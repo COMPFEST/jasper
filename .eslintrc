@@ -30,6 +30,7 @@
     "import/export": 0,
     "quotes": 0,
     "jsx-quotes": 0,
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "react/jsx-pascal-case": 0
   }
 }

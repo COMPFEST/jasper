@@ -19,3 +19,6 @@ jobs:
 
       - name: Test
         run: npm test
+
+      - name: Code Coverage
+        run: bash <(curl -s https://codecov.io/bash)

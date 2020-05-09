@@ -1,4 +1,4 @@
-import { AlertBox } from '.'
+import AlertBox from '.'
 
 describe('AlertBox', () => {
   it('is truthy', () => {

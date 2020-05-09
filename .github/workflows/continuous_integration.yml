@@ -1,0 +1,18 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - master
+      - staging
+    pull_request:
+      - master
+      - staging
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Test
+        run: npm run test

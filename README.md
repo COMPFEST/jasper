@@ -2,7 +2,7 @@
 
 > COMPFEST React Component Library
 
-[![NPM](https://img.shields.io/npm/v/jasper-ui.svg)](https://www.npmjs.com/package/jasper-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/jasper-ui.svg)](https://www.npmjs.com/package/jasper-ui) ![Test](https://github.com/COMPFEST/jasper/workflows/Continuous%Integration/badge.svg) ![Deploy Docs](https://github.com/COMPFEST/jasper/workflows/Build%20and%20Deploy%20Documentation/badge.svg)
 
 ## Install
 

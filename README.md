@@ -10,7 +10,7 @@
 
 ## Docs
 
-See the [documentation](https://compfest.github.io/jasper/) here.
+See the [documentation](https://jasper.compfest.id/) here.
 
 ## Install
 

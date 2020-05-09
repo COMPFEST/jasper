@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<button
+  className="all"
+  type="button"
+>
+  Hello
+</button>
+`;
+
+exports[`renders correctly 2`] = `
+<a
+  href="https://www.compfest.id/"
+>
+  <button
+    className="all"
+    href="https://www.compfest.id/"
+    type="button"
+  >
+    Hi
+  </button>
+</a>
+`;

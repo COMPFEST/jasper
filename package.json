@@ -8,6 +8,16 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/*.stories.{js,jsx}",
+      "!**/style.js",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/serviceWorker.js"
+    ]
+  },
   "engines": {
     "node": ">=10"
   },
@@ -20,6 +30,7 @@
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
+    "test:coverage": "cross-env CI=1 react-scripts test --env=jsdom --coverage",
     "predeploy": "npm run build && cd docs && npm install && npm run build",
     "storybook": "start-storybook"
   },

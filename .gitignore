@@ -17,6 +17,9 @@ dist
 .env.test.local
 .env.production.local
 
+# coverage
+coverage
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

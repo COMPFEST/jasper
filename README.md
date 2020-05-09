@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/jasper-ui.svg)](https://www.npmjs.com/package/jasper-ui) ![CI](https://github.com/COMPFEST/jasper/workflows/CI/badge.svg) ![NPM Publish](https://github.com/COMPFEST/jasper/workflows/NPM%20Publish/badge.svg) ![Deploy Docs](https://github.com/COMPFEST/jasper/workflows/Deploy%20Docs/badge.svg)
 
+## Docs
+
+See the [documentation](https://compfest.github.io/jasper/) here.
+
 ## Install
 
 ```bash

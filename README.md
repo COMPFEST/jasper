@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/jasper-ui.svg)](https://www.npmjs.com/package/jasper-ui)
 ![CI](https://github.com/COMPFEST/jasper/workflows/CI/badge.svg)
-![NPM Publish](https://github.com/COMPFEST/jasper/workflows/NPM%20Publish/badge.svg)
+![Publish Package](https://github.com/COMPFEST/jasper/workflows/20Publish%20Package/badge.svg)
 ![Deploy Docs](https://github.com/COMPFEST/jasper/workflows/Deploy%20Docs/badge.svg)
 [![codecov](https://codecov.io/gh/COMPFEST/jasper/branch/master/graph/badge.svg)](https://codecov.io/gh/COMPFEST/jasper)
 

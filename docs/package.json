@@ -17,7 +17,7 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-helmet": "^6.0.0",
-    "jasper": "file:.."
+    "jasper-ui": "file:.."
   },
   "devDependencies": {
     "prettier": "file:../node_modules/prettier"

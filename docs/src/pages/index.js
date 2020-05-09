@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Button } from 'jasper'
-import 'jasper/dist/index.css'
+import { Button } from 'jasper-ui'
+import 'jasper-ui/dist/index.css'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

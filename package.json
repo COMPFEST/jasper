@@ -20,7 +20,7 @@
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd docs && npm install && npm run build",
+    "predeploy": "npm install && cd docs && npm install && npm run build",
     "storybook": "start-storybook"
   },
   "dependencies": {

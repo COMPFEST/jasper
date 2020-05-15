@@ -16,11 +16,11 @@ const Card = props => {
 }
 
 Card.propTypes = {
-  //title and content props is mandatory
+  // title and content props is mandatory
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
 
-  //linkContent and href is optional
+  // linkContent and href is optional
   linkContent: PropTypes.string,
   href: PropTypes.string,
 }

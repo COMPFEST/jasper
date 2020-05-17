@@ -1,5 +1,5 @@
 {
-  "name": "docusaurus",
+  "name": "jasper-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,8 +12,11 @@
     "@docusaurus/core": "^2.0.0-alpha.54",
     "@docusaurus/preset-classic": "^2.0.0-alpha.54",
     "classnames": "^2.2.6",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "prop-types": "file:../node_modules/prop-types",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "styled-components": "file:../node_modules/styled-components",
+    "jasper-ui": "file:.."
   },
   "browserslist": {
     "production": [

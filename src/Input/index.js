@@ -9,6 +9,7 @@ export const BaseInput = styled(Field)`
   background-color: transparent;
   border: 2px solid #000;
   border-radius: 5px;
+  font-family: inherit;
 `
 
 export const TextInput = (props) => (
@@ -28,7 +29,7 @@ const RadioSpan = styled.span`
     border: 1px solid #000;
     margin-right: 0.6rem;
     transition: background 0.2s ease;
-    box-shadow: inset 0 0 0 0.15rem ${(props) => props.theme.colors.darkBlue};
+    box-shadow: inset 0 0 0 0.15rem #000;
   }
 `
 
@@ -46,28 +47,17 @@ const RadioButton = styled(Field)`
   }
 `
 
-export const RadioInput = (field) => (
-  <div style={{ display: "flex", justifyContent: "space-between" }}>
-    {field.options.map((option, index) => (
-      <label key={index} style={{ cursor: "pointer" }}>
-        <RadioButton type="radio" name={field.name} value={option} />
-        <RadioSpan>{option}</RadioSpan>
-      </label>
-    ))}
-  </div>
+export const RadioInput = ({ name, value, children }) => (
+  <label style={{ cursor: "pointer" }}>
+    <RadioButton type="radio" name={name} value={value || children} />
+    <RadioSpan>{children}</RadioSpan>
+  </label>
 )
 
-export const NumberInput = (field) => (
-  <BaseInput type="number" name={field.name} placeholder={field.placeholder} />
-)
+export const NumberInput = (props) => <BaseInput type="number" {...props} />
 
-export const TextAreaInput = (field) => (
-  <BaseInput
-    style={{ width: "100%" }}
-    as="textarea"
-    name={field.name}
-    placeholder={field.placeholder}
-  />
+export const TextAreaInput = (props) => (
+  <BaseInput component="textarea" {...props} />
 )
 
 const PhoneSpan = styled.span`
@@ -124,7 +114,3 @@ export const CheckboxInput = (field, values, setFieldValue) => (
     ))}
   </div>
 )
-
-export default {
-  text: TextInput
-}

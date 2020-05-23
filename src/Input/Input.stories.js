@@ -1,6 +1,6 @@
 import React from "react"
 import { Formik, Form } from "formik"
-import Input from "./index"
+import { TextInput, RadioInput, NumberInput, TextAreaInput } from "./index"
 
 export default { title: "Input" }
 
@@ -21,6 +21,29 @@ const TestFormik = ({ children }) => (
 
 export const Text = () => (
   <TestFormik>
-    <Input.text name="TextInput" placeholder="Text Placeholder" />
+    <TextInput name="TextInput" placeholder="Text Placeholder" />
+  </TestFormik>
+)
+
+export const Radio = () => (
+  <TestFormik>
+    <RadioInput name="RadioInput" value="one">
+      1
+    </RadioInput>
+    <RadioInput name="RadioInput" value="two">
+      2
+    </RadioInput>
+  </TestFormik>
+)
+
+export const Number = () => (
+  <TestFormik>
+    <NumberInput name="NumberInput" placeholder="Number Placeholder" />
+  </TestFormik>
+)
+
+export const TextArea = () => (
+  <TestFormik>
+    <TextAreaInput name="TextAreaInput" placeholder="TextArea Placeholder" />
   </TestFormik>
 )

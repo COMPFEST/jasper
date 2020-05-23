@@ -35,6 +35,7 @@
     "storybook": "start-storybook"
   },
   "dependencies": {
+    "formik": "^2.1.4",
     "prop-types": "^15.5.7"
   },
   "peerDependencies": {

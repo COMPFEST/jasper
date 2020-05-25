@@ -1,6 +1,13 @@
 import React from "react"
 import { Formik, Form } from "formik"
-import { TextInput, RadioInput, NumberInput, TextAreaInput } from "./index"
+import {
+  TextInput,
+  RadioInput,
+  NumberInput,
+  TextAreaInput,
+  PhoneInput,
+  CheckboxInput
+} from "./index"
 
 export default { title: "Input" }
 
@@ -12,10 +19,17 @@ const TestFormik = ({ children }) => (
       actions.setSubmitting(false)
     }}
   >
-    <Form>
-      {children}
-      <button type="submit">Submit</button>
-    </Form>
+    {({ errors }) => (
+      <Form>
+        {children}
+        {Object.keys(errors).map((key) => (
+          <span key={key}>
+            {key}: {errors[key]}
+          </span>
+        ))}
+        <button type="submit">Submit</button>
+      </Form>
+    )}
   </Formik>
 )
 
@@ -45,5 +59,22 @@ export const Number = () => (
 export const TextArea = () => (
   <TestFormik>
     <TextAreaInput name="TextAreaInput" placeholder="TextArea Placeholder" />
+  </TestFormik>
+)
+
+export const Phone = () => (
+  <TestFormik>
+    <PhoneInput name="PhoneInput" placeholder="Phone Placeholder" />
+  </TestFormik>
+)
+
+export const Checkbox = () => (
+  <TestFormik>
+    <CheckboxInput name="CheckboxInput" value="one">
+      1
+    </CheckboxInput>
+    <CheckboxInput name="CheckboxInput" value="two">
+      2
+    </CheckboxInput>
   </TestFormik>
 )

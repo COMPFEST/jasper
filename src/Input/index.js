@@ -76,7 +76,7 @@ const PhoneSpan = styled.span`
   }
 `
 
-export const PhoneInput = (field) => (
+export const PhoneInput = (props) => (
   <div style={{ position: "relative" }}>
     <PhoneSpan>+62</PhoneSpan>
     <BaseInput
@@ -87,30 +87,21 @@ export const PhoneInput = (field) => (
         width: "calc(100% - 19px - 4.5rem)"
       }}
       type="text"
-      onChange={(event) => {
-        if (event.target.value.match(/^\d*$/)) {
-          console.log(event.target.value)
+      {...props}
+      validate={(value) => {
+        let errorMessage
+        if (!value.match(/^\d*$/)) {
+          errorMessage = "Invalid phone number"
         }
+        return errorMessage
       }}
-      name={field.name}
     />
   </div>
 )
 
-export const CheckboxInput = (field, values, setFieldValue) => (
-  <div>
-    {field.options.map((option, index) => (
-      <div key={index}>
-        <label>
-          <BaseInput
-            type="checkbox"
-            name={option}
-            onChange={(event) => setFieldValue(option, event.target.checked)}
-            checked={values[option]}
-          />
-          {option}
-        </label>
-      </div>
-    ))}
-  </div>
+export const CheckboxInput = ({ name, value, children }) => (
+  <label style={{ cursor: "pointer" }}>
+    <Field type="checkbox" name={name} value={value || children} />
+    {children}
+  </label>
 )

@@ -1,13 +1,6 @@
 import React from "react"
 import { Formik, Form } from "formik"
-import {
-  TextInput,
-  RadioInput,
-  NumberInput,
-  TextAreaInput,
-  PhoneInput,
-  CheckboxInput
-} from "./index"
+import Input from "."
 
 export default { title: "Input" }
 
@@ -35,46 +28,46 @@ const TestFormik = ({ children }) => (
 
 export const Text = () => (
   <TestFormik>
-    <TextInput name="TextInput" placeholder="Text Placeholder" />
+    <Input.Text name="TextInput" placeholder="Text Placeholder" />
   </TestFormik>
 )
 
 export const Radio = () => (
   <TestFormik>
-    <RadioInput name="RadioInput" value="one">
+    <Input.Radio name="RadioInput" value="one">
       1
-    </RadioInput>
-    <RadioInput name="RadioInput" value="two">
+    </Input.Radio>
+    <Input.Radio name="RadioInput" value="two">
       2
-    </RadioInput>
+    </Input.Radio>
   </TestFormik>
 )
 
 export const Number = () => (
   <TestFormik>
-    <NumberInput name="NumberInput" placeholder="Number Placeholder" />
+    <Input.Number name="NumberInput" placeholder="Number Placeholder" />
   </TestFormik>
 )
 
 export const TextArea = () => (
   <TestFormik>
-    <TextAreaInput name="TextAreaInput" placeholder="TextArea Placeholder" />
+    <Input.TextArea name="TextAreaInput" placeholder="TextArea Placeholder" />
   </TestFormik>
 )
 
 export const Phone = () => (
   <TestFormik>
-    <PhoneInput name="PhoneInput" placeholder="Phone Placeholder" />
+    <Input.Phone name="PhoneInput" placeholder="Phone Placeholder" />
   </TestFormik>
 )
 
 export const Checkbox = () => (
   <TestFormik>
-    <CheckboxInput name="CheckboxInput" value="one">
+    <Input.Checkbox name="CheckboxInput" value="one">
       1
-    </CheckboxInput>
-    <CheckboxInput name="CheckboxInput" value="two">
+    </Input.Checkbox>
+    <Input.Checkbox name="CheckboxInput" value="two">
       2
-    </CheckboxInput>
+    </Input.Checkbox>
   </TestFormik>
 )

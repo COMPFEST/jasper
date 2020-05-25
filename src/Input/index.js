@@ -55,3 +55,12 @@ export const CheckboxInput = ({ name, value, children }) => (
     {children}
   </CheckboxLabel>
 )
+
+export default {
+  Checkbox: CheckboxInput,
+  Number: NumberInput,
+  Phone: PhoneInput,
+  Radio: RadioInput,
+  Text: TextInput,
+  TextArea: TextAreaInput,
+}

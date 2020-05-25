@@ -12,9 +12,9 @@ export const TextInput = (props) => (
   <BaseInput type={props.type || "text"} {...props} />
 )
 
-export const RadioInput = ({ name, value, children }) => (
+export const RadioInput = ({ name, value, children, ...props }) => (
   <label style={{ cursor: "pointer" }}>
-    <RadioButton type="radio" name={name} value={value || children} />
+    <RadioButton type="radio" value={value || children} {...props} />
     <RadioSpan>{children}</RadioSpan>
   </label>
 )
@@ -48,9 +48,9 @@ export const PhoneInput = (props) => (
   </div>
 )
 
-export const CheckboxInput = ({ name, value, children }) => (
+export const CheckboxInput = ({ value, children, ...props }) => (
   <CheckboxLabel>
-    <Field type="checkbox" name={name} value={value || children} />
+    <Field type="checkbox" value={value || children} {...props} />
     <span className="checkmark" />
     {children}
   </CheckboxLabel>
@@ -62,5 +62,5 @@ export default {
   Phone: PhoneInput,
   Radio: RadioInput,
   Text: TextInput,
-  TextArea: TextAreaInput,
+  TextArea: TextAreaInput
 }

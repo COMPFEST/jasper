@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders navItems correctly 1`] = `
+<div
+  className="sc-bdVaJa vErfP"
+>
+  <div
+    className="small-nav"
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      navitem1
+    </div>
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "fontWeight": "normal",
+        }
+      }
+    >
+      navitem2
+    </div>
+  </div>
+  <div
+    className="nav-content"
+  >
+    <div
+      className="sc-bwzfXH jzlPfT"
+    >
+      <div
+        id="card-body"
+      >
+        <h1
+          id="title"
+        >
+          Component1
+        </h1>
+        <p
+          id="content"
+        >
+          Hello world, this is component1
+        </p>
+        <a
+          id="link"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

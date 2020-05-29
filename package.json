@@ -35,6 +35,7 @@
     "storybook": "start-storybook"
   },
   "dependencies": {
+    "embla-carousel-react": "^1.3.3",
     "prop-types": "^15.5.7"
   },
   "peerDependencies": {

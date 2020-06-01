@@ -23,14 +23,12 @@ const SSOButton = props => {
   )
 }
 
-export const Footer = () =>(
+export const Footer = () => (
   <FooterContainer>
     <div className="layout" id="footer-top">
       <div id="left">
         <div id="logo">
-          
-            <img src={compfest} alt="COMPFEST" />
-          
+          <img src={compfest} alt="COMPFEST" />
         </div>
         <div id="socmed">
           <a id="fb" href="https://www.facebook.com/COMPFEST">
@@ -61,19 +59,12 @@ export const Footer = () =>(
           <span id="top">COMPFEST 12 HRD Open Recruitment</span>
           <div id="bottom">
             <div className="link-container">
-              
-                <p>Home</p>
-              
-              
-                <p>About HRD</p>
-              
+              <p>Home</p>
+              <p>About HRD</p>
             </div>
             <div className="link-container">
-              
-                <p>Departments</p>
-              
-                {/* <p>Results</p> */}
-                <SSOButton text="Sign In" />
+              <p>Departments</p>
+              <SSOButton text="Sign In" />
             </div>
           </div>
         </div>

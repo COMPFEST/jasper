@@ -1,0 +1,13 @@
+.testimony_carousel__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimony_carousel__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.testimony_carousel__viewport.is-dragging {
+  cursor: grabbing;
+}

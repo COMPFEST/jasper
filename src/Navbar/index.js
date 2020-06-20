@@ -7,6 +7,9 @@ import findByType from "../utils/findByType"
 import useGetWindowWidth from "../utils/useGetWindowWidth"
 import { BREAKPOINT } from "../utils/variables"
 
+import { ReactComponent as ToggleClose } from "./assets/toggle_close.svg"
+import { ReactComponent as ToggleOpen } from "./assets/toggle_open.svg"
+
 const Brand = () => null
 const Collapse = () => null
 const Toggle = () => null
@@ -54,15 +57,9 @@ const Navbar = ({ children }) => {
     return (
       <div className={styles.toggle} onClick={() => setShow(prev => !prev)}>
         {show ? (
-          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="22.1914" height="3.50215" rx="1.75107" transform="matrix(0.742317 0.670049 0.580506 -0.814256 0.493652 3.13062)" fill="white"/>
-            <rect width="22.1914" height="3.50215" rx="1.75107" transform="matrix(-0.742317 0.670049 -0.580506 -0.814256 18.5059 2.85156)" fill="white"/>
-          </svg>
+          <ToggleClose />
         ) : (
-          <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="26" height="4" rx="2" transform="matrix(1 0 0 -1 0 4)" fill="white"/>
-            <rect width="26" height="4" rx="2" transform="matrix(1 0 0 -1 0 13)" fill="white"/>
-          </svg>
+          <ToggleOpen />
         )}
       </div>
     )

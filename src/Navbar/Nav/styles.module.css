@@ -8,6 +8,13 @@
   font-size: 14px;
   min-height: 48px;
   display: flex;
+  opacity: 50%;
+  font-family: "ITC Avant Garde Std Bk", Arial, Helvetica, sans-serif;
+  line-height: 0px;
+}
+
+.navItem:hover {
+  opacity: 80%;
 }
 
 .navItem:not(:last-child) {
@@ -15,23 +22,26 @@
 }
 
 .navItem.active {
-  font-weight: bold;
+  font-weight: 600;
   opacity: 100%;
 }
 
 .navItem > * {
-  flex: 1;
+  flex: 1 1;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
 }
 
-@media only screen and (min-width: 789px) {
+@media only screen and (min-width: 768px) {
   .navItem {
     font-size: 16px;
-    opacity: 50%;
     position: relative;
+  }
+
+  .navItem:not(:last-child) {
+    margin-right: 48px;
   }
 
   .navItem.active::before {
@@ -39,9 +49,10 @@
     position: absolute;
     background: var(--accent);
     height: 4px;
-    width: 140%;
+    width: calc(100% + 14px);
     transform: translateX(-50%);
     left: 50%;
     bottom: 0;
   }
 }
+

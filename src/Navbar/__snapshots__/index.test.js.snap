@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="navbar"
+>
+  <div
+    className="navbarWrapper"
+  >
+    <div
+      className="brand"
+    >
+      <div
+        className="brandWrapper"
+      >
+        <a
+          href="#"
+        >
+          <div
+            className="brandText"
+          >
+            <div>
+              Hello
+            </div>
+          </div>
+        </a>
+        <div
+          className="toggle"
+          onClick={[Function]}
+        >
+          <svg
+            fill="none"
+            height="13"
+            viewBox="0 0 26 13"
+            width="26"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="white"
+              height="4"
+              rx="2"
+              transform="matrix(1 0 0 -1 0 4)"
+              width="26"
+            />
+            <rect
+              fill="white"
+              height="4"
+              rx="2"
+              transform="matrix(1 0 0 -1 0 13)"
+              width="26"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="collapse show"
+    >
+      <ul
+        className="nav"
+      >
+        <li
+          className="navItem active"
+        >
+          <a
+            href="#"
+          >
+            Budi
+          </a>
+        </li>
+        <li
+          className="navItem "
+        >
+          <a
+            href="#"
+          >
+            Andi
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

@@ -7,6 +7,7 @@
 .navbar {
   --bg: #080E16;
   --fg: #FFFFFF;
+  --accent: #44C3DB;
 
   background: var(--bg);
   color: var(--fg);
@@ -18,6 +19,7 @@
 
 .brandText {
   display: flex;
+  align-items: center;
 }
 
 .brandText > *:not(:last-child) {
@@ -40,25 +42,23 @@
   outline: none;
 }
 
-.brandText * {
-  display: block;
-}
-
 .collapse {
-  overflow: hidden;
   display: flex;
   max-height: 0;
   transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+  padding: 0 12px;
 }
 
 .collapse > * {
   flex-direction: column;
   width: 100%;
+  max-height: 240px;
+  overflow-y: auto;
   margin-bottom: 24px;
 }
 
 .collapse > * > * {
-  margin: 0 12px;
+  margin-right: 0 !important;
 }
 
 .collapse.show {
@@ -74,18 +74,30 @@
   display: block;
 }
 
-@media only screen and (min-width: 789px) {
+@media only screen and (min-width: 768px) {
   .collapse {
-    overflow: initial;
+    margin-left: 50px;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+
+  .collapse::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
   }
 
   .collapse > * {
     flex-direction: row;
     margin-bottom: 0;
+    max-height: none;
+    max-height: initial;
+    overflow-y: visible;
+    overflow-y: initial;
   }
 
-  .collapse > * > * {
-    padding: 0;
+  .collapse > * > *:not(:last-child) {
+    margin-right: 34px !important;
   }
 
   .collapse > * > *:not(:last-child) {
@@ -104,5 +116,15 @@
 
   .brand {
     min-height: 67px;
+  }
+
+  .brandText * {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbarWrapper {
+    padding: 0 8em;
   }
 }

@@ -1,20 +1,24 @@
 import React from "react"
-import Spinner from "."
 import renderer from "react-test-renderer"
+import Navbar from '.'
+import Nav from './Nav'
 
 it("renders correctly", () => {
-  let tree = renderer.create(<Spinner />).toJSON()
-  expect(tree).toMatchSnapshot()
-
-  tree = renderer.create(<Spinner variant="regular" />).toJSON()
-  expect(tree).toMatchSnapshot()
-
-  tree = renderer.create(<Spinner size="lg" />).toJSON()
-  expect(tree).toMatchSnapshot()
-
-  tree = renderer.create(<Spinner speed="fast" />).toJSON()
-  expect(tree).toMatchSnapshot()
-
-  tree = renderer.create(<Spinner animation="bouncy" />).toJSON()
+  const tree = renderer.create((
+    <Navbar>
+      <Navbar.Brand>
+        <div>
+          Hello
+        </div>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse>
+        <Nav>
+          <Nav.Link href="#" active>Budi</Nav.Link>
+          <Nav.Link href="#">Andi</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  )).toJSON()
   expect(tree).toMatchSnapshot()
 })

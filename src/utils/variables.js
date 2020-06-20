@@ -1,4 +1,4 @@
-const BREAKPOINT = 789
+const BREAKPOINT = 768
 
 export {
   BREAKPOINT

@@ -1,0 +1,47 @@
+.nav {
+  --accent: #44C3DB;
+
+  display: flex;
+}
+
+.navItem {
+  font-size: 14px;
+  min-height: 48px;
+  display: flex;
+}
+
+.navItem:not(:last-child) {
+  margin-right: 34px;
+}
+
+.navItem.active {
+  font-weight: bold;
+  opacity: 100%;
+}
+
+.navItem > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (min-width: 789px) {
+  .navItem {
+    font-size: 16px;
+    opacity: 50%;
+    position: relative;
+  }
+
+  .navItem.active::before {
+    content: " ";
+    position: absolute;
+    background: var(--accent);
+    height: 4px;
+    width: 140%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+  }
+}

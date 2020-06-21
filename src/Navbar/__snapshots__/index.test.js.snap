@@ -28,28 +28,9 @@ exports[`renders correctly 1`] = `
           className="toggle"
           onClick={[Function]}
         >
-          <svg
-            fill="none"
-            height="13"
-            viewBox="0 0 26 13"
-            width="26"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="white"
-              height="4"
-              rx="2"
-              transform="matrix(1 0 0 -1 0 4)"
-              width="26"
-            />
-            <rect
-              fill="white"
-              height="4"
-              rx="2"
-              transform="matrix(1 0 0 -1 0 13)"
-              width="26"
-            />
-          </svg>
+          <img
+            src="toggle_open.svg"
+          />
         </div>
       </div>
     </div>

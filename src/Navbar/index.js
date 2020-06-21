@@ -7,8 +7,8 @@ import findByType from "../utils/findByType"
 import useGetWindowWidth from "../utils/useGetWindowWidth"
 import { BREAKPOINT } from "../utils/variables"
 
-import { ReactComponent as ToggleClose } from "./assets/toggle_close.svg"
-import { ReactComponent as ToggleOpen } from "./assets/toggle_open.svg"
+import ToggleClose from "./assets/toggle_close.svg"
+import ToggleOpen from "./assets/toggle_open.svg"
 
 const Brand = () => null
 const Collapse = () => null
@@ -57,9 +57,9 @@ const Navbar = ({ children }) => {
     return (
       <div className={styles.toggle} onClick={() => setShow(prev => !prev)}>
         {show ? (
-          <ToggleClose />
+          <img src={ToggleClose} />
         ) : (
-          <ToggleOpen />
+          <img src={ToggleOpen} />
         )}
       </div>
     )

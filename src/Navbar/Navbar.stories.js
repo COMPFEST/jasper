@@ -3,17 +3,18 @@ import { storiesOf } from "@storybook/react"
 
 import Navbar from "."
 import Nav from "./Nav"
-import { ReactComponent as LogoMobile } from './assets/logo_mobile.svg'
-import { ReactComponent as LogoDesktop } from './assets/logo_desktop.svg'
+
+import LogoMobile from './assets/logo_mobile.svg'
+import LogoDesktop from './assets/logo_desktop.svg'
 
 storiesOf("Navbar").add("Navbar", () => (
   <Navbar>
     <Navbar.Brand>
       <div mobile>
-        <LogoMobile/>
+        <img src={LogoMobile}/>
       </div>
       <div>
-        <LogoDesktop/>
+        <img src={LogoDesktop}/>
       </div>
     </Navbar.Brand>
     <Navbar.Toggle />

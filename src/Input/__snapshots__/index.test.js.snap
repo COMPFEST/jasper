@@ -59,6 +59,7 @@ exports[`Input.Radio renders correctly 1`] = `
   }
 >
   <Styled(Field)
+    name="input-name"
     type="radio"
     value="input-value"
   />

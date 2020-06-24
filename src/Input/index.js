@@ -14,7 +14,12 @@ export const TextInput = (props) => (
 
 export const RadioInput = ({ name, value, children, ...props }) => (
   <label style={{ cursor: "pointer" }}>
-    <RadioButton type="radio" value={value || children} {...props} />
+    <RadioButton
+      type="radio"
+      name={name}
+      value={value || children}
+      {...props}
+    />
     <RadioSpan>{children}</RadioSpan>
   </label>
 )

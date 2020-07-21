@@ -29,8 +29,8 @@ const Navbar = ({ children }) => {
     if (!Array.isArray(brandChild)) {
       brandText = brandTextMobile = brandChild
     } else {
-      brandTextMobile = brandChild.filter(b => b.props.mobile)
-      brandText = brandChild.filter(b => !b.props.mobile)
+      brandTextMobile = brandChild.filter((b) => b.props.mobile)
+      brandText = brandChild.filter((b) => !b.props.mobile)
     }
 
     const brandLink = brand.props?.href || "#"
@@ -55,12 +55,8 @@ const Navbar = ({ children }) => {
     if (!toggle) return
 
     return (
-      <div className={styles.toggle} onClick={() => setShow(prev => !prev)}>
-        {show ? (
-          <img src={ToggleClose} />
-        ) : (
-          <img src={ToggleOpen} />
-        )}
+      <div className={styles.toggle} onClick={() => setShow((prev) => !prev)}>
+        {show ? <img src={ToggleClose} /> : <img src={ToggleOpen} />}
       </div>
     )
   }
@@ -70,7 +66,9 @@ const Navbar = ({ children }) => {
     if (!collapse) return
 
     return (
-      <div className={`${styles.collapse} ${show || !isMobile ? styles.show : ""}`}>
+      <div
+        className={`${styles.collapse} ${show || !isMobile ? styles.show : ""}`}
+      >
         {collapse.props.children}
       </div>
     )

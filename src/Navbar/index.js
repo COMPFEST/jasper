@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 import PropTypes from "prop-types"
 import styles from "./styles.module.css"
@@ -15,7 +15,6 @@ const Collapse = () => null
 const Toggle = () => null
 
 const Navbar = ({ children }) => {
-  const [show, setShow] = useState(false)
   const windowWidth = useGetWindowWidth()
   const isMobile = windowWidth < BREAKPOINT
 
@@ -49,20 +48,10 @@ const Navbar = ({ children }) => {
     )
   }
 
-  const renderToggle = () => {
-    const toggle = findByType(children, Toggle)[0]
-
-    if (!toggle) return
-
-    return (
-      <div className={styles.toggle} onClick={() => setShow((prev) => !prev)}>
-        {show ? <img src={ToggleClose} /> : <img src={ToggleOpen} />}
-      </div>
-    )
-  }
+  const collapse = findByType(children, Collapse)[0]
+  const show = collapse.props?.show
 
   const renderCollapse = () => {
-    const collapse = findByType(children, Collapse)[0]
     if (!collapse) return
 
     return (
@@ -70,6 +59,19 @@ const Navbar = ({ children }) => {
         className={`${styles.collapse} ${show || !isMobile ? styles.show : ""}`}
       >
         {collapse.props.children}
+      </div>
+    )
+  }
+
+  const renderToggle = () => {
+    const toggle = findByType(children, Toggle)[0]
+    const setShow = toggle.props?.setShow || function() {}
+
+    if (!toggle) return
+
+    return (
+      <div className={styles.toggle} onClick={() => setShow((prev) => !prev)}>
+        {show ? <img src={ToggleClose} /> : <img src={ToggleOpen} />}
       </div>
     )
   }

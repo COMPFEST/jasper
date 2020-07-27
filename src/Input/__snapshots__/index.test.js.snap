@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input.Checkbox renders correctly 1`] = `
+<styled.label>
+  <Field
+    name="input-name"
+    type="checkbox"
+    value="Hello"
+  />
+  <span
+    className="checkmark"
+  />
+  Hello
+</styled.label>
+`;
+
+exports[`Input.Number renders correctly 1`] = `
+<Styled(Field)
+  name="input-name"
+  placeholder="number placeholder"
+  type="number"
+/>
+`;
+
+exports[`Input.Phone renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <styled.span>
+    +62
+  </styled.span>
+  <Styled(Field)
+    name="input-name"
+    placeholder="phone placeholder"
+    style={
+      Object {
+        "paddingLeft": "4.5rem",
+        "position": "relative",
+        "width": "calc(100% - 19px - 4.5rem)",
+        "zIndex": 10,
+      }
+    }
+    type="text"
+    validate={[Function]}
+  />
+</div>
+`;
+
+exports[`Input.Radio renders correctly 1`] = `
+<label
+  style={
+    Object {
+      "cursor": "pointer",
+    }
+  }
+>
+  <Styled(Field)
+    name="input-name"
+    type="radio"
+    value="input-value"
+  />
+  <styled.span>
+    Hello
+  </styled.span>
+</label>
+`;
+
+exports[`Input.Text renders correctly 1`] = `
+<Styled(Field)
+  name="input-name"
+  placeholder="text placeholder"
+  type="text"
+/>
+`;
+
+exports[`Input.TextArea renders correctly 1`] = `
+<Styled(Field)
+  component="textarea"
+  name="input-name"
+  placeholder="placeholder"
+/>
+`;

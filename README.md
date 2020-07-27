@@ -54,6 +54,18 @@ To run documentation page:
   - cd docusaurus && npm start
 
 
+## Testing
+
+To run all tests:
+- npm test
+
+To run test with coverage:
+- npm run test:coverage
+
+To run test and update snapshots:
+- npm run test:watch
+
+
 ## License
 
 MIT © [COMPFEST](https://github.com/COMPFEST)

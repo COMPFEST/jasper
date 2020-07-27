@@ -42,7 +42,7 @@ To install jasper-ui:
 - npm install
 
 To install documentation page:
-- cd docs && npm install
+- cd docusaurus && npm install
 
 To run storybook:
 - npm run storybook
@@ -51,7 +51,7 @@ To run documentation page:
 - Run this in one terminal:
   - npm start
 - Run this in another terminal:
-  - cd docs && npm run develop
+  - cd docusaurus && npm start
 
 
 ## License

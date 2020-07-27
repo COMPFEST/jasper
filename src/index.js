@@ -3,6 +3,8 @@ import AlertBox from "./AlertBox"
 import Card from "./Card"
 import Input from "./Input"
 import SmallNav from "./SmallNav"
-import Navbar from "./Navbar"
 
-export { Button, AlertBox, Card, Input, SmallNav, Navbar }
+export { Button, AlertBox, Card, Input, SmallNav }
+
+// TODO: Import Navbar and Footer
+// make sure it doesnt break the docs

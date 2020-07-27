@@ -63,3 +63,29 @@ describe("Input.Checkbox", () => {
     expect(wrapper).toMatchSnapshot()
   })
 })
+
+describe("Input.Dropdown", () => {
+  const listDepartments = [
+    "Finance",
+    "Academy",
+    "Competition",
+    "Creative",
+    "Event",
+    "IT Dev",
+    "Marketing",
+    "Partnership",
+    "Operational",
+  ]
+
+  it("renders correctly", () => {
+    const wrapper = shallow(
+      <Input.Dropdown
+        placeholder={listDepartments[0]}
+        choices={listDepartments}
+        label="Departments"
+      />
+    )
+
+    expect(wrapper).toMatchSnapshot()
+  })
+})

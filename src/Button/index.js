@@ -1,17 +1,25 @@
 import React from "react"
 
 import PropTypes from "prop-types"
-import styles from "./styles.module.css"
+import { StyledButton } from "./style"
 
 const Button = props => {
   if (props.href) {
-    return (
-      <a href={props.href}>
-        <button className={styles.all} {...props}>{props.children}</button>
-      </a>
-    )
+    if (props.download) {
+      return (
+        <a href={props.href} download>
+          <StyledButton {...props}>{props.children}</StyledButton>
+        </a>
+      )
+    } else {
+      return (
+        <a href={props.href}>
+          <StyledButton {...props}>{props.children}</StyledButton>
+        </a>
+      )
+    }
   }
-  return <button className={styles.all} {...props}>{props.children}</button>
+  return <StyledButton {...props}>{props.children}</StyledButton>
 }
 
 Button.propTypes = {

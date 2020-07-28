@@ -110,7 +110,6 @@ const Carousel = ({ children }) => {
       setPrevBtnEnabled(embla.canScrollPrev())
       setNextBtnEnabled(embla.canScrollNext())
     }
-    console.log(embla)
     if (embla) {
       setScrollSnaps(embla.scrollSnapList())
       embla.on("select", onSelect)

@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <button
-  className="all"
+  className="sc-bdVaJa bkVfZj"
   type="button"
 >
   Hello
@@ -14,8 +14,24 @@ exports[`renders correctly 2`] = `
   href="https://www.compfest.id/"
 >
   <button
-    className="all"
+    className="sc-bdVaJa bkVfZj"
     href="https://www.compfest.id/"
+    type="button"
+  >
+    Hi
+  </button>
+</a>
+`;
+
+exports[`renders correctly 3`] = `
+<a
+  download={true}
+  href="https://www.compfest.id/images/common/bgmobile_jargon_acad_compe_landing.svg"
+>
+  <button
+    className="sc-bdVaJa bkVfZj"
+    download={true}
+    href="https://www.compfest.id/images/common/bgmobile_jargon_acad_compe_landing.svg"
     type="button"
   >
     Hi

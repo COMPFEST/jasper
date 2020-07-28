@@ -4,6 +4,7 @@ const Style = styled.div`
   & * {
     margin: 0;
   }
+
   #card-body {
     background: #F3F3F3;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -13,7 +14,7 @@ const Style = styled.div`
   #mini-information-card {
     & div {
       padding: 25px 20px;
-      width: 11rem;
+      width: 13rem;
     }
   }
 
@@ -94,6 +95,22 @@ const Style = styled.div`
     h1 {
       font-weight: 700;
       font-size: 1.5rem;
+    }
+  }
+
+  #carousel-card {
+    & #card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      width: max-content;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 2em;
     }
   }
 `

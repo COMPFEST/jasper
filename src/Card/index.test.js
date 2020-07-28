@@ -10,7 +10,7 @@ describe('Card', () => {
     const title = "Card Title Test"
     const content = "Card content test"
     const wrapper = shallow(
-      <Card title={title} content={content}/>
+      <Card title={title} text={content}/>
     )
     expect(wrapper.contains(title)).toEqual(true)
   })
@@ -19,7 +19,7 @@ describe('Card', () => {
     const title = "Card Title Test"
     const content = "Card content test"
     const wrapper = shallow(
-      <Card title={title} content={content}/>
+      <Card title={title} text={content}/>
     )
     expect(wrapper.contains(content)).toEqual(true)
   })
@@ -29,7 +29,7 @@ describe('Card', () => {
     const content = "Card content test"
     const linkContent = "Link content test"
     const wrapper = shallow(
-      <Card title={title} content={content} linkContent={linkContent}/>
+      <Card title={title} text={content} linkContent={linkContent}/>
     )
     expect(wrapper.contains(linkContent)).toEqual(true)
   })
@@ -39,7 +39,7 @@ describe('Card', () => {
     const content = "Card content test"
     const href = "https://www.compfest.id/"
     const wrapper = shallow(
-      <Card title={title} content={content} href={href}/>
+      <Card title={title} text={content} href={href}/>
     )
     expect(wrapper.find('[href="https://www.compfest.id/"]').length).toBe(1)
   })
@@ -50,7 +50,7 @@ describe('Card', () => {
     const miniTitle = 'mini title'
     const content = "Card content test"
     const wrapper = shallow(
-      <Card type="large-card" miniTitle={miniTitle} content={content}/>
+      <Card type="large-card" miniTitle={miniTitle} text={content}/>
     )
     expect(wrapper.contains(miniTitle)).toEqual(true)
   })
@@ -59,7 +59,7 @@ describe('Card', () => {
     const title = 'title'
     const content = "Card content test"
     const wrapper = shallow(
-      <Card type="large-card" title={title} content={content}/>
+      <Card type="large-card" title={title} text={content}/>
     )
     expect(wrapper.contains(title)).toEqual(true)
   })
@@ -67,7 +67,7 @@ describe('Card', () => {
   it('renders image correctly', () => {
     const content = "Card content test"
     const wrapper = shallow(
-      <Card type="large-card" image={img} content={content}/>
+      <Card type="large-card" image={img} text={content}/>
     )
     expect(wrapper.find("img").prop("src")).toEqual(img)
   })
@@ -76,7 +76,7 @@ describe('Card', () => {
     const button = <Button>Hello</Button>
     const content = "Card content test"
     const wrapper = shallow(
-      <Card type="large-card" buttonTop={button} content={content}/>
+      <Card type="large-card" buttonTop={button} text={content}/>
     )
     expect(wrapper.contains(button)).toEqual(true)
   })
@@ -85,7 +85,7 @@ describe('Card', () => {
     const button = <Button>Hello</Button>
     const content = "Card content test"
     const wrapper = shallow(
-      <Card type="large-card" buttonBottom={button} content={content}/>
+      <Card type="large-card" buttonBottom={button} text={content}/>
     )
     expect(wrapper.contains(button)).toEqual(true)
   })
@@ -95,7 +95,7 @@ describe('Card', () => {
   it('renders image correctly', () => {
     const content = "Card content test"
     const wrapper = shallow(
-      <Card type="article-card" image={img} content={content}/>
+      <Card type="article-card" image={img} text={content}/>
     )
     expect(wrapper.find("img").prop("src")).toEqual(img)
   })
@@ -104,7 +104,7 @@ describe('Card', () => {
     const content = "Card content test"
     const category = 'category'
     const wrapper = shallow(
-      <Card type="article-card" category={category} content={content}/>
+      <Card type="article-card" category={category} text={content}/>
     )
     expect(wrapper.contains(category)).toEqual(true)
   })
@@ -113,8 +113,25 @@ describe('Card', () => {
     const content = "Card content test"
     const title = 'title'
     const wrapper = shallow(
-      <Card type="article-card" title={title} content={content}/>
+      <Card type="article-card" title={title} text={content}/>
     )
     expect(wrapper.contains(title)).toEqual(true)
+  })
+
+  // Carousel card
+
+  it('renders caption correctly', () => {
+    const caption = "card caption"
+    const wrapper = shallow(
+      <Card type="carousel-card" caption={caption}/>
+    )
+    expect(wrapper.contains(caption)).toEqual(true)
+  })
+
+  it('renders image correctly', () => {
+    const wrapper = shallow(
+      <Card type="carousel-card" image={img}/>
+    )
+    expect(wrapper.find("img").prop("src")).toEqual(img)
   })
 })

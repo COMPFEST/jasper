@@ -71,3 +71,28 @@ export const Checkbox = () => (
     </Input.Checkbox>
   </TestFormik>
 )
+
+export const Dropdown = () => {
+  const listDepartments = [
+    "Finance",
+    "Academy",
+    "Competition",
+    "Creative",
+    "Event",
+    "IT Dev",
+    "Marketing",
+    "Partnership",
+    "Operational"
+  ]
+
+  return (
+    <TestFormik>
+      <Input.Dropdown
+        placeholder={listDepartments[0]}
+        choices={listDepartments}
+        label="Departments"
+        name="DropdownInput"
+      />
+    </TestFormik>
+  )
+}

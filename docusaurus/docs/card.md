@@ -12,7 +12,7 @@ We use mini information cards to display information meant to be important. It i
 ### Structure
 An information card may consist of multiple components. The following are the general structure for a typical mini information card.
 
-<img src='../static/img/card-example.svg' alt=''/>
+<img src='/img/card-example.svg' alt=''/>
 
 | Prop name   | Type   | Mandatory/Optional | Description                |
 |-------------|--------|--------------------|----------------------------|

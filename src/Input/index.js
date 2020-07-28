@@ -1,4 +1,5 @@
 import React from "react"
+
 import { Field } from "formik"
 import {
   BaseInput,
@@ -7,6 +8,7 @@ import {
   PhoneSpan,
   CheckboxLabel
 } from "./style"
+import Dropdown from "./Dropdown"
 
 export const TextInput = (props) => (
   <BaseInput type={props.type || "text"} {...props} />
@@ -14,7 +16,12 @@ export const TextInput = (props) => (
 
 export const RadioInput = ({ name, value, children, ...props }) => (
   <label style={{ cursor: "pointer" }}>
-    <RadioButton type="radio" value={value || children} {...props} />
+    <RadioButton
+      type="radio"
+      name={name}
+      value={value || children}
+      {...props}
+    />
     <RadioSpan>{children}</RadioSpan>
   </label>
 )
@@ -56,11 +63,16 @@ export const CheckboxInput = ({ value, children, ...props }) => (
   </CheckboxLabel>
 )
 
+export const DropdownInput = (props) => (
+  <Field component={Dropdown} {...props} />
+)
+
 export default {
   Checkbox: CheckboxInput,
   Number: NumberInput,
   Phone: PhoneInput,
   Radio: RadioInput,
   Text: TextInput,
-  TextArea: TextAreaInput
+  TextArea: TextAreaInput,
+  Dropdown: DropdownInput
 }

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="default md normal linear"
+  />
+</div>
+`;
+
+exports[`renders correctly 2`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="regular md normal linear"
+  />
+</div>
+`;
+
+exports[`renders correctly 3`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="default lg normal linear"
+  />
+</div>
+`;
+
+exports[`renders correctly 4`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="default md fast linear"
+  />
+</div>
+`;
+
+exports[`renders correctly 5`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="default md normal bouncy"
+  />
+</div>
+`;

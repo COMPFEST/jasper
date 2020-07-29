@@ -412,9 +412,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
-/* harmony import */ var _isInternalUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(22);
-/* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(32);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
+/* harmony import */ var _isInternalUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
+/* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(33);
 /* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -465,10 +465,10 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var prop_types = __webpack_require__(311);
 
 // EXTERNAL MODULE: ./node_modules/history/esm/history.js + 2 modules
-var esm_history = __webpack_require__(21);
+var esm_history = __webpack_require__(22);
 
 // EXTERNAL MODULE: ../node_modules/prop-types/index.js
-var node_modules_prop_types = __webpack_require__(17);
+var node_modules_prop_types = __webpack_require__(13);
 var node_modules_prop_types_default = /*#__PURE__*/__webpack_require__.n(node_modules_prop_types);
 
 // CONCATENATED MODULE: ./node_modules/mini-create-react-context/dist/esm/index.js
@@ -661,7 +661,7 @@ var path_to_regexp_default = /*#__PURE__*/__webpack_require__.n(path_to_regexp);
 var react_is = __webpack_require__(131);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
-var objectWithoutPropertiesLoose = __webpack_require__(33);
+var objectWithoutPropertiesLoose = __webpack_require__(34);
 
 // EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
 var hoist_non_react_statics_cjs = __webpack_require__(167);
@@ -1448,7 +1448,7 @@ var root = _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"] || fre
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(28)
+var fs = __webpack_require__(29)
 var polyfills = __webpack_require__(284)
 var legacy = __webpack_require__(286)
 var clone = __webpack_require__(287)
@@ -1806,6 +1806,24 @@ function retry () {
 
 /***/ }),
 /* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (false) { var throwOnDirectAccess, ReactIs; } else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = __webpack_require__(314)();
+}
+
+
+/***/ }),
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1819,7 +1837,7 @@ function retry () {
  */function useBaseUrl(url){const{siteConfig}=Object(_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])();const{baseUrl='/'}=siteConfig||{};if(!url){return url;}const externalRegex=/^(https?:|\/\/)/;if(externalRegex.test(url)){return url;}if(url.startsWith('/')){return baseUrl+url.slice(1);}return baseUrl+url;}
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 var Marker = {
@@ -1851,7 +1869,7 @@ module.exports = Marker;
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1864,13 +1882,13 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var Head = __webpack_require__(61);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(22);
+var isInternalUrl = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
-var useBaseUrl = __webpack_require__(13);
+var useBaseUrl = __webpack_require__(14);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useTheme.js
 /**
@@ -1961,7 +1979,7 @@ var Toggle_styles_module_default = /*#__PURE__*/__webpack_require__.n(Toggle_sty
  * LICENSE file in the root directory of this source tree.
  */const Moon=()=>/*#__PURE__*/react_default.a.createElement("span",{className:classnames_default()(Toggle_styles_module_default.a.toggle,Toggle_styles_module_default.a.moon)});const Sun=()=>/*#__PURE__*/react_default.a.createElement("span",{className:classnames_default()(Toggle_styles_module_default.a.toggle,Toggle_styles_module_default.a.sun)});/* harmony default export */ var Toggle = (function(props){const{isClient}=Object(useDocusaurusContext["a" /* default */])();return/*#__PURE__*/react_default.a.createElement(component_default.a,Object(esm_extends["a" /* default */])({disabled:!isClient,icons:{checked:/*#__PURE__*/react_default.a.createElement(Moon,null),unchecked:/*#__PURE__*/react_default.a.createElement(Sun,null)}},props));});
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useThemeContext.js
-var useThemeContext = __webpack_require__(40);
+var useThemeContext = __webpack_require__(41);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/router.js
 var router = __webpack_require__(64);
@@ -1974,7 +1992,7 @@ var router = __webpack_require__(64);
  * LICENSE file in the root directory of this source tree.
  */function useLocationHash(initialHash){const[hash,setHash]=Object(react["useState"])(initialHash);Object(react["useEffect"])(()=>{const handleHashChange=()=>setHash(window.location.hash);window.addEventListener('hashchange',handleHashChange);return()=>window.removeEventListener('hashchange',handleHashChange);},[]);return[hash,setHash];}/* harmony default export */ var hooks_useLocationHash = (useLocationHash);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/ExecutionEnvironment.js
-var ExecutionEnvironment = __webpack_require__(32);
+var ExecutionEnvironment = __webpack_require__(33);
 var ExecutionEnvironment_default = /*#__PURE__*/__webpack_require__.n(ExecutionEnvironment);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useScrollPosition.js
@@ -2031,7 +2049,7 @@ var styles = __webpack_require__(324);
  */function Layout(props){const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{favicon,title:siteTitle,themeConfig:{image:defaultImage},url:siteUrl}=siteConfig;const{children,title,noFooter,description,image,keywords,permalink,version}=props;const metaTitle=title?`${title} | ${siteTitle}`:siteTitle;const metaImage=image||defaultImage;let metaImageUrl=siteUrl+Object(useBaseUrl["a" /* default */])(metaImage);if(!Object(isInternalUrl["a" /* default */])(metaImage)){metaImageUrl=metaImage;}const faviconUrl=Object(useBaseUrl["a" /* default */])(favicon);return/*#__PURE__*/react_default.a.createElement(theme_ThemeProvider,null,/*#__PURE__*/react_default.a.createElement(theme_TabGroupChoiceProvider,null,/*#__PURE__*/react_default.a.createElement(Head["a" /* default */],null,/*#__PURE__*/react_default.a.createElement("html",{lang:"en"}),metaTitle&&/*#__PURE__*/react_default.a.createElement("title",null,metaTitle),metaTitle&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:title",content:metaTitle}),favicon&&/*#__PURE__*/react_default.a.createElement("link",{rel:"shortcut icon",href:faviconUrl}),description&&/*#__PURE__*/react_default.a.createElement("meta",{name:"description",content:description}),description&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:description",content:description}),version&&/*#__PURE__*/react_default.a.createElement("meta",{name:"docsearch:version",content:version}),keywords&&keywords.length&&/*#__PURE__*/react_default.a.createElement("meta",{name:"keywords",content:keywords.join(',')}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"twitter:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:image:alt",content:`Image for ${metaTitle}`}),permalink&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:url",content:siteUrl+permalink}),/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:card",content:"summary_large_image"})),/*#__PURE__*/react_default.a.createElement(theme_AnnouncementBar,null),/*#__PURE__*/react_default.a.createElement(theme_Navbar,null),/*#__PURE__*/react_default.a.createElement("div",{className:"main-wrapper"},children),!noFooter&&/*#__PURE__*/react_default.a.createElement(theme_Footer,null)));}/* harmony default export */ var theme_Layout = __webpack_exports__["a"] = (Layout);
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2059,24 +2077,6 @@ exports.fromPromise = function (fn) {
     if (typeof cb !== 'function') return fn.apply(this, arguments)
     else fn.apply(this, arguments).then(r => cb(null, r), cb)
   }, 'name', { value: fn.name })
-}
-
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (false) { var throwOnDirectAccess, ReactIs; } else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(314)();
 }
 
 
@@ -2118,7 +2118,7 @@ function invariant(condition, message) {
 
 "use strict";
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const mkdirs = u(__webpack_require__(290))
 const mkdirsSync = __webpack_require__(291)
 
@@ -2140,7157 +2140,17 @@ module.exports = {
 "use strict";
 
 // EXPORTS
-__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ createBrowserHistory; });
-__webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ createHashHistory; });
-__webpack_require__.d(__webpack_exports__, "d", function() { return /* binding */ createMemoryHistory; });
-__webpack_require__.d(__webpack_exports__, "c", function() { return /* binding */ createLocation; });
-__webpack_require__.d(__webpack_exports__, "f", function() { return /* binding */ locationsAreEqual; });
-__webpack_require__.d(__webpack_exports__, "e", function() { return /* binding */ createPath; });
-
-// UNUSED EXPORTS: parsePath
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(2);
-
-// CONCATENATED MODULE: ./node_modules/resolve-pathname/esm/resolve-pathname.js
-function isAbsolute(pathname) {
-  return pathname.charAt(0) === '/';
-}
-
-// About 1.5x faster than the two-arg version of Array#splice()
-function spliceOne(list, index) {
-  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1) {
-    list[i] = list[k];
-  }
-
-  list.pop();
-}
-
-// This implementation is based heavily on node's url.parse
-function resolvePathname(to, from) {
-  if (from === undefined) from = '';
-
-  var toParts = (to && to.split('/')) || [];
-  var fromParts = (from && from.split('/')) || [];
-
-  var isToAbs = to && isAbsolute(to);
-  var isFromAbs = from && isAbsolute(from);
-  var mustEndAbs = isToAbs || isFromAbs;
-
-  if (to && isAbsolute(to)) {
-    // to is absolute
-    fromParts = toParts;
-  } else if (toParts.length) {
-    // to is relative, drop the filename
-    fromParts.pop();
-    fromParts = fromParts.concat(toParts);
-  }
-
-  if (!fromParts.length) return '/';
-
-  var hasTrailingSlash;
-  if (fromParts.length) {
-    var last = fromParts[fromParts.length - 1];
-    hasTrailingSlash = last === '.' || last === '..' || last === '';
-  } else {
-    hasTrailingSlash = false;
-  }
-
-  var up = 0;
-  for (var i = fromParts.length; i >= 0; i--) {
-    var part = fromParts[i];
-
-    if (part === '.') {
-      spliceOne(fromParts, i);
-    } else if (part === '..') {
-      spliceOne(fromParts, i);
-      up++;
-    } else if (up) {
-      spliceOne(fromParts, i);
-      up--;
-    }
-  }
-
-  if (!mustEndAbs) for (; up--; up) fromParts.unshift('..');
-
-  if (
-    mustEndAbs &&
-    fromParts[0] !== '' &&
-    (!fromParts[0] || !isAbsolute(fromParts[0]))
-  )
-    fromParts.unshift('');
-
-  var result = fromParts.join('/');
-
-  if (hasTrailingSlash && result.substr(-1) !== '/') result += '/';
-
-  return result;
-}
-
-/* harmony default export */ var resolve_pathname = (resolvePathname);
-
-// CONCATENATED MODULE: ./node_modules/value-equal/esm/value-equal.js
-function value_equal_valueOf(obj) {
-  return obj.valueOf ? obj.valueOf() : Object.prototype.valueOf.call(obj);
-}
-
-function valueEqual(a, b) {
-  // Test for strict equality first.
-  if (a === b) return true;
-
-  // Otherwise, if either of them == null they are not equal.
-  if (a == null || b == null) return false;
-
-  if (Array.isArray(a)) {
-    return (
-      Array.isArray(b) &&
-      a.length === b.length &&
-      a.every(function(item, index) {
-        return valueEqual(item, b[index]);
-      })
-    );
-  }
-
-  if (typeof a === 'object' || typeof b === 'object') {
-    var aValue = value_equal_valueOf(a);
-    var bValue = value_equal_valueOf(b);
-
-    if (aValue !== a || bValue !== b) return valueEqual(aValue, bValue);
-
-    return Object.keys(Object.assign({}, a, b)).every(function(key) {
-      return valueEqual(a[key], b[key]);
-    });
-  }
-
-  return false;
-}
-
-/* harmony default export */ var value_equal = (valueEqual);
-
-// EXTERNAL MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
-var tiny_invariant_esm = __webpack_require__(19);
-
-// CONCATENATED MODULE: ./node_modules/history/esm/history.js
-
-
-
-
-
-
-function addLeadingSlash(path) {
-  return path.charAt(0) === '/' ? path : '/' + path;
-}
-function stripLeadingSlash(path) {
-  return path.charAt(0) === '/' ? path.substr(1) : path;
-}
-function hasBasename(path, prefix) {
-  return path.toLowerCase().indexOf(prefix.toLowerCase()) === 0 && '/?#'.indexOf(path.charAt(prefix.length)) !== -1;
-}
-function stripBasename(path, prefix) {
-  return hasBasename(path, prefix) ? path.substr(prefix.length) : path;
-}
-function stripTrailingSlash(path) {
-  return path.charAt(path.length - 1) === '/' ? path.slice(0, -1) : path;
-}
-function parsePath(path) {
-  var pathname = path || '/';
-  var search = '';
-  var hash = '';
-  var hashIndex = pathname.indexOf('#');
-
-  if (hashIndex !== -1) {
-    hash = pathname.substr(hashIndex);
-    pathname = pathname.substr(0, hashIndex);
-  }
-
-  var searchIndex = pathname.indexOf('?');
-
-  if (searchIndex !== -1) {
-    search = pathname.substr(searchIndex);
-    pathname = pathname.substr(0, searchIndex);
-  }
-
-  return {
-    pathname: pathname,
-    search: search === '?' ? '' : search,
-    hash: hash === '#' ? '' : hash
-  };
-}
-function createPath(location) {
-  var pathname = location.pathname,
-      search = location.search,
-      hash = location.hash;
-  var path = pathname || '/';
-  if (search && search !== '?') path += search.charAt(0) === '?' ? search : "?" + search;
-  if (hash && hash !== '#') path += hash.charAt(0) === '#' ? hash : "#" + hash;
-  return path;
-}
-
-function createLocation(path, state, key, currentLocation) {
-  var location;
-
-  if (typeof path === 'string') {
-    // Two-arg form: push(path, state)
-    location = parsePath(path);
-    location.state = state;
-  } else {
-    // One-arg form: push(location)
-    location = Object(esm_extends["a" /* default */])({}, path);
-    if (location.pathname === undefined) location.pathname = '';
-
-    if (location.search) {
-      if (location.search.charAt(0) !== '?') location.search = '?' + location.search;
-    } else {
-      location.search = '';
-    }
-
-    if (location.hash) {
-      if (location.hash.charAt(0) !== '#') location.hash = '#' + location.hash;
-    } else {
-      location.hash = '';
-    }
-
-    if (state !== undefined && location.state === undefined) location.state = state;
-  }
-
-  try {
-    location.pathname = decodeURI(location.pathname);
-  } catch (e) {
-    if (e instanceof URIError) {
-      throw new URIError('Pathname "' + location.pathname + '" could not be decoded. ' + 'This is likely caused by an invalid percent-encoding.');
-    } else {
-      throw e;
-    }
-  }
-
-  if (key) location.key = key;
-
-  if (currentLocation) {
-    // Resolve incomplete/relative pathname relative to current location.
-    if (!location.pathname) {
-      location.pathname = currentLocation.pathname;
-    } else if (location.pathname.charAt(0) !== '/') {
-      location.pathname = resolve_pathname(location.pathname, currentLocation.pathname);
-    }
-  } else {
-    // When there is no prior location and pathname is empty, set it to /
-    if (!location.pathname) {
-      location.pathname = '/';
-    }
-  }
-
-  return location;
-}
-function locationsAreEqual(a, b) {
-  return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && value_equal(a.state, b.state);
-}
-
-function createTransitionManager() {
-  var prompt = null;
-
-  function setPrompt(nextPrompt) {
-     false ? undefined : void 0;
-    prompt = nextPrompt;
-    return function () {
-      if (prompt === nextPrompt) prompt = null;
-    };
-  }
-
-  function confirmTransitionTo(location, action, getUserConfirmation, callback) {
-    // TODO: If another transition starts while we're still confirming
-    // the previous one, we may end up in a weird state. Figure out the
-    // best way to handle this.
-    if (prompt != null) {
-      var result = typeof prompt === 'function' ? prompt(location, action) : prompt;
-
-      if (typeof result === 'string') {
-        if (typeof getUserConfirmation === 'function') {
-          getUserConfirmation(result, callback);
-        } else {
-           false ? undefined : void 0;
-          callback(true);
-        }
-      } else {
-        // Return false from a transition hook to cancel the transition.
-        callback(result !== false);
-      }
-    } else {
-      callback(true);
-    }
-  }
-
-  var listeners = [];
-
-  function appendListener(fn) {
-    var isActive = true;
-
-    function listener() {
-      if (isActive) fn.apply(void 0, arguments);
-    }
-
-    listeners.push(listener);
-    return function () {
-      isActive = false;
-      listeners = listeners.filter(function (item) {
-        return item !== listener;
-      });
-    };
-  }
-
-  function notifyListeners() {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    listeners.forEach(function (listener) {
-      return listener.apply(void 0, args);
-    });
-  }
-
-  return {
-    setPrompt: setPrompt,
-    confirmTransitionTo: confirmTransitionTo,
-    appendListener: appendListener,
-    notifyListeners: notifyListeners
-  };
-}
-
-var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-function getConfirmation(message, callback) {
-  callback(window.confirm(message)); // eslint-disable-line no-alert
-}
-/**
- * Returns true if the HTML5 history API is supported. Taken from Modernizr.
- *
- * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
- * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
- * changed to avoid false negatives for Windows Phones: https://github.com/reactjs/react-router/issues/586
- */
-
-function supportsHistory() {
-  var ua = window.navigator.userAgent;
-  if ((ua.indexOf('Android 2.') !== -1 || ua.indexOf('Android 4.0') !== -1) && ua.indexOf('Mobile Safari') !== -1 && ua.indexOf('Chrome') === -1 && ua.indexOf('Windows Phone') === -1) return false;
-  return window.history && 'pushState' in window.history;
-}
-/**
- * Returns true if browser fires popstate on hash change.
- * IE10 and IE11 do not.
- */
-
-function supportsPopStateOnHashChange() {
-  return window.navigator.userAgent.indexOf('Trident') === -1;
-}
-/**
- * Returns false if using go(n) with hash history causes a full page reload.
- */
-
-function supportsGoWithoutReloadUsingHash() {
-  return window.navigator.userAgent.indexOf('Firefox') === -1;
-}
-/**
- * Returns true if a given popstate event is an extraneous WebKit event.
- * Accounts for the fact that Chrome on iOS fires real popstate events
- * containing undefined state when pressing the back button.
- */
-
-function isExtraneousPopstateEvent(event) {
-  return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
-}
-
-var PopStateEvent = 'popstate';
-var HashChangeEvent = 'hashchange';
-
-function getHistoryState() {
-  try {
-    return window.history.state || {};
-  } catch (e) {
-    // IE 11 sometimes throws when accessing window.history.state
-    // See https://github.com/ReactTraining/history/pull/289
-    return {};
-  }
-}
-/**
- * Creates a history object that uses the HTML5 history API including
- * pushState, replaceState, and the popstate event.
- */
-
-
-function createBrowserHistory(props) {
-  if (props === void 0) {
-    props = {};
-  }
-
-  !canUseDOM ?  false ? undefined : Object(tiny_invariant_esm["a" /* default */])(false) : void 0;
-  var globalHistory = window.history;
-  var canUseHistory = supportsHistory();
-  var needsHashChangeListener = !supportsPopStateOnHashChange();
-  var _props = props,
-      _props$forceRefresh = _props.forceRefresh,
-      forceRefresh = _props$forceRefresh === void 0 ? false : _props$forceRefresh,
-      _props$getUserConfirm = _props.getUserConfirmation,
-      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
-      _props$keyLength = _props.keyLength,
-      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
-  var basename = props.basename ? stripTrailingSlash(addLeadingSlash(props.basename)) : '';
-
-  function getDOMLocation(historyState) {
-    var _ref = historyState || {},
-        key = _ref.key,
-        state = _ref.state;
-
-    var _window$location = window.location,
-        pathname = _window$location.pathname,
-        search = _window$location.search,
-        hash = _window$location.hash;
-    var path = pathname + search + hash;
-     false ? undefined : void 0;
-    if (basename) path = stripBasename(path, basename);
-    return createLocation(path, state, key);
-  }
-
-  function createKey() {
-    return Math.random().toString(36).substr(2, keyLength);
-  }
-
-  var transitionManager = createTransitionManager();
-
-  function setState(nextState) {
-    Object(esm_extends["a" /* default */])(history, nextState);
-
-    history.length = globalHistory.length;
-    transitionManager.notifyListeners(history.location, history.action);
-  }
-
-  function handlePopState(event) {
-    // Ignore extraneous popstate events in WebKit.
-    if (isExtraneousPopstateEvent(event)) return;
-    handlePop(getDOMLocation(event.state));
-  }
-
-  function handleHashChange() {
-    handlePop(getDOMLocation(getHistoryState()));
-  }
-
-  var forceNextPop = false;
-
-  function handlePop(location) {
-    if (forceNextPop) {
-      forceNextPop = false;
-      setState();
-    } else {
-      var action = 'POP';
-      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-        if (ok) {
-          setState({
-            action: action,
-            location: location
-          });
-        } else {
-          revertPop(location);
-        }
-      });
-    }
-  }
-
-  function revertPop(fromLocation) {
-    var toLocation = history.location; // TODO: We could probably make this more reliable by
-    // keeping a list of keys we've seen in sessionStorage.
-    // Instead, we just default to 0 for keys we don't know.
-
-    var toIndex = allKeys.indexOf(toLocation.key);
-    if (toIndex === -1) toIndex = 0;
-    var fromIndex = allKeys.indexOf(fromLocation.key);
-    if (fromIndex === -1) fromIndex = 0;
-    var delta = toIndex - fromIndex;
-
-    if (delta) {
-      forceNextPop = true;
-      go(delta);
-    }
-  }
-
-  var initialLocation = getDOMLocation(getHistoryState());
-  var allKeys = [initialLocation.key]; // Public interface
-
-  function createHref(location) {
-    return basename + createPath(location);
-  }
-
-  function push(path, state) {
-     false ? undefined : void 0;
-    var action = 'PUSH';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var href = createHref(location);
-      var key = location.key,
-          state = location.state;
-
-      if (canUseHistory) {
-        globalHistory.pushState({
-          key: key,
-          state: state
-        }, null, href);
-
-        if (forceRefresh) {
-          window.location.href = href;
-        } else {
-          var prevIndex = allKeys.indexOf(history.location.key);
-          var nextKeys = allKeys.slice(0, prevIndex + 1);
-          nextKeys.push(location.key);
-          allKeys = nextKeys;
-          setState({
-            action: action,
-            location: location
-          });
-        }
-      } else {
-         false ? undefined : void 0;
-        window.location.href = href;
-      }
-    });
-  }
-
-  function replace(path, state) {
-     false ? undefined : void 0;
-    var action = 'REPLACE';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var href = createHref(location);
-      var key = location.key,
-          state = location.state;
-
-      if (canUseHistory) {
-        globalHistory.replaceState({
-          key: key,
-          state: state
-        }, null, href);
-
-        if (forceRefresh) {
-          window.location.replace(href);
-        } else {
-          var prevIndex = allKeys.indexOf(history.location.key);
-          if (prevIndex !== -1) allKeys[prevIndex] = location.key;
-          setState({
-            action: action,
-            location: location
-          });
-        }
-      } else {
-         false ? undefined : void 0;
-        window.location.replace(href);
-      }
-    });
-  }
-
-  function go(n) {
-    globalHistory.go(n);
-  }
-
-  function goBack() {
-    go(-1);
-  }
-
-  function goForward() {
-    go(1);
-  }
-
-  var listenerCount = 0;
-
-  function checkDOMListeners(delta) {
-    listenerCount += delta;
-
-    if (listenerCount === 1 && delta === 1) {
-      window.addEventListener(PopStateEvent, handlePopState);
-      if (needsHashChangeListener) window.addEventListener(HashChangeEvent, handleHashChange);
-    } else if (listenerCount === 0) {
-      window.removeEventListener(PopStateEvent, handlePopState);
-      if (needsHashChangeListener) window.removeEventListener(HashChangeEvent, handleHashChange);
-    }
-  }
-
-  var isBlocked = false;
-
-  function block(prompt) {
-    if (prompt === void 0) {
-      prompt = false;
-    }
-
-    var unblock = transitionManager.setPrompt(prompt);
-
-    if (!isBlocked) {
-      checkDOMListeners(1);
-      isBlocked = true;
-    }
-
-    return function () {
-      if (isBlocked) {
-        isBlocked = false;
-        checkDOMListeners(-1);
-      }
-
-      return unblock();
-    };
-  }
-
-  function listen(listener) {
-    var unlisten = transitionManager.appendListener(listener);
-    checkDOMListeners(1);
-    return function () {
-      checkDOMListeners(-1);
-      unlisten();
-    };
-  }
-
-  var history = {
-    length: globalHistory.length,
-    action: 'POP',
-    location: initialLocation,
-    createHref: createHref,
-    push: push,
-    replace: replace,
-    go: go,
-    goBack: goBack,
-    goForward: goForward,
-    block: block,
-    listen: listen
-  };
-  return history;
-}
-
-var HashChangeEvent$1 = 'hashchange';
-var HashPathCoders = {
-  hashbang: {
-    encodePath: function encodePath(path) {
-      return path.charAt(0) === '!' ? path : '!/' + stripLeadingSlash(path);
-    },
-    decodePath: function decodePath(path) {
-      return path.charAt(0) === '!' ? path.substr(1) : path;
-    }
-  },
-  noslash: {
-    encodePath: stripLeadingSlash,
-    decodePath: addLeadingSlash
-  },
-  slash: {
-    encodePath: addLeadingSlash,
-    decodePath: addLeadingSlash
-  }
-};
-
-function stripHash(url) {
-  var hashIndex = url.indexOf('#');
-  return hashIndex === -1 ? url : url.slice(0, hashIndex);
-}
-
-function getHashPath() {
-  // We can't use window.location.hash here because it's not
-  // consistent across browsers - Firefox will pre-decode it!
-  var href = window.location.href;
-  var hashIndex = href.indexOf('#');
-  return hashIndex === -1 ? '' : href.substring(hashIndex + 1);
-}
-
-function pushHashPath(path) {
-  window.location.hash = path;
-}
-
-function replaceHashPath(path) {
-  window.location.replace(stripHash(window.location.href) + '#' + path);
-}
-
-function createHashHistory(props) {
-  if (props === void 0) {
-    props = {};
-  }
-
-  !canUseDOM ?  false ? undefined : Object(tiny_invariant_esm["a" /* default */])(false) : void 0;
-  var globalHistory = window.history;
-  var canGoWithoutReload = supportsGoWithoutReloadUsingHash();
-  var _props = props,
-      _props$getUserConfirm = _props.getUserConfirmation,
-      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
-      _props$hashType = _props.hashType,
-      hashType = _props$hashType === void 0 ? 'slash' : _props$hashType;
-  var basename = props.basename ? stripTrailingSlash(addLeadingSlash(props.basename)) : '';
-  var _HashPathCoders$hashT = HashPathCoders[hashType],
-      encodePath = _HashPathCoders$hashT.encodePath,
-      decodePath = _HashPathCoders$hashT.decodePath;
-
-  function getDOMLocation() {
-    var path = decodePath(getHashPath());
-     false ? undefined : void 0;
-    if (basename) path = stripBasename(path, basename);
-    return createLocation(path);
-  }
-
-  var transitionManager = createTransitionManager();
-
-  function setState(nextState) {
-    Object(esm_extends["a" /* default */])(history, nextState);
-
-    history.length = globalHistory.length;
-    transitionManager.notifyListeners(history.location, history.action);
-  }
-
-  var forceNextPop = false;
-  var ignorePath = null;
-
-  function locationsAreEqual$$1(a, b) {
-    return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash;
-  }
-
-  function handleHashChange() {
-    var path = getHashPath();
-    var encodedPath = encodePath(path);
-
-    if (path !== encodedPath) {
-      // Ensure we always have a properly-encoded hash.
-      replaceHashPath(encodedPath);
-    } else {
-      var location = getDOMLocation();
-      var prevLocation = history.location;
-      if (!forceNextPop && locationsAreEqual$$1(prevLocation, location)) return; // A hashchange doesn't always == location change.
-
-      if (ignorePath === createPath(location)) return; // Ignore this change; we already setState in push/replace.
-
-      ignorePath = null;
-      handlePop(location);
-    }
-  }
-
-  function handlePop(location) {
-    if (forceNextPop) {
-      forceNextPop = false;
-      setState();
-    } else {
-      var action = 'POP';
-      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-        if (ok) {
-          setState({
-            action: action,
-            location: location
-          });
-        } else {
-          revertPop(location);
-        }
-      });
-    }
-  }
-
-  function revertPop(fromLocation) {
-    var toLocation = history.location; // TODO: We could probably make this more reliable by
-    // keeping a list of paths we've seen in sessionStorage.
-    // Instead, we just default to 0 for paths we don't know.
-
-    var toIndex = allPaths.lastIndexOf(createPath(toLocation));
-    if (toIndex === -1) toIndex = 0;
-    var fromIndex = allPaths.lastIndexOf(createPath(fromLocation));
-    if (fromIndex === -1) fromIndex = 0;
-    var delta = toIndex - fromIndex;
-
-    if (delta) {
-      forceNextPop = true;
-      go(delta);
-    }
-  } // Ensure the hash is encoded properly before doing anything else.
-
-
-  var path = getHashPath();
-  var encodedPath = encodePath(path);
-  if (path !== encodedPath) replaceHashPath(encodedPath);
-  var initialLocation = getDOMLocation();
-  var allPaths = [createPath(initialLocation)]; // Public interface
-
-  function createHref(location) {
-    var baseTag = document.querySelector('base');
-    var href = '';
-
-    if (baseTag && baseTag.getAttribute('href')) {
-      href = stripHash(window.location.href);
-    }
-
-    return href + '#' + encodePath(basename + createPath(location));
-  }
-
-  function push(path, state) {
-     false ? undefined : void 0;
-    var action = 'PUSH';
-    var location = createLocation(path, undefined, undefined, history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var path = createPath(location);
-      var encodedPath = encodePath(basename + path);
-      var hashChanged = getHashPath() !== encodedPath;
-
-      if (hashChanged) {
-        // We cannot tell if a hashchange was caused by a PUSH, so we'd
-        // rather setState here and ignore the hashchange. The caveat here
-        // is that other hash histories in the page will consider it a POP.
-        ignorePath = path;
-        pushHashPath(encodedPath);
-        var prevIndex = allPaths.lastIndexOf(createPath(history.location));
-        var nextPaths = allPaths.slice(0, prevIndex + 1);
-        nextPaths.push(path);
-        allPaths = nextPaths;
-        setState({
-          action: action,
-          location: location
-        });
-      } else {
-         false ? undefined : void 0;
-        setState();
-      }
-    });
-  }
-
-  function replace(path, state) {
-     false ? undefined : void 0;
-    var action = 'REPLACE';
-    var location = createLocation(path, undefined, undefined, history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var path = createPath(location);
-      var encodedPath = encodePath(basename + path);
-      var hashChanged = getHashPath() !== encodedPath;
-
-      if (hashChanged) {
-        // We cannot tell if a hashchange was caused by a REPLACE, so we'd
-        // rather setState here and ignore the hashchange. The caveat here
-        // is that other hash histories in the page will consider it a POP.
-        ignorePath = path;
-        replaceHashPath(encodedPath);
-      }
-
-      var prevIndex = allPaths.indexOf(createPath(history.location));
-      if (prevIndex !== -1) allPaths[prevIndex] = path;
-      setState({
-        action: action,
-        location: location
-      });
-    });
-  }
-
-  function go(n) {
-     false ? undefined : void 0;
-    globalHistory.go(n);
-  }
-
-  function goBack() {
-    go(-1);
-  }
-
-  function goForward() {
-    go(1);
-  }
-
-  var listenerCount = 0;
-
-  function checkDOMListeners(delta) {
-    listenerCount += delta;
-
-    if (listenerCount === 1 && delta === 1) {
-      window.addEventListener(HashChangeEvent$1, handleHashChange);
-    } else if (listenerCount === 0) {
-      window.removeEventListener(HashChangeEvent$1, handleHashChange);
-    }
-  }
-
-  var isBlocked = false;
-
-  function block(prompt) {
-    if (prompt === void 0) {
-      prompt = false;
-    }
-
-    var unblock = transitionManager.setPrompt(prompt);
-
-    if (!isBlocked) {
-      checkDOMListeners(1);
-      isBlocked = true;
-    }
-
-    return function () {
-      if (isBlocked) {
-        isBlocked = false;
-        checkDOMListeners(-1);
-      }
-
-      return unblock();
-    };
-  }
-
-  function listen(listener) {
-    var unlisten = transitionManager.appendListener(listener);
-    checkDOMListeners(1);
-    return function () {
-      checkDOMListeners(-1);
-      unlisten();
-    };
-  }
-
-  var history = {
-    length: globalHistory.length,
-    action: 'POP',
-    location: initialLocation,
-    createHref: createHref,
-    push: push,
-    replace: replace,
-    go: go,
-    goBack: goBack,
-    goForward: goForward,
-    block: block,
-    listen: listen
-  };
-  return history;
-}
-
-function clamp(n, lowerBound, upperBound) {
-  return Math.min(Math.max(n, lowerBound), upperBound);
-}
-/**
- * Creates a history object that stores locations in memory.
- */
-
-
-function createMemoryHistory(props) {
-  if (props === void 0) {
-    props = {};
-  }
-
-  var _props = props,
-      getUserConfirmation = _props.getUserConfirmation,
-      _props$initialEntries = _props.initialEntries,
-      initialEntries = _props$initialEntries === void 0 ? ['/'] : _props$initialEntries,
-      _props$initialIndex = _props.initialIndex,
-      initialIndex = _props$initialIndex === void 0 ? 0 : _props$initialIndex,
-      _props$keyLength = _props.keyLength,
-      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
-  var transitionManager = createTransitionManager();
-
-  function setState(nextState) {
-    Object(esm_extends["a" /* default */])(history, nextState);
-
-    history.length = history.entries.length;
-    transitionManager.notifyListeners(history.location, history.action);
-  }
-
-  function createKey() {
-    return Math.random().toString(36).substr(2, keyLength);
-  }
-
-  var index = clamp(initialIndex, 0, initialEntries.length - 1);
-  var entries = initialEntries.map(function (entry) {
-    return typeof entry === 'string' ? createLocation(entry, undefined, createKey()) : createLocation(entry, undefined, entry.key || createKey());
-  }); // Public interface
-
-  var createHref = createPath;
-
-  function push(path, state) {
-     false ? undefined : void 0;
-    var action = 'PUSH';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var prevIndex = history.index;
-      var nextIndex = prevIndex + 1;
-      var nextEntries = history.entries.slice(0);
-
-      if (nextEntries.length > nextIndex) {
-        nextEntries.splice(nextIndex, nextEntries.length - nextIndex, location);
-      } else {
-        nextEntries.push(location);
-      }
-
-      setState({
-        action: action,
-        location: location,
-        index: nextIndex,
-        entries: nextEntries
-      });
-    });
-  }
-
-  function replace(path, state) {
-     false ? undefined : void 0;
-    var action = 'REPLACE';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      history.entries[history.index] = location;
-      setState({
-        action: action,
-        location: location
-      });
-    });
-  }
-
-  function go(n) {
-    var nextIndex = clamp(history.index + n, 0, history.entries.length - 1);
-    var action = 'POP';
-    var location = history.entries[nextIndex];
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (ok) {
-        setState({
-          action: action,
-          location: location,
-          index: nextIndex
-        });
-      } else {
-        // Mimic the behavior of DOM histories by
-        // causing a render after a cancelled POP.
-        setState();
-      }
-    });
-  }
-
-  function goBack() {
-    go(-1);
-  }
-
-  function goForward() {
-    go(1);
-  }
-
-  function canGo(n) {
-    var nextIndex = history.index + n;
-    return nextIndex >= 0 && nextIndex < history.entries.length;
-  }
-
-  function block(prompt) {
-    if (prompt === void 0) {
-      prompt = false;
-    }
-
-    return transitionManager.setPrompt(prompt);
-  }
-
-  function listen(listener) {
-    return transitionManager.appendListener(listener);
-  }
-
-  var history = {
-    length: entries.length,
-    action: 'POP',
-    location: entries[index],
-    index: index,
-    entries: entries,
-    createHref: createHref,
-    push: push,
-    replace: replace,
-    go: go,
-    goBack: goBack,
-    goForward: goForward,
-    canGo: canGo,
-    block: block,
-    listen: listen
-  };
-  return history;
-}
-
-
-
-
-/***/ }),
-/* 22 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isInternalUrl; });
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function isInternalUrl(url){return /^\/(?!\/)/.test(url);}
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-const u = __webpack_require__(16).fromPromise
-const fs = __webpack_require__(124)
-
-function pathExists (path) {
-  return fs.access(path).then(() => true).catch(() => false)
-}
-
-module.exports = {
-  pathExists: u(pathExists),
-  pathExistsSync: fs.existsSync
-}
-
-
-/***/ }),
-/* 24 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(68);
-
-
-/** Detect free variable `exports`. */
-var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
-
-/** Detect free variable `module`. */
-var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
-
-/** Detect the popular CommonJS extension `module.exports`. */
-var moduleExports = freeModule && freeModule.exports === freeExports;
-
-/** Detect free variable `process` from Node.js. */
-var freeProcess = moduleExports && _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].process;
-
-/** Used to access faster Node.js helpers. */
-var nodeUtil = (function() {
-  try {
-    // Use `util.types` for Node.js 10+.
-    var types = freeModule && freeModule.require && freeModule.require('util').types;
-
-    if (types) {
-      return types;
-    }
-
-    // Legacy `process.binding('util')` for Node.js < 10.
-    return freeProcess && freeProcess.binding && freeProcess.binding('util');
-  } catch (e) {}
-}());
-
-/* harmony default export */ __webpack_exports__["a"] = (nodeUtil);
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(90)(module)))
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var isArray = Array.isArray;
-var keyList = Object.keys;
-var hasProp = Object.prototype.hasOwnProperty;
-var hasElementType = typeof Element !== 'undefined';
-
-function equal(a, b) {
-  // fast-deep-equal index.js 2.0.1
-  if (a === b) return true;
-
-  if (a && b && typeof a == 'object' && typeof b == 'object') {
-    var arrA = isArray(a)
-      , arrB = isArray(b)
-      , i
-      , length
-      , key;
-
-    if (arrA && arrB) {
-      length = a.length;
-      if (length != b.length) return false;
-      for (i = length; i-- !== 0;)
-        if (!equal(a[i], b[i])) return false;
-      return true;
-    }
-
-    if (arrA != arrB) return false;
-
-    var dateA = a instanceof Date
-      , dateB = b instanceof Date;
-    if (dateA != dateB) return false;
-    if (dateA && dateB) return a.getTime() == b.getTime();
-
-    var regexpA = a instanceof RegExp
-      , regexpB = b instanceof RegExp;
-    if (regexpA != regexpB) return false;
-    if (regexpA && regexpB) return a.toString() == b.toString();
-
-    var keys = keyList(a);
-    length = keys.length;
-
-    if (length !== keyList(b).length)
-      return false;
-
-    for (i = length; i-- !== 0;)
-      if (!hasProp.call(b, keys[i])) return false;
-    // end fast-deep-equal
-
-    // start react-fast-compare
-    // custom handling for DOM elements
-    if (hasElementType && a instanceof Element && b instanceof Element)
-      return a === b;
-
-    // custom handling for React
-    for (i = length; i-- !== 0;) {
-      key = keys[i];
-      if (key === '_owner' && a.$$typeof) {
-        // React-specific: avoid traversing React elements' _owner.
-        //  _owner contains circular references
-        // and is not needed when comparing the actual elements (and not their owners)
-        // .$$typeof and ._store on just reasonable markers of a react element
-        continue;
-      } else {
-        // all other properties should be traversed as usual
-        if (!equal(a[key], b[key])) return false;
-      }
-    }
-    // end react-fast-compare
-
-    // fast-deep-equal index.js 2.0.1
-    return true;
-  }
-
-  return a !== a && b !== b;
-}
-// end fast-deep-equal
-
-module.exports = function exportedEqual(a, b) {
-  try {
-    return equal(a, b);
-  } catch (error) {
-    if ((error.message && error.message.match(/stack|recursion/i)) || (error.number === -2146828260)) {
-      // warn on circular references, don't crash
-      // browsers give this different errors name and messages:
-      // chrome/safari: "RangeError", "Maximum call stack size exceeded"
-      // firefox: "InternalError", too much recursion"
-      // edge: "Error", "Out of stack space"
-      console.warn('Warning: react-fast-compare does not handle circular references.', error.name, error.message);
-      return false;
-    }
-    // some other error. we should definitely know about these
-    throw error;
-  }
-};
-
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var roundingPrecisionFrom = __webpack_require__(103).roundingPrecisionFrom;
-
-var override = __webpack_require__(37);
-
-var OptimizationLevel = {
-  Zero: '0',
-  One: '1',
-  Two: '2'
-};
-
-var DEFAULTS = {};
-
-DEFAULTS[OptimizationLevel.Zero] = {};
-DEFAULTS[OptimizationLevel.One] = {
-  cleanupCharsets: true,
-  normalizeUrls: true,
-  optimizeBackground: true,
-  optimizeBorderRadius: true,
-  optimizeFilter: true,
-  optimizeFontWeight: true,
-  optimizeOutline: true,
-  removeEmpty: true,
-  removeNegativePaddings: true,
-  removeQuotes: true,
-  removeWhitespace: true,
-  replaceMultipleZeros: true,
-  replaceTimeUnits: true,
-  replaceZeroUnits: true,
-  roundingPrecision: roundingPrecisionFrom(undefined),
-  selectorsSortingMethod: 'standard',
-  specialComments: 'all',
-  tidyAtRules: true,
-  tidyBlockScopes: true,
-  tidySelectors: true,
-  transform: noop
-};
-DEFAULTS[OptimizationLevel.Two] = {
-  mergeAdjacentRules: true,
-  mergeIntoShorthands: true,
-  mergeMedia: true,
-  mergeNonAdjacentRules: true,
-  mergeSemantically: false,
-  overrideProperties: true,
-  removeEmpty: true,
-  reduceNonAdjacentRules: true,
-  removeDuplicateFontRules: true,
-  removeDuplicateMediaBlocks: true,
-  removeDuplicateRules: true,
-  removeUnusedAtRules: false,
-  restructureRules: false,
-  skipProperties: []
-};
-
-var ALL_KEYWORD_1 = '*';
-var ALL_KEYWORD_2 = 'all';
-var FALSE_KEYWORD_1 = 'false';
-var FALSE_KEYWORD_2 = 'off';
-var TRUE_KEYWORD_1 = 'true';
-var TRUE_KEYWORD_2 = 'on';
-
-var LIST_VALUE_SEPARATOR = ',';
-var OPTION_SEPARATOR = ';';
-var OPTION_VALUE_SEPARATOR = ':';
-
-function noop() {}
-
-function optimizationLevelFrom(source) {
-  var level = override(DEFAULTS, {});
-  var Zero = OptimizationLevel.Zero;
-  var One = OptimizationLevel.One;
-  var Two = OptimizationLevel.Two;
-
-
-  if (undefined === source) {
-    delete level[Two];
-    return level;
-  }
-
-  if (typeof source == 'string') {
-    source = parseInt(source);
-  }
-
-  if (typeof source == 'number' && source === parseInt(Two)) {
-    return level;
-  }
-
-  if (typeof source == 'number' && source === parseInt(One)) {
-    delete level[Two];
-    return level;
-  }
-
-  if (typeof source == 'number' && source === parseInt(Zero)) {
-    delete level[Two];
-    delete level[One];
-    return level;
-  }
-
-  if (typeof source == 'object') {
-    source = covertValuesToHashes(source);
-  }
-
-  if (One in source && 'roundingPrecision' in source[One]) {
-    source[One].roundingPrecision = roundingPrecisionFrom(source[One].roundingPrecision);
-  }
-
-  if (Two in source && 'skipProperties' in source[Two] && typeof(source[Two].skipProperties) == 'string') {
-    source[Two].skipProperties = source[Two].skipProperties.split(LIST_VALUE_SEPARATOR);
-  }
-
-  if (Zero in source || One in source || Two in source) {
-    level[Zero] = override(level[Zero], source[Zero]);
-  }
-
-  if (One in source && ALL_KEYWORD_1 in source[One]) {
-    level[One] = override(level[One], defaults(One, normalizeValue(source[One][ALL_KEYWORD_1])));
-    delete source[One][ALL_KEYWORD_1];
-  }
-
-  if (One in source && ALL_KEYWORD_2 in source[One]) {
-    level[One] = override(level[One], defaults(One, normalizeValue(source[One][ALL_KEYWORD_2])));
-    delete source[One][ALL_KEYWORD_2];
-  }
-
-  if (One in source || Two in source) {
-    level[One] = override(level[One], source[One]);
-  } else {
-    delete level[One];
-  }
-
-  if (Two in source && ALL_KEYWORD_1 in source[Two]) {
-    level[Two] = override(level[Two], defaults(Two, normalizeValue(source[Two][ALL_KEYWORD_1])));
-    delete source[Two][ALL_KEYWORD_1];
-  }
-
-  if (Two in source && ALL_KEYWORD_2 in source[Two]) {
-    level[Two] = override(level[Two], defaults(Two, normalizeValue(source[Two][ALL_KEYWORD_2])));
-    delete source[Two][ALL_KEYWORD_2];
-  }
-
-  if (Two in source) {
-    level[Two] = override(level[Two], source[Two]);
-  } else {
-    delete level[Two];
-  }
-
-  return level;
-}
-
-function defaults(level, value) {
-  var options = override(DEFAULTS[level], {});
-  var key;
-
-  for (key in options) {
-    if (typeof options[key] == 'boolean') {
-      options[key] = value;
-    }
-  }
-
-  return options;
-}
-
-function normalizeValue(value) {
-  switch (value) {
-    case FALSE_KEYWORD_1:
-    case FALSE_KEYWORD_2:
-      return false;
-    case TRUE_KEYWORD_1:
-    case TRUE_KEYWORD_2:
-      return true;
-    default:
-      return value;
-  }
-}
-
-function covertValuesToHashes(source) {
-  var clonedSource = override(source, {});
-  var level;
-  var i;
-
-  for (i = 0; i <= 2; i++) {
-    level = '' + i;
-
-    if (level in clonedSource && (clonedSource[level] === undefined || clonedSource[level] === false)) {
-      delete clonedSource[level];
-    }
-
-    if (level in clonedSource && clonedSource[level] === true) {
-      clonedSource[level] = {};
-    }
-
-    if (level in clonedSource && typeof clonedSource[level] == 'string') {
-      clonedSource[level] = covertToHash(clonedSource[level], level);
-    }
-  }
-
-  return clonedSource;
-}
-
-function covertToHash(asString, level) {
-  return asString
-    .split(OPTION_SEPARATOR)
-    .reduce(function (accumulator, directive) {
-      var parts = directive.split(OPTION_VALUE_SEPARATOR);
-      var name = parts[0];
-      var value = parts[1];
-      var normalizedValue = normalizeValue(value);
-
-      if (ALL_KEYWORD_1 == name || ALL_KEYWORD_2 == name) {
-        accumulator = override(accumulator, defaults(level, normalizedValue));
-      } else {
-        accumulator[name] = normalizedValue;
-      }
-
-      return accumulator;
-    }, {});
-}
-
-module.exports = {
-  OptimizationLevel: OptimizationLevel,
-  optimizationLevelFrom: optimizationLevelFrom,
-};
-
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"codeBlockContent": "codeBlockContent_32p_",
-	"codeBlockTitle": "codeBlockTitle_U1PS",
-	"codeBlock": "codeBlock_19pQ",
-	"codeBlockWithTitle": "codeBlockWithTitle_2fj3",
-	"copyButton": "copyButton_1BYj",
-	"codeBlockLines": "codeBlockLines_2n9r"
-};
-
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-module.exports = require("fs");
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports) {
-
-module.exports = require("url");
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Contains the interpretation of CSS properties, as used by the property optimizer
-
-var breakUp = __webpack_require__(206);
-var canOverride = __webpack_require__(207);
-var restore = __webpack_require__(209);
-
-var override = __webpack_require__(37);
-
-// Properties to process
-// Extend this object in order to add support for more properties in the optimizer.
-//
-// Each key in this object represents a CSS property and should be an object.
-// Such an object contains properties that describe how the represented CSS property should be handled.
-// Possible options:
-//
-// * components: array (Only specify for shorthand properties.)
-//   Contains the names of the granular properties this shorthand compacts.
-//
-// * canOverride: function
-//   Returns whether two tokens of this property can be merged with each other.
-//   This property has no meaning for shorthands.
-//
-// * defaultValue: string
-//   Specifies the default value of the property according to the CSS standard.
-//   For shorthand, this is used when every component is set to its default value, therefore it should be the shortest possible default value of all the components.
-//
-// * shortestValue: string
-//   Specifies the shortest possible value the property can possibly have.
-//   (Falls back to defaultValue if unspecified.)
-//
-// * breakUp: function (Only specify for shorthand properties.)
-//   Breaks the shorthand up to its components.
-//
-// * restore: function (Only specify for shorthand properties.)
-//   Puts the shorthand together from its components.
-//
-var compactable = {
-  'animation': {
-    canOverride: canOverride.generic.components([
-      canOverride.generic.time,
-      canOverride.generic.timingFunction,
-      canOverride.generic.time,
-      canOverride.property.animationIterationCount,
-      canOverride.property.animationDirection,
-      canOverride.property.animationFillMode,
-      canOverride.property.animationPlayState,
-      canOverride.property.animationName
-    ]),
-    components: [
-      'animation-duration',
-      'animation-timing-function',
-      'animation-delay',
-      'animation-iteration-count',
-      'animation-direction',
-      'animation-fill-mode',
-      'animation-play-state',
-      'animation-name'
-    ],
-    breakUp: breakUp.multiplex(breakUp.animation),
-    defaultValue: 'none',
-    restore: restore.multiplex(restore.withoutDefaults),
-    shorthand: true,
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-delay': {
-    canOverride: canOverride.generic.time,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: '0s',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-direction': {
-    canOverride: canOverride.property.animationDirection,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: 'normal',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-duration': {
-    canOverride: canOverride.generic.time,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: '0s',
-    intoMultiplexMode: 'real',
-    keepUnlessDefault: 'animation-delay',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-fill-mode': {
-    canOverride: canOverride.property.animationFillMode,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: 'none',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-iteration-count': {
-    canOverride: canOverride.property.animationIterationCount,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: '1',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-name': {
-    canOverride: canOverride.property.animationName,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: 'none',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-play-state': {
-    canOverride: canOverride.property.animationPlayState,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: 'running',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'animation-timing-function': {
-    canOverride: canOverride.generic.timingFunction,
-    componentOf: [
-      'animation'
-    ],
-    defaultValue: 'ease',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'background': {
-    canOverride: canOverride.generic.components([
-      canOverride.generic.image,
-      canOverride.property.backgroundPosition,
-      canOverride.property.backgroundSize,
-      canOverride.property.backgroundRepeat,
-      canOverride.property.backgroundAttachment,
-      canOverride.property.backgroundOrigin,
-      canOverride.property.backgroundClip,
-      canOverride.generic.color
-    ]),
-    components: [
-      'background-image',
-      'background-position',
-      'background-size',
-      'background-repeat',
-      'background-attachment',
-      'background-origin',
-      'background-clip',
-      'background-color'
-    ],
-    breakUp: breakUp.multiplex(breakUp.background),
-    defaultValue: '0 0',
-    restore: restore.multiplex(restore.background),
-    shortestValue: '0',
-    shorthand: true
-  },
-  'background-attachment': {
-    canOverride: canOverride.property.backgroundAttachment,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: 'scroll',
-    intoMultiplexMode: 'real'
-  },
-  'background-clip': {
-    canOverride: canOverride.property.backgroundClip,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: 'border-box',
-    intoMultiplexMode: 'real',
-    shortestValue: 'border-box'
-  },
-  'background-color': {
-    canOverride: canOverride.generic.color,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: 'transparent',
-    intoMultiplexMode: 'real', // otherwise real color will turn into default since color appears in last multiplex only
-    multiplexLastOnly: true,
-    nonMergeableValue: 'none',
-    shortestValue: 'red'
-  },
-  'background-image': {
-    canOverride: canOverride.generic.image,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: 'none',
-    intoMultiplexMode: 'default'
-  },
-  'background-origin': {
-    canOverride: canOverride.property.backgroundOrigin,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: 'padding-box',
-    intoMultiplexMode: 'real',
-    shortestValue: 'border-box'
-  },
-  'background-position': {
-    canOverride: canOverride.property.backgroundPosition,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: ['0', '0'],
-    doubleValues: true,
-    intoMultiplexMode: 'real',
-    shortestValue: '0'
-  },
-  'background-repeat': {
-    canOverride: canOverride.property.backgroundRepeat,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: ['repeat'],
-    doubleValues: true,
-    intoMultiplexMode: 'real'
-  },
-  'background-size': {
-    canOverride: canOverride.property.backgroundSize,
-    componentOf: [
-      'background'
-    ],
-    defaultValue: ['auto'],
-    doubleValues: true,
-    intoMultiplexMode: 'real',
-    shortestValue: '0 0'
-  },
-  'bottom': {
-    canOverride: canOverride.property.bottom,
-    defaultValue: 'auto'
-  },
-  'border': {
-    breakUp: breakUp.border,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.property.borderStyle,
-      canOverride.generic.color
-    ]),
-    components: [
-      'border-width',
-      'border-style',
-      'border-color'
-    ],
-    defaultValue: 'none',
-    overridesShorthands: [
-      'border-bottom',
-      'border-left',
-      'border-right',
-      'border-top'
-    ],
-    restore: restore.withoutDefaults,
-    shorthand: true,
-    shorthandComponents: true
-  },
-  'border-bottom': {
-    breakUp: breakUp.border,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.property.borderStyle,
-      canOverride.generic.color
-    ]),
-    components: [
-      'border-bottom-width',
-      'border-bottom-style',
-      'border-bottom-color'
-    ],
-    defaultValue: 'none',
-    restore: restore.withoutDefaults,
-    shorthand: true
-  },
-  'border-bottom-color': {
-    canOverride: canOverride.generic.color,
-    componentOf: [
-      'border-bottom',
-      'border-color'
-    ],
-    defaultValue: 'none'
-  },
-  'border-bottom-left-radius': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-radius'
-    ],
-    defaultValue: '0',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-'
-    ]
-  },
-  'border-bottom-right-radius': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-radius'
-    ],
-    defaultValue: '0',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-'
-    ]
-  },
-  'border-bottom-style': {
-    canOverride: canOverride.property.borderStyle,
-    componentOf: [
-      'border-bottom',
-      'border-style'
-    ],
-    defaultValue: 'none'
-  },
-  'border-bottom-width': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-bottom',
-      'border-width'
-    ],
-    defaultValue: 'medium',
-    oppositeTo: 'border-top-width',
-    shortestValue: '0'
-  },
-  'border-collapse': {
-    canOverride: canOverride.property.borderCollapse,
-    defaultValue: 'separate'
-  },
-  'border-color': {
-    breakUp: breakUp.fourValues,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.color,
-      canOverride.generic.color,
-      canOverride.generic.color,
-      canOverride.generic.color
-    ]),
-    componentOf: [
-      'border'
-    ],
-    components: [
-      'border-top-color',
-      'border-right-color',
-      'border-bottom-color',
-      'border-left-color'
-    ],
-    defaultValue: 'none',
-    restore: restore.fourValues,
-    shortestValue: 'red',
-    shorthand: true
-  },
-  'border-left': {
-    breakUp: breakUp.border,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.property.borderStyle,
-      canOverride.generic.color
-    ]),
-    components: [
-      'border-left-width',
-      'border-left-style',
-      'border-left-color'
-    ],
-    defaultValue: 'none',
-    restore: restore.withoutDefaults,
-    shorthand: true
-  },
-  'border-left-color': {
-    canOverride: canOverride.generic.color,
-    componentOf: [
-      'border-color',
-      'border-left'
-    ],
-    defaultValue: 'none'
-  },
-  'border-left-style': {
-    canOverride: canOverride.property.borderStyle,
-    componentOf: [
-      'border-left',
-      'border-style'
-    ],
-    defaultValue: 'none'
-  },
-  'border-left-width': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-left',
-      'border-width'
-    ],
-    defaultValue: 'medium',
-    oppositeTo: 'border-right-width',
-    shortestValue: '0'
-  },
-  'border-radius': {
-    breakUp: breakUp.borderRadius,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit
-    ]),
-    components: [
-      'border-top-left-radius',
-      'border-top-right-radius',
-      'border-bottom-right-radius',
-      'border-bottom-left-radius'
-    ],
-    defaultValue: '0',
-    restore: restore.borderRadius,
-    shorthand: true,
-    vendorPrefixes: [
-      '-moz-',
-      '-o-'
-    ]
-  },
-  'border-right': {
-    breakUp: breakUp.border,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.property.borderStyle,
-      canOverride.generic.color
-    ]),
-    components: [
-      'border-right-width',
-      'border-right-style',
-      'border-right-color'
-    ],
-    defaultValue: 'none',
-    restore: restore.withoutDefaults,
-    shorthand: true
-  },
-  'border-right-color': {
-    canOverride: canOverride.generic.color,
-    componentOf: [
-      'border-color',
-      'border-right'
-    ],
-    defaultValue: 'none'
-  },
-  'border-right-style': {
-    canOverride: canOverride.property.borderStyle,
-    componentOf: [
-      'border-right',
-      'border-style'
-    ],
-    defaultValue: 'none'
-  },
-  'border-right-width': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-right',
-      'border-width'
-    ],
-    defaultValue: 'medium',
-    oppositeTo: 'border-left-width',
-    shortestValue: '0'
-  },
-  'border-style': {
-    breakUp: breakUp.fourValues,
-    canOverride: canOverride.generic.components([
-      canOverride.property.borderStyle,
-      canOverride.property.borderStyle,
-      canOverride.property.borderStyle,
-      canOverride.property.borderStyle
-    ]),
-    componentOf: [
-      'border'
-    ],
-    components: [
-      'border-top-style',
-      'border-right-style',
-      'border-bottom-style',
-      'border-left-style'
-    ],
-    defaultValue: 'none',
-    restore: restore.fourValues,
-    shorthand: true
-  },
-  'border-top': {
-    breakUp: breakUp.border,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.property.borderStyle,
-      canOverride.generic.color
-    ]),
-    components: [
-      'border-top-width',
-      'border-top-style',
-      'border-top-color'
-    ],
-    defaultValue: 'none',
-    restore: restore.withoutDefaults,
-    shorthand: true
-  },
-  'border-top-color': {
-    canOverride: canOverride.generic.color,
-    componentOf: [
-      'border-color',
-      'border-top'
-    ],
-    defaultValue: 'none'
-  },
-  'border-top-left-radius': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-radius'
-    ],
-    defaultValue: '0',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-'
-    ]
-  },
-  'border-top-right-radius': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-radius'
-    ],
-    defaultValue: '0',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-'
-    ]
-  },
-  'border-top-style': {
-    canOverride: canOverride.property.borderStyle,
-    componentOf: [
-      'border-style',
-      'border-top'
-    ],
-    defaultValue: 'none'
-  },
-  'border-top-width': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'border-top',
-      'border-width'
-    ],
-    defaultValue: 'medium',
-    oppositeTo: 'border-bottom-width',
-    shortestValue: '0'
-  },
-  'border-width': {
-    breakUp: breakUp.fourValues,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit
-    ]),
-    componentOf: [
-      'border'
-    ],
-    components: [
-      'border-top-width',
-      'border-right-width',
-      'border-bottom-width',
-      'border-left-width'
-    ],
-    defaultValue: 'medium',
-    restore: restore.fourValues,
-    shortestValue: '0',
-    shorthand: true
-  },
-  'clear': {
-    canOverride: canOverride.property.clear,
-    defaultValue: 'none'
-  },
-  'color': {
-    canOverride: canOverride.generic.color,
-    defaultValue: 'transparent',
-    shortestValue: 'red'
-  },
-  'cursor': {
-    canOverride: canOverride.property.cursor,
-    defaultValue: 'auto'
-  },
-  'display': {
-    canOverride: canOverride.property.display,
-  },
-  'float': {
-    canOverride: canOverride.property.float,
-    defaultValue: 'none'
-  },
-  'font': {
-    breakUp: breakUp.font,
-    canOverride: canOverride.generic.components([
-      canOverride.property.fontStyle,
-      canOverride.property.fontVariant,
-      canOverride.property.fontWeight,
-      canOverride.property.fontStretch,
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.property.fontFamily
-    ]),
-    components: [
-      'font-style',
-      'font-variant',
-      'font-weight',
-      'font-stretch',
-      'font-size',
-      'line-height',
-      'font-family'
-    ],
-    restore: restore.font,
-    shorthand: true
-  },
-  'font-family': {
-    canOverride: canOverride.property.fontFamily,
-    defaultValue: 'user|agent|specific'
-  },
-  'font-size': {
-    canOverride: canOverride.generic.unit,
-    defaultValue: 'medium',
-    shortestValue: '0'
-  },
-  'font-stretch': {
-    canOverride: canOverride.property.fontStretch,
-    defaultValue: 'normal'
-  },
-  'font-style': {
-    canOverride: canOverride.property.fontStyle,
-    defaultValue: 'normal'
-  },
-  'font-variant': {
-    canOverride: canOverride.property.fontVariant,
-    defaultValue: 'normal'
-  },
-  'font-weight': {
-    canOverride: canOverride.property.fontWeight,
-    defaultValue: 'normal',
-    shortestValue: '400'
-  },
-  'height': {
-    canOverride: canOverride.generic.unit,
-    defaultValue: 'auto',
-    shortestValue: '0'
-  },
-  'left': {
-    canOverride: canOverride.property.left,
-    defaultValue: 'auto'
-  },
-  'line-height': {
-    canOverride: canOverride.generic.unitOrNumber,
-    defaultValue: 'normal',
-    shortestValue: '0'
-  },
-  'list-style': {
-    canOverride: canOverride.generic.components([
-      canOverride.property.listStyleType,
-      canOverride.property.listStylePosition,
-      canOverride.property.listStyleImage
-    ]),
-    components: [
-      'list-style-type',
-      'list-style-position',
-      'list-style-image'
-    ],
-    breakUp: breakUp.listStyle,
-    restore: restore.withoutDefaults,
-    defaultValue: 'outside', // can't use 'disc' because that'd override default 'decimal' for <ol>
-    shortestValue: 'none',
-    shorthand: true
-  },
-  'list-style-image' : {
-    canOverride: canOverride.generic.image,
-    componentOf: [
-      'list-style'
-    ],
-    defaultValue: 'none'
-  },
-  'list-style-position' : {
-    canOverride: canOverride.property.listStylePosition,
-    componentOf: [
-      'list-style'
-    ],
-    defaultValue: 'outside',
-    shortestValue: 'inside'
-  },
-  'list-style-type' : {
-    canOverride: canOverride.property.listStyleType,
-    componentOf: [
-      'list-style'
-    ],
-    // NOTE: we can't tell the real default value here, it's 'disc' for <ul> and 'decimal' for <ol>
-    // this is a hack, but it doesn't matter because this value will be either overridden or
-    // it will disappear at the final step anyway
-    defaultValue: 'decimal|disc',
-    shortestValue: 'none'
-  },
-  'margin': {
-    breakUp: breakUp.fourValues,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit
-    ]),
-    components: [
-      'margin-top',
-      'margin-right',
-      'margin-bottom',
-      'margin-left'
-    ],
-    defaultValue: '0',
-    restore: restore.fourValues,
-    shorthand: true
-  },
-  'margin-bottom': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'margin'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'margin-top'
-  },
-  'margin-left': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'margin'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'margin-right'
-  },
-  'margin-right': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'margin'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'margin-left'
-  },
-  'margin-top': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'margin'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'margin-bottom'
-  },
-  'outline': {
-    canOverride: canOverride.generic.components([
-      canOverride.generic.color,
-      canOverride.property.outlineStyle,
-      canOverride.generic.unit
-    ]),
-    components: [
-      'outline-color',
-      'outline-style',
-      'outline-width'
-    ],
-    breakUp: breakUp.outline,
-    restore: restore.withoutDefaults,
-    defaultValue: '0',
-    shorthand: true
-  },
-  'outline-color': {
-    canOverride: canOverride.generic.color,
-    componentOf: [
-      'outline'
-    ],
-    defaultValue: 'invert',
-    shortestValue: 'red'
-  },
-  'outline-style': {
-    canOverride: canOverride.property.outlineStyle,
-    componentOf: [
-      'outline'
-    ],
-    defaultValue: 'none'
-  },
-  'outline-width': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'outline'
-    ],
-    defaultValue: 'medium',
-    shortestValue: '0'
-  },
-  'overflow': {
-    canOverride: canOverride.property.overflow,
-    defaultValue: 'visible'
-  },
-  'overflow-x': {
-    canOverride: canOverride.property.overflow,
-    defaultValue: 'visible'
-  },
-  'overflow-y': {
-    canOverride: canOverride.property.overflow,
-    defaultValue: 'visible'
-  },
-  'padding': {
-    breakUp: breakUp.fourValues,
-    canOverride: canOverride.generic.components([
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit,
-      canOverride.generic.unit
-    ]),
-    components: [
-      'padding-top',
-      'padding-right',
-      'padding-bottom',
-      'padding-left'
-    ],
-    defaultValue: '0',
-    restore: restore.fourValues,
-    shorthand: true
-  },
-  'padding-bottom': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'padding'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'padding-top'
-  },
-  'padding-left': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'padding'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'padding-right'
-  },
-  'padding-right': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'padding'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'padding-left'
-  },
-  'padding-top': {
-    canOverride: canOverride.generic.unit,
-    componentOf: [
-      'padding'
-    ],
-    defaultValue: '0',
-    oppositeTo: 'padding-bottom'
-  },
-  'position': {
-    canOverride: canOverride.property.position,
-    defaultValue: 'static'
-  },
-  'right': {
-    canOverride: canOverride.property.right,
-    defaultValue: 'auto'
-  },
-  'text-align': {
-    canOverride: canOverride.property.textAlign,
-    // NOTE: we can't tell the real default value here, as it depends on default text direction
-    // this is a hack, but it doesn't matter because this value will be either overridden or
-    // it will disappear anyway
-    defaultValue: 'left|right'
-  },
-  'text-decoration': {
-    canOverride: canOverride.property.textDecoration,
-    defaultValue: 'none'
-  },
-  'text-overflow': {
-    canOverride: canOverride.property.textOverflow,
-    defaultValue: 'none'
-  },
-  'text-shadow': {
-    canOverride: canOverride.property.textShadow,
-    defaultValue: 'none'
-  },
-  'top': {
-    canOverride: canOverride.property.top,
-    defaultValue: 'auto'
-  },
-  'transform': {
-    canOverride: canOverride.property.transform,
-    vendorPrefixes: [
-      '-moz-',
-      '-ms-',
-      '-webkit-'
-    ]
-  },
-  'transition': {
-    breakUp: breakUp.multiplex(breakUp.transition),
-    canOverride: canOverride.generic.components([
-      canOverride.property.transitionProperty,
-      canOverride.generic.time,
-      canOverride.generic.timingFunction,
-      canOverride.generic.time
-    ]),
-    components: [
-      'transition-property',
-      'transition-duration',
-      'transition-timing-function',
-      'transition-delay'
-    ],
-    defaultValue: 'none',
-    restore: restore.multiplex(restore.withoutDefaults),
-    shorthand: true,
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'transition-delay': {
-    canOverride: canOverride.generic.time,
-    componentOf: [
-      'transition'
-    ],
-    defaultValue: '0s',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'transition-duration': {
-    canOverride: canOverride.generic.time,
-    componentOf: [
-      'transition'
-    ],
-    defaultValue: '0s',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'transition-property': {
-    canOverride: canOverride.generic.propertyName,
-    componentOf: [
-      'transition'
-    ],
-    defaultValue: 'all',
-    intoMultiplexMode: 'placeholder',
-    placeholderValue: '_', // it's a short value that won't match any property and still be a valid `transition-property`
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'transition-timing-function': {
-    canOverride: canOverride.generic.timingFunction,
-    componentOf: [
-      'transition'
-    ],
-    defaultValue: 'ease',
-    intoMultiplexMode: 'real',
-    vendorPrefixes: [
-      '-moz-',
-      '-o-',
-      '-webkit-'
-    ]
-  },
-  'vertical-align': {
-    canOverride: canOverride.property.verticalAlign,
-    defaultValue: 'baseline'
-  },
-  'visibility': {
-    canOverride: canOverride.property.visibility,
-    defaultValue: 'visible'
-  },
-  'white-space': {
-    canOverride: canOverride.property.whiteSpace,
-    defaultValue: 'normal'
-  },
-  'width': {
-    canOverride: canOverride.generic.unit,
-    defaultValue: 'auto',
-    shortestValue: '0'
-  },
-  'z-index': {
-    canOverride: canOverride.property.zIndex,
-    defaultValue: 'auto'
-  }
-};
-
-function cloneDescriptor(propertyName, prefix) {
-  var clonedDescriptor = override(compactable[propertyName], {});
-
-  if ('componentOf' in clonedDescriptor) {
-    clonedDescriptor.componentOf = clonedDescriptor.componentOf.map(function (shorthandName) {
-      return prefix + shorthandName;
-    });
-  }
-
-  if ('components' in clonedDescriptor) {
-    clonedDescriptor.components = clonedDescriptor.components.map(function (longhandName) {
-      return prefix + longhandName;
-    });
-  }
-
-  if ('keepUnlessDefault' in clonedDescriptor) {
-    clonedDescriptor.keepUnlessDefault = prefix + clonedDescriptor.keepUnlessDefault;
-  }
-
-  return clonedDescriptor;
-}
-
-// generate vendor-prefixed properties
-var vendorPrefixedCompactable = {};
-
-for (var propertyName in compactable) {
-  var descriptor = compactable[propertyName];
-
-  if (!('vendorPrefixes' in descriptor)) {
-    continue;
-  }
-
-  for (var i = 0; i < descriptor.vendorPrefixes.length; i++) {
-    var prefix = descriptor.vendorPrefixes[i];
-    var clonedDescriptor = cloneDescriptor(propertyName, prefix);
-    delete clonedDescriptor.vendorPrefixes;
-
-    vendorPrefixedCompactable[prefix + propertyName] = clonedDescriptor;
-  }
-
-  delete descriptor.vendorPrefixes;
-}
-
-module.exports = override(compactable, vendorPrefixedCompactable);
-
-
-/***/ }),
-/* 31 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export BrowserRouter */
-/* unused harmony export HashRouter */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Link; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NavLink; });
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["f"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["g"]; });
-
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(318);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(33);
-/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(19);
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The public API for a <Router> that uses HTML5 history.
- */
-
-var BrowserRouter =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(BrowserRouter, _React$Component);
-
-  function BrowserRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-    _this.history = Object(history__WEBPACK_IMPORTED_MODULE_3__[/* createBrowserHistory */ "a"])(_this.props);
-    return _this;
-  }
-
-  var _proto = BrowserRouter.prototype;
-
-  _proto.render = function render() {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* Router */ "b"], {
-      history: this.history,
-      children: this.props.children
-    });
-  };
-
-  return BrowserRouter;
-}(react__WEBPACK_IMPORTED_MODULE_2___default.a.Component);
-
-if (false) {}
-
-/**
- * The public API for a <Router> that uses window.location.hash.
- */
-
-var HashRouter =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(HashRouter, _React$Component);
-
-  function HashRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-    _this.history = Object(history__WEBPACK_IMPORTED_MODULE_3__[/* createHashHistory */ "b"])(_this.props);
-    return _this;
-  }
-
-  var _proto = HashRouter.prototype;
-
-  _proto.render = function render() {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* Router */ "b"], {
-      history: this.history,
-      children: this.props.children
-    });
-  };
-
-  return HashRouter;
-}(react__WEBPACK_IMPORTED_MODULE_2___default.a.Component);
-
-if (false) {}
-
-var resolveToLocation = function resolveToLocation(to, currentLocation) {
-  return typeof to === "function" ? to(currentLocation) : to;
-};
-var normalizeToLocation = function normalizeToLocation(to, currentLocation) {
-  return typeof to === "string" ? Object(history__WEBPACK_IMPORTED_MODULE_3__[/* createLocation */ "c"])(to, null, null, currentLocation) : to;
-};
-
-var forwardRefShim = function forwardRefShim(C) {
-  return C;
-};
-
-var forwardRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef;
-
-if (typeof forwardRef === "undefined") {
-  forwardRef = forwardRefShim;
-}
-
-function isModifiedEvent(event) {
-  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-}
-
-var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
-  var innerRef = _ref.innerRef,
-      navigate = _ref.navigate,
-      _onClick = _ref.onClick,
-      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_ref, ["innerRef", "navigate", "onClick"]);
-
-  var target = rest.target;
-
-  var props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({}, rest, {
-    onClick: function onClick(event) {
-      try {
-        if (_onClick) _onClick(event);
-      } catch (ex) {
-        event.preventDefault();
-        throw ex;
-      }
-
-      if (!event.defaultPrevented && // onClick prevented default
-      event.button === 0 && ( // ignore everything but left clicks
-      !target || target === "_self") && // let browser handle "target=_blank" etc.
-      !isModifiedEvent(event) // ignore clicks with modifier keys
-      ) {
-          event.preventDefault();
-          navigate();
-        }
-    }
-  }); // React 15 compat
-
-
-  if (forwardRefShim !== forwardRef) {
-    props.ref = forwardedRef || innerRef;
-  } else {
-    props.ref = innerRef;
-  }
-  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
-
-
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", props);
-});
-
-if (false) {}
-/**
- * The public API for rendering a history-aware <a>.
- */
-
-
-var Link = forwardRef(function (_ref2, forwardedRef) {
-  var _ref2$component = _ref2.component,
-      component = _ref2$component === void 0 ? LinkAnchor : _ref2$component,
-      replace = _ref2.replace,
-      to = _ref2.to,
-      innerRef = _ref2.innerRef,
-      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_ref2, ["component", "replace", "to", "innerRef"]);
-
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* __RouterContext */ "e"].Consumer, null, function (context) {
-    !context ?  false ? undefined : Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(false) : void 0;
-    var history = context.history;
-    var location = normalizeToLocation(resolveToLocation(to, context.location), context.location);
-    var href = location ? history.createHref(location) : "";
-
-    var props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({}, rest, {
-      href: href,
-      navigate: function navigate() {
-        var location = resolveToLocation(to, context.location);
-        var method = replace ? history.replace : history.push;
-        method(location);
-      }
-    }); // React 15 compat
-
-
-    if (forwardRefShim !== forwardRef) {
-      props.ref = forwardedRef || innerRef;
-    } else {
-      props.innerRef = innerRef;
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(component, props);
-  });
-});
-
-if (false) { var refType, toType; }
-
-var forwardRefShim$1 = function forwardRefShim(C) {
-  return C;
-};
-
-var forwardRef$1 = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef;
-
-if (typeof forwardRef$1 === "undefined") {
-  forwardRef$1 = forwardRefShim$1;
-}
-
-function joinClassnames() {
-  for (var _len = arguments.length, classnames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classnames[_key] = arguments[_key];
-  }
-
-  return classnames.filter(function (i) {
-    return i;
-  }).join(" ");
-}
-/**
- * A <Link> wrapper that knows if it's "active" or not.
- */
-
-
-var NavLink = forwardRef$1(function (_ref, forwardedRef) {
-  var _ref$ariaCurrent = _ref["aria-current"],
-      ariaCurrent = _ref$ariaCurrent === void 0 ? "page" : _ref$ariaCurrent,
-      _ref$activeClassName = _ref.activeClassName,
-      activeClassName = _ref$activeClassName === void 0 ? "active" : _ref$activeClassName,
-      activeStyle = _ref.activeStyle,
-      classNameProp = _ref.className,
-      exact = _ref.exact,
-      isActiveProp = _ref.isActive,
-      locationProp = _ref.location,
-      sensitive = _ref.sensitive,
-      strict = _ref.strict,
-      styleProp = _ref.style,
-      to = _ref.to,
-      innerRef = _ref.innerRef,
-      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
-
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* __RouterContext */ "e"].Consumer, null, function (context) {
-    !context ?  false ? undefined : Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(false) : void 0;
-    var currentLocation = locationProp || context.location;
-    var toLocation = normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
-    var path = toLocation.pathname; // Regex taken from: https://github.com/pillarjs/path-to-regexp/blob/master/index.js#L202
-
-    var escapedPath = path && path.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
-    var match = escapedPath ? Object(react_router__WEBPACK_IMPORTED_MODULE_0__[/* matchPath */ "f"])(currentLocation.pathname, {
-      path: escapedPath,
-      exact: exact,
-      sensitive: sensitive,
-      strict: strict
-    }) : null;
-    var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
-    var className = isActive ? joinClassnames(classNameProp, activeClassName) : classNameProp;
-    var style = isActive ? Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({}, styleProp, {}, activeStyle) : styleProp;
-
-    var props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({
-      "aria-current": isActive && ariaCurrent || null,
-      className: className,
-      style: style,
-      to: toLocation
-    }, rest); // React 15 compat
-
-
-    if (forwardRefShim$1 !== forwardRef$1) {
-      props.ref = forwardedRef || innerRef;
-    } else {
-      props.innerRef = innerRef;
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Link, props);
-  });
-});
-
-if (false) { var ariaCurrentType; }
-
-
-//# sourceMappingURL=react-router-dom.js.map
-
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const canUseDOM=!!(typeof window!=='undefined'&&window.document&&window.document.createElement);const ExecutionEnvironment={canUseDOM,canUseEventListeners:canUseDOM&&!!(window.addEventListener||window.attachEvent),canUseIntersectionObserver:canUseDOM&&'IntersectionObserver'in window,canUseViewport:canUseDOM&&!!window.screen};module.exports=ExecutionEnvironment;
-
-/***/ }),
-/* 33 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _objectWithoutPropertiesLoose; });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"docTitle": "docTitle_1vWb",
-	"docItemContainer": "docItemContainer_2cwg",
-	"docItemCol": "docItemCol_2GOA",
-	"docItemWrapper": "docItemWrapper_1cc7",
-	"tableOfContents": "tableOfContents_TbNY",
-	"docLastUpdatedAt": "docLastUpdatedAt_1sqk"
-};
-
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"sidebar": "sidebar_1kLs",
-	"sidebarLogo": "sidebarLogo_3ono",
-	"menu": "menu_w2sC",
-	"sidebarMenuIcon": "sidebarMenuIcon_2vk4",
-	"sidebarMenuCloseIcon": "sidebarMenuCloseIcon_1JRa"
-};
-
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"heroBanner": "heroBanner_2Ftp",
-	"buttons": "buttons_1Wc3",
-	"features": "features_P2SU",
-	"featureImage": "featureImage_3Xqx"
-};
-
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-function override(source1, source2) {
-  var target = {};
-  var key1;
-  var key2;
-  var item;
-
-  for (key1 in source1) {
-    item = source1[key1];
-
-    if (Array.isArray(item)) {
-      target[key1] = item.slice(0);
-    } else if (typeof item == 'object' && item !== null) {
-      target[key1] = override(item, {});
-    } else {
-      target[key1] = item;
-    }
-  }
-
-  for (key2 in source2) {
-    item = source2[key2];
-
-    if (key2 in target && Array.isArray(item)) {
-      target[key2] = item.slice(0);
-    } else if (key2 in target && typeof item == 'object' && item !== null) {
-      target[key2] = override(target[key2], item);
-    } else {
-      target[key2] = item;
-    }
-  }
-
-  return target;
-}
-
-module.exports = override;
-
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Hack = __webpack_require__(80);
-
-var Marker = __webpack_require__(14);
-var Token = __webpack_require__(9);
-
-var Match = {
-  ASTERISK: '*',
-  BACKSLASH: '\\',
-  BANG: '!',
-  BANG_SUFFIX_PATTERN: /!\w+$/,
-  IMPORTANT_TOKEN: '!important',
-  IMPORTANT_TOKEN_PATTERN: new RegExp('!important$', 'i'),
-  IMPORTANT_WORD: 'important',
-  IMPORTANT_WORD_PATTERN: new RegExp('important$', 'i'),
-  SUFFIX_BANG_PATTERN: /!$/,
-  UNDERSCORE: '_',
-  VARIABLE_REFERENCE_PATTERN: /var\(--.+\)$/
-};
-
-function wrapAll(properties, includeVariable, skipProperties) {
-  var wrapped = [];
-  var single;
-  var property;
-  var i;
-
-  for (i = properties.length - 1; i >= 0; i--) {
-    property = properties[i];
-
-    if (property[0] != Token.PROPERTY) {
-      continue;
-    }
-
-    if (!includeVariable && someVariableReferences(property)) {
-      continue;
-    }
-
-    if (skipProperties && skipProperties.indexOf(property[1][1]) > -1) {
-      continue;
-    }
-
-    single = wrapSingle(property);
-    single.all = properties;
-    single.position = i;
-    wrapped.unshift(single);
-  }
-
-  return wrapped;
-}
-
-function someVariableReferences(property) {
-  var i, l;
-  var value;
-
-  // skipping `property` and property name tokens
-  for (i = 2, l = property.length; i < l; i++) {
-    value = property[i];
-
-    if (value[0] != Token.PROPERTY_VALUE) {
-      continue;
-    }
-
-    if (isVariableReference(value[1])) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function isVariableReference(value) {
-  return Match.VARIABLE_REFERENCE_PATTERN.test(value);
-}
-
-function isMultiplex(property) {
-  var value;
-  var i, l;
-
-  for (i = 3, l = property.length; i < l; i++) {
-    value = property[i];
-
-    if (value[0] == Token.PROPERTY_VALUE && (value[1] == Marker.COMMA || value[1] == Marker.FORWARD_SLASH)) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function hackFrom(property) {
-  var match = false;
-  var name = property[1][1];
-  var lastValue = property[property.length - 1];
-
-  if (name[0] == Match.UNDERSCORE) {
-    match = [Hack.UNDERSCORE];
-  } else if (name[0] == Match.ASTERISK) {
-    match = [Hack.ASTERISK];
-  } else if (lastValue[1][0] == Match.BANG && !lastValue[1].match(Match.IMPORTANT_WORD_PATTERN)) {
-    match = [Hack.BANG];
-  } else if (lastValue[1].indexOf(Match.BANG) > 0 && !lastValue[1].match(Match.IMPORTANT_WORD_PATTERN) && Match.BANG_SUFFIX_PATTERN.test(lastValue[1])) {
-    match = [Hack.BANG];
-  } else if (lastValue[1].indexOf(Match.BACKSLASH) > 0 && lastValue[1].indexOf(Match.BACKSLASH) == lastValue[1].length - Match.BACKSLASH.length - 1) {
-    match = [Hack.BACKSLASH, lastValue[1].substring(lastValue[1].indexOf(Match.BACKSLASH) + 1)];
-  } else if (lastValue[1].indexOf(Match.BACKSLASH) === 0 && lastValue[1].length == 2) {
-    match = [Hack.BACKSLASH, lastValue[1].substring(1)];
-  }
-
-  return match;
-}
-
-function isImportant(property) {
-  if (property.length < 3)
-    return false;
-
-  var lastValue = property[property.length - 1];
-  if (Match.IMPORTANT_TOKEN_PATTERN.test(lastValue[1])) {
-    return true;
-  } else if (Match.IMPORTANT_WORD_PATTERN.test(lastValue[1]) && Match.SUFFIX_BANG_PATTERN.test(property[property.length - 2][1])) {
-    return true;
-  }
-
-  return false;
-}
-
-function stripImportant(property) {
-  var lastValue = property[property.length - 1];
-  var oneButLastValue = property[property.length - 2];
-
-  if (Match.IMPORTANT_TOKEN_PATTERN.test(lastValue[1])) {
-    lastValue[1] = lastValue[1].replace(Match.IMPORTANT_TOKEN_PATTERN, '');
-  } else {
-    lastValue[1] = lastValue[1].replace(Match.IMPORTANT_WORD_PATTERN, '');
-    oneButLastValue[1] = oneButLastValue[1].replace(Match.SUFFIX_BANG_PATTERN, '');
-  }
-
-  if (lastValue[1].length === 0) {
-    property.pop();
-  }
-
-  if (oneButLastValue[1].length === 0) {
-    property.pop();
-  }
-}
-
-function stripPrefixHack(property) {
-  property[1][1] = property[1][1].substring(1);
-}
-
-function stripSuffixHack(property, hackFrom) {
-  var lastValue = property[property.length - 1];
-  lastValue[1] = lastValue[1]
-    .substring(0, lastValue[1].indexOf(hackFrom[0] == Hack.BACKSLASH ? Match.BACKSLASH : Match.BANG))
-    .trim();
-
-  if (lastValue[1].length === 0) {
-    property.pop();
-  }
-}
-
-function wrapSingle(property) {
-  var importantProperty = isImportant(property);
-  if (importantProperty) {
-    stripImportant(property);
-  }
-
-  var whichHack = hackFrom(property);
-  if (whichHack[0] == Hack.ASTERISK || whichHack[0] == Hack.UNDERSCORE) {
-    stripPrefixHack(property);
-  } else if (whichHack[0] == Hack.BACKSLASH || whichHack[0] == Hack.BANG) {
-    stripSuffixHack(property, whichHack);
-  }
-
-  return {
-    block: property[2] && property[2][0] == Token.PROPERTY_BLOCK,
-    components: [],
-    dirty: false,
-    hack: whichHack,
-    important: importantProperty,
-    name: property[1][1],
-    multiplex: property.length > 3 ? isMultiplex(property) : false,
-    position: 0,
-    shorthand: false,
-    unused: false,
-    value: property.slice(2)
-  };
-}
-
-module.exports = {
-  all: wrapAll,
-  single: wrapSingle
-};
-
-
-/***/ }),
-/* 39 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/**
- * Prism: Lightweight, robust, elegant syntax highlighting
- * MIT license http://www.opensource.org/licenses/mit-license.php/
- * @author Lea Verou http://lea.verou.me
- */
-
-/**
- * prism-react-renderer:
- * This file has been modified to remove:
- * - globals and window dependency
- * - worker support
- * - highlightAll and other element dependent methods
- * - _.hooks helpers
- * - UMD/node-specific hacks
- * It has also been run through prettier
- */
-var Prism = function () {
-  var uniqueId = 0;
-  var _ = {
-    util: {
-      encode: function (tokens) {
-        if (tokens instanceof Token) {
-          return new Token(tokens.type, _.util.encode(tokens.content), tokens.alias);
-        } else if (_.util.type(tokens) === "Array") {
-          return tokens.map(_.util.encode);
-        } else {
-          return tokens.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/\u00a0/g, " ");
-        }
-      },
-      type: function (o) {
-        return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1];
-      },
-      objId: function (obj) {
-        if (!obj["__id"]) {
-          Object.defineProperty(obj, "__id", {
-            value: ++uniqueId
-          });
-        }
-
-        return obj["__id"];
-      },
-      // Deep clone a language definition (e.g. to extend it)
-      clone: function (o, visited) {
-        var type = _.util.type(o);
-
-        visited = visited || {};
-
-        switch (type) {
-          case "Object":
-            if (visited[_.util.objId(o)]) {
-              return visited[_.util.objId(o)];
-            }
-
-            var clone = {};
-            visited[_.util.objId(o)] = clone;
-
-            for (var key in o) {
-              if (o.hasOwnProperty(key)) {
-                clone[key] = _.util.clone(o[key], visited);
-              }
-            }
-
-            return clone;
-
-          case "Array":
-            if (visited[_.util.objId(o)]) {
-              return visited[_.util.objId(o)];
-            }
-
-            var clone = [];
-            visited[_.util.objId(o)] = clone;
-            o.forEach(function (v, i) {
-              clone[i] = _.util.clone(v, visited);
-            });
-            return clone;
-        }
-
-        return o;
-      }
-    },
-    languages: {
-      extend: function (id, redef) {
-        var lang = _.util.clone(_.languages[id]);
-
-        for (var key in redef) {
-          lang[key] = redef[key];
-        }
-
-        return lang;
-      },
-
-      /**
-       * Insert a token before another token in a language literal
-       * As this needs to recreate the object (we cannot actually insert before keys in object literals),
-       * we cannot just provide an object, we need anobject and a key.
-       * @param inside The key (or language id) of the parent
-       * @param before The key to insert before. If not provided, the function appends instead.
-       * @param insert Object with the key/value pairs to insert
-       * @param root The object that contains `inside`. If equal to Prism.languages, it can be omitted.
-       */
-      insertBefore: function (inside, before, insert, root) {
-        root = root || _.languages;
-        var grammar = root[inside];
-
-        if (arguments.length == 2) {
-          insert = arguments[1];
-
-          for (var newToken in insert) {
-            if (insert.hasOwnProperty(newToken)) {
-              grammar[newToken] = insert[newToken];
-            }
-          }
-
-          return grammar;
-        }
-
-        var ret = {};
-
-        for (var token in grammar) {
-          if (grammar.hasOwnProperty(token)) {
-            if (token == before) {
-              for (var newToken in insert) {
-                if (insert.hasOwnProperty(newToken)) {
-                  ret[newToken] = insert[newToken];
-                }
-              }
-            }
-
-            ret[token] = grammar[token];
-          }
-        } // Update references in other language definitions
-
-
-        _.languages.DFS(_.languages, function (key, value) {
-          if (value === root[inside] && key != inside) {
-            this[key] = ret;
-          }
-        });
-
-        return root[inside] = ret;
-      },
-      // Traverse a language definition with Depth First Search
-      DFS: function (o, callback, type, visited) {
-        visited = visited || {};
-
-        for (var i in o) {
-          if (o.hasOwnProperty(i)) {
-            callback.call(o, i, o[i], type || i);
-
-            if (_.util.type(o[i]) === "Object" && !visited[_.util.objId(o[i])]) {
-              visited[_.util.objId(o[i])] = true;
-
-              _.languages.DFS(o[i], callback, null, visited);
-            } else if (_.util.type(o[i]) === "Array" && !visited[_.util.objId(o[i])]) {
-              visited[_.util.objId(o[i])] = true;
-
-              _.languages.DFS(o[i], callback, i, visited);
-            }
-          }
-        }
-      }
-    },
-    plugins: {},
-    highlight: function (text, grammar, language) {
-      var env = {
-        code: text,
-        grammar: grammar,
-        language: language
-      };
-      env.tokens = _.tokenize(env.code, env.grammar);
-      return Token.stringify(_.util.encode(env.tokens), env.language);
-    },
-    matchGrammar: function (text, strarr, grammar, index, startPos, oneshot, target) {
-      var Token = _.Token;
-
-      for (var token in grammar) {
-        if (!grammar.hasOwnProperty(token) || !grammar[token]) {
-          continue;
-        }
-
-        if (token == target) {
-          return;
-        }
-
-        var patterns = grammar[token];
-        patterns = _.util.type(patterns) === "Array" ? patterns : [patterns];
-
-        for (var j = 0; j < patterns.length; ++j) {
-          var pattern = patterns[j],
-              inside = pattern.inside,
-              lookbehind = !!pattern.lookbehind,
-              greedy = !!pattern.greedy,
-              lookbehindLength = 0,
-              alias = pattern.alias;
-
-          if (greedy && !pattern.pattern.global) {
-            // Without the global flag, lastIndex won't work
-            var flags = pattern.pattern.toString().match(/[imuy]*$/)[0];
-            pattern.pattern = RegExp(pattern.pattern.source, flags + "g");
-          }
-
-          pattern = pattern.pattern || pattern; // Don’t cache length as it changes during the loop
-
-          for (var i = index, pos = startPos; i < strarr.length; pos += strarr[i].length, ++i) {
-            var str = strarr[i];
-
-            if (strarr.length > text.length) {
-              // Something went terribly wrong, ABORT, ABORT!
-              return;
-            }
-
-            if (str instanceof Token) {
-              continue;
-            }
-
-            if (greedy && i != strarr.length - 1) {
-              pattern.lastIndex = pos;
-              var match = pattern.exec(text);
-
-              if (!match) {
-                break;
-              }
-
-              var from = match.index + (lookbehind ? match[1].length : 0),
-                  to = match.index + match[0].length,
-                  k = i,
-                  p = pos;
-
-              for (var len = strarr.length; k < len && (p < to || !strarr[k].type && !strarr[k - 1].greedy); ++k) {
-                p += strarr[k].length; // Move the index i to the element in strarr that is closest to from
-
-                if (from >= p) {
-                  ++i;
-                  pos = p;
-                }
-              } // If strarr[i] is a Token, then the match starts inside another Token, which is invalid
-
-
-              if (strarr[i] instanceof Token) {
-                continue;
-              } // Number of tokens to delete and replace with the new match
-
-
-              delNum = k - i;
-              str = text.slice(pos, p);
-              match.index -= pos;
-            } else {
-              pattern.lastIndex = 0;
-              var match = pattern.exec(str),
-                  delNum = 1;
-            }
-
-            if (!match) {
-              if (oneshot) {
-                break;
-              }
-
-              continue;
-            }
-
-            if (lookbehind) {
-              lookbehindLength = match[1] ? match[1].length : 0;
-            }
-
-            var from = match.index + lookbehindLength,
-                match = match[0].slice(lookbehindLength),
-                to = from + match.length,
-                before = str.slice(0, from),
-                after = str.slice(to);
-            var args = [i, delNum];
-
-            if (before) {
-              ++i;
-              pos += before.length;
-              args.push(before);
-            }
-
-            var wrapped = new Token(token, inside ? _.tokenize(match, inside) : match, alias, match, greedy);
-            args.push(wrapped);
-
-            if (after) {
-              args.push(after);
-            }
-
-            Array.prototype.splice.apply(strarr, args);
-
-            if (delNum != 1) {
-              _.matchGrammar(text, strarr, grammar, i, pos, true, token);
-            }
-
-            if (oneshot) {
-              break;
-            }
-          }
-        }
-      }
-    },
-    hooks: {
-      add: function () {}
-    },
-    tokenize: function (text, grammar, language) {
-      var strarr = [text];
-      var rest = grammar.rest;
-
-      if (rest) {
-        for (var token in rest) {
-          grammar[token] = rest[token];
-        }
-
-        delete grammar.rest;
-      }
-
-      _.matchGrammar(text, strarr, grammar, 0, 0, false);
-
-      return strarr;
-    }
-  };
-
-  var Token = _.Token = function (type, content, alias, matchedStr, greedy) {
-    this.type = type;
-    this.content = content;
-    this.alias = alias; // Copy of the full string this token was created from
-
-    this.length = (matchedStr || "").length | 0;
-    this.greedy = !!greedy;
-  };
-
-  Token.stringify = function (o, language, parent) {
-    if (typeof o == "string") {
-      return o;
-    }
-
-    if (_.util.type(o) === "Array") {
-      return o.map(function (element) {
-        return Token.stringify(element, language, o);
-      }).join("");
-    }
-
-    var env = {
-      type: o.type,
-      content: Token.stringify(o.content, language, parent),
-      tag: "span",
-      classes: ["token", o.type],
-      attributes: {},
-      language: language,
-      parent: parent
-    };
-
-    if (o.alias) {
-      var aliases = _.util.type(o.alias) === "Array" ? o.alias : [o.alias];
-      Array.prototype.push.apply(env.classes, aliases);
-    }
-
-    var attributes = Object.keys(env.attributes).map(function (name) {
-      return name + '="' + (env.attributes[name] || "").replace(/"/g, "&quot;") + '"';
-    }).join(" ");
-    return "<" + env.tag + ' class="' + env.classes.join(" ") + '"' + (attributes ? " " + attributes : "") + ">" + env.content + "</" + env.tag + ">";
-  };
-
-  return _;
-}();
-
-/* This content is auto-generated to include some prismjs language components: */
-
-/* "prismjs/components/prism-markup" */
-
-Prism.languages.markup = {
-  'comment': /<!--[\s\S]*?-->/,
-  'prolog': /<\?[\s\S]+?\?>/,
-  'doctype': {
-    pattern: /<!DOCTYPE(?:[^>"'[\]]|"[^"]*"|'[^']*')+(?:\[(?:(?!<!--)[^"'\]]|"[^"]*"|'[^']*'|<!--[\s\S]*?-->)*\]\s*)?>/i,
-    greedy: true
-  },
-  'cdata': /<!\[CDATA\[[\s\S]*?]]>/i,
-  'tag': {
-    pattern: /<\/?(?!\d)[^\s>\/=$<%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/i,
-    greedy: true,
-    inside: {
-      'tag': {
-        pattern: /^<\/?[^\s>\/]+/i,
-        inside: {
-          'punctuation': /^<\/?/,
-          'namespace': /^[^\s>\/:]+:/
-        }
-      },
-      'attr-value': {
-        pattern: /=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+)/i,
-        inside: {
-          'punctuation': [/^=/, {
-            pattern: /^(\s*)["']|["']$/,
-            lookbehind: true
-          }]
-        }
-      },
-      'punctuation': /\/?>/,
-      'attr-name': {
-        pattern: /[^\s>\/]+/,
-        inside: {
-          'namespace': /^[^\s>\/:]+:/
-        }
-      }
-    }
-  },
-  'entity': /&#?[\da-z]{1,8};/i
-};
-Prism.languages.markup['tag'].inside['attr-value'].inside['entity'] = Prism.languages.markup['entity']; // Plugin to make entity title show the real entity, idea by Roman Komarov
-
-Prism.hooks.add('wrap', function (env) {
-  if (env.type === 'entity') {
-    env.attributes['title'] = env.content.replace(/&amp;/, '&');
-  }
-});
-Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
-  /**
-   * Adds an inlined language to markup.
-   *
-   * An example of an inlined language is CSS with `<style>` tags.
-   *
-   * @param {string} tagName The name of the tag that contains the inlined language. This name will be treated as
-   * case insensitive.
-   * @param {string} lang The language key.
-   * @example
-   * addInlined('style', 'css');
-   */
-  value: function addInlined(tagName, lang) {
-    var includedCdataInside = {};
-    includedCdataInside['language-' + lang] = {
-      pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i,
-      lookbehind: true,
-      inside: Prism.languages[lang]
-    };
-    includedCdataInside['cdata'] = /^<!\[CDATA\[|\]\]>$/i;
-    var inside = {
-      'included-cdata': {
-        pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i,
-        inside: includedCdataInside
-      }
-    };
-    inside['language-' + lang] = {
-      pattern: /[\s\S]+/,
-      inside: Prism.languages[lang]
-    };
-    var def = {};
-    def[tagName] = {
-      pattern: RegExp(/(<__[\s\S]*?>)(?:<!\[CDATA\[[\s\S]*?\]\]>\s*|[\s\S])*?(?=<\/__>)/.source.replace(/__/g, function () {
-        return tagName;
-      }), 'i'),
-      lookbehind: true,
-      greedy: true,
-      inside: inside
-    };
-    Prism.languages.insertBefore('markup', 'cdata', def);
-  }
-});
-Prism.languages.xml = Prism.languages.extend('markup', {});
-Prism.languages.html = Prism.languages.markup;
-Prism.languages.mathml = Prism.languages.markup;
-Prism.languages.svg = Prism.languages.markup;
-/* "prismjs/components/prism-bash" */
-
-(function (Prism) {
-  // $ set | grep '^[A-Z][^[:space:]]*=' | cut -d= -f1 | tr '\n' '|'
-  // + LC_ALL, RANDOM, REPLY, SECONDS.
-  // + make sure PS1..4 are here as they are not always set,
-  // - some useless things.
-  var envVars = '\\b(?:BASH|BASHOPTS|BASH_ALIASES|BASH_ARGC|BASH_ARGV|BASH_CMDS|BASH_COMPLETION_COMPAT_DIR|BASH_LINENO|BASH_REMATCH|BASH_SOURCE|BASH_VERSINFO|BASH_VERSION|COLORTERM|COLUMNS|COMP_WORDBREAKS|DBUS_SESSION_BUS_ADDRESS|DEFAULTS_PATH|DESKTOP_SESSION|DIRSTACK|DISPLAY|EUID|GDMSESSION|GDM_LANG|GNOME_KEYRING_CONTROL|GNOME_KEYRING_PID|GPG_AGENT_INFO|GROUPS|HISTCONTROL|HISTFILE|HISTFILESIZE|HISTSIZE|HOME|HOSTNAME|HOSTTYPE|IFS|INSTANCE|JOB|LANG|LANGUAGE|LC_ADDRESS|LC_ALL|LC_IDENTIFICATION|LC_MEASUREMENT|LC_MONETARY|LC_NAME|LC_NUMERIC|LC_PAPER|LC_TELEPHONE|LC_TIME|LESSCLOSE|LESSOPEN|LINES|LOGNAME|LS_COLORS|MACHTYPE|MAILCHECK|MANDATORY_PATH|NO_AT_BRIDGE|OLDPWD|OPTERR|OPTIND|ORBIT_SOCKETDIR|OSTYPE|PAPERSIZE|PATH|PIPESTATUS|PPID|PS1|PS2|PS3|PS4|PWD|RANDOM|REPLY|SECONDS|SELINUX_INIT|SESSION|SESSIONTYPE|SESSION_MANAGER|SHELL|SHELLOPTS|SHLVL|SSH_AUTH_SOCK|TERM|UID|UPSTART_EVENTS|UPSTART_INSTANCE|UPSTART_JOB|UPSTART_SESSION|USER|WINDOWID|XAUTHORITY|XDG_CONFIG_DIRS|XDG_CURRENT_DESKTOP|XDG_DATA_DIRS|XDG_GREETER_DATA_DIR|XDG_MENU_PREFIX|XDG_RUNTIME_DIR|XDG_SEAT|XDG_SEAT_PATH|XDG_SESSION_DESKTOP|XDG_SESSION_ID|XDG_SESSION_PATH|XDG_SESSION_TYPE|XDG_VTNR|XMODIFIERS)\\b';
-  var insideString = {
-    'environment': {
-      pattern: RegExp("\\$" + envVars),
-      alias: 'constant'
-    },
-    'variable': [// [0]: Arithmetic Environment
-    {
-      pattern: /\$?\(\([\s\S]+?\)\)/,
-      greedy: true,
-      inside: {
-        // If there is a $ sign at the beginning highlight $(( and )) as variable
-        'variable': [{
-          pattern: /(^\$\(\([\s\S]+)\)\)/,
-          lookbehind: true
-        }, /^\$\(\(/],
-        'number': /\b0x[\dA-Fa-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:[Ee]-?\d+)?/,
-        // Operators according to https://www.gnu.org/software/bash/manual/bashref.html#Shell-Arithmetic
-        'operator': /--?|-=|\+\+?|\+=|!=?|~|\*\*?|\*=|\/=?|%=?|<<=?|>>=?|<=?|>=?|==?|&&?|&=|\^=?|\|\|?|\|=|\?|:/,
-        // If there is no $ sign at the beginning highlight (( and )) as punctuation
-        'punctuation': /\(\(?|\)\)?|,|;/
-      }
-    }, // [1]: Command Substitution
-    {
-      pattern: /\$\((?:\([^)]+\)|[^()])+\)|`[^`]+`/,
-      greedy: true,
-      inside: {
-        'variable': /^\$\(|^`|\)$|`$/
-      }
-    }, // [2]: Brace expansion
-    {
-      pattern: /\$\{[^}]+\}/,
-      greedy: true,
-      inside: {
-        'operator': /:[-=?+]?|[!\/]|##?|%%?|\^\^?|,,?/,
-        'punctuation': /[\[\]]/,
-        'environment': {
-          pattern: RegExp("(\\{)" + envVars),
-          lookbehind: true,
-          alias: 'constant'
-        }
-      }
-    }, /\$(?:\w+|[#?*!@$])/],
-    // Escape sequences from echo and printf's manuals, and escaped quotes.
-    'entity': /\\(?:[abceEfnrtv\\"]|O?[0-7]{1,3}|x[0-9a-fA-F]{1,2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})/
-  };
-  Prism.languages.bash = {
-    'shebang': {
-      pattern: /^#!\s*\/.*/,
-      alias: 'important'
-    },
-    'comment': {
-      pattern: /(^|[^"{\\$])#.*/,
-      lookbehind: true
-    },
-    'function-name': [// a) function foo {
-    // b) foo() {
-    // c) function foo() {
-    // but not “foo {”
-    {
-      // a) and c)
-      pattern: /(\bfunction\s+)\w+(?=(?:\s*\(?:\s*\))?\s*\{)/,
-      lookbehind: true,
-      alias: 'function'
-    }, {
-      // b)
-      pattern: /\b\w+(?=\s*\(\s*\)\s*\{)/,
-      alias: 'function'
-    }],
-    // Highlight variable names as variables in for and select beginnings.
-    'for-or-select': {
-      pattern: /(\b(?:for|select)\s+)\w+(?=\s+in\s)/,
-      alias: 'variable',
-      lookbehind: true
-    },
-    // Highlight variable names as variables in the left-hand part
-    // of assignments (“=” and “+=”).
-    'assign-left': {
-      pattern: /(^|[\s;|&]|[<>]\()\w+(?=\+?=)/,
-      inside: {
-        'environment': {
-          pattern: RegExp("(^|[\\s;|&]|[<>]\\()" + envVars),
-          lookbehind: true,
-          alias: 'constant'
-        }
-      },
-      alias: 'variable',
-      lookbehind: true
-    },
-    'string': [// Support for Here-documents https://en.wikipedia.org/wiki/Here_document
-    {
-      pattern: /((?:^|[^<])<<-?\s*)(\w+?)\s*(?:\r?\n|\r)[\s\S]*?(?:\r?\n|\r)\2/,
-      lookbehind: true,
-      greedy: true,
-      inside: insideString
-    }, // Here-document with quotes around the tag
-    // → No expansion (so no “inside”).
-    {
-      pattern: /((?:^|[^<])<<-?\s*)(["'])(\w+)\2\s*(?:\r?\n|\r)[\s\S]*?(?:\r?\n|\r)\3/,
-      lookbehind: true,
-      greedy: true
-    }, // “Normal” string
-    {
-      pattern: /(^|[^\\](?:\\\\)*)(["'])(?:\\[\s\S]|\$\([^)]+\)|`[^`]+`|(?!\2)[^\\])*\2/,
-      lookbehind: true,
-      greedy: true,
-      inside: insideString
-    }],
-    'environment': {
-      pattern: RegExp("\\$?" + envVars),
-      alias: 'constant'
-    },
-    'variable': insideString.variable,
-    'function': {
-      pattern: /(^|[\s;|&]|[<>]\()(?:add|apropos|apt|aptitude|apt-cache|apt-get|aspell|automysqlbackup|awk|basename|bash|bc|bconsole|bg|bzip2|cal|cat|cfdisk|chgrp|chkconfig|chmod|chown|chroot|cksum|clear|cmp|column|comm|cp|cron|crontab|csplit|curl|cut|date|dc|dd|ddrescue|debootstrap|df|diff|diff3|dig|dir|dircolors|dirname|dirs|dmesg|du|egrep|eject|env|ethtool|expand|expect|expr|fdformat|fdisk|fg|fgrep|file|find|fmt|fold|format|free|fsck|ftp|fuser|gawk|git|gparted|grep|groupadd|groupdel|groupmod|groups|grub-mkconfig|gzip|halt|head|hg|history|host|hostname|htop|iconv|id|ifconfig|ifdown|ifup|import|install|ip|jobs|join|kill|killall|less|link|ln|locate|logname|logrotate|look|lpc|lpr|lprint|lprintd|lprintq|lprm|ls|lsof|lynx|make|man|mc|mdadm|mkconfig|mkdir|mke2fs|mkfifo|mkfs|mkisofs|mknod|mkswap|mmv|more|most|mount|mtools|mtr|mutt|mv|nano|nc|netstat|nice|nl|nohup|notify-send|npm|nslookup|op|open|parted|passwd|paste|pathchk|ping|pkill|pnpm|popd|pr|printcap|printenv|ps|pushd|pv|quota|quotacheck|quotactl|ram|rar|rcp|reboot|remsync|rename|renice|rev|rm|rmdir|rpm|rsync|scp|screen|sdiff|sed|sendmail|seq|service|sftp|sh|shellcheck|shuf|shutdown|sleep|slocate|sort|split|ssh|stat|strace|su|sudo|sum|suspend|swapon|sync|tac|tail|tar|tee|time|timeout|top|touch|tr|traceroute|tsort|tty|umount|uname|unexpand|uniq|units|unrar|unshar|unzip|update-grub|uptime|useradd|userdel|usermod|users|uudecode|uuencode|v|vdir|vi|vim|virsh|vmstat|wait|watch|wc|wget|whereis|which|who|whoami|write|xargs|xdg-open|yarn|yes|zenity|zip|zsh|zypper)(?=$|[)\s;|&])/,
-      lookbehind: true
-    },
-    'keyword': {
-      pattern: /(^|[\s;|&]|[<>]\()(?:if|then|else|elif|fi|for|while|in|case|esac|function|select|do|done|until)(?=$|[)\s;|&])/,
-      lookbehind: true
-    },
-    // https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html
-    'builtin': {
-      pattern: /(^|[\s;|&]|[<>]\()(?:\.|:|break|cd|continue|eval|exec|exit|export|getopts|hash|pwd|readonly|return|shift|test|times|trap|umask|unset|alias|bind|builtin|caller|command|declare|echo|enable|help|let|local|logout|mapfile|printf|read|readarray|source|type|typeset|ulimit|unalias|set|shopt)(?=$|[)\s;|&])/,
-      lookbehind: true,
-      // Alias added to make those easier to distinguish from strings.
-      alias: 'class-name'
-    },
-    'boolean': {
-      pattern: /(^|[\s;|&]|[<>]\()(?:true|false)(?=$|[)\s;|&])/,
-      lookbehind: true
-    },
-    'file-descriptor': {
-      pattern: /\B&\d\b/,
-      alias: 'important'
-    },
-    'operator': {
-      // Lots of redirections here, but not just that.
-      pattern: /\d?<>|>\||\+=|==?|!=?|=~|<<[<-]?|[&\d]?>>|\d?[<>]&?|&[>&]?|\|[&|]?|<=?|>=?/,
-      inside: {
-        'file-descriptor': {
-          pattern: /^\d/,
-          alias: 'important'
-        }
-      }
-    },
-    'punctuation': /\$?\(\(?|\)\)?|\.\.|[{}[\];\\]/,
-    'number': {
-      pattern: /(^|\s)(?:[1-9]\d*|0)(?:[.,]\d+)?\b/,
-      lookbehind: true
-    }
-  };
-  /* Patterns in command substitution. */
-
-  var toBeCopied = ['comment', 'function-name', 'for-or-select', 'assign-left', 'string', 'environment', 'function', 'keyword', 'builtin', 'boolean', 'file-descriptor', 'operator', 'punctuation', 'number'];
-  var inside = insideString.variable[1].inside;
-
-  for (var i = 0; i < toBeCopied.length; i++) {
-    inside[toBeCopied[i]] = Prism.languages.bash[toBeCopied[i]];
-  }
-
-  Prism.languages.shell = Prism.languages.bash;
-})(Prism);
-/* "prismjs/components/prism-clike" */
-
-
-Prism.languages.clike = {
-  'comment': [{
-    pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,
-    lookbehind: true
-  }, {
-    pattern: /(^|[^\\:])\/\/.*/,
-    lookbehind: true,
-    greedy: true
-  }],
-  'string': {
-    pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
-    greedy: true
-  },
-  'class-name': {
-    pattern: /(\b(?:class|interface|extends|implements|trait|instanceof|new)\s+|\bcatch\s+\()[\w.\\]+/i,
-    lookbehind: true,
-    inside: {
-      'punctuation': /[.\\]/
-    }
-  },
-  'keyword': /\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,
-  'boolean': /\b(?:true|false)\b/,
-  'function': /\w+(?=\()/,
-  'number': /\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?/i,
-  'operator': /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,
-  'punctuation': /[{}[\];(),.:]/
-};
-/* "prismjs/components/prism-c" */
-
-Prism.languages.c = Prism.languages.extend('clike', {
-  'comment': {
-    pattern: /\/\/(?:[^\r\n\\]|\\(?:\r\n?|\n|(?![\r\n])))*|\/\*[\s\S]*?(?:\*\/|$)/,
-    greedy: true
-  },
-  'class-name': {
-    pattern: /(\b(?:enum|struct)\s+(?:__attribute__\s*\(\([\s\S]*?\)\)\s*)?)\w+/,
-    lookbehind: true
-  },
-  'keyword': /\b(?:__attribute__|_Alignas|_Alignof|_Atomic|_Bool|_Complex|_Generic|_Imaginary|_Noreturn|_Static_assert|_Thread_local|asm|typeof|inline|auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while)\b/,
-  'function': /[a-z_]\w*(?=\s*\()/i,
-  'operator': />>=?|<<=?|->|([-+&|:])\1|[?:~]|[-+*/%&|^!=<>]=?/,
-  'number': /(?:\b0x(?:[\da-f]+\.?[\da-f]*|\.[\da-f]+)(?:p[+-]?\d+)?|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?)[ful]*/i
-});
-Prism.languages.insertBefore('c', 'string', {
-  'macro': {
-    // allow for multiline macro definitions
-    // spaces after the # character compile fine with gcc
-    pattern: /(^\s*)#\s*[a-z]+(?:[^\r\n\\]|\\(?:\r\n|[\s\S]))*/im,
-    lookbehind: true,
-    alias: 'property',
-    inside: {
-      // highlight the path of the include statement as a string
-      'string': {
-        pattern: /(#\s*include\s*)(?:<.+?>|("|')(?:\\?.)+?\2)/,
-        lookbehind: true
-      },
-      // highlight macro directives as keywords
-      'directive': {
-        pattern: /(#\s*)\b(?:define|defined|elif|else|endif|error|ifdef|ifndef|if|import|include|line|pragma|undef|using)\b/,
-        lookbehind: true,
-        alias: 'keyword'
-      }
-    }
-  },
-  // highlight predefined macros as constants
-  'constant': /\b(?:__FILE__|__LINE__|__DATE__|__TIME__|__TIMESTAMP__|__func__|EOF|NULL|SEEK_CUR|SEEK_END|SEEK_SET|stdin|stdout|stderr)\b/
-});
-delete Prism.languages.c['boolean'];
-/* "prismjs/components/prism-cpp" */
-
-Prism.languages.cpp = Prism.languages.extend('c', {
-  'class-name': {
-    pattern: /(\b(?:class|enum|struct)\s+)\w+/,
-    lookbehind: true
-  },
-  'keyword': /\b(?:alignas|alignof|asm|auto|bool|break|case|catch|char|char8_t|char16_t|char32_t|class|compl|concept|const|consteval|constexpr|constinit|const_cast|continue|co_await|co_return|co_yield|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|float|for|friend|goto|if|inline|int|int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|long|mutable|namespace|new|noexcept|nullptr|operator|private|protected|public|register|reinterpret_cast|requires|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while)\b/,
-  'number': {
-    pattern: /(?:\b0b[01']+|\b0x(?:[\da-f']+\.?[\da-f']*|\.[\da-f']+)(?:p[+-]?[\d']+)?|(?:\b[\d']+\.?[\d']*|\B\.[\d']+)(?:e[+-]?[\d']+)?)[ful]*/i,
-    greedy: true
-  },
-  'operator': />>=?|<<=?|->|([-+&|:])\1|[?:~]|[-+*/%&|^!=<>]=?|\b(?:and|and_eq|bitand|bitor|not|not_eq|or|or_eq|xor|xor_eq)\b/,
-  'boolean': /\b(?:true|false)\b/
-});
-Prism.languages.insertBefore('cpp', 'string', {
-  'raw-string': {
-    pattern: /R"([^()\\ ]{0,16})\([\s\S]*?\)\1"/,
-    alias: 'string',
-    greedy: true
-  }
-});
-/* "prismjs/components/prism-css" */
-
-(function (Prism) {
-  var string = /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/;
-  Prism.languages.css = {
-    'comment': /\/\*[\s\S]*?\*\//,
-    'atrule': {
-      pattern: /@[\w-]+[\s\S]*?(?:;|(?=\s*\{))/,
-      inside: {
-        'rule': /^@[\w-]+/,
-        'selector-function-argument': {
-          pattern: /(\bselector\s*\((?!\s*\))\s*)(?:[^()]|\((?:[^()]|\([^()]*\))*\))+?(?=\s*\))/,
-          lookbehind: true,
-          alias: 'selector'
-        } // See rest below
-
-      }
-    },
-    'url': {
-      pattern: RegExp('url\\((?:' + string.source + '|[^\n\r()]*)\\)', 'i'),
-      greedy: true,
-      inside: {
-        'function': /^url/i,
-        'punctuation': /^\(|\)$/
-      }
-    },
-    'selector': RegExp('[^{}\\s](?:[^{};"\']|' + string.source + ')*?(?=\\s*\\{)'),
-    'string': {
-      pattern: string,
-      greedy: true
-    },
-    'property': /[-_a-z\xA0-\uFFFF][-\w\xA0-\uFFFF]*(?=\s*:)/i,
-    'important': /!important\b/i,
-    'function': /[-a-z0-9]+(?=\()/i,
-    'punctuation': /[(){};:,]/
-  };
-  Prism.languages.css['atrule'].inside.rest = Prism.languages.css;
-  var markup = Prism.languages.markup;
-
-  if (markup) {
-    markup.tag.addInlined('style', 'css');
-    Prism.languages.insertBefore('inside', 'attr-value', {
-      'style-attr': {
-        pattern: /\s*style=("|')(?:\\[\s\S]|(?!\1)[^\\])*\1/i,
-        inside: {
-          'attr-name': {
-            pattern: /^\s*style/i,
-            inside: markup.tag.inside
-          },
-          'punctuation': /^\s*=\s*['"]|['"]\s*$/,
-          'attr-value': {
-            pattern: /.+/i,
-            inside: Prism.languages.css
-          }
-        },
-        alias: 'language-css'
-      }
-    }, markup.tag);
-  }
-})(Prism);
-/* "prismjs/components/prism-css-extras" */
-
-
-(function (Prism) {
-  var string = /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/;
-  var selectorInside;
-  Prism.languages.css.selector = {
-    pattern: Prism.languages.css.selector,
-    inside: selectorInside = {
-      'pseudo-element': /:(?:after|before|first-letter|first-line|selection)|::[-\w]+/,
-      'pseudo-class': /:[-\w]+/,
-      'class': /\.[-:.\w]+/,
-      'id': /#[-:.\w]+/,
-      'attribute': {
-        pattern: RegExp('\\[(?:[^[\\]"\']|' + string.source + ')*\\]'),
-        greedy: true,
-        inside: {
-          'punctuation': /^\[|\]$/,
-          'case-sensitivity': {
-            pattern: /(\s)[si]$/i,
-            lookbehind: true,
-            alias: 'keyword'
-          },
-          'namespace': {
-            pattern: /^(\s*)[-*\w\xA0-\uFFFF]*\|(?!=)/,
-            lookbehind: true,
-            inside: {
-              'punctuation': /\|$/
-            }
-          },
-          'attribute': {
-            pattern: /^(\s*)[-\w\xA0-\uFFFF]+/,
-            lookbehind: true
-          },
-          'value': [string, {
-            pattern: /(=\s*)[-\w\xA0-\uFFFF]+(?=\s*$)/,
-            lookbehind: true
-          }],
-          'operator': /[|~*^$]?=/
-        }
-      },
-      'n-th': [{
-        pattern: /(\(\s*)[+-]?\d*[\dn](?:\s*[+-]\s*\d+)?(?=\s*\))/,
-        lookbehind: true,
-        inside: {
-          'number': /[\dn]+/,
-          'operator': /[+-]/
-        }
-      }, {
-        pattern: /(\(\s*)(?:even|odd)(?=\s*\))/i,
-        lookbehind: true
-      }],
-      'punctuation': /[()]/
-    }
-  };
-  Prism.languages.css['atrule'].inside['selector-function-argument'].inside = selectorInside;
-  Prism.languages.insertBefore('css', 'property', {
-    'variable': {
-      pattern: /(^|[^-\w\xA0-\uFFFF])--[-_a-z\xA0-\uFFFF][-\w\xA0-\uFFFF]*/i,
-      lookbehind: true
-    }
-  });
-  var unit = {
-    pattern: /(\d)(?:%|[a-z]+)/,
-    lookbehind: true
-  }; // 123 -123 .123 -.123 12.3 -12.3
-
-  var number = {
-    pattern: /(^|[^\w.-])-?\d*\.?\d+/,
-    lookbehind: true
-  };
-  Prism.languages.insertBefore('css', 'function', {
-    'operator': {
-      pattern: /(\s)[+\-*\/](?=\s)/,
-      lookbehind: true
-    },
-    // CAREFUL!
-    // Previewers and Inline color use hexcode and color.
-    'hexcode': {
-      pattern: /\B#(?:[\da-f]{1,2}){3,4}\b/i,
-      alias: 'color'
-    },
-    'color': [/\b(?:AliceBlue|AntiqueWhite|Aqua|Aquamarine|Azure|Beige|Bisque|Black|BlanchedAlmond|Blue|BlueViolet|Brown|BurlyWood|CadetBlue|Chartreuse|Chocolate|Coral|CornflowerBlue|Cornsilk|Crimson|Cyan|DarkBlue|DarkCyan|DarkGoldenRod|DarkGr[ae]y|DarkGreen|DarkKhaki|DarkMagenta|DarkOliveGreen|DarkOrange|DarkOrchid|DarkRed|DarkSalmon|DarkSeaGreen|DarkSlateBlue|DarkSlateGr[ae]y|DarkTurquoise|DarkViolet|DeepPink|DeepSkyBlue|DimGr[ae]y|DodgerBlue|FireBrick|FloralWhite|ForestGreen|Fuchsia|Gainsboro|GhostWhite|Gold|GoldenRod|Gr[ae]y|Green|GreenYellow|HoneyDew|HotPink|IndianRed|Indigo|Ivory|Khaki|Lavender|LavenderBlush|LawnGreen|LemonChiffon|LightBlue|LightCoral|LightCyan|LightGoldenRodYellow|LightGr[ae]y|LightGreen|LightPink|LightSalmon|LightSeaGreen|LightSkyBlue|LightSlateGr[ae]y|LightSteelBlue|LightYellow|Lime|LimeGreen|Linen|Magenta|Maroon|MediumAquaMarine|MediumBlue|MediumOrchid|MediumPurple|MediumSeaGreen|MediumSlateBlue|MediumSpringGreen|MediumTurquoise|MediumVioletRed|MidnightBlue|MintCream|MistyRose|Moccasin|NavajoWhite|Navy|OldLace|Olive|OliveDrab|Orange|OrangeRed|Orchid|PaleGoldenRod|PaleGreen|PaleTurquoise|PaleVioletRed|PapayaWhip|PeachPuff|Peru|Pink|Plum|PowderBlue|Purple|Red|RosyBrown|RoyalBlue|SaddleBrown|Salmon|SandyBrown|SeaGreen|SeaShell|Sienna|Silver|SkyBlue|SlateBlue|SlateGr[ae]y|Snow|SpringGreen|SteelBlue|Tan|Teal|Thistle|Tomato|Transparent|Turquoise|Violet|Wheat|White|WhiteSmoke|Yellow|YellowGreen)\b/i, {
-      pattern: /\b(?:rgb|hsl)\(\s*\d{1,3}\s*,\s*\d{1,3}%?\s*,\s*\d{1,3}%?\s*\)\B|\b(?:rgb|hsl)a\(\s*\d{1,3}\s*,\s*\d{1,3}%?\s*,\s*\d{1,3}%?\s*,\s*(?:0|0?\.\d+|1)\s*\)\B/i,
-      inside: {
-        'unit': unit,
-        'number': number,
-        'function': /[\w-]+(?=\()/,
-        'punctuation': /[(),]/
-      }
-    }],
-    'entity': /\\[\da-f]{1,8}/i,
-    'unit': unit,
-    'number': number
-  });
-})(Prism);
-/* "prismjs/components/prism-javascript" */
-
-
-Prism.languages.javascript = Prism.languages.extend('clike', {
-  'class-name': [Prism.languages.clike['class-name'], {
-    pattern: /(^|[^$\w\xA0-\uFFFF])[_$A-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\.(?:prototype|constructor))/,
-    lookbehind: true
-  }],
-  'keyword': [{
-    pattern: /((?:^|})\s*)(?:catch|finally)\b/,
-    lookbehind: true
-  }, {
-    pattern: /(^|[^.]|\.\.\.\s*)\b(?:as|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
-    lookbehind: true
-  }],
-  'number': /\b(?:(?:0[xX](?:[\dA-Fa-f](?:_[\dA-Fa-f])?)+|0[bB](?:[01](?:_[01])?)+|0[oO](?:[0-7](?:_[0-7])?)+)n?|(?:\d(?:_\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:_\d)?)+\.?(?:\d(?:_\d)?)*|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
-  // Allow for all non-ASCII characters (See http://stackoverflow.com/a/2008444)
-  'function': /#?[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*(?:\.\s*(?:apply|bind|call)\s*)?\()/,
-  'operator': /--|\+\+|\*\*=?|=>|&&|\|\||[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?[.?]?|[~:]/
-});
-Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/;
-Prism.languages.insertBefore('javascript', 'keyword', {
-  'regex': {
-    pattern: /((?:^|[^$\w\xA0-\uFFFF."'\])\s])\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*]|\\.|[^/\\\[\r\n])+\/[gimyus]{0,6}(?=(?:\s|\/\*[\s\S]*?\*\/)*(?:$|[\r\n,.;:})\]]|\/\/))/,
-    lookbehind: true,
-    greedy: true
-  },
-  // This must be declared before keyword because we use "function" inside the look-forward
-  'function-variable': {
-    pattern: /#?[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]*\))*\)|[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*)\s*=>))/,
-    alias: 'function'
-  },
-  'parameter': [{
-    pattern: /(function(?:\s+[_$A-Za-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*)?\s*\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\))/,
-    lookbehind: true,
-    inside: Prism.languages.javascript
-  }, {
-    pattern: /[_$a-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*=>)/i,
-    inside: Prism.languages.javascript
-  }, {
-    pattern: /(\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*=>)/,
-    lookbehind: true,
-    inside: Prism.languages.javascript
-  }, {
-    pattern: /((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:[_$A-Za-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*\s*)\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*\{)/,
-    lookbehind: true,
-    inside: Prism.languages.javascript
-  }],
-  'constant': /\b[A-Z](?:[A-Z_]|\dx?)*\b/
-});
-Prism.languages.insertBefore('javascript', 'string', {
-  'template-string': {
-    pattern: /`(?:\\[\s\S]|\${(?:[^{}]|{(?:[^{}]|{[^}]*})*})+}|(?!\${)[^\\`])*`/,
-    greedy: true,
-    inside: {
-      'template-punctuation': {
-        pattern: /^`|`$/,
-        alias: 'string'
-      },
-      'interpolation': {
-        pattern: /((?:^|[^\\])(?:\\{2})*)\${(?:[^{}]|{(?:[^{}]|{[^}]*})*})+}/,
-        lookbehind: true,
-        inside: {
-          'interpolation-punctuation': {
-            pattern: /^\${|}$/,
-            alias: 'punctuation'
-          },
-          rest: Prism.languages.javascript
-        }
-      },
-      'string': /[\s\S]+/
-    }
-  }
-});
-
-if (Prism.languages.markup) {
-  Prism.languages.markup.tag.addInlined('script', 'javascript');
-}
-
-Prism.languages.js = Prism.languages.javascript;
-/* "prismjs/components/prism-jsx" */
-
-(function (Prism) {
-  var javascript = Prism.util.clone(Prism.languages.javascript);
-  Prism.languages.jsx = Prism.languages.extend('markup', javascript);
-  Prism.languages.jsx.tag.pattern = /<\/?(?:[\w.:-]+\s*(?:\s+(?:[\w.:$-]+(?:=(?:("|')(?:\\[\s\S]|(?!\1)[^\\])*\1|[^\s{'">=]+|\{(?:\{(?:\{[^}]*\}|[^{}])*\}|[^{}])+\}))?|\{\s*\.{3}\s*[a-z_$][\w$]*(?:\.[a-z_$][\w$]*)*\s*\}))*\s*\/?)?>/i;
-  Prism.languages.jsx.tag.inside['tag'].pattern = /^<\/?[^\s>\/]*/i;
-  Prism.languages.jsx.tag.inside['attr-value'].pattern = /=(?!\{)(?:("|')(?:\\[\s\S]|(?!\1)[^\\])*\1|[^\s'">]+)/i;
-  Prism.languages.jsx.tag.inside['tag'].inside['class-name'] = /^[A-Z]\w*(?:\.[A-Z]\w*)*$/;
-  Prism.languages.insertBefore('inside', 'attr-name', {
-    'spread': {
-      pattern: /\{\s*\.{3}\s*[a-z_$][\w$]*(?:\.[a-z_$][\w$]*)*\s*\}/,
-      inside: {
-        'punctuation': /\.{3}|[{}.]/,
-        'attr-value': /\w+/
-      }
-    }
-  }, Prism.languages.jsx.tag);
-  Prism.languages.insertBefore('inside', 'attr-value', {
-    'script': {
-      // Allow for two levels of nesting
-      pattern: /=(?:\{(?:\{(?:\{[^}]*\}|[^}])*\}|[^}])+\})/i,
-      inside: {
-        'script-punctuation': {
-          pattern: /^=(?={)/,
-          alias: 'punctuation'
-        },
-        rest: Prism.languages.jsx
-      },
-      'alias': 'language-javascript'
-    }
-  }, Prism.languages.jsx.tag); // The following will handle plain text inside tags
-
-  var stringifyToken = function (token) {
-    if (!token) {
-      return '';
-    }
-
-    if (typeof token === 'string') {
-      return token;
-    }
-
-    if (typeof token.content === 'string') {
-      return token.content;
-    }
-
-    return token.content.map(stringifyToken).join('');
-  };
-
-  var walkTokens = function (tokens) {
-    var openedTags = [];
-
-    for (var i = 0; i < tokens.length; i++) {
-      var token = tokens[i];
-      var notTagNorBrace = false;
-
-      if (typeof token !== 'string') {
-        if (token.type === 'tag' && token.content[0] && token.content[0].type === 'tag') {
-          // We found a tag, now find its kind
-          if (token.content[0].content[0].content === '</') {
-            // Closing tag
-            if (openedTags.length > 0 && openedTags[openedTags.length - 1].tagName === stringifyToken(token.content[0].content[1])) {
-              // Pop matching opening tag
-              openedTags.pop();
-            }
-          } else {
-            if (token.content[token.content.length - 1].content === '/>') ; else {
-              // Opening tag
-              openedTags.push({
-                tagName: stringifyToken(token.content[0].content[1]),
-                openedBraces: 0
-              });
-            }
-          }
-        } else if (openedTags.length > 0 && token.type === 'punctuation' && token.content === '{') {
-          // Here we might have entered a JSX context inside a tag
-          openedTags[openedTags.length - 1].openedBraces++;
-        } else if (openedTags.length > 0 && openedTags[openedTags.length - 1].openedBraces > 0 && token.type === 'punctuation' && token.content === '}') {
-          // Here we might have left a JSX context inside a tag
-          openedTags[openedTags.length - 1].openedBraces--;
-        } else {
-          notTagNorBrace = true;
-        }
-      }
-
-      if (notTagNorBrace || typeof token === 'string') {
-        if (openedTags.length > 0 && openedTags[openedTags.length - 1].openedBraces === 0) {
-          // Here we are inside a tag, and not inside a JSX context.
-          // That's plain text: drop any tokens matched.
-          var plainText = stringifyToken(token); // And merge text with adjacent text
-
-          if (i < tokens.length - 1 && (typeof tokens[i + 1] === 'string' || tokens[i + 1].type === 'plain-text')) {
-            plainText += stringifyToken(tokens[i + 1]);
-            tokens.splice(i + 1, 1);
-          }
-
-          if (i > 0 && (typeof tokens[i - 1] === 'string' || tokens[i - 1].type === 'plain-text')) {
-            plainText = stringifyToken(tokens[i - 1]) + plainText;
-            tokens.splice(i - 1, 1);
-            i--;
-          }
-
-          tokens[i] = new Prism.Token('plain-text', plainText, null, plainText);
-        }
-      }
-
-      if (token.content && typeof token.content !== 'string') {
-        walkTokens(token.content);
-      }
-    }
-  };
-
-  Prism.hooks.add('after-tokenize', function (env) {
-    if (env.language !== 'jsx' && env.language !== 'tsx') {
-      return;
-    }
-
-    walkTokens(env.tokens);
-  });
-})(Prism);
-/* "prismjs/components/prism-js-extras" */
-
-
-(function (Prism) {
-  Prism.languages.insertBefore('javascript', 'function-variable', {
-    'method-variable': {
-      pattern: RegExp('(\\.\\s*)' + Prism.languages.javascript['function-variable'].pattern.source),
-      lookbehind: true,
-      alias: ['function-variable', 'method', 'function', 'property-access']
-    }
-  });
-  Prism.languages.insertBefore('javascript', 'function', {
-    'method': {
-      pattern: RegExp('(\\.\\s*)' + Prism.languages.javascript['function'].source),
-      lookbehind: true,
-      alias: ['function', 'property-access']
-    }
-  });
-  Prism.languages.insertBefore('javascript', 'constant', {
-    'known-class-name': [{
-      // standard built-ins
-      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
-      pattern: /\b(?:(?:(?:Uint|Int)(?:8|16|32)|Uint8Clamped|Float(?:32|64))?Array|ArrayBuffer|BigInt|Boolean|DataView|Date|Error|Function|Intl|JSON|Math|Number|Object|Promise|Proxy|Reflect|RegExp|String|Symbol|(?:Weak)?(?:Set|Map)|WebAssembly)\b/,
-      alias: 'class-name'
-    }, {
-      // errors
-      pattern: /\b(?:[A-Z]\w*)Error\b/,
-      alias: 'class-name'
-    }]
-  });
-  Prism.languages.javascript['keyword'].unshift({
-    pattern: /\b(?:as|default|export|from|import)\b/,
-    alias: 'module'
-  }, {
-    pattern: /\bnull\b/,
-    alias: ['null', 'nil']
-  }, {
-    pattern: /\bundefined\b/,
-    alias: 'nil'
-  });
-  Prism.languages.insertBefore('javascript', 'operator', {
-    'spread': {
-      pattern: /\.{3}/,
-      alias: 'operator'
-    },
-    'arrow': {
-      pattern: /=>/,
-      alias: 'operator'
-    }
-  });
-  Prism.languages.insertBefore('javascript', 'punctuation', {
-    'property-access': {
-      pattern: /(\.\s*)#?[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*/,
-      lookbehind: true
-    },
-    'maybe-class-name': {
-      pattern: /(^|[^$\w\xA0-\uFFFF])[A-Z][$\w\xA0-\uFFFF]+/,
-      lookbehind: true
-    },
-    'dom': {
-      // this contains only a few commonly used DOM variables
-      pattern: /\b(?:document|location|navigator|performance|(?:local|session)Storage|window)\b/,
-      alias: 'variable'
-    },
-    'console': {
-      pattern: /\bconsole(?=\s*\.)/,
-      alias: 'class-name'
-    }
-  }); // add 'maybe-class-name' to tokens which might be a class name
-
-  var maybeClassNameTokens = ['function', 'function-variable', 'method', 'method-variable', 'property-access'];
-
-  for (var i = 0; i < maybeClassNameTokens.length; i++) {
-    var token = maybeClassNameTokens[i];
-    var value = Prism.languages.javascript[token]; // convert regex to object
-
-    if (Prism.util.type(value) === 'RegExp') {
-      value = Prism.languages.javascript[token] = {
-        pattern: value
-      };
-    } // keep in mind that we don't support arrays
-
-
-    var inside = value.inside || {};
-    value.inside = inside;
-    inside['maybe-class-name'] = /^[A-Z][\s\S]*/;
-  }
-})(Prism);
-/* "prismjs/components/prism-coffeescript" */
-
-
-(function (Prism) {
-  // Ignore comments starting with { to privilege string interpolation highlighting
-  var comment = /#(?!\{).+/,
-      interpolation = {
-    pattern: /#\{[^}]+\}/,
-    alias: 'variable'
-  };
-  Prism.languages.coffeescript = Prism.languages.extend('javascript', {
-    'comment': comment,
-    'string': [// Strings are multiline
-    {
-      pattern: /'(?:\\[\s\S]|[^\\'])*'/,
-      greedy: true
-    }, {
-      // Strings are multiline
-      pattern: /"(?:\\[\s\S]|[^\\"])*"/,
-      greedy: true,
-      inside: {
-        'interpolation': interpolation
-      }
-    }],
-    'keyword': /\b(?:and|break|by|catch|class|continue|debugger|delete|do|each|else|extend|extends|false|finally|for|if|in|instanceof|is|isnt|let|loop|namespace|new|no|not|null|of|off|on|or|own|return|super|switch|then|this|throw|true|try|typeof|undefined|unless|until|when|while|window|with|yes|yield)\b/,
-    'class-member': {
-      pattern: /@(?!\d)\w+/,
-      alias: 'variable'
-    }
-  });
-  Prism.languages.insertBefore('coffeescript', 'comment', {
-    'multiline-comment': {
-      pattern: /###[\s\S]+?###/,
-      alias: 'comment'
-    },
-    // Block regexp can contain comments and interpolation
-    'block-regex': {
-      pattern: /\/{3}[\s\S]*?\/{3}/,
-      alias: 'regex',
-      inside: {
-        'comment': comment,
-        'interpolation': interpolation
-      }
-    }
-  });
-  Prism.languages.insertBefore('coffeescript', 'string', {
-    'inline-javascript': {
-      pattern: /`(?:\\[\s\S]|[^\\`])*`/,
-      inside: {
-        'delimiter': {
-          pattern: /^`|`$/,
-          alias: 'punctuation'
-        },
-        rest: Prism.languages.javascript
-      }
-    },
-    // Block strings
-    'multiline-string': [{
-      pattern: /'''[\s\S]*?'''/,
-      greedy: true,
-      alias: 'string'
-    }, {
-      pattern: /"""[\s\S]*?"""/,
-      greedy: true,
-      alias: 'string',
-      inside: {
-        interpolation: interpolation
-      }
-    }]
-  });
-  Prism.languages.insertBefore('coffeescript', 'keyword', {
-    // Object property
-    'property': /(?!\d)\w+(?=\s*:(?!:))/
-  });
-  delete Prism.languages.coffeescript['template-string'];
-  Prism.languages.coffee = Prism.languages.coffeescript;
-})(Prism);
-/* "prismjs/components/prism-diff" */
-
-
-(function (Prism) {
-  Prism.languages.diff = {
-    'coord': [// Match all kinds of coord lines (prefixed by "+++", "---" or "***").
-    /^(?:\*{3}|-{3}|\+{3}).*$/m, // Match "@@ ... @@" coord lines in unified diff.
-    /^@@.*@@$/m, // Match coord lines in normal diff (starts with a number).
-    /^\d+.*$/m] // deleted, inserted, unchanged, diff
-
-  };
-  /**
-   * A map from the name of a block to its line prefix.
-   *
-   * @type {Object<string, string>}
-   */
-
-  var PREFIXES = {
-    'deleted-sign': '-',
-    'deleted-arrow': '<',
-    'inserted-sign': '+',
-    'inserted-arrow': '>',
-    'unchanged': ' ',
-    'diff': '!'
-  }; // add a token for each prefix
-
-  Object.keys(PREFIXES).forEach(function (name) {
-    var prefix = PREFIXES[name];
-    var alias = [];
-
-    if (!/^\w+$/.test(name)) {
-      // "deleted-sign" -> "deleted"
-      alias.push(/\w+/.exec(name)[0]);
-    }
-
-    if (name === "diff") {
-      alias.push("bold");
-    }
-
-    Prism.languages.diff[name] = {
-      // pattern: /^(?:[_].*(?:\r\n?|\n|(?![\s\S])))+/m
-      pattern: RegExp('^(?:[' + prefix + '].*(?:\r\n?|\n|(?![\\s\\S])))+', 'm'),
-      alias: alias
-    };
-  }); // make prefixes available to Diff plugin
-
-  Object.defineProperty(Prism.languages.diff, 'PREFIXES', {
-    value: PREFIXES
-  });
-})(Prism);
-/* "prismjs/components/prism-git" */
-
-
-Prism.languages.git = {
-  /*
-   * A simple one line comment like in a git status command
-   * For instance:
-   * $ git status
-   * # On branch infinite-scroll
-   * # Your branch and 'origin/sharedBranches/frontendTeam/infinite-scroll' have diverged,
-   * # and have 1 and 2 different commits each, respectively.
-   * nothing to commit (working directory clean)
-   */
-  'comment': /^#.*/m,
-
-  /*
-   * Regexp to match the changed lines in a git diff output. Check the example below.
-   */
-  'deleted': /^[-–].*/m,
-  'inserted': /^\+.*/m,
-
-  /*
-   * a string (double and simple quote)
-   */
-  'string': /("|')(?:\\.|(?!\1)[^\\\r\n])*\1/m,
-
-  /*
-   * a git command. It starts with a random prompt finishing by a $, then "git" then some other parameters
-   * For instance:
-   * $ git add file.txt
-   */
-  'command': {
-    pattern: /^.*\$ git .*$/m,
-    inside: {
-      /*
-       * A git command can contain a parameter starting by a single or a double dash followed by a string
-       * For instance:
-       * $ git diff --cached
-       * $ git log -p
-       */
-      'parameter': /\s--?\w+/m
-    }
-  },
-
-  /*
-   * Coordinates displayed in a git diff command
-   * For instance:
-   * $ git diff
-   * diff --git file.txt file.txt
-   * index 6214953..1d54a52 100644
-   * --- file.txt
-   * +++ file.txt
-   * @@ -1 +1,2 @@
-   * -Here's my tetx file
-   * +Here's my text file
-   * +And this is the second line
-   */
-  'coord': /^@@.*@@$/m,
-
-  /*
-   * Match a "commit [SHA1]" line in a git log output.
-   * For instance:
-   * $ git log
-   * commit a11a14ef7e26f2ca62d4b35eac455ce636d0dc09
-   * Author: lgiraudel
-   * Date:   Mon Feb 17 11:18:34 2014 +0100
-   *
-   *     Add of a new line
-   */
-  'commit_sha1': /^commit \w{40}$/m
-};
-/* "prismjs/components/prism-go" */
-
-Prism.languages.go = Prism.languages.extend('clike', {
-  'keyword': /\b(?:break|case|chan|const|continue|default|defer|else|fallthrough|for|func|go(?:to)?|if|import|interface|map|package|range|return|select|struct|switch|type|var)\b/,
-  'builtin': /\b(?:bool|byte|complex(?:64|128)|error|float(?:32|64)|rune|string|u?int(?:8|16|32|64)?|uintptr|append|cap|close|complex|copy|delete|imag|len|make|new|panic|print(?:ln)?|real|recover)\b/,
-  'boolean': /\b(?:_|iota|nil|true|false)\b/,
-  'operator': /[*\/%^!=]=?|\+[=+]?|-[=-]?|\|[=|]?|&(?:=|&|\^=?)?|>(?:>=?|=)?|<(?:<=?|=|-)?|:=|\.\.\./,
-  'number': /(?:\b0x[a-f\d]+|(?:\b\d+\.?\d*|\B\.\d+)(?:e[-+]?\d+)?)i?/i,
-  'string': {
-    pattern: /(["'`])(?:\\[\s\S]|(?!\1)[^\\])*\1/,
-    greedy: true
-  }
-});
-delete Prism.languages.go['class-name'];
-/* "prismjs/components/prism-graphql" */
-
-Prism.languages.graphql = {
-  'comment': /#.*/,
-  'string': {
-    pattern: /"(?:\\.|[^\\"\r\n])*"/,
-    greedy: true
-  },
-  'number': /(?:\B-|\b)\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
-  'boolean': /\b(?:true|false)\b/,
-  'variable': /\$[a-z_]\w*/i,
-  'directive': {
-    pattern: /@[a-z_]\w*/i,
-    alias: 'function'
-  },
-  'attr-name': {
-    pattern: /[a-z_]\w*(?=\s*(?:\((?:[^()"]|"(?:\\.|[^\\"\r\n])*")*\))?:)/i,
-    greedy: true
-  },
-  'class-name': {
-    pattern: /(\b(?:enum|implements|interface|on|scalar|type|union)\s+)[a-zA-Z_]\w*/,
-    lookbehind: true
-  },
-  'fragment': {
-    pattern: /(\bfragment\s+|\.{3}\s*(?!on\b))[a-zA-Z_]\w*/,
-    lookbehind: true,
-    alias: 'function'
-  },
-  'keyword': /\b(?:enum|fragment|implements|input|interface|mutation|on|query|scalar|schema|type|union)\b/,
-  'operator': /[!=|]|\.{3}/,
-  'punctuation': /[!(){}\[\]:=,]/,
-  'constant': /\b(?!ID\b)[A-Z][A-Z_\d]*\b/
-};
-/* "prismjs/components/prism-markup-templating" */
-
-(function (Prism) {
-  /**
-   * Returns the placeholder for the given language id and index.
-   *
-   * @param {string} language
-   * @param {string|number} index
-   * @returns {string}
-   */
-  function getPlaceholder(language, index) {
-    return '___' + language.toUpperCase() + index + '___';
-  }
-
-  Object.defineProperties(Prism.languages['markup-templating'] = {}, {
-    buildPlaceholders: {
-      /**
-       * Tokenize all inline templating expressions matching `placeholderPattern`.
-       *
-       * If `replaceFilter` is provided, only matches of `placeholderPattern` for which `replaceFilter` returns
-       * `true` will be replaced.
-       *
-       * @param {object} env The environment of the `before-tokenize` hook.
-       * @param {string} language The language id.
-       * @param {RegExp} placeholderPattern The matches of this pattern will be replaced by placeholders.
-       * @param {(match: string) => boolean} [replaceFilter]
-       */
-      value: function (env, language, placeholderPattern, replaceFilter) {
-        if (env.language !== language) {
-          return;
-        }
-
-        var tokenStack = env.tokenStack = [];
-        env.code = env.code.replace(placeholderPattern, function (match) {
-          if (typeof replaceFilter === 'function' && !replaceFilter(match)) {
-            return match;
-          }
-
-          var i = tokenStack.length;
-          var placeholder; // Check for existing strings
-
-          while (env.code.indexOf(placeholder = getPlaceholder(language, i)) !== -1) {
-            ++i;
-          } // Create a sparse array
-
-
-          tokenStack[i] = match;
-          return placeholder;
-        }); // Switch the grammar to markup
-
-        env.grammar = Prism.languages.markup;
-      }
-    },
-    tokenizePlaceholders: {
-      /**
-       * Replace placeholders with proper tokens after tokenizing.
-       *
-       * @param {object} env The environment of the `after-tokenize` hook.
-       * @param {string} language The language id.
-       */
-      value: function (env, language) {
-        if (env.language !== language || !env.tokenStack) {
-          return;
-        } // Switch the grammar back
-
-
-        env.grammar = Prism.languages[language];
-        var j = 0;
-        var keys = Object.keys(env.tokenStack);
-
-        function walkTokens(tokens) {
-          for (var i = 0; i < tokens.length; i++) {
-            // all placeholders are replaced already
-            if (j >= keys.length) {
-              break;
-            }
-
-            var token = tokens[i];
-
-            if (typeof token === 'string' || token.content && typeof token.content === 'string') {
-              var k = keys[j];
-              var t = env.tokenStack[k];
-              var s = typeof token === 'string' ? token : token.content;
-              var placeholder = getPlaceholder(language, k);
-              var index = s.indexOf(placeholder);
-
-              if (index > -1) {
-                ++j;
-                var before = s.substring(0, index);
-                var middle = new Prism.Token(language, Prism.tokenize(t, env.grammar), 'language-' + language, t);
-                var after = s.substring(index + placeholder.length);
-                var replacement = [];
-
-                if (before) {
-                  replacement.push.apply(replacement, walkTokens([before]));
-                }
-
-                replacement.push(middle);
-
-                if (after) {
-                  replacement.push.apply(replacement, walkTokens([after]));
-                }
-
-                if (typeof token === 'string') {
-                  tokens.splice.apply(tokens, [i, 1].concat(replacement));
-                } else {
-                  token.content = replacement;
-                }
-              }
-            } else if (token.content
-            /* && typeof token.content !== 'string' */
-            ) {
-                walkTokens(token.content);
-              }
-          }
-
-          return tokens;
-        }
-
-        walkTokens(env.tokens);
-      }
-    }
-  });
-})(Prism);
-/* "prismjs/components/prism-handlebars" */
-
-
-(function (Prism) {
-  Prism.languages.handlebars = {
-    'comment': /\{\{![\s\S]*?\}\}/,
-    'delimiter': {
-      pattern: /^\{\{\{?|\}\}\}?$/i,
-      alias: 'punctuation'
-    },
-    'string': /(["'])(?:\\.|(?!\1)[^\\\r\n])*\1/,
-    'number': /\b0x[\dA-Fa-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:[Ee][+-]?\d+)?/,
-    'boolean': /\b(?:true|false)\b/,
-    'block': {
-      pattern: /^(\s*~?\s*)[#\/]\S+?(?=\s*~?\s*$|\s)/i,
-      lookbehind: true,
-      alias: 'keyword'
-    },
-    'brackets': {
-      pattern: /\[[^\]]+\]/,
-      inside: {
-        punctuation: /\[|\]/,
-        variable: /[\s\S]+/
-      }
-    },
-    'punctuation': /[!"#%&':()*+,.\/;<=>@\[\\\]^`{|}~]/,
-    'variable': /[^!"#%&'()*+,\/;<=>@\[\\\]^`{|}~\s]+/
-  };
-  Prism.hooks.add('before-tokenize', function (env) {
-    var handlebarsPattern = /\{\{\{[\s\S]+?\}\}\}|\{\{[\s\S]+?\}\}/g;
-    Prism.languages['markup-templating'].buildPlaceholders(env, 'handlebars', handlebarsPattern);
-  });
-  Prism.hooks.add('after-tokenize', function (env) {
-    Prism.languages['markup-templating'].tokenizePlaceholders(env, 'handlebars');
-  });
-})(Prism);
-/* "prismjs/components/prism-json" */
-
-
-Prism.languages.json = {
-  'property': {
-    pattern: /"(?:\\.|[^\\"\r\n])*"(?=\s*:)/,
-    greedy: true
-  },
-  'string': {
-    pattern: /"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
-    greedy: true
-  },
-  'comment': /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
-  'number': /-?\d+\.?\d*(?:e[+-]?\d+)?/i,
-  'punctuation': /[{}[\],]/,
-  'operator': /:/,
-  'boolean': /\b(?:true|false)\b/,
-  'null': {
-    pattern: /\bnull\b/,
-    alias: 'keyword'
-  }
-};
-/* "prismjs/components/prism-less" */
-
-/* FIXME :
- :extend() is not handled specifically : its highlighting is buggy.
- Mixin usage must be inside a ruleset to be highlighted.
- At-rules (e.g. import) containing interpolations are buggy.
- Detached rulesets are highlighted as at-rules.
- A comment before a mixin usage prevents the latter to be properly highlighted.
- */
-
-Prism.languages.less = Prism.languages.extend('css', {
-  'comment': [/\/\*[\s\S]*?\*\//, {
-    pattern: /(^|[^\\])\/\/.*/,
-    lookbehind: true
-  }],
-  'atrule': {
-    pattern: /@[\w-]+?(?:\((?:[^(){}]|\([^(){}]*\))*\)|[^(){};])*?(?=\s*\{)/,
-    inside: {
-      'punctuation': /[:()]/
-    }
-  },
-  // selectors and mixins are considered the same
-  'selector': {
-    pattern: /(?:@\{[\w-]+\}|[^{};\s@])(?:@\{[\w-]+\}|\((?:[^(){}]|\([^(){}]*\))*\)|[^(){};@])*?(?=\s*\{)/,
-    inside: {
-      // mixin parameters
-      'variable': /@+[\w-]+/
-    }
-  },
-  'property': /(?:@\{[\w-]+\}|[\w-])+(?:\+_?)?(?=\s*:)/i,
-  'operator': /[+\-*\/]/
-});
-Prism.languages.insertBefore('less', 'property', {
-  'variable': [// Variable declaration (the colon must be consumed!)
-  {
-    pattern: /@[\w-]+\s*:/,
-    inside: {
-      "punctuation": /:/
-    }
-  }, // Variable usage
-  /@@?[\w-]+/],
-  'mixin-usage': {
-    pattern: /([{;]\s*)[.#](?!\d)[\w-]+.*?(?=[(;])/,
-    lookbehind: true,
-    alias: 'function'
-  }
-});
-/* "prismjs/components/prism-makefile" */
-
-Prism.languages.makefile = {
-  'comment': {
-    pattern: /(^|[^\\])#(?:\\(?:\r\n|[\s\S])|[^\\\r\n])*/,
-    lookbehind: true
-  },
-  'string': {
-    pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
-    greedy: true
-  },
-  // Built-in target names
-  'builtin': /\.[A-Z][^:#=\s]+(?=\s*:(?!=))/,
-  // Targets
-  'symbol': {
-    pattern: /^[^:=\r\n]+(?=\s*:(?!=))/m,
-    inside: {
-      'variable': /\$+(?:[^(){}:#=\s]+|(?=[({]))/
-    }
-  },
-  'variable': /\$+(?:[^(){}:#=\s]+|\([@*%<^+?][DF]\)|(?=[({]))/,
-  'keyword': [// Directives
-  /-include\b|\b(?:define|else|endef|endif|export|ifn?def|ifn?eq|include|override|private|sinclude|undefine|unexport|vpath)\b/, // Functions
-  {
-    pattern: /(\()(?:addsuffix|abspath|and|basename|call|dir|error|eval|file|filter(?:-out)?|findstring|firstword|flavor|foreach|guile|if|info|join|lastword|load|notdir|or|origin|patsubst|realpath|shell|sort|strip|subst|suffix|value|warning|wildcard|word(?:s|list)?)(?=[ \t])/,
-    lookbehind: true
-  }],
-  'operator': /(?:::|[?:+!])?=|[|@]/,
-  'punctuation': /[:;(){}]/
-};
-/* "prismjs/components/prism-markdown" */
-
-(function (Prism) {
-  // Allow only one line break
-  var inner = /(?:\\.|[^\\\n\r]|(?:\n|\r\n?)(?!\n|\r\n?))/.source;
-  /**
-   * This function is intended for the creation of the bold or italic pattern.
-   *
-   * This also adds a lookbehind group to the given pattern to ensure that the pattern is not backslash-escaped.
-   *
-   * _Note:_ Keep in mind that this adds a capturing group.
-   *
-   * @param {string} pattern
-   * @param {boolean} starAlternative Whether to also add an alternative where all `_`s are replaced with `*`s.
-   * @returns {RegExp}
-   */
-
-  function createInline(pattern, starAlternative) {
-    pattern = pattern.replace(/<inner>/g, function () {
-      return inner;
-    });
-
-    if (starAlternative) {
-      pattern = pattern + '|' + pattern.replace(/_/g, '\\*');
-    }
-
-    return RegExp(/((?:^|[^\\])(?:\\{2})*)/.source + '(?:' + pattern + ')');
-  }
-
-  var tableCell = /(?:\\.|``.+?``|`[^`\r\n]+`|[^\\|\r\n`])+/.source;
-  var tableRow = /\|?__(?:\|__)+\|?(?:(?:\n|\r\n?)|$)/.source.replace(/__/g, function () {
-    return tableCell;
-  });
-  var tableLine = /\|?[ \t]*:?-{3,}:?[ \t]*(?:\|[ \t]*:?-{3,}:?[ \t]*)+\|?(?:\n|\r\n?)/.source;
-  Prism.languages.markdown = Prism.languages.extend('markup', {});
-  Prism.languages.insertBefore('markdown', 'prolog', {
-    'blockquote': {
-      // > ...
-      pattern: /^>(?:[\t ]*>)*/m,
-      alias: 'punctuation'
-    },
-    'table': {
-      pattern: RegExp('^' + tableRow + tableLine + '(?:' + tableRow + ')*', 'm'),
-      inside: {
-        'table-data-rows': {
-          pattern: RegExp('^(' + tableRow + tableLine + ')(?:' + tableRow + ')*$'),
-          lookbehind: true,
-          inside: {
-            'table-data': {
-              pattern: RegExp(tableCell),
-              inside: Prism.languages.markdown
-            },
-            'punctuation': /\|/
-          }
-        },
-        'table-line': {
-          pattern: RegExp('^(' + tableRow + ')' + tableLine + '$'),
-          lookbehind: true,
-          inside: {
-            'punctuation': /\||:?-{3,}:?/
-          }
-        },
-        'table-header-row': {
-          pattern: RegExp('^' + tableRow + '$'),
-          inside: {
-            'table-header': {
-              pattern: RegExp(tableCell),
-              alias: 'important',
-              inside: Prism.languages.markdown
-            },
-            'punctuation': /\|/
-          }
-        }
-      }
-    },
-    'code': [{
-      // Prefixed by 4 spaces or 1 tab and preceded by an empty line
-      pattern: /((?:^|\n)[ \t]*\n|(?:^|\r\n?)[ \t]*\r\n?)(?: {4}|\t).+(?:(?:\n|\r\n?)(?: {4}|\t).+)*/,
-      lookbehind: true,
-      alias: 'keyword'
-    }, {
-      // `code`
-      // ``code``
-      pattern: /``.+?``|`[^`\r\n]+`/,
-      alias: 'keyword'
-    }, {
-      // ```optional language
-      // code block
-      // ```
-      pattern: /^```[\s\S]*?^```$/m,
-      greedy: true,
-      inside: {
-        'code-block': {
-          pattern: /^(```.*(?:\n|\r\n?))[\s\S]+?(?=(?:\n|\r\n?)^```$)/m,
-          lookbehind: true
-        },
-        'code-language': {
-          pattern: /^(```).+/,
-          lookbehind: true
-        },
-        'punctuation': /```/
-      }
-    }],
-    'title': [{
-      // title 1
-      // =======
-      // title 2
-      // -------
-      pattern: /\S.*(?:\n|\r\n?)(?:==+|--+)(?=[ \t]*$)/m,
-      alias: 'important',
-      inside: {
-        punctuation: /==+$|--+$/
-      }
-    }, {
-      // # title 1
-      // ###### title 6
-      pattern: /(^\s*)#+.+/m,
-      lookbehind: true,
-      alias: 'important',
-      inside: {
-        punctuation: /^#+|#+$/
-      }
-    }],
-    'hr': {
-      // ***
-      // ---
-      // * * *
-      // -----------
-      pattern: /(^\s*)([*-])(?:[\t ]*\2){2,}(?=\s*$)/m,
-      lookbehind: true,
-      alias: 'punctuation'
-    },
-    'list': {
-      // * item
-      // + item
-      // - item
-      // 1. item
-      pattern: /(^\s*)(?:[*+-]|\d+\.)(?=[\t ].)/m,
-      lookbehind: true,
-      alias: 'punctuation'
-    },
-    'url-reference': {
-      // [id]: http://example.com "Optional title"
-      // [id]: http://example.com 'Optional title'
-      // [id]: http://example.com (Optional title)
-      // [id]: <http://example.com> "Optional title"
-      pattern: /!?\[[^\]]+\]:[\t ]+(?:\S+|<(?:\\.|[^>\\])+>)(?:[\t ]+(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\((?:\\.|[^)\\])*\)))?/,
-      inside: {
-        'variable': {
-          pattern: /^(!?\[)[^\]]+/,
-          lookbehind: true
-        },
-        'string': /(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\((?:\\.|[^)\\])*\))$/,
-        'punctuation': /^[\[\]!:]|[<>]/
-      },
-      alias: 'url'
-    },
-    'bold': {
-      // **strong**
-      // __strong__
-      // allow one nested instance of italic text using the same delimiter
-      pattern: createInline(/__(?:(?!_)<inner>|_(?:(?!_)<inner>)+_)+__/.source, true),
-      lookbehind: true,
-      greedy: true,
-      inside: {
-        'content': {
-          pattern: /(^..)[\s\S]+(?=..$)/,
-          lookbehind: true,
-          inside: {} // see below
-
-        },
-        'punctuation': /\*\*|__/
-      }
-    },
-    'italic': {
-      // *em*
-      // _em_
-      // allow one nested instance of bold text using the same delimiter
-      pattern: createInline(/_(?:(?!_)<inner>|__(?:(?!_)<inner>)+__)+_/.source, true),
-      lookbehind: true,
-      greedy: true,
-      inside: {
-        'content': {
-          pattern: /(^.)[\s\S]+(?=.$)/,
-          lookbehind: true,
-          inside: {} // see below
-
-        },
-        'punctuation': /[*_]/
-      }
-    },
-    'strike': {
-      // ~~strike through~~
-      // ~strike~
-      pattern: createInline(/(~~?)(?:(?!~)<inner>)+?\2/.source, false),
-      lookbehind: true,
-      greedy: true,
-      inside: {
-        'content': {
-          pattern: /(^~~?)[\s\S]+(?=\1$)/,
-          lookbehind: true,
-          inside: {} // see below
-
-        },
-        'punctuation': /~~?/
-      }
-    },
-    'url': {
-      // [example](http://example.com "Optional title")
-      // [example][id]
-      // [example] [id]
-      pattern: createInline(/!?\[(?:(?!\])<inner>)+\](?:\([^\s)]+(?:[\t ]+"(?:\\.|[^"\\])*")?\)| ?\[(?:(?!\])<inner>)+\])/.source, false),
-      lookbehind: true,
-      greedy: true,
-      inside: {
-        'variable': {
-          pattern: /(\[)[^\]]+(?=\]$)/,
-          lookbehind: true
-        },
-        'content': {
-          pattern: /(^!?\[)[^\]]+(?=\])/,
-          lookbehind: true,
-          inside: {} // see below
-
-        },
-        'string': {
-          pattern: /"(?:\\.|[^"\\])*"(?=\)$)/
-        }
-      }
-    }
-  });
-  ['url', 'bold', 'italic', 'strike'].forEach(function (token) {
-    ['url', 'bold', 'italic', 'strike'].forEach(function (inside) {
-      if (token !== inside) {
-        Prism.languages.markdown[token].inside.content.inside[inside] = Prism.languages.markdown[inside];
-      }
-    });
-  });
-  Prism.hooks.add('after-tokenize', function (env) {
-    if (env.language !== 'markdown' && env.language !== 'md') {
-      return;
-    }
-
-    function walkTokens(tokens) {
-      if (!tokens || typeof tokens === 'string') {
-        return;
-      }
-
-      for (var i = 0, l = tokens.length; i < l; i++) {
-        var token = tokens[i];
-
-        if (token.type !== 'code') {
-          walkTokens(token.content);
-          continue;
-        }
-        /*
-         * Add the correct `language-xxxx` class to this code block. Keep in mind that the `code-language` token
-         * is optional. But the grammar is defined so that there is only one case we have to handle:
-         *
-         * token.content = [
-         *     <span class="punctuation">```</span>,
-         *     <span class="code-language">xxxx</span>,
-         *     '\n', // exactly one new lines (\r or \n or \r\n)
-         *     <span class="code-block">...</span>,
-         *     '\n', // exactly one new lines again
-         *     <span class="punctuation">```</span>
-         * ];
-         */
-
-
-        var codeLang = token.content[1];
-        var codeBlock = token.content[3];
-
-        if (codeLang && codeBlock && codeLang.type === 'code-language' && codeBlock.type === 'code-block' && typeof codeLang.content === 'string') {
-          // this might be a language that Prism does not support
-          // do some replacements to support C++, C#, and F#
-          var lang = codeLang.content.replace(/\b#/g, 'sharp').replace(/\b\+\+/g, 'pp'); // only use the first word
-
-          lang = (/[a-z][\w-]*/i.exec(lang) || [''])[0].toLowerCase();
-          var alias = 'language-' + lang; // add alias
-
-          if (!codeBlock.alias) {
-            codeBlock.alias = [alias];
-          } else if (typeof codeBlock.alias === 'string') {
-            codeBlock.alias = [codeBlock.alias, alias];
-          } else {
-            codeBlock.alias.push(alias);
-          }
-        }
-      }
-    }
-
-    walkTokens(env.tokens);
-  });
-  Prism.hooks.add('wrap', function (env) {
-    if (env.type !== 'code-block') {
-      return;
-    }
-
-    var codeLang = '';
-
-    for (var i = 0, l = env.classes.length; i < l; i++) {
-      var cls = env.classes[i];
-      var match = /language-(.+)/.exec(cls);
-
-      if (match) {
-        codeLang = match[1];
-        break;
-      }
-    }
-
-    var grammar = Prism.languages[codeLang];
-
-    if (!grammar) {
-      if (codeLang && codeLang !== 'none' && Prism.plugins.autoloader) {
-        var id = 'md-' + new Date().valueOf() + '-' + Math.floor(Math.random() * 1e16);
-        env.attributes['id'] = id;
-        Prism.plugins.autoloader.loadLanguages(codeLang, function () {
-          var ele = document.getElementById(id);
-
-          if (ele) {
-            ele.innerHTML = Prism.highlight(ele.textContent, Prism.languages[codeLang], codeLang);
-          }
-        });
-      }
-    } else {
-      // reverse Prism.util.encode
-      var code = env.content.replace(/&lt;/g, '<').replace(/&amp;/g, '&');
-      env.content = Prism.highlight(code, grammar, codeLang);
-    }
-  });
-  Prism.languages.md = Prism.languages.markdown;
-})(Prism);
-/* "prismjs/components/prism-objectivec" */
-
-
-Prism.languages.objectivec = Prism.languages.extend('c', {
-  'keyword': /\b(?:asm|typeof|inline|auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while|in|self|super)\b|(?:@interface|@end|@implementation|@protocol|@class|@public|@protected|@private|@property|@try|@catch|@finally|@throw|@synthesize|@dynamic|@selector)\b/,
-  'string': /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1|@"(?:\\(?:\r\n|[\s\S])|[^"\\\r\n])*"/,
-  'operator': /-[->]?|\+\+?|!=?|<<?=?|>>?=?|==?|&&?|\|\|?|[~^%?*\/@]/
-});
-delete Prism.languages.objectivec['class-name'];
-/* "prismjs/components/prism-ocaml" */
-
-Prism.languages.ocaml = {
-  'comment': /\(\*[\s\S]*?\*\)/,
-  'string': [{
-    pattern: /"(?:\\.|[^\\\r\n"])*"/,
-    greedy: true
-  }, {
-    pattern: /(['`])(?:\\(?:\d+|x[\da-f]+|.)|(?!\1)[^\\\r\n])\1/i,
-    greedy: true
-  }],
-  'number': /\b(?:0x[\da-f][\da-f_]+|(?:0[bo])?\d[\d_]*\.?[\d_]*(?:e[+-]?[\d_]+)?)/i,
-  'directive': {
-    pattern: /\B#\w+/,
-    alias: 'important'
-  },
-  'label': {
-    pattern: /\B~\w+/,
-    alias: 'function'
-  },
-  'type_variable': {
-    pattern: /\B'\w+/,
-    alias: 'function'
-  },
-  'variant': {
-    pattern: /`\w+/,
-    alias: 'variable'
-  },
-  'module': {
-    pattern: /\b[A-Z]\w+/,
-    alias: 'variable'
-  },
-  // For the list of keywords and operators,
-  // see: http://caml.inria.fr/pub/docs/manual-ocaml/lex.html#sec84
-  'keyword': /\b(?:as|assert|begin|class|constraint|do|done|downto|else|end|exception|external|for|fun|function|functor|if|in|include|inherit|initializer|lazy|let|match|method|module|mutable|new|nonrec|object|of|open|private|rec|sig|struct|then|to|try|type|val|value|virtual|when|where|while|with)\b/,
-  'boolean': /\b(?:false|true)\b/,
-  // Custom operators are allowed
-  'operator': /:=|[=<>@^|&+\-*\/$%!?~][!$%&*+\-.\/:<=>?@^|~]*|\b(?:and|asr|land|lor|lsl|lsr|lxor|mod|or)\b/,
-  'punctuation': /[(){}\[\]|_.,:;]/
-};
-/* "prismjs/components/prism-python" */
-
-Prism.languages.python = {
-  'comment': {
-    pattern: /(^|[^\\])#.*/,
-    lookbehind: true
-  },
-  'string-interpolation': {
-    pattern: /(?:f|rf|fr)(?:("""|''')[\s\S]+?\1|("|')(?:\\.|(?!\2)[^\\\r\n])*\2)/i,
-    greedy: true,
-    inside: {
-      'interpolation': {
-        // "{" <expression> <optional "!s", "!r", or "!a"> <optional ":" format specifier> "}"
-        pattern: /((?:^|[^{])(?:{{)*){(?!{)(?:[^{}]|{(?!{)(?:[^{}]|{(?!{)(?:[^{}])+})+})+}/,
-        lookbehind: true,
-        inside: {
-          'format-spec': {
-            pattern: /(:)[^:(){}]+(?=}$)/,
-            lookbehind: true
-          },
-          'conversion-option': {
-            pattern: /![sra](?=[:}]$)/,
-            alias: 'punctuation'
-          },
-          rest: null
-        }
-      },
-      'string': /[\s\S]+/
-    }
-  },
-  'triple-quoted-string': {
-    pattern: /(?:[rub]|rb|br)?("""|''')[\s\S]+?\1/i,
-    greedy: true,
-    alias: 'string'
-  },
-  'string': {
-    pattern: /(?:[rub]|rb|br)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i,
-    greedy: true
-  },
-  'function': {
-    pattern: /((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g,
-    lookbehind: true
-  },
-  'class-name': {
-    pattern: /(\bclass\s+)\w+/i,
-    lookbehind: true
-  },
-  'decorator': {
-    pattern: /(^\s*)@\w+(?:\.\w+)*/im,
-    lookbehind: true,
-    alias: ['annotation', 'punctuation'],
-    inside: {
-      'punctuation': /\./
-    }
-  },
-  'keyword': /\b(?:and|as|assert|async|await|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|nonlocal|not|or|pass|print|raise|return|try|while|with|yield)\b/,
-  'builtin': /\b(?:__import__|abs|all|any|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/,
-  'boolean': /\b(?:True|False|None)\b/,
-  'number': /(?:\b(?=\d)|\B(?=\.))(?:0[bo])?(?:(?:\d|0x[\da-f])[\da-f]*\.?\d*|\.\d+)(?:e[+-]?\d+)?j?\b/i,
-  'operator': /[-+%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
-  'punctuation': /[{}[\];(),.:]/
-};
-Prism.languages.python['string-interpolation'].inside['interpolation'].inside.rest = Prism.languages.python;
-Prism.languages.py = Prism.languages.python;
-/* "prismjs/components/prism-reason" */
-
-Prism.languages.reason = Prism.languages.extend('clike', {
-  'string': {
-    pattern: /"(?:\\(?:\r\n|[\s\S])|[^\\\r\n"])*"/,
-    greedy: true
-  },
-  // 'class-name' must be matched *after* 'constructor' defined below
-  'class-name': /\b[A-Z]\w*/,
-  'keyword': /\b(?:and|as|assert|begin|class|constraint|do|done|downto|else|end|exception|external|for|fun|function|functor|if|in|include|inherit|initializer|lazy|let|method|module|mutable|new|nonrec|object|of|open|or|private|rec|sig|struct|switch|then|to|try|type|val|virtual|when|while|with)\b/,
-  'operator': /\.{3}|:[:=]|\|>|->|=(?:==?|>)?|<=?|>=?|[|^?'#!~`]|[+\-*\/]\.?|\b(?:mod|land|lor|lxor|lsl|lsr|asr)\b/
-});
-Prism.languages.insertBefore('reason', 'class-name', {
-  'character': {
-    pattern: /'(?:\\x[\da-f]{2}|\\o[0-3][0-7][0-7]|\\\d{3}|\\.|[^'\\\r\n])'/,
-    alias: 'string'
-  },
-  'constructor': {
-    // Negative look-ahead prevents from matching things like String.capitalize
-    pattern: /\b[A-Z]\w*\b(?!\s*\.)/,
-    alias: 'variable'
-  },
-  'label': {
-    pattern: /\b[a-z]\w*(?=::)/,
-    alias: 'symbol'
-  }
-}); // We can't match functions property, so let's not even try.
-
-delete Prism.languages.reason.function;
-/* "prismjs/components/prism-sass" */
-
-(function (Prism) {
-  Prism.languages.sass = Prism.languages.extend('css', {
-    // Sass comments don't need to be closed, only indented
-    'comment': {
-      pattern: /^([ \t]*)\/[\/*].*(?:(?:\r?\n|\r)\1[ \t]+.+)*/m,
-      lookbehind: true
-    }
-  });
-  Prism.languages.insertBefore('sass', 'atrule', {
-    // We want to consume the whole line
-    'atrule-line': {
-      // Includes support for = and + shortcuts
-      pattern: /^(?:[ \t]*)[@+=].+/m,
-      inside: {
-        'atrule': /(?:@[\w-]+|[+=])/m
-      }
-    }
-  });
-  delete Prism.languages.sass.atrule;
-  var variable = /\$[-\w]+|#\{\$[-\w]+\}/;
-  var operator = [/[+*\/%]|[=!]=|<=?|>=?|\b(?:and|or|not)\b/, {
-    pattern: /(\s+)-(?=\s)/,
-    lookbehind: true
-  }];
-  Prism.languages.insertBefore('sass', 'property', {
-    // We want to consume the whole line
-    'variable-line': {
-      pattern: /^[ \t]*\$.+/m,
-      inside: {
-        'punctuation': /:/,
-        'variable': variable,
-        'operator': operator
-      }
-    },
-    // We want to consume the whole line
-    'property-line': {
-      pattern: /^[ \t]*(?:[^:\s]+ *:.*|:[^:\s]+.*)/m,
-      inside: {
-        'property': [/[^:\s]+(?=\s*:)/, {
-          pattern: /(:)[^:\s]+/,
-          lookbehind: true
-        }],
-        'punctuation': /:/,
-        'variable': variable,
-        'operator': operator,
-        'important': Prism.languages.sass.important
-      }
-    }
-  });
-  delete Prism.languages.sass.property;
-  delete Prism.languages.sass.important; // Now that whole lines for other patterns are consumed,
-  // what's left should be selectors
-
-  Prism.languages.insertBefore('sass', 'punctuation', {
-    'selector': {
-      pattern: /([ \t]*)\S(?:,?[^,\r\n]+)*(?:,(?:\r?\n|\r)\1[ \t]+\S(?:,?[^,\r\n]+)*)*/,
-      lookbehind: true
-    }
-  });
-})(Prism);
-/* "prismjs/components/prism-scss" */
-
-
-Prism.languages.scss = Prism.languages.extend('css', {
-  'comment': {
-    pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|\/\/.*)/,
-    lookbehind: true
-  },
-  'atrule': {
-    pattern: /@[\w-]+(?:\([^()]+\)|[^(])*?(?=\s+[{;])/,
-    inside: {
-      'rule': /@[\w-]+/ // See rest below
-
-    }
-  },
-  // url, compassified
-  'url': /(?:[-a-z]+-)?url(?=\()/i,
-  // CSS selector regex is not appropriate for Sass
-  // since there can be lot more things (var, @ directive, nesting..)
-  // a selector must start at the end of a property or after a brace (end of other rules or nesting)
-  // it can contain some characters that aren't used for defining rules or end of selector, & (parent selector), or interpolated variable
-  // the end of a selector is found when there is no rules in it ( {} or {\s}) or if there is a property (because an interpolated var
-  // can "pass" as a selector- e.g: proper#{$erty})
-  // this one was hard to do, so please be careful if you edit this one :)
-  'selector': {
-    // Initial look-ahead is used to prevent matching of blank selectors
-    pattern: /(?=\S)[^@;{}()]?(?:[^@;{}()]|#\{\$[-\w]+\})+(?=\s*\{(?:\}|\s|[^}]+[:{][^}]+))/m,
-    inside: {
-      'parent': {
-        pattern: /&/,
-        alias: 'important'
-      },
-      'placeholder': /%[-\w]+/,
-      'variable': /\$[-\w]+|#\{\$[-\w]+\}/
-    }
-  },
-  'property': {
-    pattern: /(?:[\w-]|\$[-\w]+|#\{\$[-\w]+\})+(?=\s*:)/,
-    inside: {
-      'variable': /\$[-\w]+|#\{\$[-\w]+\}/
-    }
-  }
-});
-Prism.languages.insertBefore('scss', 'atrule', {
-  'keyword': [/@(?:if|else(?: if)?|for|each|while|import|extend|debug|warn|mixin|include|function|return|content)/i, {
-    pattern: /( +)(?:from|through)(?= )/,
-    lookbehind: true
-  }]
-});
-Prism.languages.insertBefore('scss', 'important', {
-  // var and interpolated vars
-  'variable': /\$[-\w]+|#\{\$[-\w]+\}/
-});
-Prism.languages.insertBefore('scss', 'function', {
-  'placeholder': {
-    pattern: /%[-\w]+/,
-    alias: 'selector'
-  },
-  'statement': {
-    pattern: /\B!(?:default|optional)\b/i,
-    alias: 'keyword'
-  },
-  'boolean': /\b(?:true|false)\b/,
-  'null': {
-    pattern: /\bnull\b/,
-    alias: 'keyword'
-  },
-  'operator': {
-    pattern: /(\s)(?:[-+*\/%]|[=!]=|<=?|>=?|and|or|not)(?=\s)/,
-    lookbehind: true
-  }
-});
-Prism.languages.scss['atrule'].inside.rest = Prism.languages.scss;
-/* "prismjs/components/prism-sql" */
-
-Prism.languages.sql = {
-  'comment': {
-    pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|(?:--|\/\/|#).*)/,
-    lookbehind: true
-  },
-  'variable': [{
-    pattern: /@(["'`])(?:\\[\s\S]|(?!\1)[^\\])+\1/,
-    greedy: true
-  }, /@[\w.$]+/],
-  'string': {
-    pattern: /(^|[^@\\])("|')(?:\\[\s\S]|(?!\2)[^\\]|\2\2)*\2/,
-    greedy: true,
-    lookbehind: true
-  },
-  'function': /\b(?:AVG|COUNT|FIRST|FORMAT|LAST|LCASE|LEN|MAX|MID|MIN|MOD|NOW|ROUND|SUM|UCASE)(?=\s*\()/i,
-  // Should we highlight user defined functions too?
-  'keyword': /\b(?:ACTION|ADD|AFTER|ALGORITHM|ALL|ALTER|ANALYZE|ANY|APPLY|AS|ASC|AUTHORIZATION|AUTO_INCREMENT|BACKUP|BDB|BEGIN|BERKELEYDB|BIGINT|BINARY|BIT|BLOB|BOOL|BOOLEAN|BREAK|BROWSE|BTREE|BULK|BY|CALL|CASCADED?|CASE|CHAIN|CHAR(?:ACTER|SET)?|CHECK(?:POINT)?|CLOSE|CLUSTERED|COALESCE|COLLATE|COLUMNS?|COMMENT|COMMIT(?:TED)?|COMPUTE|CONNECT|CONSISTENT|CONSTRAINT|CONTAINS(?:TABLE)?|CONTINUE|CONVERT|CREATE|CROSS|CURRENT(?:_DATE|_TIME|_TIMESTAMP|_USER)?|CURSOR|CYCLE|DATA(?:BASES?)?|DATE(?:TIME)?|DAY|DBCC|DEALLOCATE|DEC|DECIMAL|DECLARE|DEFAULT|DEFINER|DELAYED|DELETE|DELIMITERS?|DENY|DESC|DESCRIBE|DETERMINISTIC|DISABLE|DISCARD|DISK|DISTINCT|DISTINCTROW|DISTRIBUTED|DO|DOUBLE|DROP|DUMMY|DUMP(?:FILE)?|DUPLICATE|ELSE(?:IF)?|ENABLE|ENCLOSED|END|ENGINE|ENUM|ERRLVL|ERRORS|ESCAPED?|EXCEPT|EXEC(?:UTE)?|EXISTS|EXIT|EXPLAIN|EXTENDED|FETCH|FIELDS|FILE|FILLFACTOR|FIRST|FIXED|FLOAT|FOLLOWING|FOR(?: EACH ROW)?|FORCE|FOREIGN|FREETEXT(?:TABLE)?|FROM|FULL|FUNCTION|GEOMETRY(?:COLLECTION)?|GLOBAL|GOTO|GRANT|GROUP|HANDLER|HASH|HAVING|HOLDLOCK|HOUR|IDENTITY(?:_INSERT|COL)?|IF|IGNORE|IMPORT|INDEX|INFILE|INNER|INNODB|INOUT|INSERT|INT|INTEGER|INTERSECT|INTERVAL|INTO|INVOKER|ISOLATION|ITERATE|JOIN|KEYS?|KILL|LANGUAGE|LAST|LEAVE|LEFT|LEVEL|LIMIT|LINENO|LINES|LINESTRING|LOAD|LOCAL|LOCK|LONG(?:BLOB|TEXT)|LOOP|MATCH(?:ED)?|MEDIUM(?:BLOB|INT|TEXT)|MERGE|MIDDLEINT|MINUTE|MODE|MODIFIES|MODIFY|MONTH|MULTI(?:LINESTRING|POINT|POLYGON)|NATIONAL|NATURAL|NCHAR|NEXT|NO|NONCLUSTERED|NULLIF|NUMERIC|OFF?|OFFSETS?|ON|OPEN(?:DATASOURCE|QUERY|ROWSET)?|OPTIMIZE|OPTION(?:ALLY)?|ORDER|OUT(?:ER|FILE)?|OVER|PARTIAL|PARTITION|PERCENT|PIVOT|PLAN|POINT|POLYGON|PRECEDING|PRECISION|PREPARE|PREV|PRIMARY|PRINT|PRIVILEGES|PROC(?:EDURE)?|PUBLIC|PURGE|QUICK|RAISERROR|READS?|REAL|RECONFIGURE|REFERENCES|RELEASE|RENAME|REPEAT(?:ABLE)?|REPLACE|REPLICATION|REQUIRE|RESIGNAL|RESTORE|RESTRICT|RETURNS?|REVOKE|RIGHT|ROLLBACK|ROUTINE|ROW(?:COUNT|GUIDCOL|S)?|RTREE|RULE|SAVE(?:POINT)?|SCHEMA|SECOND|SELECT|SERIAL(?:IZABLE)?|SESSION(?:_USER)?|SET(?:USER)?|SHARE|SHOW|SHUTDOWN|SIMPLE|SMALLINT|SNAPSHOT|SOME|SONAME|SQL|START(?:ING)?|STATISTICS|STATUS|STRIPED|SYSTEM_USER|TABLES?|TABLESPACE|TEMP(?:ORARY|TABLE)?|TERMINATED|TEXT(?:SIZE)?|THEN|TIME(?:STAMP)?|TINY(?:BLOB|INT|TEXT)|TOP?|TRAN(?:SACTIONS?)?|TRIGGER|TRUNCATE|TSEQUAL|TYPES?|UNBOUNDED|UNCOMMITTED|UNDEFINED|UNION|UNIQUE|UNLOCK|UNPIVOT|UNSIGNED|UPDATE(?:TEXT)?|USAGE|USE|USER|USING|VALUES?|VAR(?:BINARY|CHAR|CHARACTER|YING)|VIEW|WAITFOR|WARNINGS|WHEN|WHERE|WHILE|WITH(?: ROLLUP|IN)?|WORK|WRITE(?:TEXT)?|YEAR)\b/i,
-  'boolean': /\b(?:TRUE|FALSE|NULL)\b/i,
-  'number': /\b0x[\da-f]+\b|\b\d+\.?\d*|\B\.\d+\b/i,
-  'operator': /[-+*\/=%^~]|&&?|\|\|?|!=?|<(?:=>?|<|>)?|>[>=]?|\b(?:AND|BETWEEN|IN|LIKE|NOT|OR|IS|DIV|REGEXP|RLIKE|SOUNDS LIKE|XOR)\b/i,
-  'punctuation': /[;[\]()`,.]/
-};
-/* "prismjs/components/prism-stylus" */
-
-(function (Prism) {
-  var inside = {
-    'url': /url\((["']?).*?\1\)/i,
-    'string': {
-      pattern: /("|')(?:(?!\1)[^\\\r\n]|\\(?:\r\n|[\s\S]))*\1/,
-      greedy: true
-    },
-    'interpolation': null,
-    // See below
-    'func': null,
-    // See below
-    'important': /\B!(?:important|optional)\b/i,
-    'keyword': {
-      pattern: /(^|\s+)(?:(?:if|else|for|return|unless)(?=\s+|$)|@[\w-]+)/,
-      lookbehind: true
-    },
-    'hexcode': /#[\da-f]{3,6}/i,
-    'number': /\b\d+(?:\.\d+)?%?/,
-    'boolean': /\b(?:true|false)\b/,
-    'operator': [// We want non-word chars around "-" because it is
-    // accepted in property names.
-    /~|[+!\/%<>?=]=?|[-:]=|\*[*=]?|\.+|&&|\|\||\B-\B|\b(?:and|in|is(?: a| defined| not|nt)?|not|or)\b/],
-    'punctuation': /[{}()\[\];:,]/
-  };
-  inside['interpolation'] = {
-    pattern: /\{[^\r\n}:]+\}/,
-    alias: 'variable',
-    inside: {
-      'delimiter': {
-        pattern: /^{|}$/,
-        alias: 'punctuation'
-      },
-      rest: inside
-    }
-  };
-  inside['func'] = {
-    pattern: /[\w-]+\([^)]*\).*/,
-    inside: {
-      'function': /^[^(]+/,
-      rest: inside
-    }
-  };
-  Prism.languages.stylus = {
-    'comment': {
-      pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|\/\/.*)/,
-      lookbehind: true
-    },
-    'atrule-declaration': {
-      pattern: /(^\s*)@.+/m,
-      lookbehind: true,
-      inside: {
-        'atrule': /^@[\w-]+/,
-        rest: inside
-      }
-    },
-    'variable-declaration': {
-      pattern: /(^[ \t]*)[\w$-]+\s*.?=[ \t]*(?:(?:\{[^}]*\}|.+)|$)/m,
-      lookbehind: true,
-      inside: {
-        'variable': /^\S+/,
-        rest: inside
-      }
-    },
-    'statement': {
-      pattern: /(^[ \t]*)(?:if|else|for|return|unless)[ \t]+.+/m,
-      lookbehind: true,
-      inside: {
-        'keyword': /^\S+/,
-        rest: inside
-      }
-    },
-    // A property/value pair cannot end with a comma or a brace
-    // It cannot have indented content unless it ended with a semicolon
-    'property-declaration': {
-      pattern: /((?:^|\{)([ \t]*))(?:[\w-]|\{[^}\r\n]+\})+(?:\s*:\s*|[ \t]+)[^{\r\n]*(?:;|[^{\r\n,](?=$)(?!(?:\r?\n|\r)(?:\{|\2[ \t]+)))/m,
-      lookbehind: true,
-      inside: {
-        'property': {
-          pattern: /^[^\s:]+/,
-          inside: {
-            'interpolation': inside.interpolation
-          }
-        },
-        rest: inside
-      }
-    },
-    // A selector can contain parentheses only as part of a pseudo-element
-    // It can span multiple lines.
-    // It must end with a comma or an accolade or have indented content.
-    'selector': {
-      pattern: /(^[ \t]*)(?:(?=\S)(?:[^{}\r\n:()]|::?[\w-]+(?:\([^)\r\n]*\))?|\{[^}\r\n]+\})+)(?:(?:\r?\n|\r)(?:\1(?:(?=\S)(?:[^{}\r\n:()]|::?[\w-]+(?:\([^)\r\n]*\))?|\{[^}\r\n]+\})+)))*(?:,$|\{|(?=(?:\r?\n|\r)(?:\{|\1[ \t]+)))/m,
-      lookbehind: true,
-      inside: {
-        'interpolation': inside.interpolation,
-        'punctuation': /[{},]/
-      }
-    },
-    'func': inside.func,
-    'string': inside.string,
-    'interpolation': inside.interpolation,
-    'punctuation': /[{}()\[\];:.]/
-  };
-})(Prism);
-/* "prismjs/components/prism-typescript" */
-
-
-Prism.languages.typescript = Prism.languages.extend('javascript', {
-  // From JavaScript Prism keyword list and TypeScript language spec: https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#221-reserved-words
-  'keyword': /\b(?:abstract|as|async|await|break|case|catch|class|const|constructor|continue|debugger|declare|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|is|keyof|let|module|namespace|new|null|of|package|private|protected|public|readonly|return|require|set|static|super|switch|this|throw|try|type|typeof|undefined|var|void|while|with|yield)\b/,
-  'builtin': /\b(?:string|Function|any|number|boolean|Array|symbol|console|Promise|unknown|never)\b/
-});
-Prism.languages.ts = Prism.languages.typescript;
-/* "prismjs/components/prism-tsx" */
-
-var typescript = Prism.util.clone(Prism.languages.typescript);
-Prism.languages.tsx = Prism.languages.extend('jsx', typescript);
-/* "prismjs/components/prism-wasm" */
-
-Prism.languages.wasm = {
-  'comment': [/\(;[\s\S]*?;\)/, {
-    pattern: /;;.*/,
-    greedy: true
-  }],
-  'string': {
-    pattern: /"(?:\\[\s\S]|[^"\\])*"/,
-    greedy: true
-  },
-  'keyword': [{
-    pattern: /\b(?:align|offset)=/,
-    inside: {
-      'operator': /=/
-    }
-  }, {
-    pattern: /\b(?:(?:f32|f64|i32|i64)(?:\.(?:abs|add|and|ceil|clz|const|convert_[su]\/i(?:32|64)|copysign|ctz|demote\/f64|div(?:_[su])?|eqz?|extend_[su]\/i32|floor|ge(?:_[su])?|gt(?:_[su])?|le(?:_[su])?|load(?:(?:8|16|32)_[su])?|lt(?:_[su])?|max|min|mul|nearest|neg?|or|popcnt|promote\/f32|reinterpret\/[fi](?:32|64)|rem_[su]|rot[lr]|shl|shr_[su]|store(?:8|16|32)?|sqrt|sub|trunc(?:_[su]\/f(?:32|64))?|wrap\/i64|xor))?|memory\.(?:grow|size))\b/,
-    inside: {
-      'punctuation': /\./
-    }
-  }, /\b(?:anyfunc|block|br(?:_if|_table)?|call(?:_indirect)?|data|drop|elem|else|end|export|func|get_(?:global|local)|global|if|import|local|loop|memory|module|mut|nop|offset|param|result|return|select|set_(?:global|local)|start|table|tee_local|then|type|unreachable)\b/],
-  'variable': /\$[\w!#$%&'*+\-./:<=>?@\\^_`|~]+/i,
-  'number': /[+-]?\b(?:\d(?:_?\d)*(?:\.\d(?:_?\d)*)?(?:[eE][+-]?\d(?:_?\d)*)?|0x[\da-fA-F](?:_?[\da-fA-F])*(?:\.[\da-fA-F](?:_?[\da-fA-D])*)?(?:[pP][+-]?\d(?:_?\d)*)?)\b|\binf\b|\bnan(?::0x[\da-fA-F](?:_?[\da-fA-D])*)?\b/,
-  'punctuation': /[()]/
-};
-/* "prismjs/components/prism-yaml" */
-
-(function (Prism) {
-  // https://yaml.org/spec/1.2/spec.html#c-ns-anchor-property
-  // https://yaml.org/spec/1.2/spec.html#c-ns-alias-node
-  var anchorOrAlias = /[*&][^\s[\]{},]+/; // https://yaml.org/spec/1.2/spec.html#c-ns-tag-property
-
-  var tag = /!(?:<[\w\-%#;/?:@&=+$,.!~*'()[\]]+>|(?:[a-zA-Z\d-]*!)?[\w\-%#;/?:@&=+$.~*'()]+)?/; // https://yaml.org/spec/1.2/spec.html#c-ns-properties(n,c)
-
-  var properties = '(?:' + tag.source + '(?:[ \t]+' + anchorOrAlias.source + ')?|' + anchorOrAlias.source + '(?:[ \t]+' + tag.source + ')?)';
-  /**
-   *
-   * @param {string} value
-   * @param {string} [flags]
-   * @returns {RegExp}
-   */
-
-  function createValuePattern(value, flags) {
-    flags = (flags || '').replace(/m/g, '') + 'm'; // add m flag
-
-    var pattern = /([:\-,[{]\s*(?:\s<<prop>>[ \t]+)?)(?:<<value>>)(?=[ \t]*(?:$|,|]|}|\s*#))/.source.replace(/<<prop>>/g, function () {
-      return properties;
-    }).replace(/<<value>>/g, function () {
-      return value;
-    });
-    return RegExp(pattern, flags);
-  }
-
-  Prism.languages.yaml = {
-    'scalar': {
-      pattern: RegExp(/([\-:]\s*(?:\s<<prop>>[ \t]+)?[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)[^\r\n]+(?:\2[^\r\n]+)*)/.source.replace(/<<prop>>/g, function () {
-        return properties;
-      })),
-      lookbehind: true,
-      alias: 'string'
-    },
-    'comment': /#.*/,
-    'key': {
-      pattern: RegExp(/((?:^|[:\-,[{\r\n?])[ \t]*(?:<<prop>>[ \t]+)?)[^\r\n{[\]},#\s]+?(?=\s*:\s)/.source.replace(/<<prop>>/g, function () {
-        return properties;
-      })),
-      lookbehind: true,
-      alias: 'atrule'
-    },
-    'directive': {
-      pattern: /(^[ \t]*)%.+/m,
-      lookbehind: true,
-      alias: 'important'
-    },
-    'datetime': {
-      pattern: createValuePattern(/\d{4}-\d\d?-\d\d?(?:[tT]|[ \t]+)\d\d?:\d{2}:\d{2}(?:\.\d*)?[ \t]*(?:Z|[-+]\d\d?(?::\d{2})?)?|\d{4}-\d{2}-\d{2}|\d\d?:\d{2}(?::\d{2}(?:\.\d*)?)?/.source),
-      lookbehind: true,
-      alias: 'number'
-    },
-    'boolean': {
-      pattern: createValuePattern(/true|false/.source, 'i'),
-      lookbehind: true,
-      alias: 'important'
-    },
-    'null': {
-      pattern: createValuePattern(/null|~/.source, 'i'),
-      lookbehind: true,
-      alias: 'important'
-    },
-    'string': {
-      // \2 because of the lookbehind group
-      pattern: createValuePattern(/("|')(?:(?!\2)[^\\\r\n]|\\.)*\2/.source),
-      lookbehind: true,
-      greedy: true
-    },
-    'number': {
-      pattern: createValuePattern(/[+-]?(?:0x[\da-f]+|0o[0-7]+|(?:\d+\.?\d*|\.?\d+)(?:e[+-]?\d+)?|\.inf|\.nan)/.source, 'i'),
-      lookbehind: true
-    },
-    'tag': tag,
-    'important': anchorOrAlias,
-    'punctuation': /---|[:[\]{}\-,|>?]|\.\.\./
-  };
-  Prism.languages.yml = Prism.languages.yaml;
-})(Prism);
-
-/* harmony default export */ __webpack_exports__["a"] = (Prism);
-
-
-/***/ }),
-/* 40 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_ThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(63);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useThemeContext(){return Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_theme_ThemeContext__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]);}/* harmony default export */ __webpack_exports__["a"] = (useThemeContext);
-
-/***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
-/* harmony import */ var _theme_MDXComponents__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(73);
-/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(98);
-/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_module_css__WEBPACK_IMPORTED_MODULE_5__);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];function BlogPostItem(props){const{children,frontMatter,metadata,truncated,isBlogPostPage=false}=props;const{date,permalink,tags,readingTime}=metadata;const{author,title}=frontMatter;const authorURL=frontMatter.author_url||frontMatter.authorURL;const authorTitle=frontMatter.author_title||frontMatter.authorTitle;const authorImageURL=frontMatter.author_image_url||frontMatter.authorImageURL;const renderPostHeader=()=>{const TitleHeading=isBlogPostPage?'h1':'h2';const match=date.substring(0,10).split('-');const year=match[0];const month=MONTHS[parseInt(match[1],10)-1];const day=parseInt(match[2],10);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TitleHeading,{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()('margin-bottom--sm',_styles_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.blogPostTitle)},isBlogPostPage?title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{to:permalink},title)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"margin-vert--md"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time",{dateTime:date,className:_styles_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.blogPostDate},month," ",day,", ",year,' ',readingTime&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null," \xB7 ",Math.ceil(readingTime)," min read"))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"avatar margin-vert--md"},authorImageURL&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{className:"avatar__photo-link avatar__photo",href:authorURL,target:"_blank",rel:"noreferrer noopener"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img",{src:authorImageURL,alt:author})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"avatar__intro"},author&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4",{className:"avatar__name"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:authorURL,target:"_blank",rel:"noreferrer noopener"},author)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small",{className:"avatar__subtitle"},authorTitle)))));};return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article",{className:!isBlogPostPage?'margin-bottom--xl':undefined},renderPostHeader(),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section",{className:"markdown"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* MDXProvider */ "a"],{components:_theme_MDXComponents__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"]},children)),(tags.length>0||truncated)&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer",{className:"row margin-vert--lg"},tags.length>0&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong",null,"Tags:"),tags.map(({label,permalink:tagPermalink})=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{key:tagPermalink,className:"margin-horiz--sm",to:tagPermalink},label))),truncated&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col text--right"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{to:metadata.permalink,"aria-label":`Read more about ${title}`},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong",null,"Read More")))));}/* harmony default export */ __webpack_exports__["a"] = (BlogPostItem);
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Hack = __webpack_require__(80);
-
-var Marker = __webpack_require__(14);
-
-var ASTERISK_HACK = '*';
-var BACKSLASH_HACK = '\\';
-var IMPORTANT_TOKEN = '!important';
-var UNDERSCORE_HACK = '_';
-var BANG_HACK = '!ie';
-
-function restoreFromOptimizing(properties, restoreCallback) {
-  var property;
-  var restored;
-  var current;
-  var i;
-
-  for (i = properties.length - 1; i >= 0; i--) {
-    property = properties[i];
-
-    if (property.unused) {
-      continue;
-    }
-
-    if (!property.dirty && !property.important && !property.hack) {
-      continue;
-    }
-
-    if (restoreCallback) {
-      restored = restoreCallback(property);
-      property.value = restored;
-    } else {
-      restored = property.value;
-    }
-
-    if (property.important) {
-      restoreImportant(property);
-    }
-
-    if (property.hack) {
-      restoreHack(property);
-    }
-
-    if ('all' in property) {
-      current = property.all[property.position];
-      current[1][1] = property.name;
-
-      current.splice(2, current.length - 1);
-      Array.prototype.push.apply(current, restored);
-    }
-  }
-}
-
-function restoreImportant(property) {
-  property.value[property.value.length - 1][1] += IMPORTANT_TOKEN;
-}
-
-function restoreHack(property) {
-  if (property.hack[0] == Hack.UNDERSCORE) {
-    property.name = UNDERSCORE_HACK + property.name;
-  } else if (property.hack[0] == Hack.ASTERISK) {
-    property.name = ASTERISK_HACK + property.name;
-  } else if (property.hack[0] == Hack.BACKSLASH) {
-    property.value[property.value.length - 1][1] += BACKSLASH_HACK + property.hack[1];
-  } else if (property.hack[0] == Hack.BANG) {
-    property.value[property.value.length - 1][1] += Marker.SPACE + BANG_HACK;
-  }
-}
-
-module.exports = restoreFromOptimizing;
-
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports) {
-
-/* -*- Mode: js; js-indent-level: 2; -*- */
-/*
- * Copyright 2011 Mozilla Foundation and contributors
- * Licensed under the New BSD license. See LICENSE or:
- * http://opensource.org/licenses/BSD-3-Clause
- */
-
-/**
- * This is a helper function for getting values from parameter/options
- * objects.
- *
- * @param args The object we are extracting values from
- * @param name The name of the property we are getting.
- * @param defaultValue An optional value to return if the property is missing
- * from the object. If this is not specified and the property is missing, an
- * error will be thrown.
- */
-function getArg(aArgs, aName, aDefaultValue) {
-  if (aName in aArgs) {
-    return aArgs[aName];
-  } else if (arguments.length === 3) {
-    return aDefaultValue;
-  } else {
-    throw new Error('"' + aName + '" is a required argument.');
-  }
-}
-exports.getArg = getArg;
-
-var urlRegexp = /^(?:([\w+\-.]+):)?\/\/(?:(\w+:\w+)@)?([\w.-]*)(?::(\d+))?(.*)$/;
-var dataUrlRegexp = /^data:.+\,.+$/;
-
-function urlParse(aUrl) {
-  var match = aUrl.match(urlRegexp);
-  if (!match) {
-    return null;
-  }
-  return {
-    scheme: match[1],
-    auth: match[2],
-    host: match[3],
-    port: match[4],
-    path: match[5]
-  };
-}
-exports.urlParse = urlParse;
-
-function urlGenerate(aParsedUrl) {
-  var url = '';
-  if (aParsedUrl.scheme) {
-    url += aParsedUrl.scheme + ':';
-  }
-  url += '//';
-  if (aParsedUrl.auth) {
-    url += aParsedUrl.auth + '@';
-  }
-  if (aParsedUrl.host) {
-    url += aParsedUrl.host;
-  }
-  if (aParsedUrl.port) {
-    url += ":" + aParsedUrl.port
-  }
-  if (aParsedUrl.path) {
-    url += aParsedUrl.path;
-  }
-  return url;
-}
-exports.urlGenerate = urlGenerate;
-
-/**
- * Normalizes a path, or the path portion of a URL:
- *
- * - Replaces consecutive slashes with one slash.
- * - Removes unnecessary '.' parts.
- * - Removes unnecessary '<dir>/..' parts.
- *
- * Based on code in the Node.js 'path' core module.
- *
- * @param aPath The path or url to normalize.
- */
-function normalize(aPath) {
-  var path = aPath;
-  var url = urlParse(aPath);
-  if (url) {
-    if (!url.path) {
-      return aPath;
-    }
-    path = url.path;
-  }
-  var isAbsolute = exports.isAbsolute(path);
-
-  var parts = path.split(/\/+/);
-  for (var part, up = 0, i = parts.length - 1; i >= 0; i--) {
-    part = parts[i];
-    if (part === '.') {
-      parts.splice(i, 1);
-    } else if (part === '..') {
-      up++;
-    } else if (up > 0) {
-      if (part === '') {
-        // The first part is blank if the path is absolute. Trying to go
-        // above the root is a no-op. Therefore we can remove all '..' parts
-        // directly after the root.
-        parts.splice(i + 1, up);
-        up = 0;
-      } else {
-        parts.splice(i, 2);
-        up--;
-      }
-    }
-  }
-  path = parts.join('/');
-
-  if (path === '') {
-    path = isAbsolute ? '/' : '.';
-  }
-
-  if (url) {
-    url.path = path;
-    return urlGenerate(url);
-  }
-  return path;
-}
-exports.normalize = normalize;
-
-/**
- * Joins two paths/URLs.
- *
- * @param aRoot The root path or URL.
- * @param aPath The path or URL to be joined with the root.
- *
- * - If aPath is a URL or a data URI, aPath is returned, unless aPath is a
- *   scheme-relative URL: Then the scheme of aRoot, if any, is prepended
- *   first.
- * - Otherwise aPath is a path. If aRoot is a URL, then its path portion
- *   is updated with the result and aRoot is returned. Otherwise the result
- *   is returned.
- *   - If aPath is absolute, the result is aPath.
- *   - Otherwise the two paths are joined with a slash.
- * - Joining for example 'http://' and 'www.example.com' is also supported.
- */
-function join(aRoot, aPath) {
-  if (aRoot === "") {
-    aRoot = ".";
-  }
-  if (aPath === "") {
-    aPath = ".";
-  }
-  var aPathUrl = urlParse(aPath);
-  var aRootUrl = urlParse(aRoot);
-  if (aRootUrl) {
-    aRoot = aRootUrl.path || '/';
-  }
-
-  // `join(foo, '//www.example.org')`
-  if (aPathUrl && !aPathUrl.scheme) {
-    if (aRootUrl) {
-      aPathUrl.scheme = aRootUrl.scheme;
-    }
-    return urlGenerate(aPathUrl);
-  }
-
-  if (aPathUrl || aPath.match(dataUrlRegexp)) {
-    return aPath;
-  }
-
-  // `join('http://', 'www.example.com')`
-  if (aRootUrl && !aRootUrl.host && !aRootUrl.path) {
-    aRootUrl.host = aPath;
-    return urlGenerate(aRootUrl);
-  }
-
-  var joined = aPath.charAt(0) === '/'
-    ? aPath
-    : normalize(aRoot.replace(/\/+$/, '') + '/' + aPath);
-
-  if (aRootUrl) {
-    aRootUrl.path = joined;
-    return urlGenerate(aRootUrl);
-  }
-  return joined;
-}
-exports.join = join;
-
-exports.isAbsolute = function (aPath) {
-  return aPath.charAt(0) === '/' || urlRegexp.test(aPath);
-};
-
-/**
- * Make a path relative to a URL or another path.
- *
- * @param aRoot The root path or URL.
- * @param aPath The path or URL to be made relative to aRoot.
- */
-function relative(aRoot, aPath) {
-  if (aRoot === "") {
-    aRoot = ".";
-  }
-
-  aRoot = aRoot.replace(/\/$/, '');
-
-  // It is possible for the path to be above the root. In this case, simply
-  // checking whether the root is a prefix of the path won't work. Instead, we
-  // need to remove components from the root one by one, until either we find
-  // a prefix that fits, or we run out of components to remove.
-  var level = 0;
-  while (aPath.indexOf(aRoot + '/') !== 0) {
-    var index = aRoot.lastIndexOf("/");
-    if (index < 0) {
-      return aPath;
-    }
-
-    // If the only part of the root that is left is the scheme (i.e. http://,
-    // file:///, etc.), one or more slashes (/), or simply nothing at all, we
-    // have exhausted all components, so the path is not relative to the root.
-    aRoot = aRoot.slice(0, index);
-    if (aRoot.match(/^([^\/]+:\/)?\/*$/)) {
-      return aPath;
-    }
-
-    ++level;
-  }
-
-  // Make sure we add a "../" for each component we removed from the root.
-  return Array(level + 1).join("../") + aPath.substr(aRoot.length + 1);
-}
-exports.relative = relative;
-
-var supportsNullProto = (function () {
-  var obj = Object.create(null);
-  return !('__proto__' in obj);
-}());
-
-function identity (s) {
-  return s;
-}
-
-/**
- * Because behavior goes wacky when you set `__proto__` on objects, we
- * have to prefix all the strings in our set with an arbitrary character.
- *
- * See https://github.com/mozilla/source-map/pull/31 and
- * https://github.com/mozilla/source-map/issues/30
- *
- * @param String aStr
- */
-function toSetString(aStr) {
-  if (isProtoString(aStr)) {
-    return '$' + aStr;
-  }
-
-  return aStr;
-}
-exports.toSetString = supportsNullProto ? identity : toSetString;
-
-function fromSetString(aStr) {
-  if (isProtoString(aStr)) {
-    return aStr.slice(1);
-  }
-
-  return aStr;
-}
-exports.fromSetString = supportsNullProto ? identity : fromSetString;
-
-function isProtoString(s) {
-  if (!s) {
-    return false;
-  }
-
-  var length = s.length;
-
-  if (length < 9 /* "__proto__".length */) {
-    return false;
-  }
-
-  if (s.charCodeAt(length - 1) !== 95  /* '_' */ ||
-      s.charCodeAt(length - 2) !== 95  /* '_' */ ||
-      s.charCodeAt(length - 3) !== 111 /* 'o' */ ||
-      s.charCodeAt(length - 4) !== 116 /* 't' */ ||
-      s.charCodeAt(length - 5) !== 111 /* 'o' */ ||
-      s.charCodeAt(length - 6) !== 114 /* 'r' */ ||
-      s.charCodeAt(length - 7) !== 112 /* 'p' */ ||
-      s.charCodeAt(length - 8) !== 95  /* '_' */ ||
-      s.charCodeAt(length - 9) !== 95  /* '_' */) {
-    return false;
-  }
-
-  for (var i = length - 10; i >= 0; i--) {
-    if (s.charCodeAt(i) !== 36 /* '$' */) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-/**
- * Comparator between two mappings where the original positions are compared.
- *
- * Optionally pass in `true` as `onlyCompareGenerated` to consider two
- * mappings with the same original source/line/column, but different generated
- * line and column the same. Useful when searching for a mapping with a
- * stubbed out mapping.
- */
-function compareByOriginalPositions(mappingA, mappingB, onlyCompareOriginal) {
-  var cmp = strcmp(mappingA.source, mappingB.source);
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalLine - mappingB.originalLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalColumn - mappingB.originalColumn;
-  if (cmp !== 0 || onlyCompareOriginal) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedLine - mappingB.generatedLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  return strcmp(mappingA.name, mappingB.name);
-}
-exports.compareByOriginalPositions = compareByOriginalPositions;
-
-/**
- * Comparator between two mappings with deflated source and name indices where
- * the generated positions are compared.
- *
- * Optionally pass in `true` as `onlyCompareGenerated` to consider two
- * mappings with the same generated line and column, but different
- * source/name/original line and column the same. Useful when searching for a
- * mapping with a stubbed out mapping.
- */
-function compareByGeneratedPositionsDeflated(mappingA, mappingB, onlyCompareGenerated) {
-  var cmp = mappingA.generatedLine - mappingB.generatedLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
-  if (cmp !== 0 || onlyCompareGenerated) {
-    return cmp;
-  }
-
-  cmp = strcmp(mappingA.source, mappingB.source);
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalLine - mappingB.originalLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalColumn - mappingB.originalColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  return strcmp(mappingA.name, mappingB.name);
-}
-exports.compareByGeneratedPositionsDeflated = compareByGeneratedPositionsDeflated;
-
-function strcmp(aStr1, aStr2) {
-  if (aStr1 === aStr2) {
-    return 0;
-  }
-
-  if (aStr1 === null) {
-    return 1; // aStr2 !== null
-  }
-
-  if (aStr2 === null) {
-    return -1; // aStr1 !== null
-  }
-
-  if (aStr1 > aStr2) {
-    return 1;
-  }
-
-  return -1;
-}
-
-/**
- * Comparator between two mappings with inflated source and name strings where
- * the generated positions are compared.
- */
-function compareByGeneratedPositionsInflated(mappingA, mappingB) {
-  var cmp = mappingA.generatedLine - mappingB.generatedLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = strcmp(mappingA.source, mappingB.source);
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalLine - mappingB.originalLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalColumn - mappingB.originalColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  return strcmp(mappingA.name, mappingB.name);
-}
-exports.compareByGeneratedPositionsInflated = compareByGeneratedPositionsInflated;
-
-/**
- * Strip any JSON XSSI avoidance prefix from the string (as documented
- * in the source maps specification), and then parse the string as
- * JSON.
- */
-function parseSourceMapInput(str) {
-  return JSON.parse(str.replace(/^\)]}'[^\n]*\n/, ''));
-}
-exports.parseSourceMapInput = parseSourceMapInput;
-
-/**
- * Compute the URL of a source given the the source root, the source's
- * URL, and the source map's URL.
- */
-function computeSourceURL(sourceRoot, sourceURL, sourceMapURL) {
-  sourceURL = sourceURL || '';
-
-  if (sourceRoot) {
-    // This follows what Chrome does.
-    if (sourceRoot[sourceRoot.length - 1] !== '/' && sourceURL[0] !== '/') {
-      sourceRoot += '/';
-    }
-    // The spec says:
-    //   Line 4: An optional source root, useful for relocating source
-    //   files on a server or removing repeated values in the
-    //   “sources” entry.  This value is prepended to the individual
-    //   entries in the “source” field.
-    sourceURL = sourceRoot + sourceURL;
-  }
-
-  // Historically, SourceMapConsumer did not take the sourceMapURL as
-  // a parameter.  This mode is still somewhat supported, which is why
-  // this code block is conditional.  However, it's preferable to pass
-  // the source map URL to SourceMapConsumer, so that this function
-  // can implement the source URL resolution algorithm as outlined in
-  // the spec.  This block is basically the equivalent of:
-  //    new URL(sourceURL, sourceMapURL).toString()
-  // ... except it avoids using URL, which wasn't available in the
-  // older releases of node still supported by this library.
-  //
-  // The spec says:
-  //   If the sources are not absolute URLs after prepending of the
-  //   “sourceRoot”, the sources are resolved relative to the
-  //   SourceMap (like resolving script src in a html document).
-  if (sourceMapURL) {
-    var parsed = urlParse(sourceMapURL);
-    if (!parsed) {
-      throw new Error("sourceMapURL could not be parsed");
-    }
-    if (parsed.path) {
-      // Strip the last path component, but keep the "/".
-      var index = parsed.path.lastIndexOf('/');
-      if (index >= 0) {
-        parsed.path = parsed.path.substring(0, index + 1);
-      }
-    }
-    sourceURL = join(urlGenerate(parsed), sourceURL);
-  }
-
-  return normalize(sourceURL);
-}
-exports.computeSourceURL = computeSourceURL;
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-var REMOTE_RESOURCE_PATTERN = /^(\w+:\/\/|\/\/)/;
-
-function isRemoteResource(uri) {
-  return REMOTE_RESOURCE_PATTERN.test(uri);
-}
-
-module.exports = isRemoteResource;
-
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports) {
-
-/* -*- Mode: js; js-indent-level: 2; -*- */
-/*
- * Copyright 2011 Mozilla Foundation and contributors
- * Licensed under the New BSD license. See LICENSE or:
- * http://opensource.org/licenses/BSD-3-Clause
- */
-
-/**
- * This is a helper function for getting values from parameter/options
- * objects.
- *
- * @param args The object we are extracting values from
- * @param name The name of the property we are getting.
- * @param defaultValue An optional value to return if the property is missing
- * from the object. If this is not specified and the property is missing, an
- * error will be thrown.
- */
-function getArg(aArgs, aName, aDefaultValue) {
-  if (aName in aArgs) {
-    return aArgs[aName];
-  } else if (arguments.length === 3) {
-    return aDefaultValue;
-  } else {
-    throw new Error('"' + aName + '" is a required argument.');
-  }
-}
-exports.getArg = getArg;
-
-var urlRegexp = /^(?:([\w+\-.]+):)?\/\/(?:(\w+:\w+)@)?([\w.-]*)(?::(\d+))?(.*)$/;
-var dataUrlRegexp = /^data:.+\,.+$/;
-
-function urlParse(aUrl) {
-  var match = aUrl.match(urlRegexp);
-  if (!match) {
-    return null;
-  }
-  return {
-    scheme: match[1],
-    auth: match[2],
-    host: match[3],
-    port: match[4],
-    path: match[5]
-  };
-}
-exports.urlParse = urlParse;
-
-function urlGenerate(aParsedUrl) {
-  var url = '';
-  if (aParsedUrl.scheme) {
-    url += aParsedUrl.scheme + ':';
-  }
-  url += '//';
-  if (aParsedUrl.auth) {
-    url += aParsedUrl.auth + '@';
-  }
-  if (aParsedUrl.host) {
-    url += aParsedUrl.host;
-  }
-  if (aParsedUrl.port) {
-    url += ":" + aParsedUrl.port
-  }
-  if (aParsedUrl.path) {
-    url += aParsedUrl.path;
-  }
-  return url;
-}
-exports.urlGenerate = urlGenerate;
-
-/**
- * Normalizes a path, or the path portion of a URL:
- *
- * - Replaces consecutive slashes with one slash.
- * - Removes unnecessary '.' parts.
- * - Removes unnecessary '<dir>/..' parts.
- *
- * Based on code in the Node.js 'path' core module.
- *
- * @param aPath The path or url to normalize.
- */
-function normalize(aPath) {
-  var path = aPath;
-  var url = urlParse(aPath);
-  if (url) {
-    if (!url.path) {
-      return aPath;
-    }
-    path = url.path;
-  }
-  var isAbsolute = exports.isAbsolute(path);
-
-  var parts = path.split(/\/+/);
-  for (var part, up = 0, i = parts.length - 1; i >= 0; i--) {
-    part = parts[i];
-    if (part === '.') {
-      parts.splice(i, 1);
-    } else if (part === '..') {
-      up++;
-    } else if (up > 0) {
-      if (part === '') {
-        // The first part is blank if the path is absolute. Trying to go
-        // above the root is a no-op. Therefore we can remove all '..' parts
-        // directly after the root.
-        parts.splice(i + 1, up);
-        up = 0;
-      } else {
-        parts.splice(i, 2);
-        up--;
-      }
-    }
-  }
-  path = parts.join('/');
-
-  if (path === '') {
-    path = isAbsolute ? '/' : '.';
-  }
-
-  if (url) {
-    url.path = path;
-    return urlGenerate(url);
-  }
-  return path;
-}
-exports.normalize = normalize;
-
-/**
- * Joins two paths/URLs.
- *
- * @param aRoot The root path or URL.
- * @param aPath The path or URL to be joined with the root.
- *
- * - If aPath is a URL or a data URI, aPath is returned, unless aPath is a
- *   scheme-relative URL: Then the scheme of aRoot, if any, is prepended
- *   first.
- * - Otherwise aPath is a path. If aRoot is a URL, then its path portion
- *   is updated with the result and aRoot is returned. Otherwise the result
- *   is returned.
- *   - If aPath is absolute, the result is aPath.
- *   - Otherwise the two paths are joined with a slash.
- * - Joining for example 'http://' and 'www.example.com' is also supported.
- */
-function join(aRoot, aPath) {
-  if (aRoot === "") {
-    aRoot = ".";
-  }
-  if (aPath === "") {
-    aPath = ".";
-  }
-  var aPathUrl = urlParse(aPath);
-  var aRootUrl = urlParse(aRoot);
-  if (aRootUrl) {
-    aRoot = aRootUrl.path || '/';
-  }
-
-  // `join(foo, '//www.example.org')`
-  if (aPathUrl && !aPathUrl.scheme) {
-    if (aRootUrl) {
-      aPathUrl.scheme = aRootUrl.scheme;
-    }
-    return urlGenerate(aPathUrl);
-  }
-
-  if (aPathUrl || aPath.match(dataUrlRegexp)) {
-    return aPath;
-  }
-
-  // `join('http://', 'www.example.com')`
-  if (aRootUrl && !aRootUrl.host && !aRootUrl.path) {
-    aRootUrl.host = aPath;
-    return urlGenerate(aRootUrl);
-  }
-
-  var joined = aPath.charAt(0) === '/'
-    ? aPath
-    : normalize(aRoot.replace(/\/+$/, '') + '/' + aPath);
-
-  if (aRootUrl) {
-    aRootUrl.path = joined;
-    return urlGenerate(aRootUrl);
-  }
-  return joined;
-}
-exports.join = join;
-
-exports.isAbsolute = function (aPath) {
-  return aPath.charAt(0) === '/' || urlRegexp.test(aPath);
-};
-
-/**
- * Make a path relative to a URL or another path.
- *
- * @param aRoot The root path or URL.
- * @param aPath The path or URL to be made relative to aRoot.
- */
-function relative(aRoot, aPath) {
-  if (aRoot === "") {
-    aRoot = ".";
-  }
-
-  aRoot = aRoot.replace(/\/$/, '');
-
-  // It is possible for the path to be above the root. In this case, simply
-  // checking whether the root is a prefix of the path won't work. Instead, we
-  // need to remove components from the root one by one, until either we find
-  // a prefix that fits, or we run out of components to remove.
-  var level = 0;
-  while (aPath.indexOf(aRoot + '/') !== 0) {
-    var index = aRoot.lastIndexOf("/");
-    if (index < 0) {
-      return aPath;
-    }
-
-    // If the only part of the root that is left is the scheme (i.e. http://,
-    // file:///, etc.), one or more slashes (/), or simply nothing at all, we
-    // have exhausted all components, so the path is not relative to the root.
-    aRoot = aRoot.slice(0, index);
-    if (aRoot.match(/^([^\/]+:\/)?\/*$/)) {
-      return aPath;
-    }
-
-    ++level;
-  }
-
-  // Make sure we add a "../" for each component we removed from the root.
-  return Array(level + 1).join("../") + aPath.substr(aRoot.length + 1);
-}
-exports.relative = relative;
-
-var supportsNullProto = (function () {
-  var obj = Object.create(null);
-  return !('__proto__' in obj);
-}());
-
-function identity (s) {
-  return s;
-}
-
-/**
- * Because behavior goes wacky when you set `__proto__` on objects, we
- * have to prefix all the strings in our set with an arbitrary character.
- *
- * See https://github.com/mozilla/source-map/pull/31 and
- * https://github.com/mozilla/source-map/issues/30
- *
- * @param String aStr
- */
-function toSetString(aStr) {
-  if (isProtoString(aStr)) {
-    return '$' + aStr;
-  }
-
-  return aStr;
-}
-exports.toSetString = supportsNullProto ? identity : toSetString;
-
-function fromSetString(aStr) {
-  if (isProtoString(aStr)) {
-    return aStr.slice(1);
-  }
-
-  return aStr;
-}
-exports.fromSetString = supportsNullProto ? identity : fromSetString;
-
-function isProtoString(s) {
-  if (!s) {
-    return false;
-  }
-
-  var length = s.length;
-
-  if (length < 9 /* "__proto__".length */) {
-    return false;
-  }
-
-  if (s.charCodeAt(length - 1) !== 95  /* '_' */ ||
-      s.charCodeAt(length - 2) !== 95  /* '_' */ ||
-      s.charCodeAt(length - 3) !== 111 /* 'o' */ ||
-      s.charCodeAt(length - 4) !== 116 /* 't' */ ||
-      s.charCodeAt(length - 5) !== 111 /* 'o' */ ||
-      s.charCodeAt(length - 6) !== 114 /* 'r' */ ||
-      s.charCodeAt(length - 7) !== 112 /* 'p' */ ||
-      s.charCodeAt(length - 8) !== 95  /* '_' */ ||
-      s.charCodeAt(length - 9) !== 95  /* '_' */) {
-    return false;
-  }
-
-  for (var i = length - 10; i >= 0; i--) {
-    if (s.charCodeAt(i) !== 36 /* '$' */) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-/**
- * Comparator between two mappings where the original positions are compared.
- *
- * Optionally pass in `true` as `onlyCompareGenerated` to consider two
- * mappings with the same original source/line/column, but different generated
- * line and column the same. Useful when searching for a mapping with a
- * stubbed out mapping.
- */
-function compareByOriginalPositions(mappingA, mappingB, onlyCompareOriginal) {
-  var cmp = strcmp(mappingA.source, mappingB.source);
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalLine - mappingB.originalLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalColumn - mappingB.originalColumn;
-  if (cmp !== 0 || onlyCompareOriginal) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedLine - mappingB.generatedLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  return strcmp(mappingA.name, mappingB.name);
-}
-exports.compareByOriginalPositions = compareByOriginalPositions;
-
-/**
- * Comparator between two mappings with deflated source and name indices where
- * the generated positions are compared.
- *
- * Optionally pass in `true` as `onlyCompareGenerated` to consider two
- * mappings with the same generated line and column, but different
- * source/name/original line and column the same. Useful when searching for a
- * mapping with a stubbed out mapping.
- */
-function compareByGeneratedPositionsDeflated(mappingA, mappingB, onlyCompareGenerated) {
-  var cmp = mappingA.generatedLine - mappingB.generatedLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
-  if (cmp !== 0 || onlyCompareGenerated) {
-    return cmp;
-  }
-
-  cmp = strcmp(mappingA.source, mappingB.source);
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalLine - mappingB.originalLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalColumn - mappingB.originalColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  return strcmp(mappingA.name, mappingB.name);
-}
-exports.compareByGeneratedPositionsDeflated = compareByGeneratedPositionsDeflated;
-
-function strcmp(aStr1, aStr2) {
-  if (aStr1 === aStr2) {
-    return 0;
-  }
-
-  if (aStr1 === null) {
-    return 1; // aStr2 !== null
-  }
-
-  if (aStr2 === null) {
-    return -1; // aStr1 !== null
-  }
-
-  if (aStr1 > aStr2) {
-    return 1;
-  }
-
-  return -1;
-}
-
-/**
- * Comparator between two mappings with inflated source and name strings where
- * the generated positions are compared.
- */
-function compareByGeneratedPositionsInflated(mappingA, mappingB) {
-  var cmp = mappingA.generatedLine - mappingB.generatedLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = strcmp(mappingA.source, mappingB.source);
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalLine - mappingB.originalLine;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  cmp = mappingA.originalColumn - mappingB.originalColumn;
-  if (cmp !== 0) {
-    return cmp;
-  }
-
-  return strcmp(mappingA.name, mappingB.name);
-}
-exports.compareByGeneratedPositionsInflated = compareByGeneratedPositionsInflated;
-
-/**
- * Strip any JSON XSSI avoidance prefix from the string (as documented
- * in the source maps specification), and then parse the string as
- * JSON.
- */
-function parseSourceMapInput(str) {
-  return JSON.parse(str.replace(/^\)]}'[^\n]*\n/, ''));
-}
-exports.parseSourceMapInput = parseSourceMapInput;
-
-/**
- * Compute the URL of a source given the the source root, the source's
- * URL, and the source map's URL.
- */
-function computeSourceURL(sourceRoot, sourceURL, sourceMapURL) {
-  sourceURL = sourceURL || '';
-
-  if (sourceRoot) {
-    // This follows what Chrome does.
-    if (sourceRoot[sourceRoot.length - 1] !== '/' && sourceURL[0] !== '/') {
-      sourceRoot += '/';
-    }
-    // The spec says:
-    //   Line 4: An optional source root, useful for relocating source
-    //   files on a server or removing repeated values in the
-    //   “sources” entry.  This value is prepended to the individual
-    //   entries in the “source” field.
-    sourceURL = sourceRoot + sourceURL;
-  }
-
-  // Historically, SourceMapConsumer did not take the sourceMapURL as
-  // a parameter.  This mode is still somewhat supported, which is why
-  // this code block is conditional.  However, it's preferable to pass
-  // the source map URL to SourceMapConsumer, so that this function
-  // can implement the source URL resolution algorithm as outlined in
-  // the spec.  This block is basically the equivalent of:
-  //    new URL(sourceURL, sourceMapURL).toString()
-  // ... except it avoids using URL, which wasn't available in the
-  // older releases of node still supported by this library.
-  //
-  // The spec says:
-  //   If the sources are not absolute URLs after prepending of the
-  //   “sourceRoot”, the sources are resolved relative to the
-  //   SourceMap (like resolving script src in a html document).
-  if (sourceMapURL) {
-    var parsed = urlParse(sourceMapURL);
-    if (!parsed) {
-      throw new Error("sourceMapURL could not be parsed");
-    }
-    if (parsed.path) {
-      // Strip the last path component, but keep the "/".
-      var index = parsed.path.lastIndexOf('/');
-      if (index >= 0) {
-        parsed.path = parsed.path.substring(0, index + 1);
-      }
-    }
-    sourceURL = join(urlGenerate(parsed), sourceURL);
-  }
-
-  return normalize(sourceURL);
-}
-exports.computeSourceURL = computeSourceURL;
-
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = __webpack_require__(0);
-var PropTypes = __webpack_require__(190);
-
-var ALL_INITIALIZERS = [];
-var READY_INITIALIZERS = [];
-
-function isWebpackReady(getModuleIds) {
-  if (( false ? undefined : _typeof(__webpack_require__.m)) !== "object") {
-    return false;
-  }
-
-  return getModuleIds().every(function (moduleId) {
-    return typeof moduleId !== "undefined" && typeof __webpack_require__.m[moduleId] !== "undefined";
-  });
-}
-
-function load(loader) {
-  var promise = loader();
-
-  var state = {
-    loading: true,
-    loaded: null,
-    error: null
-  };
-
-  state.promise = promise.then(function (loaded) {
-    state.loading = false;
-    state.loaded = loaded;
-    return loaded;
-  }).catch(function (err) {
-    state.loading = false;
-    state.error = err;
-    throw err;
-  });
-
-  return state;
-}
-
-function loadMap(obj) {
-  var state = {
-    loading: false,
-    loaded: {},
-    error: null
-  };
-
-  var promises = [];
-
-  try {
-    Object.keys(obj).forEach(function (key) {
-      var result = load(obj[key]);
-
-      if (!result.loading) {
-        state.loaded[key] = result.loaded;
-        state.error = result.error;
-      } else {
-        state.loading = true;
-      }
-
-      promises.push(result.promise);
-
-      result.promise.then(function (res) {
-        state.loaded[key] = res;
-      }).catch(function (err) {
-        state.error = err;
-      });
-    });
-  } catch (err) {
-    state.error = err;
-  }
-
-  state.promise = Promise.all(promises).then(function (res) {
-    state.loading = false;
-    return res;
-  }).catch(function (err) {
-    state.loading = false;
-    throw err;
-  });
-
-  return state;
-}
-
-function resolve(obj) {
-  return obj && obj.__esModule ? obj.default : obj;
-}
-
-function render(loaded, props) {
-  return React.createElement(resolve(loaded), props);
-}
-
-function createLoadableComponent(loadFn, options) {
-  var _class, _temp;
-
-  if (!options.loading) {
-    throw new Error("react-loadable requires a `loading` component");
-  }
-
-  var opts = Object.assign({
-    loader: null,
-    loading: null,
-    delay: 200,
-    timeout: null,
-    render: render,
-    webpack: null,
-    modules: null
-  }, options);
-
-  var res = null;
-
-  function init() {
-    if (!res) {
-      res = loadFn(opts.loader);
-    }
-    return res.promise;
-  }
-
-  ALL_INITIALIZERS.push(init);
-
-  if (typeof opts.webpack === "function") {
-    READY_INITIALIZERS.push(function () {
-      if (isWebpackReady(opts.webpack)) {
-        return init();
-      }
-    });
-  }
-
-  return _temp = _class = function (_React$Component) {
-    _inherits(LoadableComponent, _React$Component);
-
-    function LoadableComponent(props) {
-      _classCallCheck(this, LoadableComponent);
-
-      var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
-
-      _this.retry = function () {
-        _this.setState({ error: null, loading: true, timedOut: false });
-        res = loadFn(opts.loader);
-        _this._loadModule();
-      };
-
-      init();
-
-      _this.state = {
-        error: res.error,
-        pastDelay: false,
-        timedOut: false,
-        loading: res.loading,
-        loaded: res.loaded
-      };
-      return _this;
-    }
-
-    LoadableComponent.preload = function preload() {
-      return init();
-    };
-
-    LoadableComponent.prototype.componentWillMount = function componentWillMount() {
-      this._mounted = true;
-      this._loadModule();
-    };
-
-    LoadableComponent.prototype._loadModule = function _loadModule() {
-      var _this2 = this;
-
-      if (this.context.loadable && Array.isArray(opts.modules)) {
-        opts.modules.forEach(function (moduleName) {
-          _this2.context.loadable.report(moduleName);
-        });
-      }
-
-      if (!res.loading) {
-        return;
-      }
-
-      if (typeof opts.delay === "number") {
-        if (opts.delay === 0) {
-          this.setState({ pastDelay: true });
-        } else {
-          this._delay = setTimeout(function () {
-            _this2.setState({ pastDelay: true });
-          }, opts.delay);
-        }
-      }
-
-      if (typeof opts.timeout === "number") {
-        this._timeout = setTimeout(function () {
-          _this2.setState({ timedOut: true });
-        }, opts.timeout);
-      }
-
-      var update = function update() {
-        if (!_this2._mounted) {
-          return;
-        }
-
-        _this2.setState({
-          error: res.error,
-          loaded: res.loaded,
-          loading: res.loading
-        });
-
-        _this2._clearTimeouts();
-      };
-
-      res.promise.then(function () {
-        update();
-      }).catch(function (err) {
-        update();
-      });
-    };
-
-    LoadableComponent.prototype.componentWillUnmount = function componentWillUnmount() {
-      this._mounted = false;
-      this._clearTimeouts();
-    };
-
-    LoadableComponent.prototype._clearTimeouts = function _clearTimeouts() {
-      clearTimeout(this._delay);
-      clearTimeout(this._timeout);
-    };
-
-    LoadableComponent.prototype.render = function render() {
-      if (this.state.loading || this.state.error) {
-        return React.createElement(opts.loading, {
-          isLoading: this.state.loading,
-          pastDelay: this.state.pastDelay,
-          timedOut: this.state.timedOut,
-          error: this.state.error,
-          retry: this.retry
-        });
-      } else if (this.state.loaded) {
-        return opts.render(this.state.loaded, this.props);
-      } else {
-        return null;
-      }
-    };
-
-    return LoadableComponent;
-  }(React.Component), _class.contextTypes = {
-    loadable: PropTypes.shape({
-      report: PropTypes.func.isRequired
-    })
-  }, _temp;
-}
-
-function Loadable(opts) {
-  return createLoadableComponent(load, opts);
-}
-
-function LoadableMap(opts) {
-  if (typeof opts.render !== "function") {
-    throw new Error("LoadableMap requires a `render(loaded, props)` function");
-  }
-
-  return createLoadableComponent(loadMap, opts);
-}
-
-Loadable.Map = LoadableMap;
-
-var Capture = function (_React$Component2) {
-  _inherits(Capture, _React$Component2);
-
-  function Capture() {
-    _classCallCheck(this, Capture);
-
-    return _possibleConstructorReturn(this, _React$Component2.apply(this, arguments));
-  }
-
-  Capture.prototype.getChildContext = function getChildContext() {
-    return {
-      loadable: {
-        report: this.props.report
-      }
-    };
-  };
-
-  Capture.prototype.render = function render() {
-    return React.Children.only(this.props.children);
-  };
-
-  return Capture;
-}(React.Component);
-
-Capture.propTypes = {
-  report: PropTypes.func.isRequired
-};
-Capture.childContextTypes = {
-  loadable: PropTypes.shape({
-    report: PropTypes.func.isRequired
-  }).isRequired
-};
-
-
-Loadable.Capture = Capture;
-
-function flushInitializers(initializers) {
-  var promises = [];
-
-  while (initializers.length) {
-    var init = initializers.pop();
-    promises.push(init());
-  }
-
-  return Promise.all(promises).then(function () {
-    if (initializers.length) {
-      return flushInitializers(initializers);
-    }
-  });
-}
-
-Loadable.preloadAll = function () {
-  return new Promise(function (resolve, reject) {
-    flushInitializers(ALL_INITIALIZERS).then(resolve, reject);
-  });
-};
-
-Loadable.preloadReady = function () {
-  return new Promise(function (resolve, reject) {
-    // We always will resolve, errors should be handled within loading UIs.
-    flushInitializers(READY_INITIALIZERS).then(resolve, resolve);
-  });
-};
-
-module.exports = Loadable;
-
-/***/ }),
-/* 47 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXPORTS
 __webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ index_modern_Button; });
+__webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ index_modern_Card; });
 
-// UNUSED EXPORTS: AlertBox, Card, Input, SmallNav
+// UNUSED EXPORTS: AlertBox, Input, SmallNav
 
 // EXTERNAL MODULE: ../node_modules/react/index.js
 var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ../node_modules/prop-types/index.js
-var prop_types = __webpack_require__(17);
+var prop_types = __webpack_require__(13);
 var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
 
 // EXTERNAL MODULE: ../node_modules/stylis/stylis.min.js
@@ -12245,7 +5105,7 @@ if (false) {}
 //# sourceMappingURL=styled-components.esm.js.map
 
 // EXTERNAL MODULE: ../node_modules/formik/node_modules/react-fast-compare/index.js
-var react_fast_compare = __webpack_require__(25);
+var react_fast_compare = __webpack_require__(26);
 var react_fast_compare_default = /*#__PURE__*/__webpack_require__.n(react_fast_compare);
 
 // CONCATENATED MODULE: ../node_modules/deepmerge/dist/es.js
@@ -13867,7 +6727,7 @@ function baseUnary(func) {
 /* harmony default export */ var _baseUnary = (baseUnary);
 
 // EXTERNAL MODULE: ../node_modules/lodash-es/_nodeUtil.js
-var _nodeUtil = __webpack_require__(24);
+var _nodeUtil = __webpack_require__(25);
 
 // CONCATENATED MODULE: ../node_modules/lodash-es/isTypedArray.js
 
@@ -17504,7 +10364,7148 @@ connect(formik_esm_FastFieldInner);
 //# sourceMappingURL=formik.esm.js.map
 
 // CONCATENATED MODULE: ../dist/index.modern.js
-function index_modern_extends(){index_modern_extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};return index_modern_extends.apply(this,arguments);}function index_modern_inheritsLoose(subClass,superClass){subClass.prototype=Object.create(superClass.prototype);subClass.prototype.constructor=subClass;subClass.__proto__=superClass;}function index_modern_objectWithoutPropertiesLoose(source,excluded){if(source==null)return{};var target={};var sourceKeys=Object.keys(source);var key,i;for(i=0;i<sourceKeys.length;i++){key=sourceKeys[i];if(excluded.indexOf(key)>=0)continue;target[key]=source[key];}return target;}function _taggedTemplateLiteralLoose(strings,raw){if(!raw){raw=strings.slice(0);}strings.raw=raw;return strings;}function _templateObject(){var data=_taggedTemplateLiteralLoose(["\n  background: linear-gradient(111.34deg, #D418B6 0%, #F1185E 100%);\n  border-radius: 100px;\n  border: none;\n  padding: 12px 22px;\n  cursor: pointer;\n  color: white;\n  font-size: 16px;\n\n  &.secondary {\n    background: transparent;\n    border: 2px solid #FF008B;\n    padding: 10px 20px;\n    color: #FF008B;\n  }\n\n  &.nude {\n    background: transparent;\n  }\n\n  &.bold {\n    font-weight: bold;\n  }\n\n  &:hover {\n    opacity: 0.75;\n  }\n"]);_templateObject=function _templateObject(){return data;};return data;}var StyledButton=styled_components_esm.button(_templateObject());var index_modern_Button=function Button(props){if(props.href){if(props.download){return/*#__PURE__*/react_default.a.createElement("a",{href:props.href,download:true},/*#__PURE__*/react_default.a.createElement(StyledButton,props,props.children));}else{return/*#__PURE__*/react_default.a.createElement("a",{href:props.href},/*#__PURE__*/react_default.a.createElement(StyledButton,props,props.children));}}return/*#__PURE__*/react_default.a.createElement(StyledButton,props,props.children);};index_modern_Button.propTypes={href:prop_types_default.a.string,children:prop_types_default.a.string};index_modern_Button.defaultProps={type:"button"};function _templateObject$1(){var data=_taggedTemplateLiteralLoose(["\n  top: 0;\n  left: 0;\n  width: 100%;\n  min-height: 100vh;\n  display: flex;\n  position: fixed;\n  z-index: 1000;\n  background-color: #14062f;\n  overflow: hidden;\n  padding-bottom: 500px;\n\n  .container {\n    width: 100%;\n    text-align: center;\n    align-self: center;\n  }\n\n  .info-message {\n    margin: auto;\n    max-width: 650px;\n    width: 80%;\n    padding-bottom: 30px;\n    font-size: 20px;\n    color: white;\n  }\n\n  button {\n    margin-left: 8px;\n    margin-right: 8px;\n  }\n\n  button:nth-of-type(1) {\n    background: transparent;\n    border: 1px solid #ffffff;\n  }\n"]);_templateObject$1=function _templateObject(){return data;};return data;}var MyStyle=styled_components_esm.div(_templateObject$1());var index_modern_AlertBox=function AlertBox(props){return/*#__PURE__*/react_default.a.createElement(MyStyle,null,/*#__PURE__*/react_default.a.createElement("div",{className:"container"},/*#__PURE__*/react_default.a.createElement("div",{className:"info-message"},props.message),/*#__PURE__*/react_default.a.createElement(index_modern_Button,{onClick:props.cancel},"Cancel"),/*#__PURE__*/react_default.a.createElement(index_modern_Button,{onClick:props.proceed},"Proceed")));};function _templateObject$2(){var data=_taggedTemplateLiteralLoose(["\n  #card-body {\n    background: #F3F3F3;\n    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n    border-radius: 10px;\n    padding: 25px 20px;\n    width: 11rem;\n  }\n\n  #title {\n    font-style: normal;\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 22px;\n    color: #000000;\n    margin: 0;\n  }\n\n  #content {\n    font-style: normal;\n    font-weight: normal;\n    font-size: 13px;\n    line-height: 177%;\n    color: #000000;\n    margin-top: 10px;\n    margin-bottom: 20px;\n  }\n\n  #link {\n    font-style: normal;\n    font-weight: 500;\n    font-size: 12px;\n    line-height: 14px;\n    color: #747373;\n    text-decoration: none;\n  }\n"]);_templateObject$2=function _templateObject(){return data;};return data;}var Style=styled_components_esm.div(_templateObject$2());var index_modern_Card=function Card(props){return/*#__PURE__*/react_default.a.createElement(Style,null,/*#__PURE__*/react_default.a.createElement("div",{id:"card-body"},/*#__PURE__*/react_default.a.createElement("h1",{id:"title"},props.title),/*#__PURE__*/react_default.a.createElement("p",{id:"content"},props.content),/*#__PURE__*/react_default.a.createElement("a",{id:"link",href:props.href},props.linkContent)));};index_modern_Card.propTypes={title:prop_types_default.a.string.isRequired,content:prop_types_default.a.string.isRequired,linkContent:prop_types_default.a.string,href:prop_types_default.a.string};function _templateObject5(){var data=_taggedTemplateLiteralLoose(["\n  color: ",";\n  display: block;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n\n  /* Hide the browser's default checkbox */\n  input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n  }\n\n  /* Create a custom checkbox */\n  .checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 20px;\n    width: 20px;\n    border: 1px solid ",";\n    border-radius: 2px;\n  }\n\n  /* On mouse-over, add a grey background color */\n  &:hover input ~ .checkmark {\n    background-color: rgba(0, 0, 0, 0.1);\n  }\n\n  /* When the checkbox is checked, add a blue background */\n  input:checked ~ .checkmark {\n    background-color: ",";\n  }\n\n  /* Style the checkmark/indicator */\n  .checkmark:after {\n    content: \"\";\n    display: none;\n    position: absolute;\n    left: 7px;\n    top: 3px;\n    width: 5px;\n    height: 10px;\n    border: solid ",";\n    border-width: 0 2px 2px 0;\n    transform: rotate(45deg);\n  }\n\n  /* Show the checkmark when checked */\n  input:checked ~ .checkmark:after {\n    display: block;\n  }\n"]);_templateObject5=function _templateObject5(){return data;};return data;}function _templateObject4(){var data=_taggedTemplateLiteralLoose(["\n  position: absolute;\n  margin: 15px;\n  color: ",";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    top: -5px;\n    display: block;\n    left: 2.5rem;\n    width: 1px;\n    height: calc(1rem + 10px);\n    background: ",";\n  }\n"]);_templateObject4=function _templateObject4(){return data;};return data;}function _templateObject3(){var data=_taggedTemplateLiteralLoose(["\n  border: 0;\n  clip: rect(0 0 0 0);\n  overflow: hidden;\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n\n  &:checked + ",":before {\n    background: ",";\n  }\n"]);_templateObject3=function _templateObject3(){return data;};return data;}function _templateObject2(){var data=_taggedTemplateLiteralLoose(["\n  display: block;\n  color: ",";\n\n  &:before {\n    content: \"\";\n    display: inline-block;\n    width: 1.2rem;\n    height: 1.2rem;\n    vertical-align: -0.25rem;\n    border-radius: 1.2rem;\n    border: 1px solid ",";\n    margin-right: 0.6rem;\n    transition: background 0.2s ease;\n    box-shadow: inset 0 0 0 0.3rem ",";\n  }\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject$3(){var data=_taggedTemplateLiteralLoose(["\n  width: calc(100% - 34px);\n  padding: 10px 15px;\n  color: ",";\n  background-color: transparent;\n  border: 2px solid ",";\n  border-radius: 5px;\n  font-family: inherit;\n\n  &::placeholder {\n    color: ",";\n    opacity: 0.5;\n  }\n"]);_templateObject$3=function _templateObject(){return data;};return data;}var BaseInput=styled_components_esm(Field)(_templateObject$3(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;});var RadioSpan=styled_components_esm.span(_templateObject2(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.background;});var RadioButton=styled_components_esm(Field)(_templateObject3(),RadioSpan,function(props){return props.theme.colors.primary;});var PhoneSpan=styled_components_esm.span(_templateObject4(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;});var CheckboxLabel=styled_components_esm.label(_templateObject5(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.background;});function _templateObject7(){var data=_taggedTemplateLiteralLoose(["\n  padding: 8px 12px;\n  width: 100%;\n"]);_templateObject7=function _templateObject7(){return data;};return data;}function _templateObject6(){var data=_taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  cursor: pointer;\n  &:hover {\n    opacity: 0.5;\n  }\n"]);_templateObject6=function _templateObject6(){return data;};return data;}function _templateObject5$1(){var data=_taggedTemplateLiteralLoose(["\n  list-style-type: none;\n  height: fit-content;\n  width: 300px;\n  padding-left: 0;\n  background: #f3f3f3;\n  z-index: 100;\n  overflow: auto;\n  margin-top: 0;\n  font-weight: 400;\n\n  .accent-background {\n    background: #e5e5e5;\n  }\n"]);_templateObject5$1=function _templateObject5(){return data;};return data;}function _templateObject4$1(){var data=_taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  border: 2px solid #000000;\n  border-radius: 5px;\n  background: #dbdbdb;\n  font-weight: 400;\n  padding: 8px 12px;\n  justify-content: space-between;\n  width: 300px;\n  box-sizing: border-box;\n  &:active,\n  &:focus {\n    outline: 0;\n  }\n"]);_templateObject4$1=function _templateObject4(){return data;};return data;}function _templateObject3$1(){var data=_taggedTemplateLiteralLoose(["\n  margin-top: 8px;\n  width: fit-content;\n"]);_templateObject3$1=function _templateObject3(){return data;};return data;}function _templateObject2$1(){var data=_taggedTemplateLiteralLoose(["\n  p {\n    margin: 0;\n  }\n\n  .rotated {\n    transform-box: fill-box;\n    transform-origin: center;\n    transform: rotate(180deg);\n  }\n\n  .background-active {\n    background: #f3f3f3;\n  }\n"]);_templateObject2$1=function _templateObject2(){return data;};return data;}function _templateObject$4(){var data=_taggedTemplateLiteralLoose(["\n  font-weight: 500;\n"]);_templateObject$4=function _templateObject(){return data;};return data;}var DropdownLabel=styled_components_esm.label(_templateObject$4());var DropdownContainer=styled_components_esm.div(_templateObject2$1());var DropdownWrapper=styled_components_esm.div(_templateObject3$1());var DropdownButton=styled_components_esm.div(_templateObject4$1());var DropdownUl=styled_components_esm.ul(_templateObject5$1());var DropdownWrapperLi=styled_components_esm.div(_templateObject6());var DropdownLi=styled_components_esm.li(_templateObject7());var index_modern_ArrowDropdown=function ArrowDropdown(_ref){var active=_ref.active;return/*#__PURE__*/react_default.a.createElement("svg",{width:"15",height:"7",viewBox:"0 0 15 7",fill:"none",xmlns:"http://www.w3.org/2000/svg",className:active?"rotated":undefined},/*#__PURE__*/react_default.a.createElement("path",{d:"M12.853 1H1.71826L7.28561 6L12.853 1Z",fill:"#252C29",stroke:"#252C29"}));};var index_modern_Dropdown=function Dropdown(_ref2){var field=_ref2.field,setFieldValue=_ref2.form.setFieldValue,props=index_modern_objectWithoutPropertiesLoose(_ref2,["field","form"]);var _useState=Object(react["useState"])(false),show=_useState[0],setShow=_useState[1];var _useState2=Object(react["useState"])(props.placeholder),value=_useState2[0],setValue=_useState2[1];var node=Object(react["useRef"])();var handleClickOutside=function handleClickOutside(e){if(node.current.contains(e.target)){return;}setShow(false);};var _handleChange=function _handleChange(e){if(props.onChange){props.onChange(e);}setShow(false);setValue(e);setFieldValue(field.name,e);};Object(react["useEffect"])(function(){if(show){document.addEventListener("mousedown",handleClickOutside);}else{document.removeEventListener("mousedown",handleClickOutside);}return function(){document.removeEventListener("mousedown",handleClickOutside);};},[show]);Object(react["useEffect"])(function(){setFieldValue(field.name,value);},[props.defaultValue]);return/*#__PURE__*/react_default.a.createElement(DropdownContainer,null,/*#__PURE__*/react_default.a.createElement(DropdownLabel,null,props.label),/*#__PURE__*/react_default.a.createElement(DropdownWrapper,{ref:node,className:show?"background-active":undefined},/*#__PURE__*/react_default.a.createElement(DropdownButton,{onClick:function onClick(e){return setShow(!show);}},/*#__PURE__*/react_default.a.createElement("p",null,value),/*#__PURE__*/react_default.a.createElement(index_modern_ArrowDropdown,{active:show})),show&&/*#__PURE__*/react_default.a.createElement(DropdownUl,null,props.choices.map(function(value,idx){return/*#__PURE__*/react_default.a.createElement(DropdownWrapperLi,{key:value.index||value.id,onClick:function onClick(){return _handleChange(value);}},/*#__PURE__*/react_default.a.createElement(DropdownLi,{key:value.index||value.id,value:value.value,className:idx%2!==0?"accent-background":undefined},/*#__PURE__*/react_default.a.createElement("p",null,value)));}))));};var index_modern_TextInput=function TextInput(props){return/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({type:props.type||"text"},props));};var index_modern_RadioInput=function RadioInput(_ref){var name=_ref.name,value=_ref.value,children=_ref.children,props=index_modern_objectWithoutPropertiesLoose(_ref,["name","value","children"]);return/*#__PURE__*/react_default.a.createElement("label",{style:{cursor:"pointer"}},/*#__PURE__*/react_default.a.createElement(RadioButton,index_modern_extends({type:"radio",name:name,value:value||children},props)),/*#__PURE__*/react_default.a.createElement(RadioSpan,null,children));};var index_modern_NumberInput=function NumberInput(props){return/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({type:"number"},props));};var index_modern_TextAreaInput=function TextAreaInput(props){return/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({component:"textarea"},props));};var index_modern_PhoneInput=function PhoneInput(props){return/*#__PURE__*/react_default.a.createElement("div",{style:{position:"relative"}},/*#__PURE__*/react_default.a.createElement(PhoneSpan,null,"+62"),/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({style:{position:"relative",zIndex:10,paddingLeft:"4.5rem",width:"calc(100% - 19px - 4.5rem)"},type:"text"},props,{validate:function validate(value){var errorMessage;if(!value.match(/^\d*$/)){errorMessage="Invalid phone number";}return errorMessage;}})));};var index_modern_CheckboxInput=function CheckboxInput(_ref2){var value=_ref2.value,children=_ref2.children,props=index_modern_objectWithoutPropertiesLoose(_ref2,["value","children"]);return/*#__PURE__*/react_default.a.createElement(CheckboxLabel,null,/*#__PURE__*/react_default.a.createElement(Field,index_modern_extends({type:"checkbox",value:value||children},props)),/*#__PURE__*/react_default.a.createElement("span",{className:"checkmark"}),children);};var index_modern_DropdownInput=function DropdownInput(props){return/*#__PURE__*/react_default.a.createElement(Field,index_modern_extends({component:index_modern_Dropdown},props));};var index_modern_index={Checkbox:index_modern_CheckboxInput,Number:index_modern_NumberInput,Phone:index_modern_PhoneInput,Radio:index_modern_RadioInput,Text:index_modern_TextInput,TextArea:index_modern_TextAreaInput,Dropdown:index_modern_DropdownInput};function _templateObject$5(){var data=_taggedTemplateLiteralLoose(["\n  .small-nav {\n    margin-top: 30px;\n    padding-bottom: 10px;\n    margin-bottom: 10px;\n    display: flex;\n    justify-content: center;\n    font-size: 1.2rem;\n    overflow-x: auto;\n    color: white;\n  }\n\n  .small-nav div {\n    display: block;\n    margin: 0 10px;\n    cursor: pointer;\n    white-space: nowrap;\n\n    &:first-child {\n      margin-left: 0;\n    }\n    &:last-child {\n      margin-right: 0;\n    }\n  }\n\n  @media (max-width: 992px) {\n    .small-nav {\n      display: flex;\n      justify-content: center;\n    }\n  }\n\n  .nav-content {\n    display: flex;\n    justify-content: center;\n  }\n"]);_templateObject$5=function _templateObject(){return data;};return data;}var Style$1=styled_components_esm.div(_templateObject$5());var index_modern_SmallNav=/*#__PURE__*/function(_Component){index_modern_inheritsLoose(SmallNav,_Component);function SmallNav(props){var _this;_this=_Component.call(this,props)||this;_this.state={index:0};return _this;}var _proto=SmallNav.prototype;_proto.render=function render(){var _this2=this;var navItems=this.props.navItems;return/*#__PURE__*/react_default.a.createElement(Style$1,null,/*#__PURE__*/react_default.a.createElement("div",{className:"small-nav"},navItems.map(function(navItem,index){return/*#__PURE__*/react_default.a.createElement("div",{key:index,onClick:function onClick(){return _this2.setState({index:index});},style:{fontWeight:_this2.state.index===index?"bold":"normal"}},navItem.title);})),/*#__PURE__*/react_default.a.createElement("div",{className:"nav-content"},navItems[this.state.index].component));};return SmallNav;}(react["Component"]);index_modern_SmallNav.propTypes={navItems:prop_types_default.a.array.isRequired};
+function index_modern_extends(){index_modern_extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};return index_modern_extends.apply(this,arguments);}function index_modern_inheritsLoose(subClass,superClass){subClass.prototype=Object.create(superClass.prototype);subClass.prototype.constructor=subClass;subClass.__proto__=superClass;}function index_modern_objectWithoutPropertiesLoose(source,excluded){if(source==null)return{};var target={};var sourceKeys=Object.keys(source);var key,i;for(i=0;i<sourceKeys.length;i++){key=sourceKeys[i];if(excluded.indexOf(key)>=0)continue;target[key]=source[key];}return target;}function _taggedTemplateLiteralLoose(strings,raw){if(!raw){raw=strings.slice(0);}strings.raw=raw;return strings;}function _templateObject(){var data=_taggedTemplateLiteralLoose(["\n  background: linear-gradient(111.34deg, #D418B6 0%, #F1185E 100%);\n  border-radius: 100px;\n  border: none;\n  padding: 12px 22px;\n  cursor: pointer;\n  color: white;\n  font-size: 16px;\n\n  &.secondary {\n    background: transparent;\n    border: 2px solid #FF008B;\n    padding: 10px 20px;\n    color: #FF008B;\n  }\n\n  &.nude {\n    background: transparent;\n  }\n\n  &.bold {\n    font-weight: bold;\n  }\n\n  &:hover {\n    opacity: 0.75;\n  }\n"]);_templateObject=function _templateObject(){return data;};return data;}var StyledButton=styled_components_esm.button(_templateObject());var index_modern_Button=function Button(props){if(props.href){if(props.download){return/*#__PURE__*/react_default.a.createElement("a",{href:props.href,download:true},/*#__PURE__*/react_default.a.createElement(StyledButton,props,props.children));}else{return/*#__PURE__*/react_default.a.createElement("a",{href:props.href},/*#__PURE__*/react_default.a.createElement(StyledButton,props,props.children));}}return/*#__PURE__*/react_default.a.createElement(StyledButton,props,props.children);};index_modern_Button.propTypes={href:prop_types_default.a.string,children:prop_types_default.a.string};index_modern_Button.defaultProps={type:"button"};function _templateObject$1(){var data=_taggedTemplateLiteralLoose(["\n  top: 0;\n  left: 0;\n  width: 100%;\n  min-height: 100vh;\n  display: flex;\n  position: fixed;\n  z-index: 1000;\n  background-color: #14062f;\n  overflow: hidden;\n  padding-bottom: 500px;\n\n  .container {\n    width: 100%;\n    text-align: center;\n    align-self: center;\n  }\n\n  .info-message {\n    margin: auto;\n    max-width: 650px;\n    width: 80%;\n    padding-bottom: 30px;\n    font-size: 20px;\n    color: white;\n  }\n\n  button {\n    margin-left: 8px;\n    margin-right: 8px;\n  }\n\n  button:nth-of-type(1) {\n    background: transparent;\n    border: 1px solid #ffffff;\n  }\n"]);_templateObject$1=function _templateObject(){return data;};return data;}var MyStyle=styled_components_esm.div(_templateObject$1());var index_modern_AlertBox=function AlertBox(props){return/*#__PURE__*/react_default.a.createElement(MyStyle,null,/*#__PURE__*/react_default.a.createElement("div",{className:"container"},/*#__PURE__*/react_default.a.createElement("div",{className:"info-message"},props.message),/*#__PURE__*/react_default.a.createElement(index_modern_Button,{onClick:props.cancel},"Cancel"),/*#__PURE__*/react_default.a.createElement(index_modern_Button,{onClick:props.proceed},"Proceed")));};function _templateObject$2(){var data=_taggedTemplateLiteralLoose(["\n  & * {\n    margin: 0;\n  }\n\n  #card-body {\n    background: #F3F3F3;\n    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n    border-radius: 10px;\n  }\n\n  #mini-information-card {\n    & div {\n      padding: 25px 20px;\n      width: 13rem;\n    }\n  }\n\n  #title {\n    font-style: normal;\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 22px;\n    color: #000000;\n    margin: 0;\n  }\n\n  #content {\n    font-style: normal;\n    font-weight: normal;\n    font-size: 13px;\n    line-height: 177%;\n    color: #000000;\n    margin-top: 10px;\n    margin-bottom: 20px;\n  }\n\n  #link {\n    font-style: normal;\n    font-weight: 500;\n    font-size: 12px;\n    line-height: 14px;\n    color: #747373;\n    text-decoration: none;\n  }\n\n  #large-card {\n    width: 50rem;\n\n    #img-container {\n      margin-right: 24px;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n\n    #text {\n      line-height: 140%;\n      text-align: justify;\n    }\n\n    #body {\n      padding: 32px 0;\n    }\n\n    & #card-body {\n      display: flex;\n    }\n\n    .btn-container {\n      padding: 20px 0 32px 0;\n    }\n  }\n\n  #article-card {\n    width: 30rem;\n    & #card-body {\n      padding: 24px;\n    }\n\n    #img-container {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n\n    h2 {\n      font-weight: normal;\n      font-size: 1rem;\n      margin-top: 20px;\n    }\n\n    h1 {\n      font-weight: 700;\n      font-size: 1.5rem;\n    }\n  }\n\n  #carousel-card {\n    & #card-body {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      padding: 32px;\n      width: max-content;\n    }\n\n    h1 {\n      font-weight: bold;\n      font-size: 2em;\n    }\n  }\n"]);_templateObject$2=function _templateObject(){return data;};return data;}var Style=styled_components_esm.div(_templateObject$2());var index_modern_Card=function Card(props){var miniInformationCard=function miniInformationCard(title,text,linkContent,href){return/*#__PURE__*/react_default.a.createElement("div",{id:"mini-information-card"},/*#__PURE__*/react_default.a.createElement("div",{id:"card-body"},/*#__PURE__*/react_default.a.createElement("h1",{id:"title"},title),/*#__PURE__*/react_default.a.createElement("p",{id:"content"},text),/*#__PURE__*/react_default.a.createElement("a",{id:"link",href:href},linkContent)));};var largeCard=function largeCard(title,text,image,miniTitle,buttonTop,buttonBottom){return/*#__PURE__*/react_default.a.createElement("div",{id:"large-card"},/*#__PURE__*/react_default.a.createElement("div",{id:"card-body"},/*#__PURE__*/react_default.a.createElement("div",{id:"img-container"},/*#__PURE__*/react_default.a.createElement("img",{src:image,alt:""})),/*#__PURE__*/react_default.a.createElement("div",{id:"body"},/*#__PURE__*/react_default.a.createElement("h3",{id:"mini-title"},miniTitle),/*#__PURE__*/react_default.a.createElement("h1",{id:"title"},title),/*#__PURE__*/react_default.a.createElement("div",{className:"btn-container"},buttonTop),/*#__PURE__*/react_default.a.createElement("p",{id:"text"},text),buttonBottom)));};var articleCard=function articleCard(title,category,image){return/*#__PURE__*/react_default.a.createElement("div",{id:"article-card"},/*#__PURE__*/react_default.a.createElement("div",{id:"card-body"},/*#__PURE__*/react_default.a.createElement("div",{id:"img-container"},/*#__PURE__*/react_default.a.createElement("img",{src:image,alt:""})),/*#__PURE__*/react_default.a.createElement("h2",null,category),/*#__PURE__*/react_default.a.createElement("h1",null,title)));};var carouselCard=function carouselCard(caption,image){return/*#__PURE__*/react_default.a.createElement("div",{id:"carousel-card"},/*#__PURE__*/react_default.a.createElement("div",{id:"card-body"},/*#__PURE__*/react_default.a.createElement("div",{id:"img-container"},/*#__PURE__*/react_default.a.createElement("img",{src:image,alt:""})),/*#__PURE__*/react_default.a.createElement("h1",{id:"title"},caption)));};var renderCardType=function renderCardType(props){switch(props.type){case'large-card':return largeCard(props.title,props.text,props.image,props.miniTitle,props.buttonTop,props.buttonBottom);case'article-card':return articleCard(props.title,props.category,props.image);case'carousel-card':return carouselCard(props.caption,props.image);default:return miniInformationCard(props.title,props.text,props.linkContent,props.href);}};return/*#__PURE__*/react_default.a.createElement(Style,null,renderCardType(props));};index_modern_Card.propTypes={text:prop_types_default.a.string,linkContent:prop_types_default.a.string,href:prop_types_default.a.string,type:prop_types_default.a.string,title:prop_types_default.a.string,caption:prop_types_default.a.string,miniTitle:prop_types_default.a.string,buttonTop:prop_types_default.a.object,buttonBottom:prop_types_default.a.object};function _templateObject5(){var data=_taggedTemplateLiteralLoose(["\n  color: ",";\n  display: block;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n\n  /* Hide the browser's default checkbox */\n  input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n  }\n\n  /* Create a custom checkbox */\n  .checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 20px;\n    width: 20px;\n    border: 1px solid ",";\n    border-radius: 2px;\n  }\n\n  /* On mouse-over, add a grey background color */\n  &:hover input ~ .checkmark {\n    background-color: rgba(0, 0, 0, 0.1);\n  }\n\n  /* When the checkbox is checked, add a blue background */\n  input:checked ~ .checkmark {\n    background-color: ",";\n  }\n\n  /* Style the checkmark/indicator */\n  .checkmark:after {\n    content: \"\";\n    display: none;\n    position: absolute;\n    left: 7px;\n    top: 3px;\n    width: 5px;\n    height: 10px;\n    border: solid ",";\n    border-width: 0 2px 2px 0;\n    transform: rotate(45deg);\n  }\n\n  /* Show the checkmark when checked */\n  input:checked ~ .checkmark:after {\n    display: block;\n  }\n"]);_templateObject5=function _templateObject5(){return data;};return data;}function _templateObject4(){var data=_taggedTemplateLiteralLoose(["\n  position: absolute;\n  margin: 15px;\n  color: ",";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    top: -5px;\n    display: block;\n    left: 2.5rem;\n    width: 1px;\n    height: calc(1rem + 10px);\n    background: ",";\n  }\n"]);_templateObject4=function _templateObject4(){return data;};return data;}function _templateObject3(){var data=_taggedTemplateLiteralLoose(["\n  border: 0;\n  clip: rect(0 0 0 0);\n  overflow: hidden;\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n\n  &:checked + ",":before {\n    background: ",";\n  }\n"]);_templateObject3=function _templateObject3(){return data;};return data;}function _templateObject2(){var data=_taggedTemplateLiteralLoose(["\n  display: block;\n  color: ",";\n\n  &:before {\n    content: \"\";\n    display: inline-block;\n    width: 1.2rem;\n    height: 1.2rem;\n    vertical-align: -0.25rem;\n    border-radius: 1.2rem;\n    border: 1px solid ",";\n    margin-right: 0.6rem;\n    transition: background 0.2s ease;\n    box-shadow: inset 0 0 0 0.3rem ",";\n  }\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject$3(){var data=_taggedTemplateLiteralLoose(["\n  width: calc(100% - 34px);\n  padding: 10px 15px;\n  color: ",";\n  background-color: transparent;\n  border: 2px solid ",";\n  border-radius: 5px;\n  font-family: inherit;\n\n  &::placeholder {\n    color: ",";\n    opacity: 0.5;\n  }\n"]);_templateObject$3=function _templateObject(){return data;};return data;}var BaseInput=styled_components_esm(Field)(_templateObject$3(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;});var RadioSpan=styled_components_esm.span(_templateObject2(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.background;});var RadioButton=styled_components_esm(Field)(_templateObject3(),RadioSpan,function(props){return props.theme.colors.primary;});var PhoneSpan=styled_components_esm.span(_templateObject4(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;});var CheckboxLabel=styled_components_esm.label(_templateObject5(),function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.primary;},function(props){return props.theme.colors.background;});function _templateObject7(){var data=_taggedTemplateLiteralLoose(["\n  padding: 8px 12px;\n  width: 100%;\n"]);_templateObject7=function _templateObject7(){return data;};return data;}function _templateObject6(){var data=_taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  cursor: pointer;\n  &:hover {\n    opacity: 0.5;\n  }\n"]);_templateObject6=function _templateObject6(){return data;};return data;}function _templateObject5$1(){var data=_taggedTemplateLiteralLoose(["\n  list-style-type: none;\n  height: fit-content;\n  width: 300px;\n  padding-left: 0;\n  background: #f3f3f3;\n  z-index: 100;\n  overflow: auto;\n  margin-top: 0;\n  font-weight: 400;\n\n  .accent-background {\n    background: #e5e5e5;\n  }\n"]);_templateObject5$1=function _templateObject5(){return data;};return data;}function _templateObject4$1(){var data=_taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  border: 2px solid #000000;\n  border-radius: 5px;\n  background: #dbdbdb;\n  font-weight: 400;\n  padding: 8px 12px;\n  justify-content: space-between;\n  width: 300px;\n  box-sizing: border-box;\n  &:active,\n  &:focus {\n    outline: 0;\n  }\n"]);_templateObject4$1=function _templateObject4(){return data;};return data;}function _templateObject3$1(){var data=_taggedTemplateLiteralLoose(["\n  margin-top: 8px;\n  width: fit-content;\n"]);_templateObject3$1=function _templateObject3(){return data;};return data;}function _templateObject2$1(){var data=_taggedTemplateLiteralLoose(["\n  p {\n    margin: 0;\n  }\n\n  .rotated {\n    transform-box: fill-box;\n    transform-origin: center;\n    transform: rotate(180deg);\n  }\n\n  .background-active {\n    background: #f3f3f3;\n  }\n"]);_templateObject2$1=function _templateObject2(){return data;};return data;}function _templateObject$4(){var data=_taggedTemplateLiteralLoose(["\n  font-weight: 500;\n"]);_templateObject$4=function _templateObject(){return data;};return data;}var DropdownLabel=styled_components_esm.label(_templateObject$4());var DropdownContainer=styled_components_esm.div(_templateObject2$1());var DropdownWrapper=styled_components_esm.div(_templateObject3$1());var DropdownButton=styled_components_esm.div(_templateObject4$1());var DropdownUl=styled_components_esm.ul(_templateObject5$1());var DropdownWrapperLi=styled_components_esm.div(_templateObject6());var DropdownLi=styled_components_esm.li(_templateObject7());var index_modern_ArrowDropdown=function ArrowDropdown(_ref){var active=_ref.active;return/*#__PURE__*/react_default.a.createElement("svg",{width:"15",height:"7",viewBox:"0 0 15 7",fill:"none",xmlns:"http://www.w3.org/2000/svg",className:active?"rotated":undefined},/*#__PURE__*/react_default.a.createElement("path",{d:"M12.853 1H1.71826L7.28561 6L12.853 1Z",fill:"#252C29",stroke:"#252C29"}));};var index_modern_Dropdown=function Dropdown(_ref2){var field=_ref2.field,setFieldValue=_ref2.form.setFieldValue,props=index_modern_objectWithoutPropertiesLoose(_ref2,["field","form"]);var _useState=Object(react["useState"])(false),show=_useState[0],setShow=_useState[1];var _useState2=Object(react["useState"])(props.placeholder),value=_useState2[0],setValue=_useState2[1];var node=Object(react["useRef"])();var handleClickOutside=function handleClickOutside(e){if(node.current.contains(e.target)){return;}setShow(false);};var _handleChange=function _handleChange(e){if(props.onChange){props.onChange(e);}setShow(false);setValue(e);setFieldValue(field.name,e);};Object(react["useEffect"])(function(){if(show){document.addEventListener("mousedown",handleClickOutside);}else{document.removeEventListener("mousedown",handleClickOutside);}return function(){document.removeEventListener("mousedown",handleClickOutside);};},[show]);Object(react["useEffect"])(function(){setFieldValue(field.name,value);},[props.defaultValue]);return/*#__PURE__*/react_default.a.createElement(DropdownContainer,null,/*#__PURE__*/react_default.a.createElement(DropdownLabel,null,props.label),/*#__PURE__*/react_default.a.createElement(DropdownWrapper,{ref:node,className:show?"background-active":undefined},/*#__PURE__*/react_default.a.createElement(DropdownButton,{onClick:function onClick(e){return setShow(!show);}},/*#__PURE__*/react_default.a.createElement("p",null,value),/*#__PURE__*/react_default.a.createElement(index_modern_ArrowDropdown,{active:show})),show&&/*#__PURE__*/react_default.a.createElement(DropdownUl,null,props.choices.map(function(value,idx){return/*#__PURE__*/react_default.a.createElement(DropdownWrapperLi,{key:value.index||value.id,onClick:function onClick(){return _handleChange(value);}},/*#__PURE__*/react_default.a.createElement(DropdownLi,{key:value.index||value.id,value:value.value,className:idx%2!==0?"accent-background":undefined},/*#__PURE__*/react_default.a.createElement("p",null,value)));}))));};var index_modern_TextInput=function TextInput(props){return/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({type:props.type||"text"},props));};var index_modern_RadioInput=function RadioInput(_ref){var name=_ref.name,value=_ref.value,children=_ref.children,props=index_modern_objectWithoutPropertiesLoose(_ref,["name","value","children"]);return/*#__PURE__*/react_default.a.createElement("label",{style:{cursor:"pointer"}},/*#__PURE__*/react_default.a.createElement(RadioButton,index_modern_extends({type:"radio",name:name,value:value||children},props)),/*#__PURE__*/react_default.a.createElement(RadioSpan,null,children));};var index_modern_NumberInput=function NumberInput(props){return/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({type:"number"},props));};var index_modern_TextAreaInput=function TextAreaInput(props){return/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({component:"textarea"},props));};var index_modern_PhoneInput=function PhoneInput(props){return/*#__PURE__*/react_default.a.createElement("div",{style:{position:"relative"}},/*#__PURE__*/react_default.a.createElement(PhoneSpan,null,"+62"),/*#__PURE__*/react_default.a.createElement(BaseInput,index_modern_extends({style:{position:"relative",zIndex:10,paddingLeft:"4.5rem",width:"calc(100% - 19px - 4.5rem)"},type:"text"},props,{validate:function validate(value){var errorMessage;if(!value.match(/^\d*$/)){errorMessage="Invalid phone number";}return errorMessage;}})));};var index_modern_CheckboxInput=function CheckboxInput(_ref2){var value=_ref2.value,children=_ref2.children,props=index_modern_objectWithoutPropertiesLoose(_ref2,["value","children"]);return/*#__PURE__*/react_default.a.createElement(CheckboxLabel,null,/*#__PURE__*/react_default.a.createElement(Field,index_modern_extends({type:"checkbox",value:value||children},props)),/*#__PURE__*/react_default.a.createElement("span",{className:"checkmark"}),children);};var index_modern_DropdownInput=function DropdownInput(props){return/*#__PURE__*/react_default.a.createElement(Field,index_modern_extends({component:index_modern_Dropdown},props));};var index_modern_index={Checkbox:index_modern_CheckboxInput,Number:index_modern_NumberInput,Phone:index_modern_PhoneInput,Radio:index_modern_RadioInput,Text:index_modern_TextInput,TextArea:index_modern_TextAreaInput,Dropdown:index_modern_DropdownInput};function _templateObject$5(){var data=_taggedTemplateLiteralLoose(["\n  .small-nav {\n    margin-top: 30px;\n    padding-bottom: 10px;\n    margin-bottom: 10px;\n    display: flex;\n    justify-content: center;\n    font-size: 1.2rem;\n    overflow-x: auto;\n    color: white;\n  }\n\n  .small-nav div {\n    display: block;\n    margin: 0 10px;\n    cursor: pointer;\n    white-space: nowrap;\n\n    &:first-child {\n      margin-left: 0;\n    }\n    &:last-child {\n      margin-right: 0;\n    }\n  }\n\n  @media (max-width: 992px) {\n    .small-nav {\n      display: flex;\n      justify-content: center;\n    }\n  }\n\n  .nav-content {\n    display: flex;\n    justify-content: center;\n  }\n"]);_templateObject$5=function _templateObject(){return data;};return data;}var Style$1=styled_components_esm.div(_templateObject$5());var index_modern_SmallNav=/*#__PURE__*/function(_Component){index_modern_inheritsLoose(SmallNav,_Component);function SmallNav(props){var _this;_this=_Component.call(this,props)||this;_this.state={index:0};return _this;}var _proto=SmallNav.prototype;_proto.render=function render(){var _this2=this;var navItems=this.props.navItems;return/*#__PURE__*/react_default.a.createElement(Style$1,null,/*#__PURE__*/react_default.a.createElement("div",{className:"small-nav"},navItems.map(function(navItem,index){return/*#__PURE__*/react_default.a.createElement("div",{key:index,onClick:function onClick(){return _this2.setState({index:index});},style:{fontWeight:_this2.state.index===index?"bold":"normal"}},navItem.title);})),/*#__PURE__*/react_default.a.createElement("div",{className:"nav-content"},navItems[this.state.index].component));};return SmallNav;}(react["Component"]);index_modern_SmallNav.propTypes={navItems:prop_types_default.a.array.isRequired};
+
+/***/ }),
+/* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ createBrowserHistory; });
+__webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ createHashHistory; });
+__webpack_require__.d(__webpack_exports__, "d", function() { return /* binding */ createMemoryHistory; });
+__webpack_require__.d(__webpack_exports__, "c", function() { return /* binding */ createLocation; });
+__webpack_require__.d(__webpack_exports__, "f", function() { return /* binding */ locationsAreEqual; });
+__webpack_require__.d(__webpack_exports__, "e", function() { return /* binding */ createPath; });
+
+// UNUSED EXPORTS: parsePath
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+var esm_extends = __webpack_require__(2);
+
+// CONCATENATED MODULE: ./node_modules/resolve-pathname/esm/resolve-pathname.js
+function isAbsolute(pathname) {
+  return pathname.charAt(0) === '/';
+}
+
+// About 1.5x faster than the two-arg version of Array#splice()
+function spliceOne(list, index) {
+  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1) {
+    list[i] = list[k];
+  }
+
+  list.pop();
+}
+
+// This implementation is based heavily on node's url.parse
+function resolvePathname(to, from) {
+  if (from === undefined) from = '';
+
+  var toParts = (to && to.split('/')) || [];
+  var fromParts = (from && from.split('/')) || [];
+
+  var isToAbs = to && isAbsolute(to);
+  var isFromAbs = from && isAbsolute(from);
+  var mustEndAbs = isToAbs || isFromAbs;
+
+  if (to && isAbsolute(to)) {
+    // to is absolute
+    fromParts = toParts;
+  } else if (toParts.length) {
+    // to is relative, drop the filename
+    fromParts.pop();
+    fromParts = fromParts.concat(toParts);
+  }
+
+  if (!fromParts.length) return '/';
+
+  var hasTrailingSlash;
+  if (fromParts.length) {
+    var last = fromParts[fromParts.length - 1];
+    hasTrailingSlash = last === '.' || last === '..' || last === '';
+  } else {
+    hasTrailingSlash = false;
+  }
+
+  var up = 0;
+  for (var i = fromParts.length; i >= 0; i--) {
+    var part = fromParts[i];
+
+    if (part === '.') {
+      spliceOne(fromParts, i);
+    } else if (part === '..') {
+      spliceOne(fromParts, i);
+      up++;
+    } else if (up) {
+      spliceOne(fromParts, i);
+      up--;
+    }
+  }
+
+  if (!mustEndAbs) for (; up--; up) fromParts.unshift('..');
+
+  if (
+    mustEndAbs &&
+    fromParts[0] !== '' &&
+    (!fromParts[0] || !isAbsolute(fromParts[0]))
+  )
+    fromParts.unshift('');
+
+  var result = fromParts.join('/');
+
+  if (hasTrailingSlash && result.substr(-1) !== '/') result += '/';
+
+  return result;
+}
+
+/* harmony default export */ var resolve_pathname = (resolvePathname);
+
+// CONCATENATED MODULE: ./node_modules/value-equal/esm/value-equal.js
+function value_equal_valueOf(obj) {
+  return obj.valueOf ? obj.valueOf() : Object.prototype.valueOf.call(obj);
+}
+
+function valueEqual(a, b) {
+  // Test for strict equality first.
+  if (a === b) return true;
+
+  // Otherwise, if either of them == null they are not equal.
+  if (a == null || b == null) return false;
+
+  if (Array.isArray(a)) {
+    return (
+      Array.isArray(b) &&
+      a.length === b.length &&
+      a.every(function(item, index) {
+        return valueEqual(item, b[index]);
+      })
+    );
+  }
+
+  if (typeof a === 'object' || typeof b === 'object') {
+    var aValue = value_equal_valueOf(a);
+    var bValue = value_equal_valueOf(b);
+
+    if (aValue !== a || bValue !== b) return valueEqual(aValue, bValue);
+
+    return Object.keys(Object.assign({}, a, b)).every(function(key) {
+      return valueEqual(a[key], b[key]);
+    });
+  }
+
+  return false;
+}
+
+/* harmony default export */ var value_equal = (valueEqual);
+
+// EXTERNAL MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
+var tiny_invariant_esm = __webpack_require__(19);
+
+// CONCATENATED MODULE: ./node_modules/history/esm/history.js
+
+
+
+
+
+
+function addLeadingSlash(path) {
+  return path.charAt(0) === '/' ? path : '/' + path;
+}
+function stripLeadingSlash(path) {
+  return path.charAt(0) === '/' ? path.substr(1) : path;
+}
+function hasBasename(path, prefix) {
+  return path.toLowerCase().indexOf(prefix.toLowerCase()) === 0 && '/?#'.indexOf(path.charAt(prefix.length)) !== -1;
+}
+function stripBasename(path, prefix) {
+  return hasBasename(path, prefix) ? path.substr(prefix.length) : path;
+}
+function stripTrailingSlash(path) {
+  return path.charAt(path.length - 1) === '/' ? path.slice(0, -1) : path;
+}
+function parsePath(path) {
+  var pathname = path || '/';
+  var search = '';
+  var hash = '';
+  var hashIndex = pathname.indexOf('#');
+
+  if (hashIndex !== -1) {
+    hash = pathname.substr(hashIndex);
+    pathname = pathname.substr(0, hashIndex);
+  }
+
+  var searchIndex = pathname.indexOf('?');
+
+  if (searchIndex !== -1) {
+    search = pathname.substr(searchIndex);
+    pathname = pathname.substr(0, searchIndex);
+  }
+
+  return {
+    pathname: pathname,
+    search: search === '?' ? '' : search,
+    hash: hash === '#' ? '' : hash
+  };
+}
+function createPath(location) {
+  var pathname = location.pathname,
+      search = location.search,
+      hash = location.hash;
+  var path = pathname || '/';
+  if (search && search !== '?') path += search.charAt(0) === '?' ? search : "?" + search;
+  if (hash && hash !== '#') path += hash.charAt(0) === '#' ? hash : "#" + hash;
+  return path;
+}
+
+function createLocation(path, state, key, currentLocation) {
+  var location;
+
+  if (typeof path === 'string') {
+    // Two-arg form: push(path, state)
+    location = parsePath(path);
+    location.state = state;
+  } else {
+    // One-arg form: push(location)
+    location = Object(esm_extends["a" /* default */])({}, path);
+    if (location.pathname === undefined) location.pathname = '';
+
+    if (location.search) {
+      if (location.search.charAt(0) !== '?') location.search = '?' + location.search;
+    } else {
+      location.search = '';
+    }
+
+    if (location.hash) {
+      if (location.hash.charAt(0) !== '#') location.hash = '#' + location.hash;
+    } else {
+      location.hash = '';
+    }
+
+    if (state !== undefined && location.state === undefined) location.state = state;
+  }
+
+  try {
+    location.pathname = decodeURI(location.pathname);
+  } catch (e) {
+    if (e instanceof URIError) {
+      throw new URIError('Pathname "' + location.pathname + '" could not be decoded. ' + 'This is likely caused by an invalid percent-encoding.');
+    } else {
+      throw e;
+    }
+  }
+
+  if (key) location.key = key;
+
+  if (currentLocation) {
+    // Resolve incomplete/relative pathname relative to current location.
+    if (!location.pathname) {
+      location.pathname = currentLocation.pathname;
+    } else if (location.pathname.charAt(0) !== '/') {
+      location.pathname = resolve_pathname(location.pathname, currentLocation.pathname);
+    }
+  } else {
+    // When there is no prior location and pathname is empty, set it to /
+    if (!location.pathname) {
+      location.pathname = '/';
+    }
+  }
+
+  return location;
+}
+function locationsAreEqual(a, b) {
+  return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && value_equal(a.state, b.state);
+}
+
+function createTransitionManager() {
+  var prompt = null;
+
+  function setPrompt(nextPrompt) {
+     false ? undefined : void 0;
+    prompt = nextPrompt;
+    return function () {
+      if (prompt === nextPrompt) prompt = null;
+    };
+  }
+
+  function confirmTransitionTo(location, action, getUserConfirmation, callback) {
+    // TODO: If another transition starts while we're still confirming
+    // the previous one, we may end up in a weird state. Figure out the
+    // best way to handle this.
+    if (prompt != null) {
+      var result = typeof prompt === 'function' ? prompt(location, action) : prompt;
+
+      if (typeof result === 'string') {
+        if (typeof getUserConfirmation === 'function') {
+          getUserConfirmation(result, callback);
+        } else {
+           false ? undefined : void 0;
+          callback(true);
+        }
+      } else {
+        // Return false from a transition hook to cancel the transition.
+        callback(result !== false);
+      }
+    } else {
+      callback(true);
+    }
+  }
+
+  var listeners = [];
+
+  function appendListener(fn) {
+    var isActive = true;
+
+    function listener() {
+      if (isActive) fn.apply(void 0, arguments);
+    }
+
+    listeners.push(listener);
+    return function () {
+      isActive = false;
+      listeners = listeners.filter(function (item) {
+        return item !== listener;
+      });
+    };
+  }
+
+  function notifyListeners() {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    listeners.forEach(function (listener) {
+      return listener.apply(void 0, args);
+    });
+  }
+
+  return {
+    setPrompt: setPrompt,
+    confirmTransitionTo: confirmTransitionTo,
+    appendListener: appendListener,
+    notifyListeners: notifyListeners
+  };
+}
+
+var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+function getConfirmation(message, callback) {
+  callback(window.confirm(message)); // eslint-disable-line no-alert
+}
+/**
+ * Returns true if the HTML5 history API is supported. Taken from Modernizr.
+ *
+ * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
+ * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
+ * changed to avoid false negatives for Windows Phones: https://github.com/reactjs/react-router/issues/586
+ */
+
+function supportsHistory() {
+  var ua = window.navigator.userAgent;
+  if ((ua.indexOf('Android 2.') !== -1 || ua.indexOf('Android 4.0') !== -1) && ua.indexOf('Mobile Safari') !== -1 && ua.indexOf('Chrome') === -1 && ua.indexOf('Windows Phone') === -1) return false;
+  return window.history && 'pushState' in window.history;
+}
+/**
+ * Returns true if browser fires popstate on hash change.
+ * IE10 and IE11 do not.
+ */
+
+function supportsPopStateOnHashChange() {
+  return window.navigator.userAgent.indexOf('Trident') === -1;
+}
+/**
+ * Returns false if using go(n) with hash history causes a full page reload.
+ */
+
+function supportsGoWithoutReloadUsingHash() {
+  return window.navigator.userAgent.indexOf('Firefox') === -1;
+}
+/**
+ * Returns true if a given popstate event is an extraneous WebKit event.
+ * Accounts for the fact that Chrome on iOS fires real popstate events
+ * containing undefined state when pressing the back button.
+ */
+
+function isExtraneousPopstateEvent(event) {
+  return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
+}
+
+var PopStateEvent = 'popstate';
+var HashChangeEvent = 'hashchange';
+
+function getHistoryState() {
+  try {
+    return window.history.state || {};
+  } catch (e) {
+    // IE 11 sometimes throws when accessing window.history.state
+    // See https://github.com/ReactTraining/history/pull/289
+    return {};
+  }
+}
+/**
+ * Creates a history object that uses the HTML5 history API including
+ * pushState, replaceState, and the popstate event.
+ */
+
+
+function createBrowserHistory(props) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  !canUseDOM ?  false ? undefined : Object(tiny_invariant_esm["a" /* default */])(false) : void 0;
+  var globalHistory = window.history;
+  var canUseHistory = supportsHistory();
+  var needsHashChangeListener = !supportsPopStateOnHashChange();
+  var _props = props,
+      _props$forceRefresh = _props.forceRefresh,
+      forceRefresh = _props$forceRefresh === void 0 ? false : _props$forceRefresh,
+      _props$getUserConfirm = _props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
+      _props$keyLength = _props.keyLength,
+      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
+  var basename = props.basename ? stripTrailingSlash(addLeadingSlash(props.basename)) : '';
+
+  function getDOMLocation(historyState) {
+    var _ref = historyState || {},
+        key = _ref.key,
+        state = _ref.state;
+
+    var _window$location = window.location,
+        pathname = _window$location.pathname,
+        search = _window$location.search,
+        hash = _window$location.hash;
+    var path = pathname + search + hash;
+     false ? undefined : void 0;
+    if (basename) path = stripBasename(path, basename);
+    return createLocation(path, state, key);
+  }
+
+  function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  }
+
+  var transitionManager = createTransitionManager();
+
+  function setState(nextState) {
+    Object(esm_extends["a" /* default */])(history, nextState);
+
+    history.length = globalHistory.length;
+    transitionManager.notifyListeners(history.location, history.action);
+  }
+
+  function handlePopState(event) {
+    // Ignore extraneous popstate events in WebKit.
+    if (isExtraneousPopstateEvent(event)) return;
+    handlePop(getDOMLocation(event.state));
+  }
+
+  function handleHashChange() {
+    handlePop(getDOMLocation(getHistoryState()));
+  }
+
+  var forceNextPop = false;
+
+  function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({
+            action: action,
+            location: location
+          });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  }
+
+  function revertPop(fromLocation) {
+    var toLocation = history.location; // TODO: We could probably make this more reliable by
+    // keeping a list of keys we've seen in sessionStorage.
+    // Instead, we just default to 0 for keys we don't know.
+
+    var toIndex = allKeys.indexOf(toLocation.key);
+    if (toIndex === -1) toIndex = 0;
+    var fromIndex = allKeys.indexOf(fromLocation.key);
+    if (fromIndex === -1) fromIndex = 0;
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  }
+
+  var initialLocation = getDOMLocation(getHistoryState());
+  var allKeys = [initialLocation.key]; // Public interface
+
+  function createHref(location) {
+    return basename + createPath(location);
+  }
+
+  function push(path, state) {
+     false ? undefined : void 0;
+    var action = 'PUSH';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+      if (canUseHistory) {
+        globalHistory.pushState({
+          key: key,
+          state: state
+        }, null, href);
+
+        if (forceRefresh) {
+          window.location.href = href;
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+          var nextKeys = allKeys.slice(0, prevIndex + 1);
+          nextKeys.push(location.key);
+          allKeys = nextKeys;
+          setState({
+            action: action,
+            location: location
+          });
+        }
+      } else {
+         false ? undefined : void 0;
+        window.location.href = href;
+      }
+    });
+  }
+
+  function replace(path, state) {
+     false ? undefined : void 0;
+    var action = 'REPLACE';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+      if (canUseHistory) {
+        globalHistory.replaceState({
+          key: key,
+          state: state
+        }, null, href);
+
+        if (forceRefresh) {
+          window.location.replace(href);
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+          if (prevIndex !== -1) allKeys[prevIndex] = location.key;
+          setState({
+            action: action,
+            location: location
+          });
+        }
+      } else {
+         false ? undefined : void 0;
+        window.location.replace(href);
+      }
+    });
+  }
+
+  function go(n) {
+    globalHistory.go(n);
+  }
+
+  function goBack() {
+    go(-1);
+  }
+
+  function goForward() {
+    go(1);
+  }
+
+  var listenerCount = 0;
+
+  function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1 && delta === 1) {
+      window.addEventListener(PopStateEvent, handlePopState);
+      if (needsHashChangeListener) window.addEventListener(HashChangeEvent, handleHashChange);
+    } else if (listenerCount === 0) {
+      window.removeEventListener(PopStateEvent, handlePopState);
+      if (needsHashChangeListener) window.removeEventListener(HashChangeEvent, handleHashChange);
+    }
+  }
+
+  var isBlocked = false;
+
+  function block(prompt) {
+    if (prompt === void 0) {
+      prompt = false;
+    }
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  }
+
+  function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  }
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+  return history;
+}
+
+var HashChangeEvent$1 = 'hashchange';
+var HashPathCoders = {
+  hashbang: {
+    encodePath: function encodePath(path) {
+      return path.charAt(0) === '!' ? path : '!/' + stripLeadingSlash(path);
+    },
+    decodePath: function decodePath(path) {
+      return path.charAt(0) === '!' ? path.substr(1) : path;
+    }
+  },
+  noslash: {
+    encodePath: stripLeadingSlash,
+    decodePath: addLeadingSlash
+  },
+  slash: {
+    encodePath: addLeadingSlash,
+    decodePath: addLeadingSlash
+  }
+};
+
+function stripHash(url) {
+  var hashIndex = url.indexOf('#');
+  return hashIndex === -1 ? url : url.slice(0, hashIndex);
+}
+
+function getHashPath() {
+  // We can't use window.location.hash here because it's not
+  // consistent across browsers - Firefox will pre-decode it!
+  var href = window.location.href;
+  var hashIndex = href.indexOf('#');
+  return hashIndex === -1 ? '' : href.substring(hashIndex + 1);
+}
+
+function pushHashPath(path) {
+  window.location.hash = path;
+}
+
+function replaceHashPath(path) {
+  window.location.replace(stripHash(window.location.href) + '#' + path);
+}
+
+function createHashHistory(props) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  !canUseDOM ?  false ? undefined : Object(tiny_invariant_esm["a" /* default */])(false) : void 0;
+  var globalHistory = window.history;
+  var canGoWithoutReload = supportsGoWithoutReloadUsingHash();
+  var _props = props,
+      _props$getUserConfirm = _props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
+      _props$hashType = _props.hashType,
+      hashType = _props$hashType === void 0 ? 'slash' : _props$hashType;
+  var basename = props.basename ? stripTrailingSlash(addLeadingSlash(props.basename)) : '';
+  var _HashPathCoders$hashT = HashPathCoders[hashType],
+      encodePath = _HashPathCoders$hashT.encodePath,
+      decodePath = _HashPathCoders$hashT.decodePath;
+
+  function getDOMLocation() {
+    var path = decodePath(getHashPath());
+     false ? undefined : void 0;
+    if (basename) path = stripBasename(path, basename);
+    return createLocation(path);
+  }
+
+  var transitionManager = createTransitionManager();
+
+  function setState(nextState) {
+    Object(esm_extends["a" /* default */])(history, nextState);
+
+    history.length = globalHistory.length;
+    transitionManager.notifyListeners(history.location, history.action);
+  }
+
+  var forceNextPop = false;
+  var ignorePath = null;
+
+  function locationsAreEqual$$1(a, b) {
+    return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash;
+  }
+
+  function handleHashChange() {
+    var path = getHashPath();
+    var encodedPath = encodePath(path);
+
+    if (path !== encodedPath) {
+      // Ensure we always have a properly-encoded hash.
+      replaceHashPath(encodedPath);
+    } else {
+      var location = getDOMLocation();
+      var prevLocation = history.location;
+      if (!forceNextPop && locationsAreEqual$$1(prevLocation, location)) return; // A hashchange doesn't always == location change.
+
+      if (ignorePath === createPath(location)) return; // Ignore this change; we already setState in push/replace.
+
+      ignorePath = null;
+      handlePop(location);
+    }
+  }
+
+  function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({
+            action: action,
+            location: location
+          });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  }
+
+  function revertPop(fromLocation) {
+    var toLocation = history.location; // TODO: We could probably make this more reliable by
+    // keeping a list of paths we've seen in sessionStorage.
+    // Instead, we just default to 0 for paths we don't know.
+
+    var toIndex = allPaths.lastIndexOf(createPath(toLocation));
+    if (toIndex === -1) toIndex = 0;
+    var fromIndex = allPaths.lastIndexOf(createPath(fromLocation));
+    if (fromIndex === -1) fromIndex = 0;
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  } // Ensure the hash is encoded properly before doing anything else.
+
+
+  var path = getHashPath();
+  var encodedPath = encodePath(path);
+  if (path !== encodedPath) replaceHashPath(encodedPath);
+  var initialLocation = getDOMLocation();
+  var allPaths = [createPath(initialLocation)]; // Public interface
+
+  function createHref(location) {
+    var baseTag = document.querySelector('base');
+    var href = '';
+
+    if (baseTag && baseTag.getAttribute('href')) {
+      href = stripHash(window.location.href);
+    }
+
+    return href + '#' + encodePath(basename + createPath(location));
+  }
+
+  function push(path, state) {
+     false ? undefined : void 0;
+    var action = 'PUSH';
+    var location = createLocation(path, undefined, undefined, history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var path = createPath(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a PUSH, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        pushHashPath(encodedPath);
+        var prevIndex = allPaths.lastIndexOf(createPath(history.location));
+        var nextPaths = allPaths.slice(0, prevIndex + 1);
+        nextPaths.push(path);
+        allPaths = nextPaths;
+        setState({
+          action: action,
+          location: location
+        });
+      } else {
+         false ? undefined : void 0;
+        setState();
+      }
+    });
+  }
+
+  function replace(path, state) {
+     false ? undefined : void 0;
+    var action = 'REPLACE';
+    var location = createLocation(path, undefined, undefined, history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var path = createPath(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a REPLACE, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        replaceHashPath(encodedPath);
+      }
+
+      var prevIndex = allPaths.indexOf(createPath(history.location));
+      if (prevIndex !== -1) allPaths[prevIndex] = path;
+      setState({
+        action: action,
+        location: location
+      });
+    });
+  }
+
+  function go(n) {
+     false ? undefined : void 0;
+    globalHistory.go(n);
+  }
+
+  function goBack() {
+    go(-1);
+  }
+
+  function goForward() {
+    go(1);
+  }
+
+  var listenerCount = 0;
+
+  function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1 && delta === 1) {
+      window.addEventListener(HashChangeEvent$1, handleHashChange);
+    } else if (listenerCount === 0) {
+      window.removeEventListener(HashChangeEvent$1, handleHashChange);
+    }
+  }
+
+  var isBlocked = false;
+
+  function block(prompt) {
+    if (prompt === void 0) {
+      prompt = false;
+    }
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  }
+
+  function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  }
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+  return history;
+}
+
+function clamp(n, lowerBound, upperBound) {
+  return Math.min(Math.max(n, lowerBound), upperBound);
+}
+/**
+ * Creates a history object that stores locations in memory.
+ */
+
+
+function createMemoryHistory(props) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  var _props = props,
+      getUserConfirmation = _props.getUserConfirmation,
+      _props$initialEntries = _props.initialEntries,
+      initialEntries = _props$initialEntries === void 0 ? ['/'] : _props$initialEntries,
+      _props$initialIndex = _props.initialIndex,
+      initialIndex = _props$initialIndex === void 0 ? 0 : _props$initialIndex,
+      _props$keyLength = _props.keyLength,
+      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
+  var transitionManager = createTransitionManager();
+
+  function setState(nextState) {
+    Object(esm_extends["a" /* default */])(history, nextState);
+
+    history.length = history.entries.length;
+    transitionManager.notifyListeners(history.location, history.action);
+  }
+
+  function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  }
+
+  var index = clamp(initialIndex, 0, initialEntries.length - 1);
+  var entries = initialEntries.map(function (entry) {
+    return typeof entry === 'string' ? createLocation(entry, undefined, createKey()) : createLocation(entry, undefined, entry.key || createKey());
+  }); // Public interface
+
+  var createHref = createPath;
+
+  function push(path, state) {
+     false ? undefined : void 0;
+    var action = 'PUSH';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var prevIndex = history.index;
+      var nextIndex = prevIndex + 1;
+      var nextEntries = history.entries.slice(0);
+
+      if (nextEntries.length > nextIndex) {
+        nextEntries.splice(nextIndex, nextEntries.length - nextIndex, location);
+      } else {
+        nextEntries.push(location);
+      }
+
+      setState({
+        action: action,
+        location: location,
+        index: nextIndex,
+        entries: nextEntries
+      });
+    });
+  }
+
+  function replace(path, state) {
+     false ? undefined : void 0;
+    var action = 'REPLACE';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      history.entries[history.index] = location;
+      setState({
+        action: action,
+        location: location
+      });
+    });
+  }
+
+  function go(n) {
+    var nextIndex = clamp(history.index + n, 0, history.entries.length - 1);
+    var action = 'POP';
+    var location = history.entries[nextIndex];
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (ok) {
+        setState({
+          action: action,
+          location: location,
+          index: nextIndex
+        });
+      } else {
+        // Mimic the behavior of DOM histories by
+        // causing a render after a cancelled POP.
+        setState();
+      }
+    });
+  }
+
+  function goBack() {
+    go(-1);
+  }
+
+  function goForward() {
+    go(1);
+  }
+
+  function canGo(n) {
+    var nextIndex = history.index + n;
+    return nextIndex >= 0 && nextIndex < history.entries.length;
+  }
+
+  function block(prompt) {
+    if (prompt === void 0) {
+      prompt = false;
+    }
+
+    return transitionManager.setPrompt(prompt);
+  }
+
+  function listen(listener) {
+    return transitionManager.appendListener(listener);
+  }
+
+  var history = {
+    length: entries.length,
+    action: 'POP',
+    location: entries[index],
+    index: index,
+    entries: entries,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    canGo: canGo,
+    block: block,
+    listen: listen
+  };
+  return history;
+}
+
+
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isInternalUrl; });
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function isInternalUrl(url){return /^\/(?!\/)/.test(url);}
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+const u = __webpack_require__(17).fromPromise
+const fs = __webpack_require__(124)
+
+function pathExists (path) {
+  return fs.access(path).then(() => true).catch(() => false)
+}
+
+module.exports = {
+  pathExists: u(pathExists),
+  pathExistsSync: fs.existsSync
+}
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(68);
+
+
+/** Detect free variable `exports`. */
+var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports = freeModule && freeModule.exports === freeExports;
+
+/** Detect free variable `process` from Node.js. */
+var freeProcess = moduleExports && _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].process;
+
+/** Used to access faster Node.js helpers. */
+var nodeUtil = (function() {
+  try {
+    // Use `util.types` for Node.js 10+.
+    var types = freeModule && freeModule.require && freeModule.require('util').types;
+
+    if (types) {
+      return types;
+    }
+
+    // Legacy `process.binding('util')` for Node.js < 10.
+    return freeProcess && freeProcess.binding && freeProcess.binding('util');
+  } catch (e) {}
+}());
+
+/* harmony default export */ __webpack_exports__["a"] = (nodeUtil);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(90)(module)))
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var isArray = Array.isArray;
+var keyList = Object.keys;
+var hasProp = Object.prototype.hasOwnProperty;
+var hasElementType = typeof Element !== 'undefined';
+
+function equal(a, b) {
+  // fast-deep-equal index.js 2.0.1
+  if (a === b) return true;
+
+  if (a && b && typeof a == 'object' && typeof b == 'object') {
+    var arrA = isArray(a)
+      , arrB = isArray(b)
+      , i
+      , length
+      , key;
+
+    if (arrA && arrB) {
+      length = a.length;
+      if (length != b.length) return false;
+      for (i = length; i-- !== 0;)
+        if (!equal(a[i], b[i])) return false;
+      return true;
+    }
+
+    if (arrA != arrB) return false;
+
+    var dateA = a instanceof Date
+      , dateB = b instanceof Date;
+    if (dateA != dateB) return false;
+    if (dateA && dateB) return a.getTime() == b.getTime();
+
+    var regexpA = a instanceof RegExp
+      , regexpB = b instanceof RegExp;
+    if (regexpA != regexpB) return false;
+    if (regexpA && regexpB) return a.toString() == b.toString();
+
+    var keys = keyList(a);
+    length = keys.length;
+
+    if (length !== keyList(b).length)
+      return false;
+
+    for (i = length; i-- !== 0;)
+      if (!hasProp.call(b, keys[i])) return false;
+    // end fast-deep-equal
+
+    // start react-fast-compare
+    // custom handling for DOM elements
+    if (hasElementType && a instanceof Element && b instanceof Element)
+      return a === b;
+
+    // custom handling for React
+    for (i = length; i-- !== 0;) {
+      key = keys[i];
+      if (key === '_owner' && a.$$typeof) {
+        // React-specific: avoid traversing React elements' _owner.
+        //  _owner contains circular references
+        // and is not needed when comparing the actual elements (and not their owners)
+        // .$$typeof and ._store on just reasonable markers of a react element
+        continue;
+      } else {
+        // all other properties should be traversed as usual
+        if (!equal(a[key], b[key])) return false;
+      }
+    }
+    // end react-fast-compare
+
+    // fast-deep-equal index.js 2.0.1
+    return true;
+  }
+
+  return a !== a && b !== b;
+}
+// end fast-deep-equal
+
+module.exports = function exportedEqual(a, b) {
+  try {
+    return equal(a, b);
+  } catch (error) {
+    if ((error.message && error.message.match(/stack|recursion/i)) || (error.number === -2146828260)) {
+      // warn on circular references, don't crash
+      // browsers give this different errors name and messages:
+      // chrome/safari: "RangeError", "Maximum call stack size exceeded"
+      // firefox: "InternalError", too much recursion"
+      // edge: "Error", "Out of stack space"
+      console.warn('Warning: react-fast-compare does not handle circular references.', error.name, error.message);
+      return false;
+    }
+    // some other error. we should definitely know about these
+    throw error;
+  }
+};
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var roundingPrecisionFrom = __webpack_require__(103).roundingPrecisionFrom;
+
+var override = __webpack_require__(38);
+
+var OptimizationLevel = {
+  Zero: '0',
+  One: '1',
+  Two: '2'
+};
+
+var DEFAULTS = {};
+
+DEFAULTS[OptimizationLevel.Zero] = {};
+DEFAULTS[OptimizationLevel.One] = {
+  cleanupCharsets: true,
+  normalizeUrls: true,
+  optimizeBackground: true,
+  optimizeBorderRadius: true,
+  optimizeFilter: true,
+  optimizeFontWeight: true,
+  optimizeOutline: true,
+  removeEmpty: true,
+  removeNegativePaddings: true,
+  removeQuotes: true,
+  removeWhitespace: true,
+  replaceMultipleZeros: true,
+  replaceTimeUnits: true,
+  replaceZeroUnits: true,
+  roundingPrecision: roundingPrecisionFrom(undefined),
+  selectorsSortingMethod: 'standard',
+  specialComments: 'all',
+  tidyAtRules: true,
+  tidyBlockScopes: true,
+  tidySelectors: true,
+  transform: noop
+};
+DEFAULTS[OptimizationLevel.Two] = {
+  mergeAdjacentRules: true,
+  mergeIntoShorthands: true,
+  mergeMedia: true,
+  mergeNonAdjacentRules: true,
+  mergeSemantically: false,
+  overrideProperties: true,
+  removeEmpty: true,
+  reduceNonAdjacentRules: true,
+  removeDuplicateFontRules: true,
+  removeDuplicateMediaBlocks: true,
+  removeDuplicateRules: true,
+  removeUnusedAtRules: false,
+  restructureRules: false,
+  skipProperties: []
+};
+
+var ALL_KEYWORD_1 = '*';
+var ALL_KEYWORD_2 = 'all';
+var FALSE_KEYWORD_1 = 'false';
+var FALSE_KEYWORD_2 = 'off';
+var TRUE_KEYWORD_1 = 'true';
+var TRUE_KEYWORD_2 = 'on';
+
+var LIST_VALUE_SEPARATOR = ',';
+var OPTION_SEPARATOR = ';';
+var OPTION_VALUE_SEPARATOR = ':';
+
+function noop() {}
+
+function optimizationLevelFrom(source) {
+  var level = override(DEFAULTS, {});
+  var Zero = OptimizationLevel.Zero;
+  var One = OptimizationLevel.One;
+  var Two = OptimizationLevel.Two;
+
+
+  if (undefined === source) {
+    delete level[Two];
+    return level;
+  }
+
+  if (typeof source == 'string') {
+    source = parseInt(source);
+  }
+
+  if (typeof source == 'number' && source === parseInt(Two)) {
+    return level;
+  }
+
+  if (typeof source == 'number' && source === parseInt(One)) {
+    delete level[Two];
+    return level;
+  }
+
+  if (typeof source == 'number' && source === parseInt(Zero)) {
+    delete level[Two];
+    delete level[One];
+    return level;
+  }
+
+  if (typeof source == 'object') {
+    source = covertValuesToHashes(source);
+  }
+
+  if (One in source && 'roundingPrecision' in source[One]) {
+    source[One].roundingPrecision = roundingPrecisionFrom(source[One].roundingPrecision);
+  }
+
+  if (Two in source && 'skipProperties' in source[Two] && typeof(source[Two].skipProperties) == 'string') {
+    source[Two].skipProperties = source[Two].skipProperties.split(LIST_VALUE_SEPARATOR);
+  }
+
+  if (Zero in source || One in source || Two in source) {
+    level[Zero] = override(level[Zero], source[Zero]);
+  }
+
+  if (One in source && ALL_KEYWORD_1 in source[One]) {
+    level[One] = override(level[One], defaults(One, normalizeValue(source[One][ALL_KEYWORD_1])));
+    delete source[One][ALL_KEYWORD_1];
+  }
+
+  if (One in source && ALL_KEYWORD_2 in source[One]) {
+    level[One] = override(level[One], defaults(One, normalizeValue(source[One][ALL_KEYWORD_2])));
+    delete source[One][ALL_KEYWORD_2];
+  }
+
+  if (One in source || Two in source) {
+    level[One] = override(level[One], source[One]);
+  } else {
+    delete level[One];
+  }
+
+  if (Two in source && ALL_KEYWORD_1 in source[Two]) {
+    level[Two] = override(level[Two], defaults(Two, normalizeValue(source[Two][ALL_KEYWORD_1])));
+    delete source[Two][ALL_KEYWORD_1];
+  }
+
+  if (Two in source && ALL_KEYWORD_2 in source[Two]) {
+    level[Two] = override(level[Two], defaults(Two, normalizeValue(source[Two][ALL_KEYWORD_2])));
+    delete source[Two][ALL_KEYWORD_2];
+  }
+
+  if (Two in source) {
+    level[Two] = override(level[Two], source[Two]);
+  } else {
+    delete level[Two];
+  }
+
+  return level;
+}
+
+function defaults(level, value) {
+  var options = override(DEFAULTS[level], {});
+  var key;
+
+  for (key in options) {
+    if (typeof options[key] == 'boolean') {
+      options[key] = value;
+    }
+  }
+
+  return options;
+}
+
+function normalizeValue(value) {
+  switch (value) {
+    case FALSE_KEYWORD_1:
+    case FALSE_KEYWORD_2:
+      return false;
+    case TRUE_KEYWORD_1:
+    case TRUE_KEYWORD_2:
+      return true;
+    default:
+      return value;
+  }
+}
+
+function covertValuesToHashes(source) {
+  var clonedSource = override(source, {});
+  var level;
+  var i;
+
+  for (i = 0; i <= 2; i++) {
+    level = '' + i;
+
+    if (level in clonedSource && (clonedSource[level] === undefined || clonedSource[level] === false)) {
+      delete clonedSource[level];
+    }
+
+    if (level in clonedSource && clonedSource[level] === true) {
+      clonedSource[level] = {};
+    }
+
+    if (level in clonedSource && typeof clonedSource[level] == 'string') {
+      clonedSource[level] = covertToHash(clonedSource[level], level);
+    }
+  }
+
+  return clonedSource;
+}
+
+function covertToHash(asString, level) {
+  return asString
+    .split(OPTION_SEPARATOR)
+    .reduce(function (accumulator, directive) {
+      var parts = directive.split(OPTION_VALUE_SEPARATOR);
+      var name = parts[0];
+      var value = parts[1];
+      var normalizedValue = normalizeValue(value);
+
+      if (ALL_KEYWORD_1 == name || ALL_KEYWORD_2 == name) {
+        accumulator = override(accumulator, defaults(level, normalizedValue));
+      } else {
+        accumulator[name] = normalizedValue;
+      }
+
+      return accumulator;
+    }, {});
+}
+
+module.exports = {
+  OptimizationLevel: OptimizationLevel,
+  optimizationLevelFrom: optimizationLevelFrom,
+};
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"codeBlockContent": "codeBlockContent_32p_",
+	"codeBlockTitle": "codeBlockTitle_U1PS",
+	"codeBlock": "codeBlock_19pQ",
+	"codeBlockWithTitle": "codeBlockWithTitle_2fj3",
+	"copyButton": "copyButton_1BYj",
+	"codeBlockLines": "codeBlockLines_2n9r"
+};
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+module.exports = require("fs");
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = require("url");
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Contains the interpretation of CSS properties, as used by the property optimizer
+
+var breakUp = __webpack_require__(206);
+var canOverride = __webpack_require__(207);
+var restore = __webpack_require__(209);
+
+var override = __webpack_require__(38);
+
+// Properties to process
+// Extend this object in order to add support for more properties in the optimizer.
+//
+// Each key in this object represents a CSS property and should be an object.
+// Such an object contains properties that describe how the represented CSS property should be handled.
+// Possible options:
+//
+// * components: array (Only specify for shorthand properties.)
+//   Contains the names of the granular properties this shorthand compacts.
+//
+// * canOverride: function
+//   Returns whether two tokens of this property can be merged with each other.
+//   This property has no meaning for shorthands.
+//
+// * defaultValue: string
+//   Specifies the default value of the property according to the CSS standard.
+//   For shorthand, this is used when every component is set to its default value, therefore it should be the shortest possible default value of all the components.
+//
+// * shortestValue: string
+//   Specifies the shortest possible value the property can possibly have.
+//   (Falls back to defaultValue if unspecified.)
+//
+// * breakUp: function (Only specify for shorthand properties.)
+//   Breaks the shorthand up to its components.
+//
+// * restore: function (Only specify for shorthand properties.)
+//   Puts the shorthand together from its components.
+//
+var compactable = {
+  'animation': {
+    canOverride: canOverride.generic.components([
+      canOverride.generic.time,
+      canOverride.generic.timingFunction,
+      canOverride.generic.time,
+      canOverride.property.animationIterationCount,
+      canOverride.property.animationDirection,
+      canOverride.property.animationFillMode,
+      canOverride.property.animationPlayState,
+      canOverride.property.animationName
+    ]),
+    components: [
+      'animation-duration',
+      'animation-timing-function',
+      'animation-delay',
+      'animation-iteration-count',
+      'animation-direction',
+      'animation-fill-mode',
+      'animation-play-state',
+      'animation-name'
+    ],
+    breakUp: breakUp.multiplex(breakUp.animation),
+    defaultValue: 'none',
+    restore: restore.multiplex(restore.withoutDefaults),
+    shorthand: true,
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-delay': {
+    canOverride: canOverride.generic.time,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: '0s',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-direction': {
+    canOverride: canOverride.property.animationDirection,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: 'normal',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-duration': {
+    canOverride: canOverride.generic.time,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: '0s',
+    intoMultiplexMode: 'real',
+    keepUnlessDefault: 'animation-delay',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-fill-mode': {
+    canOverride: canOverride.property.animationFillMode,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: 'none',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-iteration-count': {
+    canOverride: canOverride.property.animationIterationCount,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: '1',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-name': {
+    canOverride: canOverride.property.animationName,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: 'none',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-play-state': {
+    canOverride: canOverride.property.animationPlayState,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: 'running',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'animation-timing-function': {
+    canOverride: canOverride.generic.timingFunction,
+    componentOf: [
+      'animation'
+    ],
+    defaultValue: 'ease',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'background': {
+    canOverride: canOverride.generic.components([
+      canOverride.generic.image,
+      canOverride.property.backgroundPosition,
+      canOverride.property.backgroundSize,
+      canOverride.property.backgroundRepeat,
+      canOverride.property.backgroundAttachment,
+      canOverride.property.backgroundOrigin,
+      canOverride.property.backgroundClip,
+      canOverride.generic.color
+    ]),
+    components: [
+      'background-image',
+      'background-position',
+      'background-size',
+      'background-repeat',
+      'background-attachment',
+      'background-origin',
+      'background-clip',
+      'background-color'
+    ],
+    breakUp: breakUp.multiplex(breakUp.background),
+    defaultValue: '0 0',
+    restore: restore.multiplex(restore.background),
+    shortestValue: '0',
+    shorthand: true
+  },
+  'background-attachment': {
+    canOverride: canOverride.property.backgroundAttachment,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: 'scroll',
+    intoMultiplexMode: 'real'
+  },
+  'background-clip': {
+    canOverride: canOverride.property.backgroundClip,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: 'border-box',
+    intoMultiplexMode: 'real',
+    shortestValue: 'border-box'
+  },
+  'background-color': {
+    canOverride: canOverride.generic.color,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: 'transparent',
+    intoMultiplexMode: 'real', // otherwise real color will turn into default since color appears in last multiplex only
+    multiplexLastOnly: true,
+    nonMergeableValue: 'none',
+    shortestValue: 'red'
+  },
+  'background-image': {
+    canOverride: canOverride.generic.image,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: 'none',
+    intoMultiplexMode: 'default'
+  },
+  'background-origin': {
+    canOverride: canOverride.property.backgroundOrigin,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: 'padding-box',
+    intoMultiplexMode: 'real',
+    shortestValue: 'border-box'
+  },
+  'background-position': {
+    canOverride: canOverride.property.backgroundPosition,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: ['0', '0'],
+    doubleValues: true,
+    intoMultiplexMode: 'real',
+    shortestValue: '0'
+  },
+  'background-repeat': {
+    canOverride: canOverride.property.backgroundRepeat,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: ['repeat'],
+    doubleValues: true,
+    intoMultiplexMode: 'real'
+  },
+  'background-size': {
+    canOverride: canOverride.property.backgroundSize,
+    componentOf: [
+      'background'
+    ],
+    defaultValue: ['auto'],
+    doubleValues: true,
+    intoMultiplexMode: 'real',
+    shortestValue: '0 0'
+  },
+  'bottom': {
+    canOverride: canOverride.property.bottom,
+    defaultValue: 'auto'
+  },
+  'border': {
+    breakUp: breakUp.border,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.property.borderStyle,
+      canOverride.generic.color
+    ]),
+    components: [
+      'border-width',
+      'border-style',
+      'border-color'
+    ],
+    defaultValue: 'none',
+    overridesShorthands: [
+      'border-bottom',
+      'border-left',
+      'border-right',
+      'border-top'
+    ],
+    restore: restore.withoutDefaults,
+    shorthand: true,
+    shorthandComponents: true
+  },
+  'border-bottom': {
+    breakUp: breakUp.border,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.property.borderStyle,
+      canOverride.generic.color
+    ]),
+    components: [
+      'border-bottom-width',
+      'border-bottom-style',
+      'border-bottom-color'
+    ],
+    defaultValue: 'none',
+    restore: restore.withoutDefaults,
+    shorthand: true
+  },
+  'border-bottom-color': {
+    canOverride: canOverride.generic.color,
+    componentOf: [
+      'border-bottom',
+      'border-color'
+    ],
+    defaultValue: 'none'
+  },
+  'border-bottom-left-radius': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-radius'
+    ],
+    defaultValue: '0',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-'
+    ]
+  },
+  'border-bottom-right-radius': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-radius'
+    ],
+    defaultValue: '0',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-'
+    ]
+  },
+  'border-bottom-style': {
+    canOverride: canOverride.property.borderStyle,
+    componentOf: [
+      'border-bottom',
+      'border-style'
+    ],
+    defaultValue: 'none'
+  },
+  'border-bottom-width': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-bottom',
+      'border-width'
+    ],
+    defaultValue: 'medium',
+    oppositeTo: 'border-top-width',
+    shortestValue: '0'
+  },
+  'border-collapse': {
+    canOverride: canOverride.property.borderCollapse,
+    defaultValue: 'separate'
+  },
+  'border-color': {
+    breakUp: breakUp.fourValues,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.color,
+      canOverride.generic.color,
+      canOverride.generic.color,
+      canOverride.generic.color
+    ]),
+    componentOf: [
+      'border'
+    ],
+    components: [
+      'border-top-color',
+      'border-right-color',
+      'border-bottom-color',
+      'border-left-color'
+    ],
+    defaultValue: 'none',
+    restore: restore.fourValues,
+    shortestValue: 'red',
+    shorthand: true
+  },
+  'border-left': {
+    breakUp: breakUp.border,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.property.borderStyle,
+      canOverride.generic.color
+    ]),
+    components: [
+      'border-left-width',
+      'border-left-style',
+      'border-left-color'
+    ],
+    defaultValue: 'none',
+    restore: restore.withoutDefaults,
+    shorthand: true
+  },
+  'border-left-color': {
+    canOverride: canOverride.generic.color,
+    componentOf: [
+      'border-color',
+      'border-left'
+    ],
+    defaultValue: 'none'
+  },
+  'border-left-style': {
+    canOverride: canOverride.property.borderStyle,
+    componentOf: [
+      'border-left',
+      'border-style'
+    ],
+    defaultValue: 'none'
+  },
+  'border-left-width': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-left',
+      'border-width'
+    ],
+    defaultValue: 'medium',
+    oppositeTo: 'border-right-width',
+    shortestValue: '0'
+  },
+  'border-radius': {
+    breakUp: breakUp.borderRadius,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit
+    ]),
+    components: [
+      'border-top-left-radius',
+      'border-top-right-radius',
+      'border-bottom-right-radius',
+      'border-bottom-left-radius'
+    ],
+    defaultValue: '0',
+    restore: restore.borderRadius,
+    shorthand: true,
+    vendorPrefixes: [
+      '-moz-',
+      '-o-'
+    ]
+  },
+  'border-right': {
+    breakUp: breakUp.border,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.property.borderStyle,
+      canOverride.generic.color
+    ]),
+    components: [
+      'border-right-width',
+      'border-right-style',
+      'border-right-color'
+    ],
+    defaultValue: 'none',
+    restore: restore.withoutDefaults,
+    shorthand: true
+  },
+  'border-right-color': {
+    canOverride: canOverride.generic.color,
+    componentOf: [
+      'border-color',
+      'border-right'
+    ],
+    defaultValue: 'none'
+  },
+  'border-right-style': {
+    canOverride: canOverride.property.borderStyle,
+    componentOf: [
+      'border-right',
+      'border-style'
+    ],
+    defaultValue: 'none'
+  },
+  'border-right-width': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-right',
+      'border-width'
+    ],
+    defaultValue: 'medium',
+    oppositeTo: 'border-left-width',
+    shortestValue: '0'
+  },
+  'border-style': {
+    breakUp: breakUp.fourValues,
+    canOverride: canOverride.generic.components([
+      canOverride.property.borderStyle,
+      canOverride.property.borderStyle,
+      canOverride.property.borderStyle,
+      canOverride.property.borderStyle
+    ]),
+    componentOf: [
+      'border'
+    ],
+    components: [
+      'border-top-style',
+      'border-right-style',
+      'border-bottom-style',
+      'border-left-style'
+    ],
+    defaultValue: 'none',
+    restore: restore.fourValues,
+    shorthand: true
+  },
+  'border-top': {
+    breakUp: breakUp.border,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.property.borderStyle,
+      canOverride.generic.color
+    ]),
+    components: [
+      'border-top-width',
+      'border-top-style',
+      'border-top-color'
+    ],
+    defaultValue: 'none',
+    restore: restore.withoutDefaults,
+    shorthand: true
+  },
+  'border-top-color': {
+    canOverride: canOverride.generic.color,
+    componentOf: [
+      'border-color',
+      'border-top'
+    ],
+    defaultValue: 'none'
+  },
+  'border-top-left-radius': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-radius'
+    ],
+    defaultValue: '0',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-'
+    ]
+  },
+  'border-top-right-radius': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-radius'
+    ],
+    defaultValue: '0',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-'
+    ]
+  },
+  'border-top-style': {
+    canOverride: canOverride.property.borderStyle,
+    componentOf: [
+      'border-style',
+      'border-top'
+    ],
+    defaultValue: 'none'
+  },
+  'border-top-width': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'border-top',
+      'border-width'
+    ],
+    defaultValue: 'medium',
+    oppositeTo: 'border-bottom-width',
+    shortestValue: '0'
+  },
+  'border-width': {
+    breakUp: breakUp.fourValues,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit
+    ]),
+    componentOf: [
+      'border'
+    ],
+    components: [
+      'border-top-width',
+      'border-right-width',
+      'border-bottom-width',
+      'border-left-width'
+    ],
+    defaultValue: 'medium',
+    restore: restore.fourValues,
+    shortestValue: '0',
+    shorthand: true
+  },
+  'clear': {
+    canOverride: canOverride.property.clear,
+    defaultValue: 'none'
+  },
+  'color': {
+    canOverride: canOverride.generic.color,
+    defaultValue: 'transparent',
+    shortestValue: 'red'
+  },
+  'cursor': {
+    canOverride: canOverride.property.cursor,
+    defaultValue: 'auto'
+  },
+  'display': {
+    canOverride: canOverride.property.display,
+  },
+  'float': {
+    canOverride: canOverride.property.float,
+    defaultValue: 'none'
+  },
+  'font': {
+    breakUp: breakUp.font,
+    canOverride: canOverride.generic.components([
+      canOverride.property.fontStyle,
+      canOverride.property.fontVariant,
+      canOverride.property.fontWeight,
+      canOverride.property.fontStretch,
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.property.fontFamily
+    ]),
+    components: [
+      'font-style',
+      'font-variant',
+      'font-weight',
+      'font-stretch',
+      'font-size',
+      'line-height',
+      'font-family'
+    ],
+    restore: restore.font,
+    shorthand: true
+  },
+  'font-family': {
+    canOverride: canOverride.property.fontFamily,
+    defaultValue: 'user|agent|specific'
+  },
+  'font-size': {
+    canOverride: canOverride.generic.unit,
+    defaultValue: 'medium',
+    shortestValue: '0'
+  },
+  'font-stretch': {
+    canOverride: canOverride.property.fontStretch,
+    defaultValue: 'normal'
+  },
+  'font-style': {
+    canOverride: canOverride.property.fontStyle,
+    defaultValue: 'normal'
+  },
+  'font-variant': {
+    canOverride: canOverride.property.fontVariant,
+    defaultValue: 'normal'
+  },
+  'font-weight': {
+    canOverride: canOverride.property.fontWeight,
+    defaultValue: 'normal',
+    shortestValue: '400'
+  },
+  'height': {
+    canOverride: canOverride.generic.unit,
+    defaultValue: 'auto',
+    shortestValue: '0'
+  },
+  'left': {
+    canOverride: canOverride.property.left,
+    defaultValue: 'auto'
+  },
+  'line-height': {
+    canOverride: canOverride.generic.unitOrNumber,
+    defaultValue: 'normal',
+    shortestValue: '0'
+  },
+  'list-style': {
+    canOverride: canOverride.generic.components([
+      canOverride.property.listStyleType,
+      canOverride.property.listStylePosition,
+      canOverride.property.listStyleImage
+    ]),
+    components: [
+      'list-style-type',
+      'list-style-position',
+      'list-style-image'
+    ],
+    breakUp: breakUp.listStyle,
+    restore: restore.withoutDefaults,
+    defaultValue: 'outside', // can't use 'disc' because that'd override default 'decimal' for <ol>
+    shortestValue: 'none',
+    shorthand: true
+  },
+  'list-style-image' : {
+    canOverride: canOverride.generic.image,
+    componentOf: [
+      'list-style'
+    ],
+    defaultValue: 'none'
+  },
+  'list-style-position' : {
+    canOverride: canOverride.property.listStylePosition,
+    componentOf: [
+      'list-style'
+    ],
+    defaultValue: 'outside',
+    shortestValue: 'inside'
+  },
+  'list-style-type' : {
+    canOverride: canOverride.property.listStyleType,
+    componentOf: [
+      'list-style'
+    ],
+    // NOTE: we can't tell the real default value here, it's 'disc' for <ul> and 'decimal' for <ol>
+    // this is a hack, but it doesn't matter because this value will be either overridden or
+    // it will disappear at the final step anyway
+    defaultValue: 'decimal|disc',
+    shortestValue: 'none'
+  },
+  'margin': {
+    breakUp: breakUp.fourValues,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit
+    ]),
+    components: [
+      'margin-top',
+      'margin-right',
+      'margin-bottom',
+      'margin-left'
+    ],
+    defaultValue: '0',
+    restore: restore.fourValues,
+    shorthand: true
+  },
+  'margin-bottom': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'margin'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'margin-top'
+  },
+  'margin-left': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'margin'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'margin-right'
+  },
+  'margin-right': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'margin'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'margin-left'
+  },
+  'margin-top': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'margin'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'margin-bottom'
+  },
+  'outline': {
+    canOverride: canOverride.generic.components([
+      canOverride.generic.color,
+      canOverride.property.outlineStyle,
+      canOverride.generic.unit
+    ]),
+    components: [
+      'outline-color',
+      'outline-style',
+      'outline-width'
+    ],
+    breakUp: breakUp.outline,
+    restore: restore.withoutDefaults,
+    defaultValue: '0',
+    shorthand: true
+  },
+  'outline-color': {
+    canOverride: canOverride.generic.color,
+    componentOf: [
+      'outline'
+    ],
+    defaultValue: 'invert',
+    shortestValue: 'red'
+  },
+  'outline-style': {
+    canOverride: canOverride.property.outlineStyle,
+    componentOf: [
+      'outline'
+    ],
+    defaultValue: 'none'
+  },
+  'outline-width': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'outline'
+    ],
+    defaultValue: 'medium',
+    shortestValue: '0'
+  },
+  'overflow': {
+    canOverride: canOverride.property.overflow,
+    defaultValue: 'visible'
+  },
+  'overflow-x': {
+    canOverride: canOverride.property.overflow,
+    defaultValue: 'visible'
+  },
+  'overflow-y': {
+    canOverride: canOverride.property.overflow,
+    defaultValue: 'visible'
+  },
+  'padding': {
+    breakUp: breakUp.fourValues,
+    canOverride: canOverride.generic.components([
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit,
+      canOverride.generic.unit
+    ]),
+    components: [
+      'padding-top',
+      'padding-right',
+      'padding-bottom',
+      'padding-left'
+    ],
+    defaultValue: '0',
+    restore: restore.fourValues,
+    shorthand: true
+  },
+  'padding-bottom': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'padding'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'padding-top'
+  },
+  'padding-left': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'padding'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'padding-right'
+  },
+  'padding-right': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'padding'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'padding-left'
+  },
+  'padding-top': {
+    canOverride: canOverride.generic.unit,
+    componentOf: [
+      'padding'
+    ],
+    defaultValue: '0',
+    oppositeTo: 'padding-bottom'
+  },
+  'position': {
+    canOverride: canOverride.property.position,
+    defaultValue: 'static'
+  },
+  'right': {
+    canOverride: canOverride.property.right,
+    defaultValue: 'auto'
+  },
+  'text-align': {
+    canOverride: canOverride.property.textAlign,
+    // NOTE: we can't tell the real default value here, as it depends on default text direction
+    // this is a hack, but it doesn't matter because this value will be either overridden or
+    // it will disappear anyway
+    defaultValue: 'left|right'
+  },
+  'text-decoration': {
+    canOverride: canOverride.property.textDecoration,
+    defaultValue: 'none'
+  },
+  'text-overflow': {
+    canOverride: canOverride.property.textOverflow,
+    defaultValue: 'none'
+  },
+  'text-shadow': {
+    canOverride: canOverride.property.textShadow,
+    defaultValue: 'none'
+  },
+  'top': {
+    canOverride: canOverride.property.top,
+    defaultValue: 'auto'
+  },
+  'transform': {
+    canOverride: canOverride.property.transform,
+    vendorPrefixes: [
+      '-moz-',
+      '-ms-',
+      '-webkit-'
+    ]
+  },
+  'transition': {
+    breakUp: breakUp.multiplex(breakUp.transition),
+    canOverride: canOverride.generic.components([
+      canOverride.property.transitionProperty,
+      canOverride.generic.time,
+      canOverride.generic.timingFunction,
+      canOverride.generic.time
+    ]),
+    components: [
+      'transition-property',
+      'transition-duration',
+      'transition-timing-function',
+      'transition-delay'
+    ],
+    defaultValue: 'none',
+    restore: restore.multiplex(restore.withoutDefaults),
+    shorthand: true,
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'transition-delay': {
+    canOverride: canOverride.generic.time,
+    componentOf: [
+      'transition'
+    ],
+    defaultValue: '0s',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'transition-duration': {
+    canOverride: canOverride.generic.time,
+    componentOf: [
+      'transition'
+    ],
+    defaultValue: '0s',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'transition-property': {
+    canOverride: canOverride.generic.propertyName,
+    componentOf: [
+      'transition'
+    ],
+    defaultValue: 'all',
+    intoMultiplexMode: 'placeholder',
+    placeholderValue: '_', // it's a short value that won't match any property and still be a valid `transition-property`
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'transition-timing-function': {
+    canOverride: canOverride.generic.timingFunction,
+    componentOf: [
+      'transition'
+    ],
+    defaultValue: 'ease',
+    intoMultiplexMode: 'real',
+    vendorPrefixes: [
+      '-moz-',
+      '-o-',
+      '-webkit-'
+    ]
+  },
+  'vertical-align': {
+    canOverride: canOverride.property.verticalAlign,
+    defaultValue: 'baseline'
+  },
+  'visibility': {
+    canOverride: canOverride.property.visibility,
+    defaultValue: 'visible'
+  },
+  'white-space': {
+    canOverride: canOverride.property.whiteSpace,
+    defaultValue: 'normal'
+  },
+  'width': {
+    canOverride: canOverride.generic.unit,
+    defaultValue: 'auto',
+    shortestValue: '0'
+  },
+  'z-index': {
+    canOverride: canOverride.property.zIndex,
+    defaultValue: 'auto'
+  }
+};
+
+function cloneDescriptor(propertyName, prefix) {
+  var clonedDescriptor = override(compactable[propertyName], {});
+
+  if ('componentOf' in clonedDescriptor) {
+    clonedDescriptor.componentOf = clonedDescriptor.componentOf.map(function (shorthandName) {
+      return prefix + shorthandName;
+    });
+  }
+
+  if ('components' in clonedDescriptor) {
+    clonedDescriptor.components = clonedDescriptor.components.map(function (longhandName) {
+      return prefix + longhandName;
+    });
+  }
+
+  if ('keepUnlessDefault' in clonedDescriptor) {
+    clonedDescriptor.keepUnlessDefault = prefix + clonedDescriptor.keepUnlessDefault;
+  }
+
+  return clonedDescriptor;
+}
+
+// generate vendor-prefixed properties
+var vendorPrefixedCompactable = {};
+
+for (var propertyName in compactable) {
+  var descriptor = compactable[propertyName];
+
+  if (!('vendorPrefixes' in descriptor)) {
+    continue;
+  }
+
+  for (var i = 0; i < descriptor.vendorPrefixes.length; i++) {
+    var prefix = descriptor.vendorPrefixes[i];
+    var clonedDescriptor = cloneDescriptor(propertyName, prefix);
+    delete clonedDescriptor.vendorPrefixes;
+
+    vendorPrefixedCompactable[prefix + propertyName] = clonedDescriptor;
+  }
+
+  delete descriptor.vendorPrefixes;
+}
+
+module.exports = override(compactable, vendorPrefixedCompactable);
+
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export BrowserRouter */
+/* unused harmony export HashRouter */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Link; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NavLink; });
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["f"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["g"]; });
+
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(318);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(34);
+/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(19);
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * The public API for a <Router> that uses HTML5 history.
+ */
+
+var BrowserRouter =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(BrowserRouter, _React$Component);
+
+  function BrowserRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.history = Object(history__WEBPACK_IMPORTED_MODULE_3__[/* createBrowserHistory */ "a"])(_this.props);
+    return _this;
+  }
+
+  var _proto = BrowserRouter.prototype;
+
+  _proto.render = function render() {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* Router */ "b"], {
+      history: this.history,
+      children: this.props.children
+    });
+  };
+
+  return BrowserRouter;
+}(react__WEBPACK_IMPORTED_MODULE_2___default.a.Component);
+
+if (false) {}
+
+/**
+ * The public API for a <Router> that uses window.location.hash.
+ */
+
+var HashRouter =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(HashRouter, _React$Component);
+
+  function HashRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.history = Object(history__WEBPACK_IMPORTED_MODULE_3__[/* createHashHistory */ "b"])(_this.props);
+    return _this;
+  }
+
+  var _proto = HashRouter.prototype;
+
+  _proto.render = function render() {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* Router */ "b"], {
+      history: this.history,
+      children: this.props.children
+    });
+  };
+
+  return HashRouter;
+}(react__WEBPACK_IMPORTED_MODULE_2___default.a.Component);
+
+if (false) {}
+
+var resolveToLocation = function resolveToLocation(to, currentLocation) {
+  return typeof to === "function" ? to(currentLocation) : to;
+};
+var normalizeToLocation = function normalizeToLocation(to, currentLocation) {
+  return typeof to === "string" ? Object(history__WEBPACK_IMPORTED_MODULE_3__[/* createLocation */ "c"])(to, null, null, currentLocation) : to;
+};
+
+var forwardRefShim = function forwardRefShim(C) {
+  return C;
+};
+
+var forwardRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef;
+
+if (typeof forwardRef === "undefined") {
+  forwardRef = forwardRefShim;
+}
+
+function isModifiedEvent(event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+}
+
+var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
+  var innerRef = _ref.innerRef,
+      navigate = _ref.navigate,
+      _onClick = _ref.onClick,
+      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_ref, ["innerRef", "navigate", "onClick"]);
+
+  var target = rest.target;
+
+  var props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({}, rest, {
+    onClick: function onClick(event) {
+      try {
+        if (_onClick) _onClick(event);
+      } catch (ex) {
+        event.preventDefault();
+        throw ex;
+      }
+
+      if (!event.defaultPrevented && // onClick prevented default
+      event.button === 0 && ( // ignore everything but left clicks
+      !target || target === "_self") && // let browser handle "target=_blank" etc.
+      !isModifiedEvent(event) // ignore clicks with modifier keys
+      ) {
+          event.preventDefault();
+          navigate();
+        }
+    }
+  }); // React 15 compat
+
+
+  if (forwardRefShim !== forwardRef) {
+    props.ref = forwardedRef || innerRef;
+  } else {
+    props.ref = innerRef;
+  }
+  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
+
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", props);
+});
+
+if (false) {}
+/**
+ * The public API for rendering a history-aware <a>.
+ */
+
+
+var Link = forwardRef(function (_ref2, forwardedRef) {
+  var _ref2$component = _ref2.component,
+      component = _ref2$component === void 0 ? LinkAnchor : _ref2$component,
+      replace = _ref2.replace,
+      to = _ref2.to,
+      innerRef = _ref2.innerRef,
+      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_ref2, ["component", "replace", "to", "innerRef"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* __RouterContext */ "e"].Consumer, null, function (context) {
+    !context ?  false ? undefined : Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(false) : void 0;
+    var history = context.history;
+    var location = normalizeToLocation(resolveToLocation(to, context.location), context.location);
+    var href = location ? history.createHref(location) : "";
+
+    var props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({}, rest, {
+      href: href,
+      navigate: function navigate() {
+        var location = resolveToLocation(to, context.location);
+        var method = replace ? history.replace : history.push;
+        method(location);
+      }
+    }); // React 15 compat
+
+
+    if (forwardRefShim !== forwardRef) {
+      props.ref = forwardedRef || innerRef;
+    } else {
+      props.innerRef = innerRef;
+    }
+
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(component, props);
+  });
+});
+
+if (false) { var refType, toType; }
+
+var forwardRefShim$1 = function forwardRefShim(C) {
+  return C;
+};
+
+var forwardRef$1 = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef;
+
+if (typeof forwardRef$1 === "undefined") {
+  forwardRef$1 = forwardRefShim$1;
+}
+
+function joinClassnames() {
+  for (var _len = arguments.length, classnames = new Array(_len), _key = 0; _key < _len; _key++) {
+    classnames[_key] = arguments[_key];
+  }
+
+  return classnames.filter(function (i) {
+    return i;
+  }).join(" ");
+}
+/**
+ * A <Link> wrapper that knows if it's "active" or not.
+ */
+
+
+var NavLink = forwardRef$1(function (_ref, forwardedRef) {
+  var _ref$ariaCurrent = _ref["aria-current"],
+      ariaCurrent = _ref$ariaCurrent === void 0 ? "page" : _ref$ariaCurrent,
+      _ref$activeClassName = _ref.activeClassName,
+      activeClassName = _ref$activeClassName === void 0 ? "active" : _ref$activeClassName,
+      activeStyle = _ref.activeStyle,
+      classNameProp = _ref.className,
+      exact = _ref.exact,
+      isActiveProp = _ref.isActive,
+      locationProp = _ref.location,
+      sensitive = _ref.sensitive,
+      strict = _ref.strict,
+      styleProp = _ref.style,
+      to = _ref.to,
+      innerRef = _ref.innerRef,
+      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__[/* __RouterContext */ "e"].Consumer, null, function (context) {
+    !context ?  false ? undefined : Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(false) : void 0;
+    var currentLocation = locationProp || context.location;
+    var toLocation = normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
+    var path = toLocation.pathname; // Regex taken from: https://github.com/pillarjs/path-to-regexp/blob/master/index.js#L202
+
+    var escapedPath = path && path.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
+    var match = escapedPath ? Object(react_router__WEBPACK_IMPORTED_MODULE_0__[/* matchPath */ "f"])(currentLocation.pathname, {
+      path: escapedPath,
+      exact: exact,
+      sensitive: sensitive,
+      strict: strict
+    }) : null;
+    var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
+    var className = isActive ? joinClassnames(classNameProp, activeClassName) : classNameProp;
+    var style = isActive ? Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({}, styleProp, {}, activeStyle) : styleProp;
+
+    var props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])({
+      "aria-current": isActive && ariaCurrent || null,
+      className: className,
+      style: style,
+      to: toLocation
+    }, rest); // React 15 compat
+
+
+    if (forwardRefShim$1 !== forwardRef$1) {
+      props.ref = forwardedRef || innerRef;
+    } else {
+      props.innerRef = innerRef;
+    }
+
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Link, props);
+  });
+});
+
+if (false) { var ariaCurrentType; }
+
+
+//# sourceMappingURL=react-router-dom.js.map
+
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const canUseDOM=!!(typeof window!=='undefined'&&window.document&&window.document.createElement);const ExecutionEnvironment={canUseDOM,canUseEventListeners:canUseDOM&&!!(window.addEventListener||window.attachEvent),canUseIntersectionObserver:canUseDOM&&'IntersectionObserver'in window,canUseViewport:canUseDOM&&!!window.screen};module.exports=ExecutionEnvironment;
+
+/***/ }),
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _objectWithoutPropertiesLoose; });
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"docTitle": "docTitle_1vWb",
+	"docItemContainer": "docItemContainer_2cwg",
+	"docItemCol": "docItemCol_2GOA",
+	"docItemWrapper": "docItemWrapper_1cc7",
+	"tableOfContents": "tableOfContents_TbNY",
+	"docLastUpdatedAt": "docLastUpdatedAt_1sqk"
+};
+
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"sidebar": "sidebar_1kLs",
+	"sidebarLogo": "sidebarLogo_3ono",
+	"menu": "menu_w2sC",
+	"sidebarMenuIcon": "sidebarMenuIcon_2vk4",
+	"sidebarMenuCloseIcon": "sidebarMenuCloseIcon_1JRa"
+};
+
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"heroBanner": "heroBanner_2Ftp",
+	"buttons": "buttons_1Wc3",
+	"features": "features_P2SU",
+	"featureImage": "featureImage_3Xqx"
+};
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports) {
+
+function override(source1, source2) {
+  var target = {};
+  var key1;
+  var key2;
+  var item;
+
+  for (key1 in source1) {
+    item = source1[key1];
+
+    if (Array.isArray(item)) {
+      target[key1] = item.slice(0);
+    } else if (typeof item == 'object' && item !== null) {
+      target[key1] = override(item, {});
+    } else {
+      target[key1] = item;
+    }
+  }
+
+  for (key2 in source2) {
+    item = source2[key2];
+
+    if (key2 in target && Array.isArray(item)) {
+      target[key2] = item.slice(0);
+    } else if (key2 in target && typeof item == 'object' && item !== null) {
+      target[key2] = override(target[key2], item);
+    } else {
+      target[key2] = item;
+    }
+  }
+
+  return target;
+}
+
+module.exports = override;
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Hack = __webpack_require__(80);
+
+var Marker = __webpack_require__(15);
+var Token = __webpack_require__(9);
+
+var Match = {
+  ASTERISK: '*',
+  BACKSLASH: '\\',
+  BANG: '!',
+  BANG_SUFFIX_PATTERN: /!\w+$/,
+  IMPORTANT_TOKEN: '!important',
+  IMPORTANT_TOKEN_PATTERN: new RegExp('!important$', 'i'),
+  IMPORTANT_WORD: 'important',
+  IMPORTANT_WORD_PATTERN: new RegExp('important$', 'i'),
+  SUFFIX_BANG_PATTERN: /!$/,
+  UNDERSCORE: '_',
+  VARIABLE_REFERENCE_PATTERN: /var\(--.+\)$/
+};
+
+function wrapAll(properties, includeVariable, skipProperties) {
+  var wrapped = [];
+  var single;
+  var property;
+  var i;
+
+  for (i = properties.length - 1; i >= 0; i--) {
+    property = properties[i];
+
+    if (property[0] != Token.PROPERTY) {
+      continue;
+    }
+
+    if (!includeVariable && someVariableReferences(property)) {
+      continue;
+    }
+
+    if (skipProperties && skipProperties.indexOf(property[1][1]) > -1) {
+      continue;
+    }
+
+    single = wrapSingle(property);
+    single.all = properties;
+    single.position = i;
+    wrapped.unshift(single);
+  }
+
+  return wrapped;
+}
+
+function someVariableReferences(property) {
+  var i, l;
+  var value;
+
+  // skipping `property` and property name tokens
+  for (i = 2, l = property.length; i < l; i++) {
+    value = property[i];
+
+    if (value[0] != Token.PROPERTY_VALUE) {
+      continue;
+    }
+
+    if (isVariableReference(value[1])) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function isVariableReference(value) {
+  return Match.VARIABLE_REFERENCE_PATTERN.test(value);
+}
+
+function isMultiplex(property) {
+  var value;
+  var i, l;
+
+  for (i = 3, l = property.length; i < l; i++) {
+    value = property[i];
+
+    if (value[0] == Token.PROPERTY_VALUE && (value[1] == Marker.COMMA || value[1] == Marker.FORWARD_SLASH)) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function hackFrom(property) {
+  var match = false;
+  var name = property[1][1];
+  var lastValue = property[property.length - 1];
+
+  if (name[0] == Match.UNDERSCORE) {
+    match = [Hack.UNDERSCORE];
+  } else if (name[0] == Match.ASTERISK) {
+    match = [Hack.ASTERISK];
+  } else if (lastValue[1][0] == Match.BANG && !lastValue[1].match(Match.IMPORTANT_WORD_PATTERN)) {
+    match = [Hack.BANG];
+  } else if (lastValue[1].indexOf(Match.BANG) > 0 && !lastValue[1].match(Match.IMPORTANT_WORD_PATTERN) && Match.BANG_SUFFIX_PATTERN.test(lastValue[1])) {
+    match = [Hack.BANG];
+  } else if (lastValue[1].indexOf(Match.BACKSLASH) > 0 && lastValue[1].indexOf(Match.BACKSLASH) == lastValue[1].length - Match.BACKSLASH.length - 1) {
+    match = [Hack.BACKSLASH, lastValue[1].substring(lastValue[1].indexOf(Match.BACKSLASH) + 1)];
+  } else if (lastValue[1].indexOf(Match.BACKSLASH) === 0 && lastValue[1].length == 2) {
+    match = [Hack.BACKSLASH, lastValue[1].substring(1)];
+  }
+
+  return match;
+}
+
+function isImportant(property) {
+  if (property.length < 3)
+    return false;
+
+  var lastValue = property[property.length - 1];
+  if (Match.IMPORTANT_TOKEN_PATTERN.test(lastValue[1])) {
+    return true;
+  } else if (Match.IMPORTANT_WORD_PATTERN.test(lastValue[1]) && Match.SUFFIX_BANG_PATTERN.test(property[property.length - 2][1])) {
+    return true;
+  }
+
+  return false;
+}
+
+function stripImportant(property) {
+  var lastValue = property[property.length - 1];
+  var oneButLastValue = property[property.length - 2];
+
+  if (Match.IMPORTANT_TOKEN_PATTERN.test(lastValue[1])) {
+    lastValue[1] = lastValue[1].replace(Match.IMPORTANT_TOKEN_PATTERN, '');
+  } else {
+    lastValue[1] = lastValue[1].replace(Match.IMPORTANT_WORD_PATTERN, '');
+    oneButLastValue[1] = oneButLastValue[1].replace(Match.SUFFIX_BANG_PATTERN, '');
+  }
+
+  if (lastValue[1].length === 0) {
+    property.pop();
+  }
+
+  if (oneButLastValue[1].length === 0) {
+    property.pop();
+  }
+}
+
+function stripPrefixHack(property) {
+  property[1][1] = property[1][1].substring(1);
+}
+
+function stripSuffixHack(property, hackFrom) {
+  var lastValue = property[property.length - 1];
+  lastValue[1] = lastValue[1]
+    .substring(0, lastValue[1].indexOf(hackFrom[0] == Hack.BACKSLASH ? Match.BACKSLASH : Match.BANG))
+    .trim();
+
+  if (lastValue[1].length === 0) {
+    property.pop();
+  }
+}
+
+function wrapSingle(property) {
+  var importantProperty = isImportant(property);
+  if (importantProperty) {
+    stripImportant(property);
+  }
+
+  var whichHack = hackFrom(property);
+  if (whichHack[0] == Hack.ASTERISK || whichHack[0] == Hack.UNDERSCORE) {
+    stripPrefixHack(property);
+  } else if (whichHack[0] == Hack.BACKSLASH || whichHack[0] == Hack.BANG) {
+    stripSuffixHack(property, whichHack);
+  }
+
+  return {
+    block: property[2] && property[2][0] == Token.PROPERTY_BLOCK,
+    components: [],
+    dirty: false,
+    hack: whichHack,
+    important: importantProperty,
+    name: property[1][1],
+    multiplex: property.length > 3 ? isMultiplex(property) : false,
+    position: 0,
+    shorthand: false,
+    unused: false,
+    value: property.slice(2)
+  };
+}
+
+module.exports = {
+  all: wrapAll,
+  single: wrapSingle
+};
+
+
+/***/ }),
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ * MIT license http://www.opensource.org/licenses/mit-license.php/
+ * @author Lea Verou http://lea.verou.me
+ */
+
+/**
+ * prism-react-renderer:
+ * This file has been modified to remove:
+ * - globals and window dependency
+ * - worker support
+ * - highlightAll and other element dependent methods
+ * - _.hooks helpers
+ * - UMD/node-specific hacks
+ * It has also been run through prettier
+ */
+var Prism = function () {
+  var uniqueId = 0;
+  var _ = {
+    util: {
+      encode: function (tokens) {
+        if (tokens instanceof Token) {
+          return new Token(tokens.type, _.util.encode(tokens.content), tokens.alias);
+        } else if (_.util.type(tokens) === "Array") {
+          return tokens.map(_.util.encode);
+        } else {
+          return tokens.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/\u00a0/g, " ");
+        }
+      },
+      type: function (o) {
+        return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1];
+      },
+      objId: function (obj) {
+        if (!obj["__id"]) {
+          Object.defineProperty(obj, "__id", {
+            value: ++uniqueId
+          });
+        }
+
+        return obj["__id"];
+      },
+      // Deep clone a language definition (e.g. to extend it)
+      clone: function (o, visited) {
+        var type = _.util.type(o);
+
+        visited = visited || {};
+
+        switch (type) {
+          case "Object":
+            if (visited[_.util.objId(o)]) {
+              return visited[_.util.objId(o)];
+            }
+
+            var clone = {};
+            visited[_.util.objId(o)] = clone;
+
+            for (var key in o) {
+              if (o.hasOwnProperty(key)) {
+                clone[key] = _.util.clone(o[key], visited);
+              }
+            }
+
+            return clone;
+
+          case "Array":
+            if (visited[_.util.objId(o)]) {
+              return visited[_.util.objId(o)];
+            }
+
+            var clone = [];
+            visited[_.util.objId(o)] = clone;
+            o.forEach(function (v, i) {
+              clone[i] = _.util.clone(v, visited);
+            });
+            return clone;
+        }
+
+        return o;
+      }
+    },
+    languages: {
+      extend: function (id, redef) {
+        var lang = _.util.clone(_.languages[id]);
+
+        for (var key in redef) {
+          lang[key] = redef[key];
+        }
+
+        return lang;
+      },
+
+      /**
+       * Insert a token before another token in a language literal
+       * As this needs to recreate the object (we cannot actually insert before keys in object literals),
+       * we cannot just provide an object, we need anobject and a key.
+       * @param inside The key (or language id) of the parent
+       * @param before The key to insert before. If not provided, the function appends instead.
+       * @param insert Object with the key/value pairs to insert
+       * @param root The object that contains `inside`. If equal to Prism.languages, it can be omitted.
+       */
+      insertBefore: function (inside, before, insert, root) {
+        root = root || _.languages;
+        var grammar = root[inside];
+
+        if (arguments.length == 2) {
+          insert = arguments[1];
+
+          for (var newToken in insert) {
+            if (insert.hasOwnProperty(newToken)) {
+              grammar[newToken] = insert[newToken];
+            }
+          }
+
+          return grammar;
+        }
+
+        var ret = {};
+
+        for (var token in grammar) {
+          if (grammar.hasOwnProperty(token)) {
+            if (token == before) {
+              for (var newToken in insert) {
+                if (insert.hasOwnProperty(newToken)) {
+                  ret[newToken] = insert[newToken];
+                }
+              }
+            }
+
+            ret[token] = grammar[token];
+          }
+        } // Update references in other language definitions
+
+
+        _.languages.DFS(_.languages, function (key, value) {
+          if (value === root[inside] && key != inside) {
+            this[key] = ret;
+          }
+        });
+
+        return root[inside] = ret;
+      },
+      // Traverse a language definition with Depth First Search
+      DFS: function (o, callback, type, visited) {
+        visited = visited || {};
+
+        for (var i in o) {
+          if (o.hasOwnProperty(i)) {
+            callback.call(o, i, o[i], type || i);
+
+            if (_.util.type(o[i]) === "Object" && !visited[_.util.objId(o[i])]) {
+              visited[_.util.objId(o[i])] = true;
+
+              _.languages.DFS(o[i], callback, null, visited);
+            } else if (_.util.type(o[i]) === "Array" && !visited[_.util.objId(o[i])]) {
+              visited[_.util.objId(o[i])] = true;
+
+              _.languages.DFS(o[i], callback, i, visited);
+            }
+          }
+        }
+      }
+    },
+    plugins: {},
+    highlight: function (text, grammar, language) {
+      var env = {
+        code: text,
+        grammar: grammar,
+        language: language
+      };
+      env.tokens = _.tokenize(env.code, env.grammar);
+      return Token.stringify(_.util.encode(env.tokens), env.language);
+    },
+    matchGrammar: function (text, strarr, grammar, index, startPos, oneshot, target) {
+      var Token = _.Token;
+
+      for (var token in grammar) {
+        if (!grammar.hasOwnProperty(token) || !grammar[token]) {
+          continue;
+        }
+
+        if (token == target) {
+          return;
+        }
+
+        var patterns = grammar[token];
+        patterns = _.util.type(patterns) === "Array" ? patterns : [patterns];
+
+        for (var j = 0; j < patterns.length; ++j) {
+          var pattern = patterns[j],
+              inside = pattern.inside,
+              lookbehind = !!pattern.lookbehind,
+              greedy = !!pattern.greedy,
+              lookbehindLength = 0,
+              alias = pattern.alias;
+
+          if (greedy && !pattern.pattern.global) {
+            // Without the global flag, lastIndex won't work
+            var flags = pattern.pattern.toString().match(/[imuy]*$/)[0];
+            pattern.pattern = RegExp(pattern.pattern.source, flags + "g");
+          }
+
+          pattern = pattern.pattern || pattern; // Don’t cache length as it changes during the loop
+
+          for (var i = index, pos = startPos; i < strarr.length; pos += strarr[i].length, ++i) {
+            var str = strarr[i];
+
+            if (strarr.length > text.length) {
+              // Something went terribly wrong, ABORT, ABORT!
+              return;
+            }
+
+            if (str instanceof Token) {
+              continue;
+            }
+
+            if (greedy && i != strarr.length - 1) {
+              pattern.lastIndex = pos;
+              var match = pattern.exec(text);
+
+              if (!match) {
+                break;
+              }
+
+              var from = match.index + (lookbehind ? match[1].length : 0),
+                  to = match.index + match[0].length,
+                  k = i,
+                  p = pos;
+
+              for (var len = strarr.length; k < len && (p < to || !strarr[k].type && !strarr[k - 1].greedy); ++k) {
+                p += strarr[k].length; // Move the index i to the element in strarr that is closest to from
+
+                if (from >= p) {
+                  ++i;
+                  pos = p;
+                }
+              } // If strarr[i] is a Token, then the match starts inside another Token, which is invalid
+
+
+              if (strarr[i] instanceof Token) {
+                continue;
+              } // Number of tokens to delete and replace with the new match
+
+
+              delNum = k - i;
+              str = text.slice(pos, p);
+              match.index -= pos;
+            } else {
+              pattern.lastIndex = 0;
+              var match = pattern.exec(str),
+                  delNum = 1;
+            }
+
+            if (!match) {
+              if (oneshot) {
+                break;
+              }
+
+              continue;
+            }
+
+            if (lookbehind) {
+              lookbehindLength = match[1] ? match[1].length : 0;
+            }
+
+            var from = match.index + lookbehindLength,
+                match = match[0].slice(lookbehindLength),
+                to = from + match.length,
+                before = str.slice(0, from),
+                after = str.slice(to);
+            var args = [i, delNum];
+
+            if (before) {
+              ++i;
+              pos += before.length;
+              args.push(before);
+            }
+
+            var wrapped = new Token(token, inside ? _.tokenize(match, inside) : match, alias, match, greedy);
+            args.push(wrapped);
+
+            if (after) {
+              args.push(after);
+            }
+
+            Array.prototype.splice.apply(strarr, args);
+
+            if (delNum != 1) {
+              _.matchGrammar(text, strarr, grammar, i, pos, true, token);
+            }
+
+            if (oneshot) {
+              break;
+            }
+          }
+        }
+      }
+    },
+    hooks: {
+      add: function () {}
+    },
+    tokenize: function (text, grammar, language) {
+      var strarr = [text];
+      var rest = grammar.rest;
+
+      if (rest) {
+        for (var token in rest) {
+          grammar[token] = rest[token];
+        }
+
+        delete grammar.rest;
+      }
+
+      _.matchGrammar(text, strarr, grammar, 0, 0, false);
+
+      return strarr;
+    }
+  };
+
+  var Token = _.Token = function (type, content, alias, matchedStr, greedy) {
+    this.type = type;
+    this.content = content;
+    this.alias = alias; // Copy of the full string this token was created from
+
+    this.length = (matchedStr || "").length | 0;
+    this.greedy = !!greedy;
+  };
+
+  Token.stringify = function (o, language, parent) {
+    if (typeof o == "string") {
+      return o;
+    }
+
+    if (_.util.type(o) === "Array") {
+      return o.map(function (element) {
+        return Token.stringify(element, language, o);
+      }).join("");
+    }
+
+    var env = {
+      type: o.type,
+      content: Token.stringify(o.content, language, parent),
+      tag: "span",
+      classes: ["token", o.type],
+      attributes: {},
+      language: language,
+      parent: parent
+    };
+
+    if (o.alias) {
+      var aliases = _.util.type(o.alias) === "Array" ? o.alias : [o.alias];
+      Array.prototype.push.apply(env.classes, aliases);
+    }
+
+    var attributes = Object.keys(env.attributes).map(function (name) {
+      return name + '="' + (env.attributes[name] || "").replace(/"/g, "&quot;") + '"';
+    }).join(" ");
+    return "<" + env.tag + ' class="' + env.classes.join(" ") + '"' + (attributes ? " " + attributes : "") + ">" + env.content + "</" + env.tag + ">";
+  };
+
+  return _;
+}();
+
+/* This content is auto-generated to include some prismjs language components: */
+
+/* "prismjs/components/prism-markup" */
+
+Prism.languages.markup = {
+  'comment': /<!--[\s\S]*?-->/,
+  'prolog': /<\?[\s\S]+?\?>/,
+  'doctype': {
+    pattern: /<!DOCTYPE(?:[^>"'[\]]|"[^"]*"|'[^']*')+(?:\[(?:(?!<!--)[^"'\]]|"[^"]*"|'[^']*'|<!--[\s\S]*?-->)*\]\s*)?>/i,
+    greedy: true
+  },
+  'cdata': /<!\[CDATA\[[\s\S]*?]]>/i,
+  'tag': {
+    pattern: /<\/?(?!\d)[^\s>\/=$<%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/i,
+    greedy: true,
+    inside: {
+      'tag': {
+        pattern: /^<\/?[^\s>\/]+/i,
+        inside: {
+          'punctuation': /^<\/?/,
+          'namespace': /^[^\s>\/:]+:/
+        }
+      },
+      'attr-value': {
+        pattern: /=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+)/i,
+        inside: {
+          'punctuation': [/^=/, {
+            pattern: /^(\s*)["']|["']$/,
+            lookbehind: true
+          }]
+        }
+      },
+      'punctuation': /\/?>/,
+      'attr-name': {
+        pattern: /[^\s>\/]+/,
+        inside: {
+          'namespace': /^[^\s>\/:]+:/
+        }
+      }
+    }
+  },
+  'entity': /&#?[\da-z]{1,8};/i
+};
+Prism.languages.markup['tag'].inside['attr-value'].inside['entity'] = Prism.languages.markup['entity']; // Plugin to make entity title show the real entity, idea by Roman Komarov
+
+Prism.hooks.add('wrap', function (env) {
+  if (env.type === 'entity') {
+    env.attributes['title'] = env.content.replace(/&amp;/, '&');
+  }
+});
+Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
+  /**
+   * Adds an inlined language to markup.
+   *
+   * An example of an inlined language is CSS with `<style>` tags.
+   *
+   * @param {string} tagName The name of the tag that contains the inlined language. This name will be treated as
+   * case insensitive.
+   * @param {string} lang The language key.
+   * @example
+   * addInlined('style', 'css');
+   */
+  value: function addInlined(tagName, lang) {
+    var includedCdataInside = {};
+    includedCdataInside['language-' + lang] = {
+      pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i,
+      lookbehind: true,
+      inside: Prism.languages[lang]
+    };
+    includedCdataInside['cdata'] = /^<!\[CDATA\[|\]\]>$/i;
+    var inside = {
+      'included-cdata': {
+        pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i,
+        inside: includedCdataInside
+      }
+    };
+    inside['language-' + lang] = {
+      pattern: /[\s\S]+/,
+      inside: Prism.languages[lang]
+    };
+    var def = {};
+    def[tagName] = {
+      pattern: RegExp(/(<__[\s\S]*?>)(?:<!\[CDATA\[[\s\S]*?\]\]>\s*|[\s\S])*?(?=<\/__>)/.source.replace(/__/g, function () {
+        return tagName;
+      }), 'i'),
+      lookbehind: true,
+      greedy: true,
+      inside: inside
+    };
+    Prism.languages.insertBefore('markup', 'cdata', def);
+  }
+});
+Prism.languages.xml = Prism.languages.extend('markup', {});
+Prism.languages.html = Prism.languages.markup;
+Prism.languages.mathml = Prism.languages.markup;
+Prism.languages.svg = Prism.languages.markup;
+/* "prismjs/components/prism-bash" */
+
+(function (Prism) {
+  // $ set | grep '^[A-Z][^[:space:]]*=' | cut -d= -f1 | tr '\n' '|'
+  // + LC_ALL, RANDOM, REPLY, SECONDS.
+  // + make sure PS1..4 are here as they are not always set,
+  // - some useless things.
+  var envVars = '\\b(?:BASH|BASHOPTS|BASH_ALIASES|BASH_ARGC|BASH_ARGV|BASH_CMDS|BASH_COMPLETION_COMPAT_DIR|BASH_LINENO|BASH_REMATCH|BASH_SOURCE|BASH_VERSINFO|BASH_VERSION|COLORTERM|COLUMNS|COMP_WORDBREAKS|DBUS_SESSION_BUS_ADDRESS|DEFAULTS_PATH|DESKTOP_SESSION|DIRSTACK|DISPLAY|EUID|GDMSESSION|GDM_LANG|GNOME_KEYRING_CONTROL|GNOME_KEYRING_PID|GPG_AGENT_INFO|GROUPS|HISTCONTROL|HISTFILE|HISTFILESIZE|HISTSIZE|HOME|HOSTNAME|HOSTTYPE|IFS|INSTANCE|JOB|LANG|LANGUAGE|LC_ADDRESS|LC_ALL|LC_IDENTIFICATION|LC_MEASUREMENT|LC_MONETARY|LC_NAME|LC_NUMERIC|LC_PAPER|LC_TELEPHONE|LC_TIME|LESSCLOSE|LESSOPEN|LINES|LOGNAME|LS_COLORS|MACHTYPE|MAILCHECK|MANDATORY_PATH|NO_AT_BRIDGE|OLDPWD|OPTERR|OPTIND|ORBIT_SOCKETDIR|OSTYPE|PAPERSIZE|PATH|PIPESTATUS|PPID|PS1|PS2|PS3|PS4|PWD|RANDOM|REPLY|SECONDS|SELINUX_INIT|SESSION|SESSIONTYPE|SESSION_MANAGER|SHELL|SHELLOPTS|SHLVL|SSH_AUTH_SOCK|TERM|UID|UPSTART_EVENTS|UPSTART_INSTANCE|UPSTART_JOB|UPSTART_SESSION|USER|WINDOWID|XAUTHORITY|XDG_CONFIG_DIRS|XDG_CURRENT_DESKTOP|XDG_DATA_DIRS|XDG_GREETER_DATA_DIR|XDG_MENU_PREFIX|XDG_RUNTIME_DIR|XDG_SEAT|XDG_SEAT_PATH|XDG_SESSION_DESKTOP|XDG_SESSION_ID|XDG_SESSION_PATH|XDG_SESSION_TYPE|XDG_VTNR|XMODIFIERS)\\b';
+  var insideString = {
+    'environment': {
+      pattern: RegExp("\\$" + envVars),
+      alias: 'constant'
+    },
+    'variable': [// [0]: Arithmetic Environment
+    {
+      pattern: /\$?\(\([\s\S]+?\)\)/,
+      greedy: true,
+      inside: {
+        // If there is a $ sign at the beginning highlight $(( and )) as variable
+        'variable': [{
+          pattern: /(^\$\(\([\s\S]+)\)\)/,
+          lookbehind: true
+        }, /^\$\(\(/],
+        'number': /\b0x[\dA-Fa-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:[Ee]-?\d+)?/,
+        // Operators according to https://www.gnu.org/software/bash/manual/bashref.html#Shell-Arithmetic
+        'operator': /--?|-=|\+\+?|\+=|!=?|~|\*\*?|\*=|\/=?|%=?|<<=?|>>=?|<=?|>=?|==?|&&?|&=|\^=?|\|\|?|\|=|\?|:/,
+        // If there is no $ sign at the beginning highlight (( and )) as punctuation
+        'punctuation': /\(\(?|\)\)?|,|;/
+      }
+    }, // [1]: Command Substitution
+    {
+      pattern: /\$\((?:\([^)]+\)|[^()])+\)|`[^`]+`/,
+      greedy: true,
+      inside: {
+        'variable': /^\$\(|^`|\)$|`$/
+      }
+    }, // [2]: Brace expansion
+    {
+      pattern: /\$\{[^}]+\}/,
+      greedy: true,
+      inside: {
+        'operator': /:[-=?+]?|[!\/]|##?|%%?|\^\^?|,,?/,
+        'punctuation': /[\[\]]/,
+        'environment': {
+          pattern: RegExp("(\\{)" + envVars),
+          lookbehind: true,
+          alias: 'constant'
+        }
+      }
+    }, /\$(?:\w+|[#?*!@$])/],
+    // Escape sequences from echo and printf's manuals, and escaped quotes.
+    'entity': /\\(?:[abceEfnrtv\\"]|O?[0-7]{1,3}|x[0-9a-fA-F]{1,2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})/
+  };
+  Prism.languages.bash = {
+    'shebang': {
+      pattern: /^#!\s*\/.*/,
+      alias: 'important'
+    },
+    'comment': {
+      pattern: /(^|[^"{\\$])#.*/,
+      lookbehind: true
+    },
+    'function-name': [// a) function foo {
+    // b) foo() {
+    // c) function foo() {
+    // but not “foo {”
+    {
+      // a) and c)
+      pattern: /(\bfunction\s+)\w+(?=(?:\s*\(?:\s*\))?\s*\{)/,
+      lookbehind: true,
+      alias: 'function'
+    }, {
+      // b)
+      pattern: /\b\w+(?=\s*\(\s*\)\s*\{)/,
+      alias: 'function'
+    }],
+    // Highlight variable names as variables in for and select beginnings.
+    'for-or-select': {
+      pattern: /(\b(?:for|select)\s+)\w+(?=\s+in\s)/,
+      alias: 'variable',
+      lookbehind: true
+    },
+    // Highlight variable names as variables in the left-hand part
+    // of assignments (“=” and “+=”).
+    'assign-left': {
+      pattern: /(^|[\s;|&]|[<>]\()\w+(?=\+?=)/,
+      inside: {
+        'environment': {
+          pattern: RegExp("(^|[\\s;|&]|[<>]\\()" + envVars),
+          lookbehind: true,
+          alias: 'constant'
+        }
+      },
+      alias: 'variable',
+      lookbehind: true
+    },
+    'string': [// Support for Here-documents https://en.wikipedia.org/wiki/Here_document
+    {
+      pattern: /((?:^|[^<])<<-?\s*)(\w+?)\s*(?:\r?\n|\r)[\s\S]*?(?:\r?\n|\r)\2/,
+      lookbehind: true,
+      greedy: true,
+      inside: insideString
+    }, // Here-document with quotes around the tag
+    // → No expansion (so no “inside”).
+    {
+      pattern: /((?:^|[^<])<<-?\s*)(["'])(\w+)\2\s*(?:\r?\n|\r)[\s\S]*?(?:\r?\n|\r)\3/,
+      lookbehind: true,
+      greedy: true
+    }, // “Normal” string
+    {
+      pattern: /(^|[^\\](?:\\\\)*)(["'])(?:\\[\s\S]|\$\([^)]+\)|`[^`]+`|(?!\2)[^\\])*\2/,
+      lookbehind: true,
+      greedy: true,
+      inside: insideString
+    }],
+    'environment': {
+      pattern: RegExp("\\$?" + envVars),
+      alias: 'constant'
+    },
+    'variable': insideString.variable,
+    'function': {
+      pattern: /(^|[\s;|&]|[<>]\()(?:add|apropos|apt|aptitude|apt-cache|apt-get|aspell|automysqlbackup|awk|basename|bash|bc|bconsole|bg|bzip2|cal|cat|cfdisk|chgrp|chkconfig|chmod|chown|chroot|cksum|clear|cmp|column|comm|cp|cron|crontab|csplit|curl|cut|date|dc|dd|ddrescue|debootstrap|df|diff|diff3|dig|dir|dircolors|dirname|dirs|dmesg|du|egrep|eject|env|ethtool|expand|expect|expr|fdformat|fdisk|fg|fgrep|file|find|fmt|fold|format|free|fsck|ftp|fuser|gawk|git|gparted|grep|groupadd|groupdel|groupmod|groups|grub-mkconfig|gzip|halt|head|hg|history|host|hostname|htop|iconv|id|ifconfig|ifdown|ifup|import|install|ip|jobs|join|kill|killall|less|link|ln|locate|logname|logrotate|look|lpc|lpr|lprint|lprintd|lprintq|lprm|ls|lsof|lynx|make|man|mc|mdadm|mkconfig|mkdir|mke2fs|mkfifo|mkfs|mkisofs|mknod|mkswap|mmv|more|most|mount|mtools|mtr|mutt|mv|nano|nc|netstat|nice|nl|nohup|notify-send|npm|nslookup|op|open|parted|passwd|paste|pathchk|ping|pkill|pnpm|popd|pr|printcap|printenv|ps|pushd|pv|quota|quotacheck|quotactl|ram|rar|rcp|reboot|remsync|rename|renice|rev|rm|rmdir|rpm|rsync|scp|screen|sdiff|sed|sendmail|seq|service|sftp|sh|shellcheck|shuf|shutdown|sleep|slocate|sort|split|ssh|stat|strace|su|sudo|sum|suspend|swapon|sync|tac|tail|tar|tee|time|timeout|top|touch|tr|traceroute|tsort|tty|umount|uname|unexpand|uniq|units|unrar|unshar|unzip|update-grub|uptime|useradd|userdel|usermod|users|uudecode|uuencode|v|vdir|vi|vim|virsh|vmstat|wait|watch|wc|wget|whereis|which|who|whoami|write|xargs|xdg-open|yarn|yes|zenity|zip|zsh|zypper)(?=$|[)\s;|&])/,
+      lookbehind: true
+    },
+    'keyword': {
+      pattern: /(^|[\s;|&]|[<>]\()(?:if|then|else|elif|fi|for|while|in|case|esac|function|select|do|done|until)(?=$|[)\s;|&])/,
+      lookbehind: true
+    },
+    // https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html
+    'builtin': {
+      pattern: /(^|[\s;|&]|[<>]\()(?:\.|:|break|cd|continue|eval|exec|exit|export|getopts|hash|pwd|readonly|return|shift|test|times|trap|umask|unset|alias|bind|builtin|caller|command|declare|echo|enable|help|let|local|logout|mapfile|printf|read|readarray|source|type|typeset|ulimit|unalias|set|shopt)(?=$|[)\s;|&])/,
+      lookbehind: true,
+      // Alias added to make those easier to distinguish from strings.
+      alias: 'class-name'
+    },
+    'boolean': {
+      pattern: /(^|[\s;|&]|[<>]\()(?:true|false)(?=$|[)\s;|&])/,
+      lookbehind: true
+    },
+    'file-descriptor': {
+      pattern: /\B&\d\b/,
+      alias: 'important'
+    },
+    'operator': {
+      // Lots of redirections here, but not just that.
+      pattern: /\d?<>|>\||\+=|==?|!=?|=~|<<[<-]?|[&\d]?>>|\d?[<>]&?|&[>&]?|\|[&|]?|<=?|>=?/,
+      inside: {
+        'file-descriptor': {
+          pattern: /^\d/,
+          alias: 'important'
+        }
+      }
+    },
+    'punctuation': /\$?\(\(?|\)\)?|\.\.|[{}[\];\\]/,
+    'number': {
+      pattern: /(^|\s)(?:[1-9]\d*|0)(?:[.,]\d+)?\b/,
+      lookbehind: true
+    }
+  };
+  /* Patterns in command substitution. */
+
+  var toBeCopied = ['comment', 'function-name', 'for-or-select', 'assign-left', 'string', 'environment', 'function', 'keyword', 'builtin', 'boolean', 'file-descriptor', 'operator', 'punctuation', 'number'];
+  var inside = insideString.variable[1].inside;
+
+  for (var i = 0; i < toBeCopied.length; i++) {
+    inside[toBeCopied[i]] = Prism.languages.bash[toBeCopied[i]];
+  }
+
+  Prism.languages.shell = Prism.languages.bash;
+})(Prism);
+/* "prismjs/components/prism-clike" */
+
+
+Prism.languages.clike = {
+  'comment': [{
+    pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,
+    lookbehind: true
+  }, {
+    pattern: /(^|[^\\:])\/\/.*/,
+    lookbehind: true,
+    greedy: true
+  }],
+  'string': {
+    pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+    greedy: true
+  },
+  'class-name': {
+    pattern: /(\b(?:class|interface|extends|implements|trait|instanceof|new)\s+|\bcatch\s+\()[\w.\\]+/i,
+    lookbehind: true,
+    inside: {
+      'punctuation': /[.\\]/
+    }
+  },
+  'keyword': /\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,
+  'boolean': /\b(?:true|false)\b/,
+  'function': /\w+(?=\()/,
+  'number': /\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?/i,
+  'operator': /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,
+  'punctuation': /[{}[\];(),.:]/
+};
+/* "prismjs/components/prism-c" */
+
+Prism.languages.c = Prism.languages.extend('clike', {
+  'comment': {
+    pattern: /\/\/(?:[^\r\n\\]|\\(?:\r\n?|\n|(?![\r\n])))*|\/\*[\s\S]*?(?:\*\/|$)/,
+    greedy: true
+  },
+  'class-name': {
+    pattern: /(\b(?:enum|struct)\s+(?:__attribute__\s*\(\([\s\S]*?\)\)\s*)?)\w+/,
+    lookbehind: true
+  },
+  'keyword': /\b(?:__attribute__|_Alignas|_Alignof|_Atomic|_Bool|_Complex|_Generic|_Imaginary|_Noreturn|_Static_assert|_Thread_local|asm|typeof|inline|auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while)\b/,
+  'function': /[a-z_]\w*(?=\s*\()/i,
+  'operator': />>=?|<<=?|->|([-+&|:])\1|[?:~]|[-+*/%&|^!=<>]=?/,
+  'number': /(?:\b0x(?:[\da-f]+\.?[\da-f]*|\.[\da-f]+)(?:p[+-]?\d+)?|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?)[ful]*/i
+});
+Prism.languages.insertBefore('c', 'string', {
+  'macro': {
+    // allow for multiline macro definitions
+    // spaces after the # character compile fine with gcc
+    pattern: /(^\s*)#\s*[a-z]+(?:[^\r\n\\]|\\(?:\r\n|[\s\S]))*/im,
+    lookbehind: true,
+    alias: 'property',
+    inside: {
+      // highlight the path of the include statement as a string
+      'string': {
+        pattern: /(#\s*include\s*)(?:<.+?>|("|')(?:\\?.)+?\2)/,
+        lookbehind: true
+      },
+      // highlight macro directives as keywords
+      'directive': {
+        pattern: /(#\s*)\b(?:define|defined|elif|else|endif|error|ifdef|ifndef|if|import|include|line|pragma|undef|using)\b/,
+        lookbehind: true,
+        alias: 'keyword'
+      }
+    }
+  },
+  // highlight predefined macros as constants
+  'constant': /\b(?:__FILE__|__LINE__|__DATE__|__TIME__|__TIMESTAMP__|__func__|EOF|NULL|SEEK_CUR|SEEK_END|SEEK_SET|stdin|stdout|stderr)\b/
+});
+delete Prism.languages.c['boolean'];
+/* "prismjs/components/prism-cpp" */
+
+Prism.languages.cpp = Prism.languages.extend('c', {
+  'class-name': {
+    pattern: /(\b(?:class|enum|struct)\s+)\w+/,
+    lookbehind: true
+  },
+  'keyword': /\b(?:alignas|alignof|asm|auto|bool|break|case|catch|char|char8_t|char16_t|char32_t|class|compl|concept|const|consteval|constexpr|constinit|const_cast|continue|co_await|co_return|co_yield|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|float|for|friend|goto|if|inline|int|int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|long|mutable|namespace|new|noexcept|nullptr|operator|private|protected|public|register|reinterpret_cast|requires|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while)\b/,
+  'number': {
+    pattern: /(?:\b0b[01']+|\b0x(?:[\da-f']+\.?[\da-f']*|\.[\da-f']+)(?:p[+-]?[\d']+)?|(?:\b[\d']+\.?[\d']*|\B\.[\d']+)(?:e[+-]?[\d']+)?)[ful]*/i,
+    greedy: true
+  },
+  'operator': />>=?|<<=?|->|([-+&|:])\1|[?:~]|[-+*/%&|^!=<>]=?|\b(?:and|and_eq|bitand|bitor|not|not_eq|or|or_eq|xor|xor_eq)\b/,
+  'boolean': /\b(?:true|false)\b/
+});
+Prism.languages.insertBefore('cpp', 'string', {
+  'raw-string': {
+    pattern: /R"([^()\\ ]{0,16})\([\s\S]*?\)\1"/,
+    alias: 'string',
+    greedy: true
+  }
+});
+/* "prismjs/components/prism-css" */
+
+(function (Prism) {
+  var string = /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/;
+  Prism.languages.css = {
+    'comment': /\/\*[\s\S]*?\*\//,
+    'atrule': {
+      pattern: /@[\w-]+[\s\S]*?(?:;|(?=\s*\{))/,
+      inside: {
+        'rule': /^@[\w-]+/,
+        'selector-function-argument': {
+          pattern: /(\bselector\s*\((?!\s*\))\s*)(?:[^()]|\((?:[^()]|\([^()]*\))*\))+?(?=\s*\))/,
+          lookbehind: true,
+          alias: 'selector'
+        } // See rest below
+
+      }
+    },
+    'url': {
+      pattern: RegExp('url\\((?:' + string.source + '|[^\n\r()]*)\\)', 'i'),
+      greedy: true,
+      inside: {
+        'function': /^url/i,
+        'punctuation': /^\(|\)$/
+      }
+    },
+    'selector': RegExp('[^{}\\s](?:[^{};"\']|' + string.source + ')*?(?=\\s*\\{)'),
+    'string': {
+      pattern: string,
+      greedy: true
+    },
+    'property': /[-_a-z\xA0-\uFFFF][-\w\xA0-\uFFFF]*(?=\s*:)/i,
+    'important': /!important\b/i,
+    'function': /[-a-z0-9]+(?=\()/i,
+    'punctuation': /[(){};:,]/
+  };
+  Prism.languages.css['atrule'].inside.rest = Prism.languages.css;
+  var markup = Prism.languages.markup;
+
+  if (markup) {
+    markup.tag.addInlined('style', 'css');
+    Prism.languages.insertBefore('inside', 'attr-value', {
+      'style-attr': {
+        pattern: /\s*style=("|')(?:\\[\s\S]|(?!\1)[^\\])*\1/i,
+        inside: {
+          'attr-name': {
+            pattern: /^\s*style/i,
+            inside: markup.tag.inside
+          },
+          'punctuation': /^\s*=\s*['"]|['"]\s*$/,
+          'attr-value': {
+            pattern: /.+/i,
+            inside: Prism.languages.css
+          }
+        },
+        alias: 'language-css'
+      }
+    }, markup.tag);
+  }
+})(Prism);
+/* "prismjs/components/prism-css-extras" */
+
+
+(function (Prism) {
+  var string = /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/;
+  var selectorInside;
+  Prism.languages.css.selector = {
+    pattern: Prism.languages.css.selector,
+    inside: selectorInside = {
+      'pseudo-element': /:(?:after|before|first-letter|first-line|selection)|::[-\w]+/,
+      'pseudo-class': /:[-\w]+/,
+      'class': /\.[-:.\w]+/,
+      'id': /#[-:.\w]+/,
+      'attribute': {
+        pattern: RegExp('\\[(?:[^[\\]"\']|' + string.source + ')*\\]'),
+        greedy: true,
+        inside: {
+          'punctuation': /^\[|\]$/,
+          'case-sensitivity': {
+            pattern: /(\s)[si]$/i,
+            lookbehind: true,
+            alias: 'keyword'
+          },
+          'namespace': {
+            pattern: /^(\s*)[-*\w\xA0-\uFFFF]*\|(?!=)/,
+            lookbehind: true,
+            inside: {
+              'punctuation': /\|$/
+            }
+          },
+          'attribute': {
+            pattern: /^(\s*)[-\w\xA0-\uFFFF]+/,
+            lookbehind: true
+          },
+          'value': [string, {
+            pattern: /(=\s*)[-\w\xA0-\uFFFF]+(?=\s*$)/,
+            lookbehind: true
+          }],
+          'operator': /[|~*^$]?=/
+        }
+      },
+      'n-th': [{
+        pattern: /(\(\s*)[+-]?\d*[\dn](?:\s*[+-]\s*\d+)?(?=\s*\))/,
+        lookbehind: true,
+        inside: {
+          'number': /[\dn]+/,
+          'operator': /[+-]/
+        }
+      }, {
+        pattern: /(\(\s*)(?:even|odd)(?=\s*\))/i,
+        lookbehind: true
+      }],
+      'punctuation': /[()]/
+    }
+  };
+  Prism.languages.css['atrule'].inside['selector-function-argument'].inside = selectorInside;
+  Prism.languages.insertBefore('css', 'property', {
+    'variable': {
+      pattern: /(^|[^-\w\xA0-\uFFFF])--[-_a-z\xA0-\uFFFF][-\w\xA0-\uFFFF]*/i,
+      lookbehind: true
+    }
+  });
+  var unit = {
+    pattern: /(\d)(?:%|[a-z]+)/,
+    lookbehind: true
+  }; // 123 -123 .123 -.123 12.3 -12.3
+
+  var number = {
+    pattern: /(^|[^\w.-])-?\d*\.?\d+/,
+    lookbehind: true
+  };
+  Prism.languages.insertBefore('css', 'function', {
+    'operator': {
+      pattern: /(\s)[+\-*\/](?=\s)/,
+      lookbehind: true
+    },
+    // CAREFUL!
+    // Previewers and Inline color use hexcode and color.
+    'hexcode': {
+      pattern: /\B#(?:[\da-f]{1,2}){3,4}\b/i,
+      alias: 'color'
+    },
+    'color': [/\b(?:AliceBlue|AntiqueWhite|Aqua|Aquamarine|Azure|Beige|Bisque|Black|BlanchedAlmond|Blue|BlueViolet|Brown|BurlyWood|CadetBlue|Chartreuse|Chocolate|Coral|CornflowerBlue|Cornsilk|Crimson|Cyan|DarkBlue|DarkCyan|DarkGoldenRod|DarkGr[ae]y|DarkGreen|DarkKhaki|DarkMagenta|DarkOliveGreen|DarkOrange|DarkOrchid|DarkRed|DarkSalmon|DarkSeaGreen|DarkSlateBlue|DarkSlateGr[ae]y|DarkTurquoise|DarkViolet|DeepPink|DeepSkyBlue|DimGr[ae]y|DodgerBlue|FireBrick|FloralWhite|ForestGreen|Fuchsia|Gainsboro|GhostWhite|Gold|GoldenRod|Gr[ae]y|Green|GreenYellow|HoneyDew|HotPink|IndianRed|Indigo|Ivory|Khaki|Lavender|LavenderBlush|LawnGreen|LemonChiffon|LightBlue|LightCoral|LightCyan|LightGoldenRodYellow|LightGr[ae]y|LightGreen|LightPink|LightSalmon|LightSeaGreen|LightSkyBlue|LightSlateGr[ae]y|LightSteelBlue|LightYellow|Lime|LimeGreen|Linen|Magenta|Maroon|MediumAquaMarine|MediumBlue|MediumOrchid|MediumPurple|MediumSeaGreen|MediumSlateBlue|MediumSpringGreen|MediumTurquoise|MediumVioletRed|MidnightBlue|MintCream|MistyRose|Moccasin|NavajoWhite|Navy|OldLace|Olive|OliveDrab|Orange|OrangeRed|Orchid|PaleGoldenRod|PaleGreen|PaleTurquoise|PaleVioletRed|PapayaWhip|PeachPuff|Peru|Pink|Plum|PowderBlue|Purple|Red|RosyBrown|RoyalBlue|SaddleBrown|Salmon|SandyBrown|SeaGreen|SeaShell|Sienna|Silver|SkyBlue|SlateBlue|SlateGr[ae]y|Snow|SpringGreen|SteelBlue|Tan|Teal|Thistle|Tomato|Transparent|Turquoise|Violet|Wheat|White|WhiteSmoke|Yellow|YellowGreen)\b/i, {
+      pattern: /\b(?:rgb|hsl)\(\s*\d{1,3}\s*,\s*\d{1,3}%?\s*,\s*\d{1,3}%?\s*\)\B|\b(?:rgb|hsl)a\(\s*\d{1,3}\s*,\s*\d{1,3}%?\s*,\s*\d{1,3}%?\s*,\s*(?:0|0?\.\d+|1)\s*\)\B/i,
+      inside: {
+        'unit': unit,
+        'number': number,
+        'function': /[\w-]+(?=\()/,
+        'punctuation': /[(),]/
+      }
+    }],
+    'entity': /\\[\da-f]{1,8}/i,
+    'unit': unit,
+    'number': number
+  });
+})(Prism);
+/* "prismjs/components/prism-javascript" */
+
+
+Prism.languages.javascript = Prism.languages.extend('clike', {
+  'class-name': [Prism.languages.clike['class-name'], {
+    pattern: /(^|[^$\w\xA0-\uFFFF])[_$A-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\.(?:prototype|constructor))/,
+    lookbehind: true
+  }],
+  'keyword': [{
+    pattern: /((?:^|})\s*)(?:catch|finally)\b/,
+    lookbehind: true
+  }, {
+    pattern: /(^|[^.]|\.\.\.\s*)\b(?:as|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+    lookbehind: true
+  }],
+  'number': /\b(?:(?:0[xX](?:[\dA-Fa-f](?:_[\dA-Fa-f])?)+|0[bB](?:[01](?:_[01])?)+|0[oO](?:[0-7](?:_[0-7])?)+)n?|(?:\d(?:_\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:_\d)?)+\.?(?:\d(?:_\d)?)*|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
+  // Allow for all non-ASCII characters (See http://stackoverflow.com/a/2008444)
+  'function': /#?[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*(?:\.\s*(?:apply|bind|call)\s*)?\()/,
+  'operator': /--|\+\+|\*\*=?|=>|&&|\|\||[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?[.?]?|[~:]/
+});
+Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/;
+Prism.languages.insertBefore('javascript', 'keyword', {
+  'regex': {
+    pattern: /((?:^|[^$\w\xA0-\uFFFF."'\])\s])\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*]|\\.|[^/\\\[\r\n])+\/[gimyus]{0,6}(?=(?:\s|\/\*[\s\S]*?\*\/)*(?:$|[\r\n,.;:})\]]|\/\/))/,
+    lookbehind: true,
+    greedy: true
+  },
+  // This must be declared before keyword because we use "function" inside the look-forward
+  'function-variable': {
+    pattern: /#?[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]*\))*\)|[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*)\s*=>))/,
+    alias: 'function'
+  },
+  'parameter': [{
+    pattern: /(function(?:\s+[_$A-Za-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*)?\s*\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\))/,
+    lookbehind: true,
+    inside: Prism.languages.javascript
+  }, {
+    pattern: /[_$a-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*=>)/i,
+    inside: Prism.languages.javascript
+  }, {
+    pattern: /(\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*=>)/,
+    lookbehind: true,
+    inside: Prism.languages.javascript
+  }, {
+    pattern: /((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:[_$A-Za-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*\s*)\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*\{)/,
+    lookbehind: true,
+    inside: Prism.languages.javascript
+  }],
+  'constant': /\b[A-Z](?:[A-Z_]|\dx?)*\b/
+});
+Prism.languages.insertBefore('javascript', 'string', {
+  'template-string': {
+    pattern: /`(?:\\[\s\S]|\${(?:[^{}]|{(?:[^{}]|{[^}]*})*})+}|(?!\${)[^\\`])*`/,
+    greedy: true,
+    inside: {
+      'template-punctuation': {
+        pattern: /^`|`$/,
+        alias: 'string'
+      },
+      'interpolation': {
+        pattern: /((?:^|[^\\])(?:\\{2})*)\${(?:[^{}]|{(?:[^{}]|{[^}]*})*})+}/,
+        lookbehind: true,
+        inside: {
+          'interpolation-punctuation': {
+            pattern: /^\${|}$/,
+            alias: 'punctuation'
+          },
+          rest: Prism.languages.javascript
+        }
+      },
+      'string': /[\s\S]+/
+    }
+  }
+});
+
+if (Prism.languages.markup) {
+  Prism.languages.markup.tag.addInlined('script', 'javascript');
+}
+
+Prism.languages.js = Prism.languages.javascript;
+/* "prismjs/components/prism-jsx" */
+
+(function (Prism) {
+  var javascript = Prism.util.clone(Prism.languages.javascript);
+  Prism.languages.jsx = Prism.languages.extend('markup', javascript);
+  Prism.languages.jsx.tag.pattern = /<\/?(?:[\w.:-]+\s*(?:\s+(?:[\w.:$-]+(?:=(?:("|')(?:\\[\s\S]|(?!\1)[^\\])*\1|[^\s{'">=]+|\{(?:\{(?:\{[^}]*\}|[^{}])*\}|[^{}])+\}))?|\{\s*\.{3}\s*[a-z_$][\w$]*(?:\.[a-z_$][\w$]*)*\s*\}))*\s*\/?)?>/i;
+  Prism.languages.jsx.tag.inside['tag'].pattern = /^<\/?[^\s>\/]*/i;
+  Prism.languages.jsx.tag.inside['attr-value'].pattern = /=(?!\{)(?:("|')(?:\\[\s\S]|(?!\1)[^\\])*\1|[^\s'">]+)/i;
+  Prism.languages.jsx.tag.inside['tag'].inside['class-name'] = /^[A-Z]\w*(?:\.[A-Z]\w*)*$/;
+  Prism.languages.insertBefore('inside', 'attr-name', {
+    'spread': {
+      pattern: /\{\s*\.{3}\s*[a-z_$][\w$]*(?:\.[a-z_$][\w$]*)*\s*\}/,
+      inside: {
+        'punctuation': /\.{3}|[{}.]/,
+        'attr-value': /\w+/
+      }
+    }
+  }, Prism.languages.jsx.tag);
+  Prism.languages.insertBefore('inside', 'attr-value', {
+    'script': {
+      // Allow for two levels of nesting
+      pattern: /=(?:\{(?:\{(?:\{[^}]*\}|[^}])*\}|[^}])+\})/i,
+      inside: {
+        'script-punctuation': {
+          pattern: /^=(?={)/,
+          alias: 'punctuation'
+        },
+        rest: Prism.languages.jsx
+      },
+      'alias': 'language-javascript'
+    }
+  }, Prism.languages.jsx.tag); // The following will handle plain text inside tags
+
+  var stringifyToken = function (token) {
+    if (!token) {
+      return '';
+    }
+
+    if (typeof token === 'string') {
+      return token;
+    }
+
+    if (typeof token.content === 'string') {
+      return token.content;
+    }
+
+    return token.content.map(stringifyToken).join('');
+  };
+
+  var walkTokens = function (tokens) {
+    var openedTags = [];
+
+    for (var i = 0; i < tokens.length; i++) {
+      var token = tokens[i];
+      var notTagNorBrace = false;
+
+      if (typeof token !== 'string') {
+        if (token.type === 'tag' && token.content[0] && token.content[0].type === 'tag') {
+          // We found a tag, now find its kind
+          if (token.content[0].content[0].content === '</') {
+            // Closing tag
+            if (openedTags.length > 0 && openedTags[openedTags.length - 1].tagName === stringifyToken(token.content[0].content[1])) {
+              // Pop matching opening tag
+              openedTags.pop();
+            }
+          } else {
+            if (token.content[token.content.length - 1].content === '/>') ; else {
+              // Opening tag
+              openedTags.push({
+                tagName: stringifyToken(token.content[0].content[1]),
+                openedBraces: 0
+              });
+            }
+          }
+        } else if (openedTags.length > 0 && token.type === 'punctuation' && token.content === '{') {
+          // Here we might have entered a JSX context inside a tag
+          openedTags[openedTags.length - 1].openedBraces++;
+        } else if (openedTags.length > 0 && openedTags[openedTags.length - 1].openedBraces > 0 && token.type === 'punctuation' && token.content === '}') {
+          // Here we might have left a JSX context inside a tag
+          openedTags[openedTags.length - 1].openedBraces--;
+        } else {
+          notTagNorBrace = true;
+        }
+      }
+
+      if (notTagNorBrace || typeof token === 'string') {
+        if (openedTags.length > 0 && openedTags[openedTags.length - 1].openedBraces === 0) {
+          // Here we are inside a tag, and not inside a JSX context.
+          // That's plain text: drop any tokens matched.
+          var plainText = stringifyToken(token); // And merge text with adjacent text
+
+          if (i < tokens.length - 1 && (typeof tokens[i + 1] === 'string' || tokens[i + 1].type === 'plain-text')) {
+            plainText += stringifyToken(tokens[i + 1]);
+            tokens.splice(i + 1, 1);
+          }
+
+          if (i > 0 && (typeof tokens[i - 1] === 'string' || tokens[i - 1].type === 'plain-text')) {
+            plainText = stringifyToken(tokens[i - 1]) + plainText;
+            tokens.splice(i - 1, 1);
+            i--;
+          }
+
+          tokens[i] = new Prism.Token('plain-text', plainText, null, plainText);
+        }
+      }
+
+      if (token.content && typeof token.content !== 'string') {
+        walkTokens(token.content);
+      }
+    }
+  };
+
+  Prism.hooks.add('after-tokenize', function (env) {
+    if (env.language !== 'jsx' && env.language !== 'tsx') {
+      return;
+    }
+
+    walkTokens(env.tokens);
+  });
+})(Prism);
+/* "prismjs/components/prism-js-extras" */
+
+
+(function (Prism) {
+  Prism.languages.insertBefore('javascript', 'function-variable', {
+    'method-variable': {
+      pattern: RegExp('(\\.\\s*)' + Prism.languages.javascript['function-variable'].pattern.source),
+      lookbehind: true,
+      alias: ['function-variable', 'method', 'function', 'property-access']
+    }
+  });
+  Prism.languages.insertBefore('javascript', 'function', {
+    'method': {
+      pattern: RegExp('(\\.\\s*)' + Prism.languages.javascript['function'].source),
+      lookbehind: true,
+      alias: ['function', 'property-access']
+    }
+  });
+  Prism.languages.insertBefore('javascript', 'constant', {
+    'known-class-name': [{
+      // standard built-ins
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+      pattern: /\b(?:(?:(?:Uint|Int)(?:8|16|32)|Uint8Clamped|Float(?:32|64))?Array|ArrayBuffer|BigInt|Boolean|DataView|Date|Error|Function|Intl|JSON|Math|Number|Object|Promise|Proxy|Reflect|RegExp|String|Symbol|(?:Weak)?(?:Set|Map)|WebAssembly)\b/,
+      alias: 'class-name'
+    }, {
+      // errors
+      pattern: /\b(?:[A-Z]\w*)Error\b/,
+      alias: 'class-name'
+    }]
+  });
+  Prism.languages.javascript['keyword'].unshift({
+    pattern: /\b(?:as|default|export|from|import)\b/,
+    alias: 'module'
+  }, {
+    pattern: /\bnull\b/,
+    alias: ['null', 'nil']
+  }, {
+    pattern: /\bundefined\b/,
+    alias: 'nil'
+  });
+  Prism.languages.insertBefore('javascript', 'operator', {
+    'spread': {
+      pattern: /\.{3}/,
+      alias: 'operator'
+    },
+    'arrow': {
+      pattern: /=>/,
+      alias: 'operator'
+    }
+  });
+  Prism.languages.insertBefore('javascript', 'punctuation', {
+    'property-access': {
+      pattern: /(\.\s*)#?[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*/,
+      lookbehind: true
+    },
+    'maybe-class-name': {
+      pattern: /(^|[^$\w\xA0-\uFFFF])[A-Z][$\w\xA0-\uFFFF]+/,
+      lookbehind: true
+    },
+    'dom': {
+      // this contains only a few commonly used DOM variables
+      pattern: /\b(?:document|location|navigator|performance|(?:local|session)Storage|window)\b/,
+      alias: 'variable'
+    },
+    'console': {
+      pattern: /\bconsole(?=\s*\.)/,
+      alias: 'class-name'
+    }
+  }); // add 'maybe-class-name' to tokens which might be a class name
+
+  var maybeClassNameTokens = ['function', 'function-variable', 'method', 'method-variable', 'property-access'];
+
+  for (var i = 0; i < maybeClassNameTokens.length; i++) {
+    var token = maybeClassNameTokens[i];
+    var value = Prism.languages.javascript[token]; // convert regex to object
+
+    if (Prism.util.type(value) === 'RegExp') {
+      value = Prism.languages.javascript[token] = {
+        pattern: value
+      };
+    } // keep in mind that we don't support arrays
+
+
+    var inside = value.inside || {};
+    value.inside = inside;
+    inside['maybe-class-name'] = /^[A-Z][\s\S]*/;
+  }
+})(Prism);
+/* "prismjs/components/prism-coffeescript" */
+
+
+(function (Prism) {
+  // Ignore comments starting with { to privilege string interpolation highlighting
+  var comment = /#(?!\{).+/,
+      interpolation = {
+    pattern: /#\{[^}]+\}/,
+    alias: 'variable'
+  };
+  Prism.languages.coffeescript = Prism.languages.extend('javascript', {
+    'comment': comment,
+    'string': [// Strings are multiline
+    {
+      pattern: /'(?:\\[\s\S]|[^\\'])*'/,
+      greedy: true
+    }, {
+      // Strings are multiline
+      pattern: /"(?:\\[\s\S]|[^\\"])*"/,
+      greedy: true,
+      inside: {
+        'interpolation': interpolation
+      }
+    }],
+    'keyword': /\b(?:and|break|by|catch|class|continue|debugger|delete|do|each|else|extend|extends|false|finally|for|if|in|instanceof|is|isnt|let|loop|namespace|new|no|not|null|of|off|on|or|own|return|super|switch|then|this|throw|true|try|typeof|undefined|unless|until|when|while|window|with|yes|yield)\b/,
+    'class-member': {
+      pattern: /@(?!\d)\w+/,
+      alias: 'variable'
+    }
+  });
+  Prism.languages.insertBefore('coffeescript', 'comment', {
+    'multiline-comment': {
+      pattern: /###[\s\S]+?###/,
+      alias: 'comment'
+    },
+    // Block regexp can contain comments and interpolation
+    'block-regex': {
+      pattern: /\/{3}[\s\S]*?\/{3}/,
+      alias: 'regex',
+      inside: {
+        'comment': comment,
+        'interpolation': interpolation
+      }
+    }
+  });
+  Prism.languages.insertBefore('coffeescript', 'string', {
+    'inline-javascript': {
+      pattern: /`(?:\\[\s\S]|[^\\`])*`/,
+      inside: {
+        'delimiter': {
+          pattern: /^`|`$/,
+          alias: 'punctuation'
+        },
+        rest: Prism.languages.javascript
+      }
+    },
+    // Block strings
+    'multiline-string': [{
+      pattern: /'''[\s\S]*?'''/,
+      greedy: true,
+      alias: 'string'
+    }, {
+      pattern: /"""[\s\S]*?"""/,
+      greedy: true,
+      alias: 'string',
+      inside: {
+        interpolation: interpolation
+      }
+    }]
+  });
+  Prism.languages.insertBefore('coffeescript', 'keyword', {
+    // Object property
+    'property': /(?!\d)\w+(?=\s*:(?!:))/
+  });
+  delete Prism.languages.coffeescript['template-string'];
+  Prism.languages.coffee = Prism.languages.coffeescript;
+})(Prism);
+/* "prismjs/components/prism-diff" */
+
+
+(function (Prism) {
+  Prism.languages.diff = {
+    'coord': [// Match all kinds of coord lines (prefixed by "+++", "---" or "***").
+    /^(?:\*{3}|-{3}|\+{3}).*$/m, // Match "@@ ... @@" coord lines in unified diff.
+    /^@@.*@@$/m, // Match coord lines in normal diff (starts with a number).
+    /^\d+.*$/m] // deleted, inserted, unchanged, diff
+
+  };
+  /**
+   * A map from the name of a block to its line prefix.
+   *
+   * @type {Object<string, string>}
+   */
+
+  var PREFIXES = {
+    'deleted-sign': '-',
+    'deleted-arrow': '<',
+    'inserted-sign': '+',
+    'inserted-arrow': '>',
+    'unchanged': ' ',
+    'diff': '!'
+  }; // add a token for each prefix
+
+  Object.keys(PREFIXES).forEach(function (name) {
+    var prefix = PREFIXES[name];
+    var alias = [];
+
+    if (!/^\w+$/.test(name)) {
+      // "deleted-sign" -> "deleted"
+      alias.push(/\w+/.exec(name)[0]);
+    }
+
+    if (name === "diff") {
+      alias.push("bold");
+    }
+
+    Prism.languages.diff[name] = {
+      // pattern: /^(?:[_].*(?:\r\n?|\n|(?![\s\S])))+/m
+      pattern: RegExp('^(?:[' + prefix + '].*(?:\r\n?|\n|(?![\\s\\S])))+', 'm'),
+      alias: alias
+    };
+  }); // make prefixes available to Diff plugin
+
+  Object.defineProperty(Prism.languages.diff, 'PREFIXES', {
+    value: PREFIXES
+  });
+})(Prism);
+/* "prismjs/components/prism-git" */
+
+
+Prism.languages.git = {
+  /*
+   * A simple one line comment like in a git status command
+   * For instance:
+   * $ git status
+   * # On branch infinite-scroll
+   * # Your branch and 'origin/sharedBranches/frontendTeam/infinite-scroll' have diverged,
+   * # and have 1 and 2 different commits each, respectively.
+   * nothing to commit (working directory clean)
+   */
+  'comment': /^#.*/m,
+
+  /*
+   * Regexp to match the changed lines in a git diff output. Check the example below.
+   */
+  'deleted': /^[-–].*/m,
+  'inserted': /^\+.*/m,
+
+  /*
+   * a string (double and simple quote)
+   */
+  'string': /("|')(?:\\.|(?!\1)[^\\\r\n])*\1/m,
+
+  /*
+   * a git command. It starts with a random prompt finishing by a $, then "git" then some other parameters
+   * For instance:
+   * $ git add file.txt
+   */
+  'command': {
+    pattern: /^.*\$ git .*$/m,
+    inside: {
+      /*
+       * A git command can contain a parameter starting by a single or a double dash followed by a string
+       * For instance:
+       * $ git diff --cached
+       * $ git log -p
+       */
+      'parameter': /\s--?\w+/m
+    }
+  },
+
+  /*
+   * Coordinates displayed in a git diff command
+   * For instance:
+   * $ git diff
+   * diff --git file.txt file.txt
+   * index 6214953..1d54a52 100644
+   * --- file.txt
+   * +++ file.txt
+   * @@ -1 +1,2 @@
+   * -Here's my tetx file
+   * +Here's my text file
+   * +And this is the second line
+   */
+  'coord': /^@@.*@@$/m,
+
+  /*
+   * Match a "commit [SHA1]" line in a git log output.
+   * For instance:
+   * $ git log
+   * commit a11a14ef7e26f2ca62d4b35eac455ce636d0dc09
+   * Author: lgiraudel
+   * Date:   Mon Feb 17 11:18:34 2014 +0100
+   *
+   *     Add of a new line
+   */
+  'commit_sha1': /^commit \w{40}$/m
+};
+/* "prismjs/components/prism-go" */
+
+Prism.languages.go = Prism.languages.extend('clike', {
+  'keyword': /\b(?:break|case|chan|const|continue|default|defer|else|fallthrough|for|func|go(?:to)?|if|import|interface|map|package|range|return|select|struct|switch|type|var)\b/,
+  'builtin': /\b(?:bool|byte|complex(?:64|128)|error|float(?:32|64)|rune|string|u?int(?:8|16|32|64)?|uintptr|append|cap|close|complex|copy|delete|imag|len|make|new|panic|print(?:ln)?|real|recover)\b/,
+  'boolean': /\b(?:_|iota|nil|true|false)\b/,
+  'operator': /[*\/%^!=]=?|\+[=+]?|-[=-]?|\|[=|]?|&(?:=|&|\^=?)?|>(?:>=?|=)?|<(?:<=?|=|-)?|:=|\.\.\./,
+  'number': /(?:\b0x[a-f\d]+|(?:\b\d+\.?\d*|\B\.\d+)(?:e[-+]?\d+)?)i?/i,
+  'string': {
+    pattern: /(["'`])(?:\\[\s\S]|(?!\1)[^\\])*\1/,
+    greedy: true
+  }
+});
+delete Prism.languages.go['class-name'];
+/* "prismjs/components/prism-graphql" */
+
+Prism.languages.graphql = {
+  'comment': /#.*/,
+  'string': {
+    pattern: /"(?:\\.|[^\\"\r\n])*"/,
+    greedy: true
+  },
+  'number': /(?:\B-|\b)\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
+  'boolean': /\b(?:true|false)\b/,
+  'variable': /\$[a-z_]\w*/i,
+  'directive': {
+    pattern: /@[a-z_]\w*/i,
+    alias: 'function'
+  },
+  'attr-name': {
+    pattern: /[a-z_]\w*(?=\s*(?:\((?:[^()"]|"(?:\\.|[^\\"\r\n])*")*\))?:)/i,
+    greedy: true
+  },
+  'class-name': {
+    pattern: /(\b(?:enum|implements|interface|on|scalar|type|union)\s+)[a-zA-Z_]\w*/,
+    lookbehind: true
+  },
+  'fragment': {
+    pattern: /(\bfragment\s+|\.{3}\s*(?!on\b))[a-zA-Z_]\w*/,
+    lookbehind: true,
+    alias: 'function'
+  },
+  'keyword': /\b(?:enum|fragment|implements|input|interface|mutation|on|query|scalar|schema|type|union)\b/,
+  'operator': /[!=|]|\.{3}/,
+  'punctuation': /[!(){}\[\]:=,]/,
+  'constant': /\b(?!ID\b)[A-Z][A-Z_\d]*\b/
+};
+/* "prismjs/components/prism-markup-templating" */
+
+(function (Prism) {
+  /**
+   * Returns the placeholder for the given language id and index.
+   *
+   * @param {string} language
+   * @param {string|number} index
+   * @returns {string}
+   */
+  function getPlaceholder(language, index) {
+    return '___' + language.toUpperCase() + index + '___';
+  }
+
+  Object.defineProperties(Prism.languages['markup-templating'] = {}, {
+    buildPlaceholders: {
+      /**
+       * Tokenize all inline templating expressions matching `placeholderPattern`.
+       *
+       * If `replaceFilter` is provided, only matches of `placeholderPattern` for which `replaceFilter` returns
+       * `true` will be replaced.
+       *
+       * @param {object} env The environment of the `before-tokenize` hook.
+       * @param {string} language The language id.
+       * @param {RegExp} placeholderPattern The matches of this pattern will be replaced by placeholders.
+       * @param {(match: string) => boolean} [replaceFilter]
+       */
+      value: function (env, language, placeholderPattern, replaceFilter) {
+        if (env.language !== language) {
+          return;
+        }
+
+        var tokenStack = env.tokenStack = [];
+        env.code = env.code.replace(placeholderPattern, function (match) {
+          if (typeof replaceFilter === 'function' && !replaceFilter(match)) {
+            return match;
+          }
+
+          var i = tokenStack.length;
+          var placeholder; // Check for existing strings
+
+          while (env.code.indexOf(placeholder = getPlaceholder(language, i)) !== -1) {
+            ++i;
+          } // Create a sparse array
+
+
+          tokenStack[i] = match;
+          return placeholder;
+        }); // Switch the grammar to markup
+
+        env.grammar = Prism.languages.markup;
+      }
+    },
+    tokenizePlaceholders: {
+      /**
+       * Replace placeholders with proper tokens after tokenizing.
+       *
+       * @param {object} env The environment of the `after-tokenize` hook.
+       * @param {string} language The language id.
+       */
+      value: function (env, language) {
+        if (env.language !== language || !env.tokenStack) {
+          return;
+        } // Switch the grammar back
+
+
+        env.grammar = Prism.languages[language];
+        var j = 0;
+        var keys = Object.keys(env.tokenStack);
+
+        function walkTokens(tokens) {
+          for (var i = 0; i < tokens.length; i++) {
+            // all placeholders are replaced already
+            if (j >= keys.length) {
+              break;
+            }
+
+            var token = tokens[i];
+
+            if (typeof token === 'string' || token.content && typeof token.content === 'string') {
+              var k = keys[j];
+              var t = env.tokenStack[k];
+              var s = typeof token === 'string' ? token : token.content;
+              var placeholder = getPlaceholder(language, k);
+              var index = s.indexOf(placeholder);
+
+              if (index > -1) {
+                ++j;
+                var before = s.substring(0, index);
+                var middle = new Prism.Token(language, Prism.tokenize(t, env.grammar), 'language-' + language, t);
+                var after = s.substring(index + placeholder.length);
+                var replacement = [];
+
+                if (before) {
+                  replacement.push.apply(replacement, walkTokens([before]));
+                }
+
+                replacement.push(middle);
+
+                if (after) {
+                  replacement.push.apply(replacement, walkTokens([after]));
+                }
+
+                if (typeof token === 'string') {
+                  tokens.splice.apply(tokens, [i, 1].concat(replacement));
+                } else {
+                  token.content = replacement;
+                }
+              }
+            } else if (token.content
+            /* && typeof token.content !== 'string' */
+            ) {
+                walkTokens(token.content);
+              }
+          }
+
+          return tokens;
+        }
+
+        walkTokens(env.tokens);
+      }
+    }
+  });
+})(Prism);
+/* "prismjs/components/prism-handlebars" */
+
+
+(function (Prism) {
+  Prism.languages.handlebars = {
+    'comment': /\{\{![\s\S]*?\}\}/,
+    'delimiter': {
+      pattern: /^\{\{\{?|\}\}\}?$/i,
+      alias: 'punctuation'
+    },
+    'string': /(["'])(?:\\.|(?!\1)[^\\\r\n])*\1/,
+    'number': /\b0x[\dA-Fa-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:[Ee][+-]?\d+)?/,
+    'boolean': /\b(?:true|false)\b/,
+    'block': {
+      pattern: /^(\s*~?\s*)[#\/]\S+?(?=\s*~?\s*$|\s)/i,
+      lookbehind: true,
+      alias: 'keyword'
+    },
+    'brackets': {
+      pattern: /\[[^\]]+\]/,
+      inside: {
+        punctuation: /\[|\]/,
+        variable: /[\s\S]+/
+      }
+    },
+    'punctuation': /[!"#%&':()*+,.\/;<=>@\[\\\]^`{|}~]/,
+    'variable': /[^!"#%&'()*+,\/;<=>@\[\\\]^`{|}~\s]+/
+  };
+  Prism.hooks.add('before-tokenize', function (env) {
+    var handlebarsPattern = /\{\{\{[\s\S]+?\}\}\}|\{\{[\s\S]+?\}\}/g;
+    Prism.languages['markup-templating'].buildPlaceholders(env, 'handlebars', handlebarsPattern);
+  });
+  Prism.hooks.add('after-tokenize', function (env) {
+    Prism.languages['markup-templating'].tokenizePlaceholders(env, 'handlebars');
+  });
+})(Prism);
+/* "prismjs/components/prism-json" */
+
+
+Prism.languages.json = {
+  'property': {
+    pattern: /"(?:\\.|[^\\"\r\n])*"(?=\s*:)/,
+    greedy: true
+  },
+  'string': {
+    pattern: /"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
+    greedy: true
+  },
+  'comment': /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
+  'number': /-?\d+\.?\d*(?:e[+-]?\d+)?/i,
+  'punctuation': /[{}[\],]/,
+  'operator': /:/,
+  'boolean': /\b(?:true|false)\b/,
+  'null': {
+    pattern: /\bnull\b/,
+    alias: 'keyword'
+  }
+};
+/* "prismjs/components/prism-less" */
+
+/* FIXME :
+ :extend() is not handled specifically : its highlighting is buggy.
+ Mixin usage must be inside a ruleset to be highlighted.
+ At-rules (e.g. import) containing interpolations are buggy.
+ Detached rulesets are highlighted as at-rules.
+ A comment before a mixin usage prevents the latter to be properly highlighted.
+ */
+
+Prism.languages.less = Prism.languages.extend('css', {
+  'comment': [/\/\*[\s\S]*?\*\//, {
+    pattern: /(^|[^\\])\/\/.*/,
+    lookbehind: true
+  }],
+  'atrule': {
+    pattern: /@[\w-]+?(?:\((?:[^(){}]|\([^(){}]*\))*\)|[^(){};])*?(?=\s*\{)/,
+    inside: {
+      'punctuation': /[:()]/
+    }
+  },
+  // selectors and mixins are considered the same
+  'selector': {
+    pattern: /(?:@\{[\w-]+\}|[^{};\s@])(?:@\{[\w-]+\}|\((?:[^(){}]|\([^(){}]*\))*\)|[^(){};@])*?(?=\s*\{)/,
+    inside: {
+      // mixin parameters
+      'variable': /@+[\w-]+/
+    }
+  },
+  'property': /(?:@\{[\w-]+\}|[\w-])+(?:\+_?)?(?=\s*:)/i,
+  'operator': /[+\-*\/]/
+});
+Prism.languages.insertBefore('less', 'property', {
+  'variable': [// Variable declaration (the colon must be consumed!)
+  {
+    pattern: /@[\w-]+\s*:/,
+    inside: {
+      "punctuation": /:/
+    }
+  }, // Variable usage
+  /@@?[\w-]+/],
+  'mixin-usage': {
+    pattern: /([{;]\s*)[.#](?!\d)[\w-]+.*?(?=[(;])/,
+    lookbehind: true,
+    alias: 'function'
+  }
+});
+/* "prismjs/components/prism-makefile" */
+
+Prism.languages.makefile = {
+  'comment': {
+    pattern: /(^|[^\\])#(?:\\(?:\r\n|[\s\S])|[^\\\r\n])*/,
+    lookbehind: true
+  },
+  'string': {
+    pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+    greedy: true
+  },
+  // Built-in target names
+  'builtin': /\.[A-Z][^:#=\s]+(?=\s*:(?!=))/,
+  // Targets
+  'symbol': {
+    pattern: /^[^:=\r\n]+(?=\s*:(?!=))/m,
+    inside: {
+      'variable': /\$+(?:[^(){}:#=\s]+|(?=[({]))/
+    }
+  },
+  'variable': /\$+(?:[^(){}:#=\s]+|\([@*%<^+?][DF]\)|(?=[({]))/,
+  'keyword': [// Directives
+  /-include\b|\b(?:define|else|endef|endif|export|ifn?def|ifn?eq|include|override|private|sinclude|undefine|unexport|vpath)\b/, // Functions
+  {
+    pattern: /(\()(?:addsuffix|abspath|and|basename|call|dir|error|eval|file|filter(?:-out)?|findstring|firstword|flavor|foreach|guile|if|info|join|lastword|load|notdir|or|origin|patsubst|realpath|shell|sort|strip|subst|suffix|value|warning|wildcard|word(?:s|list)?)(?=[ \t])/,
+    lookbehind: true
+  }],
+  'operator': /(?:::|[?:+!])?=|[|@]/,
+  'punctuation': /[:;(){}]/
+};
+/* "prismjs/components/prism-markdown" */
+
+(function (Prism) {
+  // Allow only one line break
+  var inner = /(?:\\.|[^\\\n\r]|(?:\n|\r\n?)(?!\n|\r\n?))/.source;
+  /**
+   * This function is intended for the creation of the bold or italic pattern.
+   *
+   * This also adds a lookbehind group to the given pattern to ensure that the pattern is not backslash-escaped.
+   *
+   * _Note:_ Keep in mind that this adds a capturing group.
+   *
+   * @param {string} pattern
+   * @param {boolean} starAlternative Whether to also add an alternative where all `_`s are replaced with `*`s.
+   * @returns {RegExp}
+   */
+
+  function createInline(pattern, starAlternative) {
+    pattern = pattern.replace(/<inner>/g, function () {
+      return inner;
+    });
+
+    if (starAlternative) {
+      pattern = pattern + '|' + pattern.replace(/_/g, '\\*');
+    }
+
+    return RegExp(/((?:^|[^\\])(?:\\{2})*)/.source + '(?:' + pattern + ')');
+  }
+
+  var tableCell = /(?:\\.|``.+?``|`[^`\r\n]+`|[^\\|\r\n`])+/.source;
+  var tableRow = /\|?__(?:\|__)+\|?(?:(?:\n|\r\n?)|$)/.source.replace(/__/g, function () {
+    return tableCell;
+  });
+  var tableLine = /\|?[ \t]*:?-{3,}:?[ \t]*(?:\|[ \t]*:?-{3,}:?[ \t]*)+\|?(?:\n|\r\n?)/.source;
+  Prism.languages.markdown = Prism.languages.extend('markup', {});
+  Prism.languages.insertBefore('markdown', 'prolog', {
+    'blockquote': {
+      // > ...
+      pattern: /^>(?:[\t ]*>)*/m,
+      alias: 'punctuation'
+    },
+    'table': {
+      pattern: RegExp('^' + tableRow + tableLine + '(?:' + tableRow + ')*', 'm'),
+      inside: {
+        'table-data-rows': {
+          pattern: RegExp('^(' + tableRow + tableLine + ')(?:' + tableRow + ')*$'),
+          lookbehind: true,
+          inside: {
+            'table-data': {
+              pattern: RegExp(tableCell),
+              inside: Prism.languages.markdown
+            },
+            'punctuation': /\|/
+          }
+        },
+        'table-line': {
+          pattern: RegExp('^(' + tableRow + ')' + tableLine + '$'),
+          lookbehind: true,
+          inside: {
+            'punctuation': /\||:?-{3,}:?/
+          }
+        },
+        'table-header-row': {
+          pattern: RegExp('^' + tableRow + '$'),
+          inside: {
+            'table-header': {
+              pattern: RegExp(tableCell),
+              alias: 'important',
+              inside: Prism.languages.markdown
+            },
+            'punctuation': /\|/
+          }
+        }
+      }
+    },
+    'code': [{
+      // Prefixed by 4 spaces or 1 tab and preceded by an empty line
+      pattern: /((?:^|\n)[ \t]*\n|(?:^|\r\n?)[ \t]*\r\n?)(?: {4}|\t).+(?:(?:\n|\r\n?)(?: {4}|\t).+)*/,
+      lookbehind: true,
+      alias: 'keyword'
+    }, {
+      // `code`
+      // ``code``
+      pattern: /``.+?``|`[^`\r\n]+`/,
+      alias: 'keyword'
+    }, {
+      // ```optional language
+      // code block
+      // ```
+      pattern: /^```[\s\S]*?^```$/m,
+      greedy: true,
+      inside: {
+        'code-block': {
+          pattern: /^(```.*(?:\n|\r\n?))[\s\S]+?(?=(?:\n|\r\n?)^```$)/m,
+          lookbehind: true
+        },
+        'code-language': {
+          pattern: /^(```).+/,
+          lookbehind: true
+        },
+        'punctuation': /```/
+      }
+    }],
+    'title': [{
+      // title 1
+      // =======
+      // title 2
+      // -------
+      pattern: /\S.*(?:\n|\r\n?)(?:==+|--+)(?=[ \t]*$)/m,
+      alias: 'important',
+      inside: {
+        punctuation: /==+$|--+$/
+      }
+    }, {
+      // # title 1
+      // ###### title 6
+      pattern: /(^\s*)#+.+/m,
+      lookbehind: true,
+      alias: 'important',
+      inside: {
+        punctuation: /^#+|#+$/
+      }
+    }],
+    'hr': {
+      // ***
+      // ---
+      // * * *
+      // -----------
+      pattern: /(^\s*)([*-])(?:[\t ]*\2){2,}(?=\s*$)/m,
+      lookbehind: true,
+      alias: 'punctuation'
+    },
+    'list': {
+      // * item
+      // + item
+      // - item
+      // 1. item
+      pattern: /(^\s*)(?:[*+-]|\d+\.)(?=[\t ].)/m,
+      lookbehind: true,
+      alias: 'punctuation'
+    },
+    'url-reference': {
+      // [id]: http://example.com "Optional title"
+      // [id]: http://example.com 'Optional title'
+      // [id]: http://example.com (Optional title)
+      // [id]: <http://example.com> "Optional title"
+      pattern: /!?\[[^\]]+\]:[\t ]+(?:\S+|<(?:\\.|[^>\\])+>)(?:[\t ]+(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\((?:\\.|[^)\\])*\)))?/,
+      inside: {
+        'variable': {
+          pattern: /^(!?\[)[^\]]+/,
+          lookbehind: true
+        },
+        'string': /(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\((?:\\.|[^)\\])*\))$/,
+        'punctuation': /^[\[\]!:]|[<>]/
+      },
+      alias: 'url'
+    },
+    'bold': {
+      // **strong**
+      // __strong__
+      // allow one nested instance of italic text using the same delimiter
+      pattern: createInline(/__(?:(?!_)<inner>|_(?:(?!_)<inner>)+_)+__/.source, true),
+      lookbehind: true,
+      greedy: true,
+      inside: {
+        'content': {
+          pattern: /(^..)[\s\S]+(?=..$)/,
+          lookbehind: true,
+          inside: {} // see below
+
+        },
+        'punctuation': /\*\*|__/
+      }
+    },
+    'italic': {
+      // *em*
+      // _em_
+      // allow one nested instance of bold text using the same delimiter
+      pattern: createInline(/_(?:(?!_)<inner>|__(?:(?!_)<inner>)+__)+_/.source, true),
+      lookbehind: true,
+      greedy: true,
+      inside: {
+        'content': {
+          pattern: /(^.)[\s\S]+(?=.$)/,
+          lookbehind: true,
+          inside: {} // see below
+
+        },
+        'punctuation': /[*_]/
+      }
+    },
+    'strike': {
+      // ~~strike through~~
+      // ~strike~
+      pattern: createInline(/(~~?)(?:(?!~)<inner>)+?\2/.source, false),
+      lookbehind: true,
+      greedy: true,
+      inside: {
+        'content': {
+          pattern: /(^~~?)[\s\S]+(?=\1$)/,
+          lookbehind: true,
+          inside: {} // see below
+
+        },
+        'punctuation': /~~?/
+      }
+    },
+    'url': {
+      // [example](http://example.com "Optional title")
+      // [example][id]
+      // [example] [id]
+      pattern: createInline(/!?\[(?:(?!\])<inner>)+\](?:\([^\s)]+(?:[\t ]+"(?:\\.|[^"\\])*")?\)| ?\[(?:(?!\])<inner>)+\])/.source, false),
+      lookbehind: true,
+      greedy: true,
+      inside: {
+        'variable': {
+          pattern: /(\[)[^\]]+(?=\]$)/,
+          lookbehind: true
+        },
+        'content': {
+          pattern: /(^!?\[)[^\]]+(?=\])/,
+          lookbehind: true,
+          inside: {} // see below
+
+        },
+        'string': {
+          pattern: /"(?:\\.|[^"\\])*"(?=\)$)/
+        }
+      }
+    }
+  });
+  ['url', 'bold', 'italic', 'strike'].forEach(function (token) {
+    ['url', 'bold', 'italic', 'strike'].forEach(function (inside) {
+      if (token !== inside) {
+        Prism.languages.markdown[token].inside.content.inside[inside] = Prism.languages.markdown[inside];
+      }
+    });
+  });
+  Prism.hooks.add('after-tokenize', function (env) {
+    if (env.language !== 'markdown' && env.language !== 'md') {
+      return;
+    }
+
+    function walkTokens(tokens) {
+      if (!tokens || typeof tokens === 'string') {
+        return;
+      }
+
+      for (var i = 0, l = tokens.length; i < l; i++) {
+        var token = tokens[i];
+
+        if (token.type !== 'code') {
+          walkTokens(token.content);
+          continue;
+        }
+        /*
+         * Add the correct `language-xxxx` class to this code block. Keep in mind that the `code-language` token
+         * is optional. But the grammar is defined so that there is only one case we have to handle:
+         *
+         * token.content = [
+         *     <span class="punctuation">```</span>,
+         *     <span class="code-language">xxxx</span>,
+         *     '\n', // exactly one new lines (\r or \n or \r\n)
+         *     <span class="code-block">...</span>,
+         *     '\n', // exactly one new lines again
+         *     <span class="punctuation">```</span>
+         * ];
+         */
+
+
+        var codeLang = token.content[1];
+        var codeBlock = token.content[3];
+
+        if (codeLang && codeBlock && codeLang.type === 'code-language' && codeBlock.type === 'code-block' && typeof codeLang.content === 'string') {
+          // this might be a language that Prism does not support
+          // do some replacements to support C++, C#, and F#
+          var lang = codeLang.content.replace(/\b#/g, 'sharp').replace(/\b\+\+/g, 'pp'); // only use the first word
+
+          lang = (/[a-z][\w-]*/i.exec(lang) || [''])[0].toLowerCase();
+          var alias = 'language-' + lang; // add alias
+
+          if (!codeBlock.alias) {
+            codeBlock.alias = [alias];
+          } else if (typeof codeBlock.alias === 'string') {
+            codeBlock.alias = [codeBlock.alias, alias];
+          } else {
+            codeBlock.alias.push(alias);
+          }
+        }
+      }
+    }
+
+    walkTokens(env.tokens);
+  });
+  Prism.hooks.add('wrap', function (env) {
+    if (env.type !== 'code-block') {
+      return;
+    }
+
+    var codeLang = '';
+
+    for (var i = 0, l = env.classes.length; i < l; i++) {
+      var cls = env.classes[i];
+      var match = /language-(.+)/.exec(cls);
+
+      if (match) {
+        codeLang = match[1];
+        break;
+      }
+    }
+
+    var grammar = Prism.languages[codeLang];
+
+    if (!grammar) {
+      if (codeLang && codeLang !== 'none' && Prism.plugins.autoloader) {
+        var id = 'md-' + new Date().valueOf() + '-' + Math.floor(Math.random() * 1e16);
+        env.attributes['id'] = id;
+        Prism.plugins.autoloader.loadLanguages(codeLang, function () {
+          var ele = document.getElementById(id);
+
+          if (ele) {
+            ele.innerHTML = Prism.highlight(ele.textContent, Prism.languages[codeLang], codeLang);
+          }
+        });
+      }
+    } else {
+      // reverse Prism.util.encode
+      var code = env.content.replace(/&lt;/g, '<').replace(/&amp;/g, '&');
+      env.content = Prism.highlight(code, grammar, codeLang);
+    }
+  });
+  Prism.languages.md = Prism.languages.markdown;
+})(Prism);
+/* "prismjs/components/prism-objectivec" */
+
+
+Prism.languages.objectivec = Prism.languages.extend('c', {
+  'keyword': /\b(?:asm|typeof|inline|auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while|in|self|super)\b|(?:@interface|@end|@implementation|@protocol|@class|@public|@protected|@private|@property|@try|@catch|@finally|@throw|@synthesize|@dynamic|@selector)\b/,
+  'string': /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1|@"(?:\\(?:\r\n|[\s\S])|[^"\\\r\n])*"/,
+  'operator': /-[->]?|\+\+?|!=?|<<?=?|>>?=?|==?|&&?|\|\|?|[~^%?*\/@]/
+});
+delete Prism.languages.objectivec['class-name'];
+/* "prismjs/components/prism-ocaml" */
+
+Prism.languages.ocaml = {
+  'comment': /\(\*[\s\S]*?\*\)/,
+  'string': [{
+    pattern: /"(?:\\.|[^\\\r\n"])*"/,
+    greedy: true
+  }, {
+    pattern: /(['`])(?:\\(?:\d+|x[\da-f]+|.)|(?!\1)[^\\\r\n])\1/i,
+    greedy: true
+  }],
+  'number': /\b(?:0x[\da-f][\da-f_]+|(?:0[bo])?\d[\d_]*\.?[\d_]*(?:e[+-]?[\d_]+)?)/i,
+  'directive': {
+    pattern: /\B#\w+/,
+    alias: 'important'
+  },
+  'label': {
+    pattern: /\B~\w+/,
+    alias: 'function'
+  },
+  'type_variable': {
+    pattern: /\B'\w+/,
+    alias: 'function'
+  },
+  'variant': {
+    pattern: /`\w+/,
+    alias: 'variable'
+  },
+  'module': {
+    pattern: /\b[A-Z]\w+/,
+    alias: 'variable'
+  },
+  // For the list of keywords and operators,
+  // see: http://caml.inria.fr/pub/docs/manual-ocaml/lex.html#sec84
+  'keyword': /\b(?:as|assert|begin|class|constraint|do|done|downto|else|end|exception|external|for|fun|function|functor|if|in|include|inherit|initializer|lazy|let|match|method|module|mutable|new|nonrec|object|of|open|private|rec|sig|struct|then|to|try|type|val|value|virtual|when|where|while|with)\b/,
+  'boolean': /\b(?:false|true)\b/,
+  // Custom operators are allowed
+  'operator': /:=|[=<>@^|&+\-*\/$%!?~][!$%&*+\-.\/:<=>?@^|~]*|\b(?:and|asr|land|lor|lsl|lsr|lxor|mod|or)\b/,
+  'punctuation': /[(){}\[\]|_.,:;]/
+};
+/* "prismjs/components/prism-python" */
+
+Prism.languages.python = {
+  'comment': {
+    pattern: /(^|[^\\])#.*/,
+    lookbehind: true
+  },
+  'string-interpolation': {
+    pattern: /(?:f|rf|fr)(?:("""|''')[\s\S]+?\1|("|')(?:\\.|(?!\2)[^\\\r\n])*\2)/i,
+    greedy: true,
+    inside: {
+      'interpolation': {
+        // "{" <expression> <optional "!s", "!r", or "!a"> <optional ":" format specifier> "}"
+        pattern: /((?:^|[^{])(?:{{)*){(?!{)(?:[^{}]|{(?!{)(?:[^{}]|{(?!{)(?:[^{}])+})+})+}/,
+        lookbehind: true,
+        inside: {
+          'format-spec': {
+            pattern: /(:)[^:(){}]+(?=}$)/,
+            lookbehind: true
+          },
+          'conversion-option': {
+            pattern: /![sra](?=[:}]$)/,
+            alias: 'punctuation'
+          },
+          rest: null
+        }
+      },
+      'string': /[\s\S]+/
+    }
+  },
+  'triple-quoted-string': {
+    pattern: /(?:[rub]|rb|br)?("""|''')[\s\S]+?\1/i,
+    greedy: true,
+    alias: 'string'
+  },
+  'string': {
+    pattern: /(?:[rub]|rb|br)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i,
+    greedy: true
+  },
+  'function': {
+    pattern: /((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g,
+    lookbehind: true
+  },
+  'class-name': {
+    pattern: /(\bclass\s+)\w+/i,
+    lookbehind: true
+  },
+  'decorator': {
+    pattern: /(^\s*)@\w+(?:\.\w+)*/im,
+    lookbehind: true,
+    alias: ['annotation', 'punctuation'],
+    inside: {
+      'punctuation': /\./
+    }
+  },
+  'keyword': /\b(?:and|as|assert|async|await|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|nonlocal|not|or|pass|print|raise|return|try|while|with|yield)\b/,
+  'builtin': /\b(?:__import__|abs|all|any|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/,
+  'boolean': /\b(?:True|False|None)\b/,
+  'number': /(?:\b(?=\d)|\B(?=\.))(?:0[bo])?(?:(?:\d|0x[\da-f])[\da-f]*\.?\d*|\.\d+)(?:e[+-]?\d+)?j?\b/i,
+  'operator': /[-+%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
+  'punctuation': /[{}[\];(),.:]/
+};
+Prism.languages.python['string-interpolation'].inside['interpolation'].inside.rest = Prism.languages.python;
+Prism.languages.py = Prism.languages.python;
+/* "prismjs/components/prism-reason" */
+
+Prism.languages.reason = Prism.languages.extend('clike', {
+  'string': {
+    pattern: /"(?:\\(?:\r\n|[\s\S])|[^\\\r\n"])*"/,
+    greedy: true
+  },
+  // 'class-name' must be matched *after* 'constructor' defined below
+  'class-name': /\b[A-Z]\w*/,
+  'keyword': /\b(?:and|as|assert|begin|class|constraint|do|done|downto|else|end|exception|external|for|fun|function|functor|if|in|include|inherit|initializer|lazy|let|method|module|mutable|new|nonrec|object|of|open|or|private|rec|sig|struct|switch|then|to|try|type|val|virtual|when|while|with)\b/,
+  'operator': /\.{3}|:[:=]|\|>|->|=(?:==?|>)?|<=?|>=?|[|^?'#!~`]|[+\-*\/]\.?|\b(?:mod|land|lor|lxor|lsl|lsr|asr)\b/
+});
+Prism.languages.insertBefore('reason', 'class-name', {
+  'character': {
+    pattern: /'(?:\\x[\da-f]{2}|\\o[0-3][0-7][0-7]|\\\d{3}|\\.|[^'\\\r\n])'/,
+    alias: 'string'
+  },
+  'constructor': {
+    // Negative look-ahead prevents from matching things like String.capitalize
+    pattern: /\b[A-Z]\w*\b(?!\s*\.)/,
+    alias: 'variable'
+  },
+  'label': {
+    pattern: /\b[a-z]\w*(?=::)/,
+    alias: 'symbol'
+  }
+}); // We can't match functions property, so let's not even try.
+
+delete Prism.languages.reason.function;
+/* "prismjs/components/prism-sass" */
+
+(function (Prism) {
+  Prism.languages.sass = Prism.languages.extend('css', {
+    // Sass comments don't need to be closed, only indented
+    'comment': {
+      pattern: /^([ \t]*)\/[\/*].*(?:(?:\r?\n|\r)\1[ \t]+.+)*/m,
+      lookbehind: true
+    }
+  });
+  Prism.languages.insertBefore('sass', 'atrule', {
+    // We want to consume the whole line
+    'atrule-line': {
+      // Includes support for = and + shortcuts
+      pattern: /^(?:[ \t]*)[@+=].+/m,
+      inside: {
+        'atrule': /(?:@[\w-]+|[+=])/m
+      }
+    }
+  });
+  delete Prism.languages.sass.atrule;
+  var variable = /\$[-\w]+|#\{\$[-\w]+\}/;
+  var operator = [/[+*\/%]|[=!]=|<=?|>=?|\b(?:and|or|not)\b/, {
+    pattern: /(\s+)-(?=\s)/,
+    lookbehind: true
+  }];
+  Prism.languages.insertBefore('sass', 'property', {
+    // We want to consume the whole line
+    'variable-line': {
+      pattern: /^[ \t]*\$.+/m,
+      inside: {
+        'punctuation': /:/,
+        'variable': variable,
+        'operator': operator
+      }
+    },
+    // We want to consume the whole line
+    'property-line': {
+      pattern: /^[ \t]*(?:[^:\s]+ *:.*|:[^:\s]+.*)/m,
+      inside: {
+        'property': [/[^:\s]+(?=\s*:)/, {
+          pattern: /(:)[^:\s]+/,
+          lookbehind: true
+        }],
+        'punctuation': /:/,
+        'variable': variable,
+        'operator': operator,
+        'important': Prism.languages.sass.important
+      }
+    }
+  });
+  delete Prism.languages.sass.property;
+  delete Prism.languages.sass.important; // Now that whole lines for other patterns are consumed,
+  // what's left should be selectors
+
+  Prism.languages.insertBefore('sass', 'punctuation', {
+    'selector': {
+      pattern: /([ \t]*)\S(?:,?[^,\r\n]+)*(?:,(?:\r?\n|\r)\1[ \t]+\S(?:,?[^,\r\n]+)*)*/,
+      lookbehind: true
+    }
+  });
+})(Prism);
+/* "prismjs/components/prism-scss" */
+
+
+Prism.languages.scss = Prism.languages.extend('css', {
+  'comment': {
+    pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|\/\/.*)/,
+    lookbehind: true
+  },
+  'atrule': {
+    pattern: /@[\w-]+(?:\([^()]+\)|[^(])*?(?=\s+[{;])/,
+    inside: {
+      'rule': /@[\w-]+/ // See rest below
+
+    }
+  },
+  // url, compassified
+  'url': /(?:[-a-z]+-)?url(?=\()/i,
+  // CSS selector regex is not appropriate for Sass
+  // since there can be lot more things (var, @ directive, nesting..)
+  // a selector must start at the end of a property or after a brace (end of other rules or nesting)
+  // it can contain some characters that aren't used for defining rules or end of selector, & (parent selector), or interpolated variable
+  // the end of a selector is found when there is no rules in it ( {} or {\s}) or if there is a property (because an interpolated var
+  // can "pass" as a selector- e.g: proper#{$erty})
+  // this one was hard to do, so please be careful if you edit this one :)
+  'selector': {
+    // Initial look-ahead is used to prevent matching of blank selectors
+    pattern: /(?=\S)[^@;{}()]?(?:[^@;{}()]|#\{\$[-\w]+\})+(?=\s*\{(?:\}|\s|[^}]+[:{][^}]+))/m,
+    inside: {
+      'parent': {
+        pattern: /&/,
+        alias: 'important'
+      },
+      'placeholder': /%[-\w]+/,
+      'variable': /\$[-\w]+|#\{\$[-\w]+\}/
+    }
+  },
+  'property': {
+    pattern: /(?:[\w-]|\$[-\w]+|#\{\$[-\w]+\})+(?=\s*:)/,
+    inside: {
+      'variable': /\$[-\w]+|#\{\$[-\w]+\}/
+    }
+  }
+});
+Prism.languages.insertBefore('scss', 'atrule', {
+  'keyword': [/@(?:if|else(?: if)?|for|each|while|import|extend|debug|warn|mixin|include|function|return|content)/i, {
+    pattern: /( +)(?:from|through)(?= )/,
+    lookbehind: true
+  }]
+});
+Prism.languages.insertBefore('scss', 'important', {
+  // var and interpolated vars
+  'variable': /\$[-\w]+|#\{\$[-\w]+\}/
+});
+Prism.languages.insertBefore('scss', 'function', {
+  'placeholder': {
+    pattern: /%[-\w]+/,
+    alias: 'selector'
+  },
+  'statement': {
+    pattern: /\B!(?:default|optional)\b/i,
+    alias: 'keyword'
+  },
+  'boolean': /\b(?:true|false)\b/,
+  'null': {
+    pattern: /\bnull\b/,
+    alias: 'keyword'
+  },
+  'operator': {
+    pattern: /(\s)(?:[-+*\/%]|[=!]=|<=?|>=?|and|or|not)(?=\s)/,
+    lookbehind: true
+  }
+});
+Prism.languages.scss['atrule'].inside.rest = Prism.languages.scss;
+/* "prismjs/components/prism-sql" */
+
+Prism.languages.sql = {
+  'comment': {
+    pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|(?:--|\/\/|#).*)/,
+    lookbehind: true
+  },
+  'variable': [{
+    pattern: /@(["'`])(?:\\[\s\S]|(?!\1)[^\\])+\1/,
+    greedy: true
+  }, /@[\w.$]+/],
+  'string': {
+    pattern: /(^|[^@\\])("|')(?:\\[\s\S]|(?!\2)[^\\]|\2\2)*\2/,
+    greedy: true,
+    lookbehind: true
+  },
+  'function': /\b(?:AVG|COUNT|FIRST|FORMAT|LAST|LCASE|LEN|MAX|MID|MIN|MOD|NOW|ROUND|SUM|UCASE)(?=\s*\()/i,
+  // Should we highlight user defined functions too?
+  'keyword': /\b(?:ACTION|ADD|AFTER|ALGORITHM|ALL|ALTER|ANALYZE|ANY|APPLY|AS|ASC|AUTHORIZATION|AUTO_INCREMENT|BACKUP|BDB|BEGIN|BERKELEYDB|BIGINT|BINARY|BIT|BLOB|BOOL|BOOLEAN|BREAK|BROWSE|BTREE|BULK|BY|CALL|CASCADED?|CASE|CHAIN|CHAR(?:ACTER|SET)?|CHECK(?:POINT)?|CLOSE|CLUSTERED|COALESCE|COLLATE|COLUMNS?|COMMENT|COMMIT(?:TED)?|COMPUTE|CONNECT|CONSISTENT|CONSTRAINT|CONTAINS(?:TABLE)?|CONTINUE|CONVERT|CREATE|CROSS|CURRENT(?:_DATE|_TIME|_TIMESTAMP|_USER)?|CURSOR|CYCLE|DATA(?:BASES?)?|DATE(?:TIME)?|DAY|DBCC|DEALLOCATE|DEC|DECIMAL|DECLARE|DEFAULT|DEFINER|DELAYED|DELETE|DELIMITERS?|DENY|DESC|DESCRIBE|DETERMINISTIC|DISABLE|DISCARD|DISK|DISTINCT|DISTINCTROW|DISTRIBUTED|DO|DOUBLE|DROP|DUMMY|DUMP(?:FILE)?|DUPLICATE|ELSE(?:IF)?|ENABLE|ENCLOSED|END|ENGINE|ENUM|ERRLVL|ERRORS|ESCAPED?|EXCEPT|EXEC(?:UTE)?|EXISTS|EXIT|EXPLAIN|EXTENDED|FETCH|FIELDS|FILE|FILLFACTOR|FIRST|FIXED|FLOAT|FOLLOWING|FOR(?: EACH ROW)?|FORCE|FOREIGN|FREETEXT(?:TABLE)?|FROM|FULL|FUNCTION|GEOMETRY(?:COLLECTION)?|GLOBAL|GOTO|GRANT|GROUP|HANDLER|HASH|HAVING|HOLDLOCK|HOUR|IDENTITY(?:_INSERT|COL)?|IF|IGNORE|IMPORT|INDEX|INFILE|INNER|INNODB|INOUT|INSERT|INT|INTEGER|INTERSECT|INTERVAL|INTO|INVOKER|ISOLATION|ITERATE|JOIN|KEYS?|KILL|LANGUAGE|LAST|LEAVE|LEFT|LEVEL|LIMIT|LINENO|LINES|LINESTRING|LOAD|LOCAL|LOCK|LONG(?:BLOB|TEXT)|LOOP|MATCH(?:ED)?|MEDIUM(?:BLOB|INT|TEXT)|MERGE|MIDDLEINT|MINUTE|MODE|MODIFIES|MODIFY|MONTH|MULTI(?:LINESTRING|POINT|POLYGON)|NATIONAL|NATURAL|NCHAR|NEXT|NO|NONCLUSTERED|NULLIF|NUMERIC|OFF?|OFFSETS?|ON|OPEN(?:DATASOURCE|QUERY|ROWSET)?|OPTIMIZE|OPTION(?:ALLY)?|ORDER|OUT(?:ER|FILE)?|OVER|PARTIAL|PARTITION|PERCENT|PIVOT|PLAN|POINT|POLYGON|PRECEDING|PRECISION|PREPARE|PREV|PRIMARY|PRINT|PRIVILEGES|PROC(?:EDURE)?|PUBLIC|PURGE|QUICK|RAISERROR|READS?|REAL|RECONFIGURE|REFERENCES|RELEASE|RENAME|REPEAT(?:ABLE)?|REPLACE|REPLICATION|REQUIRE|RESIGNAL|RESTORE|RESTRICT|RETURNS?|REVOKE|RIGHT|ROLLBACK|ROUTINE|ROW(?:COUNT|GUIDCOL|S)?|RTREE|RULE|SAVE(?:POINT)?|SCHEMA|SECOND|SELECT|SERIAL(?:IZABLE)?|SESSION(?:_USER)?|SET(?:USER)?|SHARE|SHOW|SHUTDOWN|SIMPLE|SMALLINT|SNAPSHOT|SOME|SONAME|SQL|START(?:ING)?|STATISTICS|STATUS|STRIPED|SYSTEM_USER|TABLES?|TABLESPACE|TEMP(?:ORARY|TABLE)?|TERMINATED|TEXT(?:SIZE)?|THEN|TIME(?:STAMP)?|TINY(?:BLOB|INT|TEXT)|TOP?|TRAN(?:SACTIONS?)?|TRIGGER|TRUNCATE|TSEQUAL|TYPES?|UNBOUNDED|UNCOMMITTED|UNDEFINED|UNION|UNIQUE|UNLOCK|UNPIVOT|UNSIGNED|UPDATE(?:TEXT)?|USAGE|USE|USER|USING|VALUES?|VAR(?:BINARY|CHAR|CHARACTER|YING)|VIEW|WAITFOR|WARNINGS|WHEN|WHERE|WHILE|WITH(?: ROLLUP|IN)?|WORK|WRITE(?:TEXT)?|YEAR)\b/i,
+  'boolean': /\b(?:TRUE|FALSE|NULL)\b/i,
+  'number': /\b0x[\da-f]+\b|\b\d+\.?\d*|\B\.\d+\b/i,
+  'operator': /[-+*\/=%^~]|&&?|\|\|?|!=?|<(?:=>?|<|>)?|>[>=]?|\b(?:AND|BETWEEN|IN|LIKE|NOT|OR|IS|DIV|REGEXP|RLIKE|SOUNDS LIKE|XOR)\b/i,
+  'punctuation': /[;[\]()`,.]/
+};
+/* "prismjs/components/prism-stylus" */
+
+(function (Prism) {
+  var inside = {
+    'url': /url\((["']?).*?\1\)/i,
+    'string': {
+      pattern: /("|')(?:(?!\1)[^\\\r\n]|\\(?:\r\n|[\s\S]))*\1/,
+      greedy: true
+    },
+    'interpolation': null,
+    // See below
+    'func': null,
+    // See below
+    'important': /\B!(?:important|optional)\b/i,
+    'keyword': {
+      pattern: /(^|\s+)(?:(?:if|else|for|return|unless)(?=\s+|$)|@[\w-]+)/,
+      lookbehind: true
+    },
+    'hexcode': /#[\da-f]{3,6}/i,
+    'number': /\b\d+(?:\.\d+)?%?/,
+    'boolean': /\b(?:true|false)\b/,
+    'operator': [// We want non-word chars around "-" because it is
+    // accepted in property names.
+    /~|[+!\/%<>?=]=?|[-:]=|\*[*=]?|\.+|&&|\|\||\B-\B|\b(?:and|in|is(?: a| defined| not|nt)?|not|or)\b/],
+    'punctuation': /[{}()\[\];:,]/
+  };
+  inside['interpolation'] = {
+    pattern: /\{[^\r\n}:]+\}/,
+    alias: 'variable',
+    inside: {
+      'delimiter': {
+        pattern: /^{|}$/,
+        alias: 'punctuation'
+      },
+      rest: inside
+    }
+  };
+  inside['func'] = {
+    pattern: /[\w-]+\([^)]*\).*/,
+    inside: {
+      'function': /^[^(]+/,
+      rest: inside
+    }
+  };
+  Prism.languages.stylus = {
+    'comment': {
+      pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|\/\/.*)/,
+      lookbehind: true
+    },
+    'atrule-declaration': {
+      pattern: /(^\s*)@.+/m,
+      lookbehind: true,
+      inside: {
+        'atrule': /^@[\w-]+/,
+        rest: inside
+      }
+    },
+    'variable-declaration': {
+      pattern: /(^[ \t]*)[\w$-]+\s*.?=[ \t]*(?:(?:\{[^}]*\}|.+)|$)/m,
+      lookbehind: true,
+      inside: {
+        'variable': /^\S+/,
+        rest: inside
+      }
+    },
+    'statement': {
+      pattern: /(^[ \t]*)(?:if|else|for|return|unless)[ \t]+.+/m,
+      lookbehind: true,
+      inside: {
+        'keyword': /^\S+/,
+        rest: inside
+      }
+    },
+    // A property/value pair cannot end with a comma or a brace
+    // It cannot have indented content unless it ended with a semicolon
+    'property-declaration': {
+      pattern: /((?:^|\{)([ \t]*))(?:[\w-]|\{[^}\r\n]+\})+(?:\s*:\s*|[ \t]+)[^{\r\n]*(?:;|[^{\r\n,](?=$)(?!(?:\r?\n|\r)(?:\{|\2[ \t]+)))/m,
+      lookbehind: true,
+      inside: {
+        'property': {
+          pattern: /^[^\s:]+/,
+          inside: {
+            'interpolation': inside.interpolation
+          }
+        },
+        rest: inside
+      }
+    },
+    // A selector can contain parentheses only as part of a pseudo-element
+    // It can span multiple lines.
+    // It must end with a comma or an accolade or have indented content.
+    'selector': {
+      pattern: /(^[ \t]*)(?:(?=\S)(?:[^{}\r\n:()]|::?[\w-]+(?:\([^)\r\n]*\))?|\{[^}\r\n]+\})+)(?:(?:\r?\n|\r)(?:\1(?:(?=\S)(?:[^{}\r\n:()]|::?[\w-]+(?:\([^)\r\n]*\))?|\{[^}\r\n]+\})+)))*(?:,$|\{|(?=(?:\r?\n|\r)(?:\{|\1[ \t]+)))/m,
+      lookbehind: true,
+      inside: {
+        'interpolation': inside.interpolation,
+        'punctuation': /[{},]/
+      }
+    },
+    'func': inside.func,
+    'string': inside.string,
+    'interpolation': inside.interpolation,
+    'punctuation': /[{}()\[\];:.]/
+  };
+})(Prism);
+/* "prismjs/components/prism-typescript" */
+
+
+Prism.languages.typescript = Prism.languages.extend('javascript', {
+  // From JavaScript Prism keyword list and TypeScript language spec: https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#221-reserved-words
+  'keyword': /\b(?:abstract|as|async|await|break|case|catch|class|const|constructor|continue|debugger|declare|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|is|keyof|let|module|namespace|new|null|of|package|private|protected|public|readonly|return|require|set|static|super|switch|this|throw|try|type|typeof|undefined|var|void|while|with|yield)\b/,
+  'builtin': /\b(?:string|Function|any|number|boolean|Array|symbol|console|Promise|unknown|never)\b/
+});
+Prism.languages.ts = Prism.languages.typescript;
+/* "prismjs/components/prism-tsx" */
+
+var typescript = Prism.util.clone(Prism.languages.typescript);
+Prism.languages.tsx = Prism.languages.extend('jsx', typescript);
+/* "prismjs/components/prism-wasm" */
+
+Prism.languages.wasm = {
+  'comment': [/\(;[\s\S]*?;\)/, {
+    pattern: /;;.*/,
+    greedy: true
+  }],
+  'string': {
+    pattern: /"(?:\\[\s\S]|[^"\\])*"/,
+    greedy: true
+  },
+  'keyword': [{
+    pattern: /\b(?:align|offset)=/,
+    inside: {
+      'operator': /=/
+    }
+  }, {
+    pattern: /\b(?:(?:f32|f64|i32|i64)(?:\.(?:abs|add|and|ceil|clz|const|convert_[su]\/i(?:32|64)|copysign|ctz|demote\/f64|div(?:_[su])?|eqz?|extend_[su]\/i32|floor|ge(?:_[su])?|gt(?:_[su])?|le(?:_[su])?|load(?:(?:8|16|32)_[su])?|lt(?:_[su])?|max|min|mul|nearest|neg?|or|popcnt|promote\/f32|reinterpret\/[fi](?:32|64)|rem_[su]|rot[lr]|shl|shr_[su]|store(?:8|16|32)?|sqrt|sub|trunc(?:_[su]\/f(?:32|64))?|wrap\/i64|xor))?|memory\.(?:grow|size))\b/,
+    inside: {
+      'punctuation': /\./
+    }
+  }, /\b(?:anyfunc|block|br(?:_if|_table)?|call(?:_indirect)?|data|drop|elem|else|end|export|func|get_(?:global|local)|global|if|import|local|loop|memory|module|mut|nop|offset|param|result|return|select|set_(?:global|local)|start|table|tee_local|then|type|unreachable)\b/],
+  'variable': /\$[\w!#$%&'*+\-./:<=>?@\\^_`|~]+/i,
+  'number': /[+-]?\b(?:\d(?:_?\d)*(?:\.\d(?:_?\d)*)?(?:[eE][+-]?\d(?:_?\d)*)?|0x[\da-fA-F](?:_?[\da-fA-F])*(?:\.[\da-fA-F](?:_?[\da-fA-D])*)?(?:[pP][+-]?\d(?:_?\d)*)?)\b|\binf\b|\bnan(?::0x[\da-fA-F](?:_?[\da-fA-D])*)?\b/,
+  'punctuation': /[()]/
+};
+/* "prismjs/components/prism-yaml" */
+
+(function (Prism) {
+  // https://yaml.org/spec/1.2/spec.html#c-ns-anchor-property
+  // https://yaml.org/spec/1.2/spec.html#c-ns-alias-node
+  var anchorOrAlias = /[*&][^\s[\]{},]+/; // https://yaml.org/spec/1.2/spec.html#c-ns-tag-property
+
+  var tag = /!(?:<[\w\-%#;/?:@&=+$,.!~*'()[\]]+>|(?:[a-zA-Z\d-]*!)?[\w\-%#;/?:@&=+$.~*'()]+)?/; // https://yaml.org/spec/1.2/spec.html#c-ns-properties(n,c)
+
+  var properties = '(?:' + tag.source + '(?:[ \t]+' + anchorOrAlias.source + ')?|' + anchorOrAlias.source + '(?:[ \t]+' + tag.source + ')?)';
+  /**
+   *
+   * @param {string} value
+   * @param {string} [flags]
+   * @returns {RegExp}
+   */
+
+  function createValuePattern(value, flags) {
+    flags = (flags || '').replace(/m/g, '') + 'm'; // add m flag
+
+    var pattern = /([:\-,[{]\s*(?:\s<<prop>>[ \t]+)?)(?:<<value>>)(?=[ \t]*(?:$|,|]|}|\s*#))/.source.replace(/<<prop>>/g, function () {
+      return properties;
+    }).replace(/<<value>>/g, function () {
+      return value;
+    });
+    return RegExp(pattern, flags);
+  }
+
+  Prism.languages.yaml = {
+    'scalar': {
+      pattern: RegExp(/([\-:]\s*(?:\s<<prop>>[ \t]+)?[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)[^\r\n]+(?:\2[^\r\n]+)*)/.source.replace(/<<prop>>/g, function () {
+        return properties;
+      })),
+      lookbehind: true,
+      alias: 'string'
+    },
+    'comment': /#.*/,
+    'key': {
+      pattern: RegExp(/((?:^|[:\-,[{\r\n?])[ \t]*(?:<<prop>>[ \t]+)?)[^\r\n{[\]},#\s]+?(?=\s*:\s)/.source.replace(/<<prop>>/g, function () {
+        return properties;
+      })),
+      lookbehind: true,
+      alias: 'atrule'
+    },
+    'directive': {
+      pattern: /(^[ \t]*)%.+/m,
+      lookbehind: true,
+      alias: 'important'
+    },
+    'datetime': {
+      pattern: createValuePattern(/\d{4}-\d\d?-\d\d?(?:[tT]|[ \t]+)\d\d?:\d{2}:\d{2}(?:\.\d*)?[ \t]*(?:Z|[-+]\d\d?(?::\d{2})?)?|\d{4}-\d{2}-\d{2}|\d\d?:\d{2}(?::\d{2}(?:\.\d*)?)?/.source),
+      lookbehind: true,
+      alias: 'number'
+    },
+    'boolean': {
+      pattern: createValuePattern(/true|false/.source, 'i'),
+      lookbehind: true,
+      alias: 'important'
+    },
+    'null': {
+      pattern: createValuePattern(/null|~/.source, 'i'),
+      lookbehind: true,
+      alias: 'important'
+    },
+    'string': {
+      // \2 because of the lookbehind group
+      pattern: createValuePattern(/("|')(?:(?!\2)[^\\\r\n]|\\.)*\2/.source),
+      lookbehind: true,
+      greedy: true
+    },
+    'number': {
+      pattern: createValuePattern(/[+-]?(?:0x[\da-f]+|0o[0-7]+|(?:\d+\.?\d*|\.?\d+)(?:e[+-]?\d+)?|\.inf|\.nan)/.source, 'i'),
+      lookbehind: true
+    },
+    'tag': tag,
+    'important': anchorOrAlias,
+    'punctuation': /---|[:[\]{}\-,|>?]|\.\.\./
+  };
+  Prism.languages.yml = Prism.languages.yaml;
+})(Prism);
+
+/* harmony default export */ __webpack_exports__["a"] = (Prism);
+
+
+/***/ }),
+/* 41 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme_ThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(63);
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function useThemeContext(){return Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_theme_ThemeContext__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]);}/* harmony default export */ __webpack_exports__["a"] = (useThemeContext);
+
+/***/ }),
+/* 42 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _theme_MDXComponents__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(73);
+/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(98);
+/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_module_css__WEBPACK_IMPORTED_MODULE_5__);
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];function BlogPostItem(props){const{children,frontMatter,metadata,truncated,isBlogPostPage=false}=props;const{date,permalink,tags,readingTime}=metadata;const{author,title}=frontMatter;const authorURL=frontMatter.author_url||frontMatter.authorURL;const authorTitle=frontMatter.author_title||frontMatter.authorTitle;const authorImageURL=frontMatter.author_image_url||frontMatter.authorImageURL;const renderPostHeader=()=>{const TitleHeading=isBlogPostPage?'h1':'h2';const match=date.substring(0,10).split('-');const year=match[0];const month=MONTHS[parseInt(match[1],10)-1];const day=parseInt(match[2],10);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TitleHeading,{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()('margin-bottom--sm',_styles_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.blogPostTitle)},isBlogPostPage?title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{to:permalink},title)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"margin-vert--md"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time",{dateTime:date,className:_styles_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.blogPostDate},month," ",day,", ",year,' ',readingTime&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null," \xB7 ",Math.ceil(readingTime)," min read"))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"avatar margin-vert--md"},authorImageURL&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{className:"avatar__photo-link avatar__photo",href:authorURL,target:"_blank",rel:"noreferrer noopener"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img",{src:authorImageURL,alt:author})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"avatar__intro"},author&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4",{className:"avatar__name"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:authorURL,target:"_blank",rel:"noreferrer noopener"},author)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small",{className:"avatar__subtitle"},authorTitle)))));};return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article",{className:!isBlogPostPage?'margin-bottom--xl':undefined},renderPostHeader(),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section",{className:"markdown"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* MDXProvider */ "a"],{components:_theme_MDXComponents__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"]},children)),(tags.length>0||truncated)&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer",{className:"row margin-vert--lg"},tags.length>0&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong",null,"Tags:"),tags.map(({label,permalink:tagPermalink})=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{key:tagPermalink,className:"margin-horiz--sm",to:tagPermalink},label))),truncated&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col text--right"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{to:metadata.permalink,"aria-label":`Read more about ${title}`},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong",null,"Read More")))));}/* harmony default export */ __webpack_exports__["a"] = (BlogPostItem);
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Hack = __webpack_require__(80);
+
+var Marker = __webpack_require__(15);
+
+var ASTERISK_HACK = '*';
+var BACKSLASH_HACK = '\\';
+var IMPORTANT_TOKEN = '!important';
+var UNDERSCORE_HACK = '_';
+var BANG_HACK = '!ie';
+
+function restoreFromOptimizing(properties, restoreCallback) {
+  var property;
+  var restored;
+  var current;
+  var i;
+
+  for (i = properties.length - 1; i >= 0; i--) {
+    property = properties[i];
+
+    if (property.unused) {
+      continue;
+    }
+
+    if (!property.dirty && !property.important && !property.hack) {
+      continue;
+    }
+
+    if (restoreCallback) {
+      restored = restoreCallback(property);
+      property.value = restored;
+    } else {
+      restored = property.value;
+    }
+
+    if (property.important) {
+      restoreImportant(property);
+    }
+
+    if (property.hack) {
+      restoreHack(property);
+    }
+
+    if ('all' in property) {
+      current = property.all[property.position];
+      current[1][1] = property.name;
+
+      current.splice(2, current.length - 1);
+      Array.prototype.push.apply(current, restored);
+    }
+  }
+}
+
+function restoreImportant(property) {
+  property.value[property.value.length - 1][1] += IMPORTANT_TOKEN;
+}
+
+function restoreHack(property) {
+  if (property.hack[0] == Hack.UNDERSCORE) {
+    property.name = UNDERSCORE_HACK + property.name;
+  } else if (property.hack[0] == Hack.ASTERISK) {
+    property.name = ASTERISK_HACK + property.name;
+  } else if (property.hack[0] == Hack.BACKSLASH) {
+    property.value[property.value.length - 1][1] += BACKSLASH_HACK + property.hack[1];
+  } else if (property.hack[0] == Hack.BANG) {
+    property.value[property.value.length - 1][1] += Marker.SPACE + BANG_HACK;
+  }
+}
+
+module.exports = restoreFromOptimizing;
+
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports) {
+
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+/**
+ * This is a helper function for getting values from parameter/options
+ * objects.
+ *
+ * @param args The object we are extracting values from
+ * @param name The name of the property we are getting.
+ * @param defaultValue An optional value to return if the property is missing
+ * from the object. If this is not specified and the property is missing, an
+ * error will be thrown.
+ */
+function getArg(aArgs, aName, aDefaultValue) {
+  if (aName in aArgs) {
+    return aArgs[aName];
+  } else if (arguments.length === 3) {
+    return aDefaultValue;
+  } else {
+    throw new Error('"' + aName + '" is a required argument.');
+  }
+}
+exports.getArg = getArg;
+
+var urlRegexp = /^(?:([\w+\-.]+):)?\/\/(?:(\w+:\w+)@)?([\w.-]*)(?::(\d+))?(.*)$/;
+var dataUrlRegexp = /^data:.+\,.+$/;
+
+function urlParse(aUrl) {
+  var match = aUrl.match(urlRegexp);
+  if (!match) {
+    return null;
+  }
+  return {
+    scheme: match[1],
+    auth: match[2],
+    host: match[3],
+    port: match[4],
+    path: match[5]
+  };
+}
+exports.urlParse = urlParse;
+
+function urlGenerate(aParsedUrl) {
+  var url = '';
+  if (aParsedUrl.scheme) {
+    url += aParsedUrl.scheme + ':';
+  }
+  url += '//';
+  if (aParsedUrl.auth) {
+    url += aParsedUrl.auth + '@';
+  }
+  if (aParsedUrl.host) {
+    url += aParsedUrl.host;
+  }
+  if (aParsedUrl.port) {
+    url += ":" + aParsedUrl.port
+  }
+  if (aParsedUrl.path) {
+    url += aParsedUrl.path;
+  }
+  return url;
+}
+exports.urlGenerate = urlGenerate;
+
+/**
+ * Normalizes a path, or the path portion of a URL:
+ *
+ * - Replaces consecutive slashes with one slash.
+ * - Removes unnecessary '.' parts.
+ * - Removes unnecessary '<dir>/..' parts.
+ *
+ * Based on code in the Node.js 'path' core module.
+ *
+ * @param aPath The path or url to normalize.
+ */
+function normalize(aPath) {
+  var path = aPath;
+  var url = urlParse(aPath);
+  if (url) {
+    if (!url.path) {
+      return aPath;
+    }
+    path = url.path;
+  }
+  var isAbsolute = exports.isAbsolute(path);
+
+  var parts = path.split(/\/+/);
+  for (var part, up = 0, i = parts.length - 1; i >= 0; i--) {
+    part = parts[i];
+    if (part === '.') {
+      parts.splice(i, 1);
+    } else if (part === '..') {
+      up++;
+    } else if (up > 0) {
+      if (part === '') {
+        // The first part is blank if the path is absolute. Trying to go
+        // above the root is a no-op. Therefore we can remove all '..' parts
+        // directly after the root.
+        parts.splice(i + 1, up);
+        up = 0;
+      } else {
+        parts.splice(i, 2);
+        up--;
+      }
+    }
+  }
+  path = parts.join('/');
+
+  if (path === '') {
+    path = isAbsolute ? '/' : '.';
+  }
+
+  if (url) {
+    url.path = path;
+    return urlGenerate(url);
+  }
+  return path;
+}
+exports.normalize = normalize;
+
+/**
+ * Joins two paths/URLs.
+ *
+ * @param aRoot The root path or URL.
+ * @param aPath The path or URL to be joined with the root.
+ *
+ * - If aPath is a URL or a data URI, aPath is returned, unless aPath is a
+ *   scheme-relative URL: Then the scheme of aRoot, if any, is prepended
+ *   first.
+ * - Otherwise aPath is a path. If aRoot is a URL, then its path portion
+ *   is updated with the result and aRoot is returned. Otherwise the result
+ *   is returned.
+ *   - If aPath is absolute, the result is aPath.
+ *   - Otherwise the two paths are joined with a slash.
+ * - Joining for example 'http://' and 'www.example.com' is also supported.
+ */
+function join(aRoot, aPath) {
+  if (aRoot === "") {
+    aRoot = ".";
+  }
+  if (aPath === "") {
+    aPath = ".";
+  }
+  var aPathUrl = urlParse(aPath);
+  var aRootUrl = urlParse(aRoot);
+  if (aRootUrl) {
+    aRoot = aRootUrl.path || '/';
+  }
+
+  // `join(foo, '//www.example.org')`
+  if (aPathUrl && !aPathUrl.scheme) {
+    if (aRootUrl) {
+      aPathUrl.scheme = aRootUrl.scheme;
+    }
+    return urlGenerate(aPathUrl);
+  }
+
+  if (aPathUrl || aPath.match(dataUrlRegexp)) {
+    return aPath;
+  }
+
+  // `join('http://', 'www.example.com')`
+  if (aRootUrl && !aRootUrl.host && !aRootUrl.path) {
+    aRootUrl.host = aPath;
+    return urlGenerate(aRootUrl);
+  }
+
+  var joined = aPath.charAt(0) === '/'
+    ? aPath
+    : normalize(aRoot.replace(/\/+$/, '') + '/' + aPath);
+
+  if (aRootUrl) {
+    aRootUrl.path = joined;
+    return urlGenerate(aRootUrl);
+  }
+  return joined;
+}
+exports.join = join;
+
+exports.isAbsolute = function (aPath) {
+  return aPath.charAt(0) === '/' || urlRegexp.test(aPath);
+};
+
+/**
+ * Make a path relative to a URL or another path.
+ *
+ * @param aRoot The root path or URL.
+ * @param aPath The path or URL to be made relative to aRoot.
+ */
+function relative(aRoot, aPath) {
+  if (aRoot === "") {
+    aRoot = ".";
+  }
+
+  aRoot = aRoot.replace(/\/$/, '');
+
+  // It is possible for the path to be above the root. In this case, simply
+  // checking whether the root is a prefix of the path won't work. Instead, we
+  // need to remove components from the root one by one, until either we find
+  // a prefix that fits, or we run out of components to remove.
+  var level = 0;
+  while (aPath.indexOf(aRoot + '/') !== 0) {
+    var index = aRoot.lastIndexOf("/");
+    if (index < 0) {
+      return aPath;
+    }
+
+    // If the only part of the root that is left is the scheme (i.e. http://,
+    // file:///, etc.), one or more slashes (/), or simply nothing at all, we
+    // have exhausted all components, so the path is not relative to the root.
+    aRoot = aRoot.slice(0, index);
+    if (aRoot.match(/^([^\/]+:\/)?\/*$/)) {
+      return aPath;
+    }
+
+    ++level;
+  }
+
+  // Make sure we add a "../" for each component we removed from the root.
+  return Array(level + 1).join("../") + aPath.substr(aRoot.length + 1);
+}
+exports.relative = relative;
+
+var supportsNullProto = (function () {
+  var obj = Object.create(null);
+  return !('__proto__' in obj);
+}());
+
+function identity (s) {
+  return s;
+}
+
+/**
+ * Because behavior goes wacky when you set `__proto__` on objects, we
+ * have to prefix all the strings in our set with an arbitrary character.
+ *
+ * See https://github.com/mozilla/source-map/pull/31 and
+ * https://github.com/mozilla/source-map/issues/30
+ *
+ * @param String aStr
+ */
+function toSetString(aStr) {
+  if (isProtoString(aStr)) {
+    return '$' + aStr;
+  }
+
+  return aStr;
+}
+exports.toSetString = supportsNullProto ? identity : toSetString;
+
+function fromSetString(aStr) {
+  if (isProtoString(aStr)) {
+    return aStr.slice(1);
+  }
+
+  return aStr;
+}
+exports.fromSetString = supportsNullProto ? identity : fromSetString;
+
+function isProtoString(s) {
+  if (!s) {
+    return false;
+  }
+
+  var length = s.length;
+
+  if (length < 9 /* "__proto__".length */) {
+    return false;
+  }
+
+  if (s.charCodeAt(length - 1) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 2) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 3) !== 111 /* 'o' */ ||
+      s.charCodeAt(length - 4) !== 116 /* 't' */ ||
+      s.charCodeAt(length - 5) !== 111 /* 'o' */ ||
+      s.charCodeAt(length - 6) !== 114 /* 'r' */ ||
+      s.charCodeAt(length - 7) !== 112 /* 'p' */ ||
+      s.charCodeAt(length - 8) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 9) !== 95  /* '_' */) {
+    return false;
+  }
+
+  for (var i = length - 10; i >= 0; i--) {
+    if (s.charCodeAt(i) !== 36 /* '$' */) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+/**
+ * Comparator between two mappings where the original positions are compared.
+ *
+ * Optionally pass in `true` as `onlyCompareGenerated` to consider two
+ * mappings with the same original source/line/column, but different generated
+ * line and column the same. Useful when searching for a mapping with a
+ * stubbed out mapping.
+ */
+function compareByOriginalPositions(mappingA, mappingB, onlyCompareOriginal) {
+  var cmp = strcmp(mappingA.source, mappingB.source);
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0 || onlyCompareOriginal) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return strcmp(mappingA.name, mappingB.name);
+}
+exports.compareByOriginalPositions = compareByOriginalPositions;
+
+/**
+ * Comparator between two mappings with deflated source and name indices where
+ * the generated positions are compared.
+ *
+ * Optionally pass in `true` as `onlyCompareGenerated` to consider two
+ * mappings with the same generated line and column, but different
+ * source/name/original line and column the same. Useful when searching for a
+ * mapping with a stubbed out mapping.
+ */
+function compareByGeneratedPositionsDeflated(mappingA, mappingB, onlyCompareGenerated) {
+  var cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0 || onlyCompareGenerated) {
+    return cmp;
+  }
+
+  cmp = strcmp(mappingA.source, mappingB.source);
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return strcmp(mappingA.name, mappingB.name);
+}
+exports.compareByGeneratedPositionsDeflated = compareByGeneratedPositionsDeflated;
+
+function strcmp(aStr1, aStr2) {
+  if (aStr1 === aStr2) {
+    return 0;
+  }
+
+  if (aStr1 === null) {
+    return 1; // aStr2 !== null
+  }
+
+  if (aStr2 === null) {
+    return -1; // aStr1 !== null
+  }
+
+  if (aStr1 > aStr2) {
+    return 1;
+  }
+
+  return -1;
+}
+
+/**
+ * Comparator between two mappings with inflated source and name strings where
+ * the generated positions are compared.
+ */
+function compareByGeneratedPositionsInflated(mappingA, mappingB) {
+  var cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = strcmp(mappingA.source, mappingB.source);
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return strcmp(mappingA.name, mappingB.name);
+}
+exports.compareByGeneratedPositionsInflated = compareByGeneratedPositionsInflated;
+
+/**
+ * Strip any JSON XSSI avoidance prefix from the string (as documented
+ * in the source maps specification), and then parse the string as
+ * JSON.
+ */
+function parseSourceMapInput(str) {
+  return JSON.parse(str.replace(/^\)]}'[^\n]*\n/, ''));
+}
+exports.parseSourceMapInput = parseSourceMapInput;
+
+/**
+ * Compute the URL of a source given the the source root, the source's
+ * URL, and the source map's URL.
+ */
+function computeSourceURL(sourceRoot, sourceURL, sourceMapURL) {
+  sourceURL = sourceURL || '';
+
+  if (sourceRoot) {
+    // This follows what Chrome does.
+    if (sourceRoot[sourceRoot.length - 1] !== '/' && sourceURL[0] !== '/') {
+      sourceRoot += '/';
+    }
+    // The spec says:
+    //   Line 4: An optional source root, useful for relocating source
+    //   files on a server or removing repeated values in the
+    //   “sources” entry.  This value is prepended to the individual
+    //   entries in the “source” field.
+    sourceURL = sourceRoot + sourceURL;
+  }
+
+  // Historically, SourceMapConsumer did not take the sourceMapURL as
+  // a parameter.  This mode is still somewhat supported, which is why
+  // this code block is conditional.  However, it's preferable to pass
+  // the source map URL to SourceMapConsumer, so that this function
+  // can implement the source URL resolution algorithm as outlined in
+  // the spec.  This block is basically the equivalent of:
+  //    new URL(sourceURL, sourceMapURL).toString()
+  // ... except it avoids using URL, which wasn't available in the
+  // older releases of node still supported by this library.
+  //
+  // The spec says:
+  //   If the sources are not absolute URLs after prepending of the
+  //   “sourceRoot”, the sources are resolved relative to the
+  //   SourceMap (like resolving script src in a html document).
+  if (sourceMapURL) {
+    var parsed = urlParse(sourceMapURL);
+    if (!parsed) {
+      throw new Error("sourceMapURL could not be parsed");
+    }
+    if (parsed.path) {
+      // Strip the last path component, but keep the "/".
+      var index = parsed.path.lastIndexOf('/');
+      if (index >= 0) {
+        parsed.path = parsed.path.substring(0, index + 1);
+      }
+    }
+    sourceURL = join(urlGenerate(parsed), sourceURL);
+  }
+
+  return normalize(sourceURL);
+}
+exports.computeSourceURL = computeSourceURL;
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports) {
+
+var REMOTE_RESOURCE_PATTERN = /^(\w+:\/\/|\/\/)/;
+
+function isRemoteResource(uri) {
+  return REMOTE_RESOURCE_PATTERN.test(uri);
+}
+
+module.exports = isRemoteResource;
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports) {
+
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+/**
+ * This is a helper function for getting values from parameter/options
+ * objects.
+ *
+ * @param args The object we are extracting values from
+ * @param name The name of the property we are getting.
+ * @param defaultValue An optional value to return if the property is missing
+ * from the object. If this is not specified and the property is missing, an
+ * error will be thrown.
+ */
+function getArg(aArgs, aName, aDefaultValue) {
+  if (aName in aArgs) {
+    return aArgs[aName];
+  } else if (arguments.length === 3) {
+    return aDefaultValue;
+  } else {
+    throw new Error('"' + aName + '" is a required argument.');
+  }
+}
+exports.getArg = getArg;
+
+var urlRegexp = /^(?:([\w+\-.]+):)?\/\/(?:(\w+:\w+)@)?([\w.-]*)(?::(\d+))?(.*)$/;
+var dataUrlRegexp = /^data:.+\,.+$/;
+
+function urlParse(aUrl) {
+  var match = aUrl.match(urlRegexp);
+  if (!match) {
+    return null;
+  }
+  return {
+    scheme: match[1],
+    auth: match[2],
+    host: match[3],
+    port: match[4],
+    path: match[5]
+  };
+}
+exports.urlParse = urlParse;
+
+function urlGenerate(aParsedUrl) {
+  var url = '';
+  if (aParsedUrl.scheme) {
+    url += aParsedUrl.scheme + ':';
+  }
+  url += '//';
+  if (aParsedUrl.auth) {
+    url += aParsedUrl.auth + '@';
+  }
+  if (aParsedUrl.host) {
+    url += aParsedUrl.host;
+  }
+  if (aParsedUrl.port) {
+    url += ":" + aParsedUrl.port
+  }
+  if (aParsedUrl.path) {
+    url += aParsedUrl.path;
+  }
+  return url;
+}
+exports.urlGenerate = urlGenerate;
+
+/**
+ * Normalizes a path, or the path portion of a URL:
+ *
+ * - Replaces consecutive slashes with one slash.
+ * - Removes unnecessary '.' parts.
+ * - Removes unnecessary '<dir>/..' parts.
+ *
+ * Based on code in the Node.js 'path' core module.
+ *
+ * @param aPath The path or url to normalize.
+ */
+function normalize(aPath) {
+  var path = aPath;
+  var url = urlParse(aPath);
+  if (url) {
+    if (!url.path) {
+      return aPath;
+    }
+    path = url.path;
+  }
+  var isAbsolute = exports.isAbsolute(path);
+
+  var parts = path.split(/\/+/);
+  for (var part, up = 0, i = parts.length - 1; i >= 0; i--) {
+    part = parts[i];
+    if (part === '.') {
+      parts.splice(i, 1);
+    } else if (part === '..') {
+      up++;
+    } else if (up > 0) {
+      if (part === '') {
+        // The first part is blank if the path is absolute. Trying to go
+        // above the root is a no-op. Therefore we can remove all '..' parts
+        // directly after the root.
+        parts.splice(i + 1, up);
+        up = 0;
+      } else {
+        parts.splice(i, 2);
+        up--;
+      }
+    }
+  }
+  path = parts.join('/');
+
+  if (path === '') {
+    path = isAbsolute ? '/' : '.';
+  }
+
+  if (url) {
+    url.path = path;
+    return urlGenerate(url);
+  }
+  return path;
+}
+exports.normalize = normalize;
+
+/**
+ * Joins two paths/URLs.
+ *
+ * @param aRoot The root path or URL.
+ * @param aPath The path or URL to be joined with the root.
+ *
+ * - If aPath is a URL or a data URI, aPath is returned, unless aPath is a
+ *   scheme-relative URL: Then the scheme of aRoot, if any, is prepended
+ *   first.
+ * - Otherwise aPath is a path. If aRoot is a URL, then its path portion
+ *   is updated with the result and aRoot is returned. Otherwise the result
+ *   is returned.
+ *   - If aPath is absolute, the result is aPath.
+ *   - Otherwise the two paths are joined with a slash.
+ * - Joining for example 'http://' and 'www.example.com' is also supported.
+ */
+function join(aRoot, aPath) {
+  if (aRoot === "") {
+    aRoot = ".";
+  }
+  if (aPath === "") {
+    aPath = ".";
+  }
+  var aPathUrl = urlParse(aPath);
+  var aRootUrl = urlParse(aRoot);
+  if (aRootUrl) {
+    aRoot = aRootUrl.path || '/';
+  }
+
+  // `join(foo, '//www.example.org')`
+  if (aPathUrl && !aPathUrl.scheme) {
+    if (aRootUrl) {
+      aPathUrl.scheme = aRootUrl.scheme;
+    }
+    return urlGenerate(aPathUrl);
+  }
+
+  if (aPathUrl || aPath.match(dataUrlRegexp)) {
+    return aPath;
+  }
+
+  // `join('http://', 'www.example.com')`
+  if (aRootUrl && !aRootUrl.host && !aRootUrl.path) {
+    aRootUrl.host = aPath;
+    return urlGenerate(aRootUrl);
+  }
+
+  var joined = aPath.charAt(0) === '/'
+    ? aPath
+    : normalize(aRoot.replace(/\/+$/, '') + '/' + aPath);
+
+  if (aRootUrl) {
+    aRootUrl.path = joined;
+    return urlGenerate(aRootUrl);
+  }
+  return joined;
+}
+exports.join = join;
+
+exports.isAbsolute = function (aPath) {
+  return aPath.charAt(0) === '/' || urlRegexp.test(aPath);
+};
+
+/**
+ * Make a path relative to a URL or another path.
+ *
+ * @param aRoot The root path or URL.
+ * @param aPath The path or URL to be made relative to aRoot.
+ */
+function relative(aRoot, aPath) {
+  if (aRoot === "") {
+    aRoot = ".";
+  }
+
+  aRoot = aRoot.replace(/\/$/, '');
+
+  // It is possible for the path to be above the root. In this case, simply
+  // checking whether the root is a prefix of the path won't work. Instead, we
+  // need to remove components from the root one by one, until either we find
+  // a prefix that fits, or we run out of components to remove.
+  var level = 0;
+  while (aPath.indexOf(aRoot + '/') !== 0) {
+    var index = aRoot.lastIndexOf("/");
+    if (index < 0) {
+      return aPath;
+    }
+
+    // If the only part of the root that is left is the scheme (i.e. http://,
+    // file:///, etc.), one or more slashes (/), or simply nothing at all, we
+    // have exhausted all components, so the path is not relative to the root.
+    aRoot = aRoot.slice(0, index);
+    if (aRoot.match(/^([^\/]+:\/)?\/*$/)) {
+      return aPath;
+    }
+
+    ++level;
+  }
+
+  // Make sure we add a "../" for each component we removed from the root.
+  return Array(level + 1).join("../") + aPath.substr(aRoot.length + 1);
+}
+exports.relative = relative;
+
+var supportsNullProto = (function () {
+  var obj = Object.create(null);
+  return !('__proto__' in obj);
+}());
+
+function identity (s) {
+  return s;
+}
+
+/**
+ * Because behavior goes wacky when you set `__proto__` on objects, we
+ * have to prefix all the strings in our set with an arbitrary character.
+ *
+ * See https://github.com/mozilla/source-map/pull/31 and
+ * https://github.com/mozilla/source-map/issues/30
+ *
+ * @param String aStr
+ */
+function toSetString(aStr) {
+  if (isProtoString(aStr)) {
+    return '$' + aStr;
+  }
+
+  return aStr;
+}
+exports.toSetString = supportsNullProto ? identity : toSetString;
+
+function fromSetString(aStr) {
+  if (isProtoString(aStr)) {
+    return aStr.slice(1);
+  }
+
+  return aStr;
+}
+exports.fromSetString = supportsNullProto ? identity : fromSetString;
+
+function isProtoString(s) {
+  if (!s) {
+    return false;
+  }
+
+  var length = s.length;
+
+  if (length < 9 /* "__proto__".length */) {
+    return false;
+  }
+
+  if (s.charCodeAt(length - 1) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 2) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 3) !== 111 /* 'o' */ ||
+      s.charCodeAt(length - 4) !== 116 /* 't' */ ||
+      s.charCodeAt(length - 5) !== 111 /* 'o' */ ||
+      s.charCodeAt(length - 6) !== 114 /* 'r' */ ||
+      s.charCodeAt(length - 7) !== 112 /* 'p' */ ||
+      s.charCodeAt(length - 8) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 9) !== 95  /* '_' */) {
+    return false;
+  }
+
+  for (var i = length - 10; i >= 0; i--) {
+    if (s.charCodeAt(i) !== 36 /* '$' */) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+/**
+ * Comparator between two mappings where the original positions are compared.
+ *
+ * Optionally pass in `true` as `onlyCompareGenerated` to consider two
+ * mappings with the same original source/line/column, but different generated
+ * line and column the same. Useful when searching for a mapping with a
+ * stubbed out mapping.
+ */
+function compareByOriginalPositions(mappingA, mappingB, onlyCompareOriginal) {
+  var cmp = strcmp(mappingA.source, mappingB.source);
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0 || onlyCompareOriginal) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return strcmp(mappingA.name, mappingB.name);
+}
+exports.compareByOriginalPositions = compareByOriginalPositions;
+
+/**
+ * Comparator between two mappings with deflated source and name indices where
+ * the generated positions are compared.
+ *
+ * Optionally pass in `true` as `onlyCompareGenerated` to consider two
+ * mappings with the same generated line and column, but different
+ * source/name/original line and column the same. Useful when searching for a
+ * mapping with a stubbed out mapping.
+ */
+function compareByGeneratedPositionsDeflated(mappingA, mappingB, onlyCompareGenerated) {
+  var cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0 || onlyCompareGenerated) {
+    return cmp;
+  }
+
+  cmp = strcmp(mappingA.source, mappingB.source);
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return strcmp(mappingA.name, mappingB.name);
+}
+exports.compareByGeneratedPositionsDeflated = compareByGeneratedPositionsDeflated;
+
+function strcmp(aStr1, aStr2) {
+  if (aStr1 === aStr2) {
+    return 0;
+  }
+
+  if (aStr1 === null) {
+    return 1; // aStr2 !== null
+  }
+
+  if (aStr2 === null) {
+    return -1; // aStr1 !== null
+  }
+
+  if (aStr1 > aStr2) {
+    return 1;
+  }
+
+  return -1;
+}
+
+/**
+ * Comparator between two mappings with inflated source and name strings where
+ * the generated positions are compared.
+ */
+function compareByGeneratedPositionsInflated(mappingA, mappingB) {
+  var cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = strcmp(mappingA.source, mappingB.source);
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return strcmp(mappingA.name, mappingB.name);
+}
+exports.compareByGeneratedPositionsInflated = compareByGeneratedPositionsInflated;
+
+/**
+ * Strip any JSON XSSI avoidance prefix from the string (as documented
+ * in the source maps specification), and then parse the string as
+ * JSON.
+ */
+function parseSourceMapInput(str) {
+  return JSON.parse(str.replace(/^\)]}'[^\n]*\n/, ''));
+}
+exports.parseSourceMapInput = parseSourceMapInput;
+
+/**
+ * Compute the URL of a source given the the source root, the source's
+ * URL, and the source map's URL.
+ */
+function computeSourceURL(sourceRoot, sourceURL, sourceMapURL) {
+  sourceURL = sourceURL || '';
+
+  if (sourceRoot) {
+    // This follows what Chrome does.
+    if (sourceRoot[sourceRoot.length - 1] !== '/' && sourceURL[0] !== '/') {
+      sourceRoot += '/';
+    }
+    // The spec says:
+    //   Line 4: An optional source root, useful for relocating source
+    //   files on a server or removing repeated values in the
+    //   “sources” entry.  This value is prepended to the individual
+    //   entries in the “source” field.
+    sourceURL = sourceRoot + sourceURL;
+  }
+
+  // Historically, SourceMapConsumer did not take the sourceMapURL as
+  // a parameter.  This mode is still somewhat supported, which is why
+  // this code block is conditional.  However, it's preferable to pass
+  // the source map URL to SourceMapConsumer, so that this function
+  // can implement the source URL resolution algorithm as outlined in
+  // the spec.  This block is basically the equivalent of:
+  //    new URL(sourceURL, sourceMapURL).toString()
+  // ... except it avoids using URL, which wasn't available in the
+  // older releases of node still supported by this library.
+  //
+  // The spec says:
+  //   If the sources are not absolute URLs after prepending of the
+  //   “sourceRoot”, the sources are resolved relative to the
+  //   SourceMap (like resolving script src in a html document).
+  if (sourceMapURL) {
+    var parsed = urlParse(sourceMapURL);
+    if (!parsed) {
+      throw new Error("sourceMapURL could not be parsed");
+    }
+    if (parsed.path) {
+      // Strip the last path component, but keep the "/".
+      var index = parsed.path.lastIndexOf('/');
+      if (index >= 0) {
+        parsed.path = parsed.path.substring(0, index + 1);
+      }
+    }
+    sourceURL = join(urlGenerate(parsed), sourceURL);
+  }
+
+  return normalize(sourceURL);
+}
+exports.computeSourceURL = computeSourceURL;
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var PropTypes = __webpack_require__(190);
+
+var ALL_INITIALIZERS = [];
+var READY_INITIALIZERS = [];
+
+function isWebpackReady(getModuleIds) {
+  if (( false ? undefined : _typeof(__webpack_require__.m)) !== "object") {
+    return false;
+  }
+
+  return getModuleIds().every(function (moduleId) {
+    return typeof moduleId !== "undefined" && typeof __webpack_require__.m[moduleId] !== "undefined";
+  });
+}
+
+function load(loader) {
+  var promise = loader();
+
+  var state = {
+    loading: true,
+    loaded: null,
+    error: null
+  };
+
+  state.promise = promise.then(function (loaded) {
+    state.loading = false;
+    state.loaded = loaded;
+    return loaded;
+  }).catch(function (err) {
+    state.loading = false;
+    state.error = err;
+    throw err;
+  });
+
+  return state;
+}
+
+function loadMap(obj) {
+  var state = {
+    loading: false,
+    loaded: {},
+    error: null
+  };
+
+  var promises = [];
+
+  try {
+    Object.keys(obj).forEach(function (key) {
+      var result = load(obj[key]);
+
+      if (!result.loading) {
+        state.loaded[key] = result.loaded;
+        state.error = result.error;
+      } else {
+        state.loading = true;
+      }
+
+      promises.push(result.promise);
+
+      result.promise.then(function (res) {
+        state.loaded[key] = res;
+      }).catch(function (err) {
+        state.error = err;
+      });
+    });
+  } catch (err) {
+    state.error = err;
+  }
+
+  state.promise = Promise.all(promises).then(function (res) {
+    state.loading = false;
+    return res;
+  }).catch(function (err) {
+    state.loading = false;
+    throw err;
+  });
+
+  return state;
+}
+
+function resolve(obj) {
+  return obj && obj.__esModule ? obj.default : obj;
+}
+
+function render(loaded, props) {
+  return React.createElement(resolve(loaded), props);
+}
+
+function createLoadableComponent(loadFn, options) {
+  var _class, _temp;
+
+  if (!options.loading) {
+    throw new Error("react-loadable requires a `loading` component");
+  }
+
+  var opts = Object.assign({
+    loader: null,
+    loading: null,
+    delay: 200,
+    timeout: null,
+    render: render,
+    webpack: null,
+    modules: null
+  }, options);
+
+  var res = null;
+
+  function init() {
+    if (!res) {
+      res = loadFn(opts.loader);
+    }
+    return res.promise;
+  }
+
+  ALL_INITIALIZERS.push(init);
+
+  if (typeof opts.webpack === "function") {
+    READY_INITIALIZERS.push(function () {
+      if (isWebpackReady(opts.webpack)) {
+        return init();
+      }
+    });
+  }
+
+  return _temp = _class = function (_React$Component) {
+    _inherits(LoadableComponent, _React$Component);
+
+    function LoadableComponent(props) {
+      _classCallCheck(this, LoadableComponent);
+
+      var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
+
+      _this.retry = function () {
+        _this.setState({ error: null, loading: true, timedOut: false });
+        res = loadFn(opts.loader);
+        _this._loadModule();
+      };
+
+      init();
+
+      _this.state = {
+        error: res.error,
+        pastDelay: false,
+        timedOut: false,
+        loading: res.loading,
+        loaded: res.loaded
+      };
+      return _this;
+    }
+
+    LoadableComponent.preload = function preload() {
+      return init();
+    };
+
+    LoadableComponent.prototype.componentWillMount = function componentWillMount() {
+      this._mounted = true;
+      this._loadModule();
+    };
+
+    LoadableComponent.prototype._loadModule = function _loadModule() {
+      var _this2 = this;
+
+      if (this.context.loadable && Array.isArray(opts.modules)) {
+        opts.modules.forEach(function (moduleName) {
+          _this2.context.loadable.report(moduleName);
+        });
+      }
+
+      if (!res.loading) {
+        return;
+      }
+
+      if (typeof opts.delay === "number") {
+        if (opts.delay === 0) {
+          this.setState({ pastDelay: true });
+        } else {
+          this._delay = setTimeout(function () {
+            _this2.setState({ pastDelay: true });
+          }, opts.delay);
+        }
+      }
+
+      if (typeof opts.timeout === "number") {
+        this._timeout = setTimeout(function () {
+          _this2.setState({ timedOut: true });
+        }, opts.timeout);
+      }
+
+      var update = function update() {
+        if (!_this2._mounted) {
+          return;
+        }
+
+        _this2.setState({
+          error: res.error,
+          loaded: res.loaded,
+          loading: res.loading
+        });
+
+        _this2._clearTimeouts();
+      };
+
+      res.promise.then(function () {
+        update();
+      }).catch(function (err) {
+        update();
+      });
+    };
+
+    LoadableComponent.prototype.componentWillUnmount = function componentWillUnmount() {
+      this._mounted = false;
+      this._clearTimeouts();
+    };
+
+    LoadableComponent.prototype._clearTimeouts = function _clearTimeouts() {
+      clearTimeout(this._delay);
+      clearTimeout(this._timeout);
+    };
+
+    LoadableComponent.prototype.render = function render() {
+      if (this.state.loading || this.state.error) {
+        return React.createElement(opts.loading, {
+          isLoading: this.state.loading,
+          pastDelay: this.state.pastDelay,
+          timedOut: this.state.timedOut,
+          error: this.state.error,
+          retry: this.retry
+        });
+      } else if (this.state.loaded) {
+        return opts.render(this.state.loaded, this.props);
+      } else {
+        return null;
+      }
+    };
+
+    return LoadableComponent;
+  }(React.Component), _class.contextTypes = {
+    loadable: PropTypes.shape({
+      report: PropTypes.func.isRequired
+    })
+  }, _temp;
+}
+
+function Loadable(opts) {
+  return createLoadableComponent(load, opts);
+}
+
+function LoadableMap(opts) {
+  if (typeof opts.render !== "function") {
+    throw new Error("LoadableMap requires a `render(loaded, props)` function");
+  }
+
+  return createLoadableComponent(loadMap, opts);
+}
+
+Loadable.Map = LoadableMap;
+
+var Capture = function (_React$Component2) {
+  _inherits(Capture, _React$Component2);
+
+  function Capture() {
+    _classCallCheck(this, Capture);
+
+    return _possibleConstructorReturn(this, _React$Component2.apply(this, arguments));
+  }
+
+  Capture.prototype.getChildContext = function getChildContext() {
+    return {
+      loadable: {
+        report: this.props.report
+      }
+    };
+  };
+
+  Capture.prototype.render = function render() {
+    return React.Children.only(this.props.children);
+  };
+
+  return Capture;
+}(React.Component);
+
+Capture.propTypes = {
+  report: PropTypes.func.isRequired
+};
+Capture.childContextTypes = {
+  loadable: PropTypes.shape({
+    report: PropTypes.func.isRequired
+  }).isRequired
+};
+
+
+Loadable.Capture = Capture;
+
+function flushInitializers(initializers) {
+  var promises = [];
+
+  while (initializers.length) {
+    var init = initializers.pop();
+    promises.push(init());
+  }
+
+  return Promise.all(promises).then(function () {
+    if (initializers.length) {
+      return flushInitializers(initializers);
+    }
+  });
+}
+
+Loadable.preloadAll = function () {
+  return new Promise(function (resolve, reject) {
+    flushInitializers(ALL_INITIALIZERS).then(resolve, reject);
+  });
+};
+
+Loadable.preloadReady = function () {
+  return new Promise(function (resolve, reject) {
+    // We always will resolve, errors should be handled within loading UIs.
+    flushInitializers(READY_INITIALIZERS).then(resolve, resolve);
+  });
+};
+
+module.exports = Loadable;
 
 /***/ }),
 /* 48 */
@@ -17537,7 +17538,7 @@ module.exports = {
 
 var systemLineBreak = __webpack_require__(101).EOL;
 
-var override = __webpack_require__(37);
+var override = __webpack_require__(38);
 
 var Breaks = {
   AfterAtRule: 'afterAtRule',
@@ -17774,7 +17775,7 @@ module.exports = formatPosition;
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 var split = __webpack_require__(81);
 
 var DEEP_SELECTOR_PATTERN = /\/deep\//;
@@ -18045,11 +18046,11 @@ var populateComponents = __webpack_require__(83);
 
 var restoreWithComponents = __webpack_require__(84);
 
-var wrapForOptimizing = __webpack_require__(38).all;
+var wrapForOptimizing = __webpack_require__(39).all;
 var removeUnused = __webpack_require__(102);
-var restoreFromOptimizing = __webpack_require__(42);
+var restoreFromOptimizing = __webpack_require__(43);
 
-var OptimizationLevel = __webpack_require__(26).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(27).OptimizationLevel;
 
 function optimizeProperties(properties, withOverriding, withMerging, context) {
   var levelOptions = context.options.level[OptimizationLevel.Two];
@@ -18085,7 +18086,7 @@ module.exports = optimizeProperties;
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var wrapSingle = __webpack_require__(38).single;
+var wrapSingle = __webpack_require__(39).single;
 
 var Token = __webpack_require__(9);
 
@@ -18418,7 +18419,7 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const rimraf = __webpack_require__(295)
 
 module.exports = {
@@ -19397,7 +19398,7 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return react_router_dom__WEBPACK_IMPORTED_MODULE_0__["c"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return react_router_dom__WEBPACK_IMPORTED_MODULE_0__["d"]; });
@@ -19429,9 +19430,9 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 
 "use strict";
 /* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
-/* harmony import */ var _theme_hooks_useThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(40);
-/* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
-/* harmony import */ var _docusaurus_isInternalUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
+/* harmony import */ var _theme_hooks_useThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(41);
+/* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _docusaurus_isInternalUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(23);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -19623,7 +19624,7 @@ var classnames = __webpack_require__(3);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/prism-react-renderer/prism/index.js
-var prism_react_renderer_prism = __webpack_require__(39);
+var prism_react_renderer_prism = __webpack_require__(40);
 
 // CONCATENATED MODULE: ./node_modules/prism-react-renderer/themes/duotoneDark/index.js
 // Duotone Dark
@@ -20119,10 +20120,10 @@ var parse_numeric_range_default = /*#__PURE__*/__webpack_require__.n(parse_numer
 var useDocusaurusContext = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useThemeContext.js
-var useThemeContext = __webpack_require__(40);
+var useThemeContext = __webpack_require__(41);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/CodeBlock/styles.module.css
-var styles_module = __webpack_require__(27);
+var styles_module = __webpack_require__(28);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/CodeBlock/index.js
@@ -20719,7 +20720,7 @@ module.exports = sortSelectors;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Spaces = __webpack_require__(50).Spaces;
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 var formatPosition = __webpack_require__(51);
 
 var CASE_ATTRIBUTE_PATTERN = /[\s"'][iI]\s*\]/;
@@ -20951,7 +20952,7 @@ module.exports = Hack;
 /* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 function split(value, separator) {
   var openLevel = Marker.OPEN_ROUND_BRACKET;
@@ -21012,7 +21013,7 @@ var emptyCharacter = '';
 var Breaks = __webpack_require__(50).Breaks;
 var Spaces = __webpack_require__(50).Spaces;
 
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 var Token = __webpack_require__(9);
 
 function supportsAfterClosingBrace(token) {
@@ -21260,7 +21261,7 @@ module.exports = {
 /* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(30);
+var compactable = __webpack_require__(31);
 var InvalidPropertyError = __webpack_require__(106);
 
 function populateComponents(properties, validator, warnings) {
@@ -21308,7 +21309,7 @@ module.exports = populateComponents;
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(30);
+var compactable = __webpack_require__(31);
 
 function restoreWithComponents(property) {
   var descriptor = compactable[property.name];
@@ -21407,9 +21408,9 @@ module.exports = extractProperties;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(6);
-var url = __webpack_require__(29);
+var url = __webpack_require__(30);
 
-var isRemoteResource = __webpack_require__(44);
+var isRemoteResource = __webpack_require__(45);
 var hasProtocol = __webpack_require__(56);
 
 var HTTP_PROTOCOL = 'http:';
@@ -21619,7 +21620,7 @@ module.exports =
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const jsonFile = __webpack_require__(303)
 
 module.exports = {
@@ -21697,7 +21698,7 @@ webpackContext.id = 91;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15);
+/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -22485,7 +22486,7 @@ module.exports = removeUnused;
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var override = __webpack_require__(37);
+var override = __webpack_require__(38);
 
 var INTEGER_PATTERN = /^\d+$/;
 
@@ -22579,7 +22580,7 @@ module.exports = {
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 function everyValuesPair(fn, left, right) {
   var leftSize = left.value.length;
@@ -22752,7 +22753,7 @@ exports.SourceNode = __webpack_require__(246).SourceNode;
  */
 
 var base64VLQ = __webpack_require__(112);
-var util = __webpack_require__(43);
+var util = __webpack_require__(44);
 var ArraySet = __webpack_require__(113).ArraySet;
 var MappingList = __webpack_require__(242).MappingList;
 
@@ -23328,7 +23329,7 @@ exports.decode = function base64VLQ_decode(aStr, aIndex, aOutParam) {
  * http://opensource.org/licenses/BSD-3-Clause
  */
 
-var util = __webpack_require__(43);
+var util = __webpack_require__(44);
 var has = Object.prototype.hasOwnProperty;
 var hasNativeMap = typeof Map !== "undefined";
 
@@ -23470,7 +23471,7 @@ module.exports = rebaseLocalMap;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(6);
-var url = __webpack_require__(29);
+var url = __webpack_require__(30);
 
 function rebaseRemoteMap(sourceMap, sourceUri) {
   var sourceDirectory = path.dirname(sourceUri);
@@ -23604,7 +23605,7 @@ module.exports =
  */
 
 var base64VLQ = __webpack_require__(122);
-var util = __webpack_require__(45);
+var util = __webpack_require__(46);
 var ArraySet = __webpack_require__(123).ArraySet;
 var MappingList = __webpack_require__(279).MappingList;
 
@@ -24180,7 +24181,7 @@ exports.decode = function base64VLQ_decode(aStr, aIndex, aOutParam) {
  * http://opensource.org/licenses/BSD-3-Clause
  */
 
-var util = __webpack_require__(45);
+var util = __webpack_require__(46);
 var has = Object.prototype.hasOwnProperty;
 var hasNativeMap = typeof Map !== "undefined";
 
@@ -24304,7 +24305,7 @@ exports.ArraySet = ArraySet;
 
 // This is adapted from https://github.com/normalize/mz
 // Copyright (c) 2014-2016 Jonathan Ong me@jongleberry.com and Contributors
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const fs = __webpack_require__(12)
 
 const api = [
@@ -24555,7 +24556,7 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 module.exports = {
   copy: u(__webpack_require__(293))
 }
@@ -24569,7 +24570,7 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15);
+/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
 /* harmony import */ var _docusaurus_Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -24605,7 +24606,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var jasper_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(47);
+/* harmony import */ var jasper_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
 const frontMatter={id:'button',title:'Button'};const metadata={"id":"button","title":"Button","description":"import { Button } from 'jasper-ui'","source":"@site/docs/button.md","permalink":"/docs/button","editUrl":"https://github.com/COMPFEST/jasper/edit/master/docusaurus/docs/button.md","sidebar":"someSidebar","previous":{"title":"This is Document Number 3","permalink":"/docs/doc3"},"next":{"title":"Card","permalink":"/docs/card"}};/* @jsx mdx */const rightToc=[{value:'Nude Button',id:'nude-button',children:[{value:'Usage',id:'usage',children:[]},{value:'Structure',id:'structure',children:[]},{value:'Code',id:'code',children:[]},{value:'Result',id:'result',children:[]}]},{value:'Filled Button',id:'filled-button',children:[{value:'Usage',id:'usage-1',children:[]},{value:'Structure',id:'structure-1',children:[]},{value:'Code',id:'code-1',children:[]},{value:'Result',id:'result-1',children:[]}]},{value:'Secondary Filled Button',id:'secondary-filled-button',children:[{value:'Code',id:'code-2',children:[]},{value:'Result',id:'result-2',children:[]}]},{value:'Props and Class Names',id:'props-and-class-names',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Button is a component that can initiate certain action and has a customisable background, text and icon.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"nude-button"},`Nude Button`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nude Buttons contain important action but it emphasised lower than primary buttons.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"structure"},`Structure`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nude Button only consists of text and doesn’t have background`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"/img/button-nude-example.svg",alt:""}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"code"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<div style={{ background: "#404040", borderRadius: "5px" }}>
   <Button className="nude">Text</Button>
 </div>
@@ -24702,7 +24703,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var jasper_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(47);
+/* harmony import */ var jasper_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
 const frontMatter={id:'alert-box',title:'Alert Box'};const metadata={"id":"alert-box","title":"Alert Box","description":"import { AlertBox, Button } from 'jasper-ui'","source":"@site/docs/alert-box.md","permalink":"/docs/alert-box","editUrl":"https://github.com/COMPFEST/jasper/edit/master/docusaurus/docs/alert-box.md","sidebar":"someSidebar","previous":{"title":"Card","permalink":"/docs/card"}};/* @jsx mdx */const rightToc=[{value:'Usage',id:'usage',children:[]},{value:'Code',id:'code',children:[]},{value:'Props and Class Names',id:'props-and-class-names',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Alert Box is a component that functions as an alert before proceeding to some action.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Alert Box will fill the screen with its message, a proceed button, and a cancel button.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"code"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const alertProceed = () => {
   console.log("Proceed")
 }
@@ -24737,8 +24738,8 @@ const frontMatter={id:'doc3',title:'This is Document Number 3'};const metadata={
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15);
-/* harmony import */ var _theme_BlogPostItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(41);
+/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
+/* harmony import */ var _theme_BlogPostItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42);
 /* harmony import */ var _docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -24824,11 +24825,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
+/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(16);
 /* harmony import */ var _docusaurus_Link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
 /* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4);
-/* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(13);
-/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(36);
+/* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(14);
+/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(37);
 /* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_module_css__WEBPACK_IMPORTED_MODULE_7__);
 const features=[{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Easy to Use"),imageUrl:"img/undraw_docusaurus_mountain.svg",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Focus on What Matters"),imageUrl:"img/undraw_docusaurus_tree.svg",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("code",null,"docs")," directory.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Powered by React"),imageUrl:"img/undraw_docusaurus_react.svg",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.")}];function Feature({imageUrl,title,description}){const imgUrl=Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(imageUrl);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()("col col--4",_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.feature)},imgUrl&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"text--center"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.featureImage,src:imgUrl,alt:title})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3",null,title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p",null,description));}function Home(){const context=Object(_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])();const{siteConfig={}}=context;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_Layout__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{title:`Hello from ${siteConfig.title}`,description:"Description will go into a meta tag in <head />"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header",{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()("hero hero--primary",_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.heroBanner)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1",{className:"hero__title"},siteConfig.title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p",{className:"hero__subtitle"},siteConfig.tagline),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.buttons},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()("button button--outline button--secondary button--lg",_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.getStarted),to:Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])("docs/installation")},"Get Started")))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main",null,features&&features.length&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.features},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"row"},features.map((props,idx)=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Feature,Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({key:idx},props))))))));}/* harmony default export */ __webpack_exports__["default"] = (Home);
 
@@ -24862,7 +24863,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-const frontMatter={id:'card',title:'Card'};const metadata={"id":"card","title":"Card","description":"Our design implement cards as a mean to display popping informations and divide sections, either individually or as a group. Cards are also used for pop-up and carousel components.\r","source":"@site/docs/card.md","permalink":"/docs/card","editUrl":"https://github.com/COMPFEST/jasper/edit/master/docusaurus/docs/card.md","sidebar":"someSidebar","previous":{"title":"Button","permalink":"/docs/button"},"next":{"title":"Alert Box","permalink":"/docs/alert-box"}};/* @jsx mdx */const rightToc=[{value:'Mini Information Card',id:'mini-information-card',children:[{value:'Usage',id:'usage',children:[]},{value:'Structure',id:'structure',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Our design implement cards as a mean to display popping informations and divide sections, either individually or as a group. Cards are also used for pop-up and carousel components.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"mini-information-card"},`Mini Information Card`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We use mini information cards to display information meant to be important. It is also used to group and organize simple informations for better display to user.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"structure"},`Structure`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`An information card may consist of multiple components. The following are the general structure for a typical mini information card.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"/img/card-example.svg",alt:""}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("table",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("thead",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"thead"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Prop name`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Type`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory/Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Description`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tbody",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`title`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Title of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`content`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`content of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`linkContent`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Displayed text of the link`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`href`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Link url`)))));};MDXContent.isMDXComponent=true;
+/* harmony import */ var jasper_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
+const frontMatter={id:'card',title:'Card'};const metadata={"id":"card","title":"Card","description":"import { Button, Card } from 'jasper-ui'\r","source":"@site/docs/card.md","permalink":"/docs/card","editUrl":"https://github.com/COMPFEST/jasper/edit/master/docusaurus/docs/card.md","sidebar":"someSidebar","previous":{"title":"Button","permalink":"/docs/button"},"next":{"title":"Alert Box","permalink":"/docs/alert-box"}};/* @jsx mdx */const rightToc=[{value:'Mini Information Card',id:'mini-information-card',children:[{value:'Usage',id:'usage',children:[]},{value:'Structure',id:'structure',children:[]},{value:'Code',id:'code',children:[]},{value:'Result',id:'result',children:[]},{value:'Props',id:'props',children:[]}]},{value:'Large Card',id:'large-card',children:[{value:'Usage',id:'usage-1',children:[]},{value:'Structure',id:'structure-1',children:[]},{value:'Code',id:'code-1',children:[]},{value:'Result',id:'result-1',children:[]},{value:'Props',id:'props-1',children:[]}]},{value:'Article Card',id:'article-card',children:[{value:'Usage',id:'usage-2',children:[]},{value:'Structure',id:'structure-2',children:[]},{value:'Code',id:'code-2',children:[]},{value:'Result',id:'result-2',children:[]},{value:'Props',id:'props-2',children:[]}]},{value:'Carousel Card',id:'carousel-card',children:[{value:'Usage',id:'usage-3',children:[]},{value:'Structure',id:'structure-3',children:[]},{value:'Code',id:'code-3',children:[]},{value:'Result',id:'result-3',children:[]},{value:'Props',id:'props-3',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Our design implement cards as a mean to display popping informations and divide sections, either individually or as a group. Cards are also used for pop-up and carousel components.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"mini-information-card"},`Mini Information Card`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We use mini information cards to display information meant to be important. It is also used to group and organize simple informations for better display to user.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"structure"},`Structure`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`An information card may consist of multiple components. The following are the general structure for a typical mini information card.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"/img/card-example.svg",alt:""}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"code"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<Card
+    title="Card Title"
+    text="Hello! This is a sample text more catchy than the typical lorem ipsum text"
+    linkContent="CLICKABLE TEXT"
+    href="https://www.compfest.id/"
+/>
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"result"},`Result`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(jasper_ui__WEBPACK_IMPORTED_MODULE_3__[/* Card */ "b"],{title:"Card Title",text:"Hello! This is a sample text more catchy than the typical lorem ipsum text",linkContent:"CLICKABLE TEXT",href:"https://www.compfest.id/",mdxType:"Card"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("table",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("thead",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"thead"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Prop name`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Type`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory/Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Description`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tbody",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`title`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Title of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`content`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`content of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`linkContent`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Displayed text of the link`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`href`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Link url`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"large-card"},`Large Card`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage-1"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We used large cards to differentiate sections in a page. It is also used to group and organize multiple related informations for more better and focused display to user.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"structure-1"},`Structure`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A large card may consist of multiple components. The following are the general structure for a typical large card.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"/img/large-card-example.svg",alt:""}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"code-1"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<Card
+    type='large-card'
+    image="/img/large-card-img.png"
+    title='Card Title That is Very Long to Decribe Something'
+    miniTitle='Card Mini Title'
+    text='COMPFEST is an annual one-stop IT event run by students of Faculty of Computer Science, University of Indonesia. Lorem ipsum dolor sit amet Lorem. COMPFEST is an annual one-stop IT event run by students of Faculty of Computer Science, University of Indonesia. Lorem ipsum dolor sit amet Lorem.'
+    buttonTop={<Button> Hello </Button>}
+    buttonBottom={<Button> Hello </Button>}
+  />
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"result-1"},`Result`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(jasper_ui__WEBPACK_IMPORTED_MODULE_3__[/* Card */ "b"],{type:"large-card",image:"/img/large-card-img.png",title:"Card Title That is Very Long to Decribe Something",miniTitle:"Card Mini Title",text:"COMPFEST is an annual one-stop IT event run by students of Faculty of Computer Science, University of Indonesia. Lorem ipsum dolor sit amet Lorem. COMPFEST is an annual one-stop IT event run by students of Faculty of Computer Science, University of Indonesia. Lorem ipsum dolor sit amet Lorem.",buttonTop:Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(jasper_ui__WEBPACK_IMPORTED_MODULE_3__[/* Button */ "a"],{mdxType:"Button"}," Hello "),buttonBottom:Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(jasper_ui__WEBPACK_IMPORTED_MODULE_3__[/* Button */ "a"],{mdxType:"Button"}," Hello "),mdxType:"Card"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props-1"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("table",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("thead",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"thead"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Prop name`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Type`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory/Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Description`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tbody",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`title`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Title of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`text`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`content of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`image`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Displayed image`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`miniTitle`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Card mini title`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`buttonTop`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Object`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Upper button section`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`buttonBottom`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Object`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Lower button section`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"article-card"},`Article Card`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage-2"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We used article card to display thumbnail of an article from Medium page. It is also used to group and organize multiple related articles for more better and focused display to user.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"structure-2"},`Structure`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`An article card may consist of multiple components. The following are the general structure for a typical article card.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"/img/article-card-example.svg",alt:""}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"code-2"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<Card
+    type="article-card"
+    title="How To Choose Between Wireless and Wired Charging?"
+    category="TECHNOLOGY"
+    image="/img/article-card-img.png"
+/>
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"result-2"},`Result`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(jasper_ui__WEBPACK_IMPORTED_MODULE_3__[/* Card */ "b"],{type:"article-card",title:"How To Choose Between Wireless and Wired Charging?",category:"TECHNOLOGY",image:"/img/article-card-img.png",mdxType:"Card"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props-2"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("table",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("thead",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"thead"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Prop name`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Type`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory/Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Description`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tbody",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`title`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Title of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`category`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Category of the card`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`image`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Displayed image`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"carousel-card"},`Carousel Card`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage-3"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We used carousel cards to display multiple informations as a group. Typically, the information presented at carousel card are simple informations with small number of text, relying on assets.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"structure-3"},`Structure`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A carousel card may consist of multiple components. The following are the general structure for a typical carousel card.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"/img/carousel-card-example.svg",alt:""}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"code-3"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<Card
+    type="carousel-card"
+    caption="Card Caption"
+    image="/img/article-card-img.png"
+/>
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"result-3"},`Result`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(jasper_ui__WEBPACK_IMPORTED_MODULE_3__[/* Card */ "b"],{type:"carousel-card",caption:"Card Caption",image:"/img/article-card-img.png",mdxType:"Card"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props-3"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("table",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("thead",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"thead"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Prop name`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Type`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory/Optional`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Description`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tbody",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`image`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Displayed image`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`caption`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`String`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Mandatory`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_home_runner_work_jasper_jasper_docusaurus_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Caption of the card`)))));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 151 */
@@ -24908,13 +24936,13 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var Head = __webpack_require__(61);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(22);
+var isInternalUrl = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
-var useBaseUrl = __webpack_require__(13);
+var useBaseUrl = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js
 var Link = __webpack_require__(5);
@@ -24938,7 +24966,7 @@ var classnames = __webpack_require__(3);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocItem/styles.module.css
-var styles_module = __webpack_require__(34);
+var styles_module = __webpack_require__(35);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocItem/index.js
@@ -24971,7 +24999,7 @@ var useDocusaurusContext = __webpack_require__(4);
 var renderRoutes = __webpack_require__(70);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Layout/index.js + 14 modules
-var Layout = __webpack_require__(15);
+var Layout = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 var esm_extends = __webpack_require__(2);
@@ -24990,10 +25018,10 @@ var useLogo = __webpack_require__(66);
 var Link = __webpack_require__(5);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(22);
+var isInternalUrl = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocSidebar/styles.module.css
-var styles_module = __webpack_require__(35);
+var styles_module = __webpack_require__(36);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocSidebar/index.js
@@ -25047,10 +25075,10 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var useDocusaurusContext = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Layout/index.js + 14 modules
-var Layout = __webpack_require__(15);
+var Layout = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/BlogPostItem/index.js
-var BlogPostItem = __webpack_require__(41);
+var BlogPostItem = __webpack_require__(42);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js
 var Link = __webpack_require__(5);
@@ -25083,10 +25111,10 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Layout/index.js + 14 modules
-var Layout = __webpack_require__(15);
+var Layout = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/BlogPostItem/index.js
-var BlogPostItem = __webpack_require__(41);
+var BlogPostItem = __webpack_require__(42);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js
 var Link = __webpack_require__(5);
@@ -26854,13 +26882,13 @@ module.exports = Object.assign(
   __webpack_require__(306),
   __webpack_require__(308),
   __webpack_require__(310),
-  __webpack_require__(23),
+  __webpack_require__(24),
   __webpack_require__(58)
 )
 
 // Export fs.promises as a getter property so that we don't trigger
 // ExperimentalWarning before fs.promises is actually accessed.
-const fs = __webpack_require__(28)
+const fs = __webpack_require__(29)
 if (Object.getOwnPropertyDescriptor(fs, 'promises')) {
   Object.defineProperty(module.exports, 'promises', {
     get () { return fs.promises }
@@ -27007,7 +27035,7 @@ var _classnames = __webpack_require__(3);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _propTypes = __webpack_require__(17);
+var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -28624,11 +28652,11 @@ module.exports = ReactPropTypesSecret;
 exports.__esModule = true;
 exports["default"] = exports.defaultOptions = void 0;
 
-var _fs = _interopRequireDefault(__webpack_require__(28));
+var _fs = _interopRequireDefault(__webpack_require__(29));
 
 var _path = _interopRequireDefault(__webpack_require__(6));
 
-var _url = _interopRequireDefault(__webpack_require__(29));
+var _url = _interopRequireDefault(__webpack_require__(30));
 
 var _utils = __webpack_require__(100);
 
@@ -29195,8 +29223,8 @@ var formatFrom = __webpack_require__(50).formatFrom;
 var inlineFrom = __webpack_require__(235);
 var inlineRequestFrom = __webpack_require__(236);
 var inlineTimeoutFrom = __webpack_require__(237);
-var OptimizationLevel = __webpack_require__(26).OptimizationLevel;
-var optimizationLevelFrom = __webpack_require__(26).optimizationLevelFrom;
+var OptimizationLevel = __webpack_require__(27).OptimizationLevel;
+var optimizationLevelFrom = __webpack_require__(27).optimizationLevelFrom;
 var rebaseFrom = __webpack_require__(238);
 var rebaseToFrom = __webpack_require__(239);
 
@@ -29377,13 +29405,13 @@ var tidyAtRule = __webpack_require__(202);
 
 var Hack = __webpack_require__(80);
 var removeUnused = __webpack_require__(102);
-var restoreFromOptimizing = __webpack_require__(42);
-var wrapForOptimizing = __webpack_require__(38).all;
+var restoreFromOptimizing = __webpack_require__(43);
+var wrapForOptimizing = __webpack_require__(39).all;
 
-var OptimizationLevel = __webpack_require__(26).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(27).OptimizationLevel;
 
 var Token = __webpack_require__(9);
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 var formatPosition = __webpack_require__(51);
 var split = __webpack_require__(81);
@@ -30436,7 +30464,7 @@ var restructure = __webpack_require__(225);
 
 var optimizeProperties = __webpack_require__(53);
 
-var OptimizationLevel = __webpack_require__(26).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(27).OptimizationLevel;
 
 var Token = __webpack_require__(9);
 
@@ -30570,7 +30598,7 @@ var optimizeProperties = __webpack_require__(53);
 var sortSelectors = __webpack_require__(78);
 var tidyRules = __webpack_require__(79);
 
-var OptimizationLevel = __webpack_require__(26).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(27).OptimizationLevel;
 
 var serializeBody = __webpack_require__(10).body;
 var serializeRules = __webpack_require__(10).rules;
@@ -30623,12 +30651,12 @@ var everyValuesPair = __webpack_require__(104);
 var hasInherit = __webpack_require__(105);
 var populateComponents = __webpack_require__(83);
 
-var compactable = __webpack_require__(30);
+var compactable = __webpack_require__(31);
 var deepClone = __webpack_require__(54).deep;
 var restoreWithComponents = __webpack_require__(84);
 
-var restoreFromOptimizing = __webpack_require__(42);
-var wrapSingle = __webpack_require__(38).single;
+var restoreFromOptimizing = __webpack_require__(43);
+var wrapSingle = __webpack_require__(39).single;
 
 var serializeBody = __webpack_require__(10).body;
 var Token = __webpack_require__(9);
@@ -31072,10 +31100,10 @@ module.exports = mergeIntoShorthands;
 
 var InvalidPropertyError = __webpack_require__(106);
 
-var wrapSingle = __webpack_require__(38).single;
+var wrapSingle = __webpack_require__(39).single;
 
 var Token = __webpack_require__(9);
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 var formatPosition = __webpack_require__(51);
 
@@ -32033,7 +32061,7 @@ module.exports = understandable;
 var shallowClone = __webpack_require__(54).shallow;
 
 var Token = __webpack_require__(9);
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 function isInheritOnly(values) {
   for (var i = 0, l = values.length; i < l; i++) {
@@ -32347,15 +32375,15 @@ var isMergeableShorthand = __webpack_require__(213);
 var overridesNonComponentShorthand = __webpack_require__(214);
 var sameVendorPrefixesIn = __webpack_require__(107).same;
 
-var compactable = __webpack_require__(30);
+var compactable = __webpack_require__(31);
 var deepClone = __webpack_require__(54).deep;
 var restoreWithComponents = __webpack_require__(84);
 var shallowClone = __webpack_require__(54).shallow;
 
-var restoreFromOptimizing = __webpack_require__(42);
+var restoreFromOptimizing = __webpack_require__(43);
 
 var Token = __webpack_require__(9);
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 var serializeProperty = __webpack_require__(10).property;
 
@@ -32829,7 +32857,7 @@ module.exports = overrideProperties;
 /* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(30);
+var compactable = __webpack_require__(31);
 
 function findComponentIn(shorthand, longhand) {
   var comparator = nameComparator(longhand);
@@ -32875,7 +32903,7 @@ module.exports = findComponentIn;
 /* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(30);
+var compactable = __webpack_require__(31);
 
 function isComponentOf(property1, property2, shallow) {
   return isDirectComponentOf(property1, property2) ||
@@ -32903,7 +32931,7 @@ module.exports = isComponentOf;
 /* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 function isMergeableShorthand(shorthand) {
   if (shorthand.name != 'font') {
@@ -32920,7 +32948,7 @@ module.exports = isMergeableShorthand;
 /* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(30);
+var compactable = __webpack_require__(31);
 
 function overridesNonComponentShorthand(property1, property2) {
   return property1.name in compactable &&
@@ -32941,7 +32969,7 @@ var extractProperties = __webpack_require__(85);
 var rulesOverlap = __webpack_require__(108);
 
 var serializeRules = __webpack_require__(10).rules;
-var OptimizationLevel = __webpack_require__(26).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(27).OptimizationLevel;
 var Token = __webpack_require__(9);
 
 function mergeMediaQueries(tokens, context) {
@@ -33084,7 +33112,7 @@ module.exports = specificitiesOverlap;
 /* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 
 var Selector = {
   ADJACENT_SIBLING: '+',
@@ -33172,7 +33200,7 @@ var isMergeable = __webpack_require__(52);
 var sortSelectors = __webpack_require__(78);
 var tidyRules = __webpack_require__(79);
 
-var OptimizationLevel = __webpack_require__(26).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(27).OptimizationLevel;
 
 var serializeBody = __webpack_require__(10).body;
 var serializeRules = __webpack_require__(10).rules;
@@ -33646,8 +33674,8 @@ module.exports = removeDuplicates;
 
 var populateComponents = __webpack_require__(83);
 
-var wrapForOptimizing = __webpack_require__(38).single;
-var restoreFromOptimizing = __webpack_require__(42);
+var wrapForOptimizing = __webpack_require__(39).single;
+var restoreFromOptimizing = __webpack_require__(43);
 
 var Token = __webpack_require__(9);
 
@@ -35060,11 +35088,11 @@ module.exports = fetchFrom;
 
 var http = __webpack_require__(231);
 var https = __webpack_require__(232);
-var url = __webpack_require__(29);
+var url = __webpack_require__(30);
 
 var isHttpResource = __webpack_require__(233);
 var isHttpsResource = __webpack_require__(234);
-var override = __webpack_require__(37);
+var override = __webpack_require__(38);
 
 var HTTP_PROTOCOL = 'http:';
 
@@ -35197,9 +35225,9 @@ module.exports = inlineOptionsFrom;
 /* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var url = __webpack_require__(29);
+var url = __webpack_require__(30);
 
-var override = __webpack_require__(37);
+var override = __webpack_require__(38);
 
 function inlineRequestFrom(option) {
   return override(
@@ -35406,7 +35434,7 @@ exports.decode = function (charCode) {
  * http://opensource.org/licenses/BSD-3-Clause
  */
 
-var util = __webpack_require__(43);
+var util = __webpack_require__(44);
 
 /**
  * Determine whether mappingB is after mappingA with respect to generated
@@ -35491,7 +35519,7 @@ exports.MappingList = MappingList;
  * http://opensource.org/licenses/BSD-3-Clause
  */
 
-var util = __webpack_require__(43);
+var util = __webpack_require__(44);
 var binarySearch = __webpack_require__(244);
 var ArraySet = __webpack_require__(113).ArraySet;
 var base64VLQ = __webpack_require__(112);
@@ -36880,7 +36908,7 @@ exports.quickSort = function (ary, comparator) {
  */
 
 var SourceMapGenerator = __webpack_require__(111).SourceMapGenerator;
-var util = __webpack_require__(43);
+var util = __webpack_require__(44);
 
 // Matches a Windows-style `\r\n` newline or a `\n` newline used by all other
 // operating systems these days (capturing the result).
@@ -37291,7 +37319,7 @@ exports.SourceNode = SourceNode;
 /* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(28);
+var fs = __webpack_require__(29);
 var path = __webpack_require__(6);
 
 var applySourceMaps = __webpack_require__(248);
@@ -37306,10 +37334,10 @@ var restoreImport = __webpack_require__(117);
 
 var tokenize = __webpack_require__(255);
 var Token = __webpack_require__(9);
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 var hasProtocol = __webpack_require__(56);
 var isImport = __webpack_require__(118);
-var isRemoteResource = __webpack_require__(44);
+var isRemoteResource = __webpack_require__(45);
 
 var UNKNOWN_URI = 'uri:unknown';
 
@@ -37638,7 +37666,7 @@ module.exports = readSources;
 /* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(28);
+var fs = __webpack_require__(29);
 var path = __webpack_require__(6);
 
 var isAllowedResource = __webpack_require__(86);
@@ -37649,7 +37677,7 @@ var rebaseRemoteMap = __webpack_require__(115);
 var Token = __webpack_require__(9);
 var hasProtocol = __webpack_require__(56);
 var isDataUriResource = __webpack_require__(250);
-var isRemoteResource = __webpack_require__(44);
+var isRemoteResource = __webpack_require__(45);
 
 var MAP_MARKER_PATTERN = /^\/\*# sourceMappingURL=(\S+) \*\/$/;
 
@@ -37915,13 +37943,13 @@ module.exports = isDataUriResource;
 /* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(28);
+var fs = __webpack_require__(29);
 var path = __webpack_require__(6);
 
 var isAllowedResource = __webpack_require__(86);
 
 var hasProtocol = __webpack_require__(56);
-var isRemoteResource = __webpack_require__(44);
+var isRemoteResource = __webpack_require__(45);
 
 function loadOriginalSources(context, callback) {
   var loadContext = {
@@ -38169,7 +38197,7 @@ module.exports = rebase;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(6);
-var url = __webpack_require__(29);
+var url = __webpack_require__(30);
 
 var DOUBLE_QUOTE = '"';
 var SINGLE_QUOTE = '\'';
@@ -38292,7 +38320,7 @@ module.exports = rewriteUrl;
 /* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Marker = __webpack_require__(14);
+var Marker = __webpack_require__(15);
 var Token = __webpack_require__(9);
 
 var formatPosition = __webpack_require__(51);
@@ -38928,7 +38956,7 @@ module.exports = serializeStyles;
 var SourceMapGenerator = __webpack_require__(110).SourceMapGenerator;
 var all = __webpack_require__(82).all;
 
-var isRemoteResource = __webpack_require__(44);
+var isRemoteResource = __webpack_require__(45);
 
 var isWindows = process.platform == 'win32';
 
@@ -40655,7 +40683,7 @@ module.exports = parseQuery;
 "use strict";
 
 
-var _parseUrl = __webpack_require__(29).parse;
+var _parseUrl = __webpack_require__(30).parse;
 
 
 
@@ -41266,7 +41294,7 @@ exports.decode = function (charCode) {
  * http://opensource.org/licenses/BSD-3-Clause
  */
 
-var util = __webpack_require__(45);
+var util = __webpack_require__(46);
 
 /**
  * Determine whether mappingB is after mappingA with respect to generated
@@ -41351,7 +41379,7 @@ exports.MappingList = MappingList;
  * http://opensource.org/licenses/BSD-3-Clause
  */
 
-var util = __webpack_require__(45);
+var util = __webpack_require__(46);
 var binarySearch = __webpack_require__(281);
 var ArraySet = __webpack_require__(123).ArraySet;
 var base64VLQ = __webpack_require__(122);
@@ -42740,7 +42768,7 @@ exports.quickSort = function (ary, comparator) {
  */
 
 var SourceMapGenerator = __webpack_require__(121).SourceMapGenerator;
-var util = __webpack_require__(45);
+var util = __webpack_require__(46);
 
 // Matches a Windows-style `\r\n` newline or a `\n` newline used by all other
 // operating systems these days (capturing the result).
@@ -43988,7 +44016,7 @@ module.exports = function (size) {
 const fs = __webpack_require__(12)
 const path = __webpack_require__(6)
 const mkdirp = __webpack_require__(20).mkdirs
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 const utimes = __webpack_require__(128).utimesMillis
 const stat = __webpack_require__(57)
 
@@ -44204,7 +44232,7 @@ module.exports = copy
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const fs = __webpack_require__(12)
 const path = __webpack_require__(6)
 const mkdir = __webpack_require__(20)
@@ -44610,11 +44638,11 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const path = __webpack_require__(6)
 const fs = __webpack_require__(12)
 const mkdir = __webpack_require__(20)
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 
 function createFile (file, callback) {
   function makeFile () {
@@ -44666,11 +44694,11 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const path = __webpack_require__(6)
 const fs = __webpack_require__(12)
 const mkdir = __webpack_require__(20)
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 
 function createLink (srcpath, dstpath, callback) {
   function makeLink (srcpath, dstpath) {
@@ -44734,7 +44762,7 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const path = __webpack_require__(6)
 const fs = __webpack_require__(12)
 const _mkdirs = __webpack_require__(20)
@@ -44749,7 +44777,7 @@ const _symlinkType = __webpack_require__(301)
 const symlinkType = _symlinkType.symlinkType
 const symlinkTypeSync = _symlinkType.symlinkTypeSync
 
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 
 function createSymlink (srcpath, dstpath, type, callback) {
   callback = (typeof type === 'function') ? type : callback
@@ -44806,7 +44834,7 @@ module.exports = {
 
 const path = __webpack_require__(6)
 const fs = __webpack_require__(12)
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 
 /**
  * Function that returns two types of paths, one relative to symlink, and one
@@ -44948,7 +44976,7 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const jsonFile = __webpack_require__(89)
 
 jsonFile.outputJson = u(__webpack_require__(304))
@@ -44972,7 +45000,7 @@ var _fs
 try {
   _fs = __webpack_require__(12)
 } catch (_) {
-  _fs = __webpack_require__(28)
+  _fs = __webpack_require__(29)
 }
 
 function readFile (file, options, callback) {
@@ -45113,7 +45141,7 @@ module.exports = jsonfile
 
 const path = __webpack_require__(6)
 const mkdir = __webpack_require__(20)
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 const jsonFile = __webpack_require__(89)
 
 function outputJson (file, data, options, callback) {
@@ -45236,7 +45264,7 @@ module.exports = moveSync
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 module.exports = {
   move: u(__webpack_require__(309))
 }
@@ -45254,7 +45282,7 @@ const path = __webpack_require__(6)
 const copy = __webpack_require__(129).copy
 const remove = __webpack_require__(58).remove
 const mkdirp = __webpack_require__(20).mkdirp
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 const stat = __webpack_require__(57)
 
 function move (src, dest, opts, cb) {
@@ -45321,11 +45349,11 @@ module.exports = move
 "use strict";
 
 
-const u = __webpack_require__(16).fromCallback
+const u = __webpack_require__(17).fromCallback
 const fs = __webpack_require__(12)
 const path = __webpack_require__(6)
 const mkdir = __webpack_require__(20)
-const pathExists = __webpack_require__(23).pathExists
+const pathExists = __webpack_require__(24).pathExists
 
 function outputFile (file, data, encoding, callback) {
   if (typeof encoding === 'function') {
@@ -45865,8 +45893,8 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var prism_react_renderer_prism__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
-/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
+/* harmony import */ var prism_react_renderer_prism__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(40);
+/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(33);
 /* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _generated_docusaurus_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72);
 /**
@@ -46448,7 +46476,7 @@ var Helmet = __webpack_require__(60);
 var lib = __webpack_require__(163);
 
 // EXTERNAL MODULE: ./node_modules/react-loadable/lib/index.js
-var react_loadable_lib = __webpack_require__(46);
+var react_loadable_lib = __webpack_require__(47);
 var react_loadable_lib_default = /*#__PURE__*/__webpack_require__.n(react_loadable_lib);
 
 // EXTERNAL MODULE: ./node_modules/html-minifier-terser/src/htmlminifier.js

@@ -15,7 +15,7 @@ Nude Buttons contain important action but it emphasised lower than primary butto
 ### Structure
 Nude Button only consists of text and doesn’t have background
 
-<img src='../static/img/button-nude-example.svg' alt=''/>
+<img src='/img/button-nude-example.svg' alt=''/>
 
 ### Code
 ```jsx
@@ -35,7 +35,7 @@ Nude Button only consists of text and doesn’t have background
 Filled Buttons are the highest emphasis button among any other buttons because it has color fill that can draw user attention and used for primary actions.
 
 ### Structure
-<img src='../static/img/button-filled-example.svg' alt=''/>
+<img src='/img/button-filled-example.svg' alt=''/>
 
 ### Code
 ```jsx

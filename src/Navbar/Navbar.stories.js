@@ -6,6 +6,8 @@ import Nav from "./Nav"
 
 import LogoMobile from "./assets/logo_mobile.svg"
 import LogoDesktop from "./assets/logo_desktop.svg"
+import ToggleClose from "./assets/toggle_close.svg"
+import ToggleOpen from "./assets/toggle_open.svg"
 
 storiesOf("Navbar").add("Navbar", () => {
   const [show, setShow] = useState(false)
@@ -20,7 +22,10 @@ storiesOf("Navbar").add("Navbar", () => {
           <img src={LogoDesktop} style={{ width: "150px" }} />
         </div>
       </Navbar.Brand>
-      <Navbar.Toggle setShow={setShow} />
+      <Navbar.Toggle setShow={setShow}>
+        <img src={ToggleOpen} alt="toggle open" open />
+        <img src={ToggleClose} alt="toggle close" close />
+      </Navbar.Toggle>
       <Navbar.Collapse show={show}>
         <Nav>
           <Nav.Link href="#" active>

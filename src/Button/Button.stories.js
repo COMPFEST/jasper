@@ -14,6 +14,10 @@ storiesOf("Button").add("Bold", () => (
   <Button className="bold">Hello Bold</Button>
 ))
 
+storiesOf("Button").add("Nude", () => (
+  <Button className="nude">Hello Bold</Button>
+))
+
 storiesOf("Button").add("Href", () => (
   <Button href="https://www.compfest.id/">Hello Href</Button>
 ))

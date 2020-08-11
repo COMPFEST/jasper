@@ -65,10 +65,10 @@ const Navbar = ({ children }) => {
     const setShow = toggle.props?.setShow || function() {}
 
     const toggleChild = toggle.props.children
+    if (!toggleChild) return
+
     const toggleOpen = toggleChild.filter((t) => t.props?.open)[0]
     const toggleClose = toggleChild.filter((t) => t.props?.close)[0]
-
-    if (!toggleChild) return
 
     return (
       <div className={styles.toggle} onClick={() => setShow((prev) => !prev)}>

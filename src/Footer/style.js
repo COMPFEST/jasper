@@ -1,219 +1,143 @@
 import styled from "styled-components"
 
 export const FooterContainer = styled.div`
-  margin-top: 53px;
-  background-color: #302858;
+  background-color: #131313;
   height: 240px;
+  padding: 3rem 7rem;
   display: flex;
   flex-direction: column;
   color: white;
+  font-family: "DM Sans", "itc";
 
-  p {
-    font-family: "itc";
+  #ft-left {
+    max-width: 40%;
   }
 
-  #footer-top {
-    height: 80%;
+  div.row {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
   }
 
-  #left,
-  #right {
+  div.column {
     display: flex;
-    flex-grow: 1;
-  }
-
-  #left {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  }
+
+  .ft-section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .slogan {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    margin-top: .5rem;
+  }
+
+  .deskripsi-singkat {
+    line-height: 1.5;
+  }
+
+  .separator {
+    /* border: 0.4px solid white; */
+    margin: 1.5rem 0;
+  }
+
+  #copyright {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  #footer-link > a {
+    margin-right: 1rem;
   }
 
   #socmed {
-    margin-top: 36px;
     display: flex;
-  }
-
-  #fb {
-    height: 25px;
-    width: 25px;
-    margin-right: 22px;
-  }
-
-  #tw {
-    width: 30px;
-    height: 25px;
-    margin-right: 22px;
-  }
-
-  #yb {
-    width: 32px;
-    height: 23px;
-    margin-right: 22px;
-  }
-
-  #ig,
-  #ln {
-    width: 23px;
-    height: 23px;
-    margin-right: 22px;
-  }
-
-  #in {
-    width: 23px;
-    height: 22px;
-  }
-
-  #right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  #top {
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  #bottom {
-    margin-top: 21px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  #bottom > div {
-    margin-right: 36px;
-  }
-
-  #bottom > div > a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-  }
-
-  .link {
-    margin-bottom: 19px;
-  }
-
-  .link-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .link-container p {
-    font-size: 16px;
-  }
-
-  #logo {
-    width: 161px;
-    height: 30px;
-  }
-
-  #footer-bottom {
-    height: 20%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: auto;
-
-    #footer-top {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: auto;
-    }
-
-    #left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 24px;
-    }
-
-    #logo {
-      margin-bottom: 10px;
-    }
-
-    #right {
-      width: 100%;
-      margin-top: 24px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #socmed {
-      margin-top: 21px;
-      display: flex;
-      margin-bottom: 40px;
-    }
-
+    margin-bottom: 1.5rem;
     #fb {
-      height: 17px;
-      width: 16px;
-      padding-right: 10px;
+      height: 25px;
+      width: 25px;
+      margin-right: 22px;
     }
 
     #tw {
-      width: 20px;
-      height: 16px;
-      padding-right: 10px;
+      width: 30px;
+      height: 25px;
+      margin-right: 22px;
     }
 
     #yb {
-      width: 21px;
-      height: 15px;
-      padding-right: 10px;
+      width: 32px;
+      height: 23px;
+      margin-right: 22px;
     }
 
     #ig,
     #ln {
-      width: 15px;
-      height: 15px;
-      padding-right: 10px;
+      width: 23px;
+      height: 23px;
+      margin-right: 22px;
     }
 
     #in {
-      width: 15px;
-      height: 15px;
-      padding-right: 10px;
+      width: 23px;
+      height: 22px;
     }
+  }
 
-    #bottom > div > a {
-      text-decoration: none;
-      color: white;
-    }
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 2rem 2rem;
+    text-align: center;
 
-    #bottom {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    #bottom > div {
-      margin-right: 0px;
-    }
-
-    .container-right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    div.row,
+    div.column {
       flex-direction: column;
+      align-items: center;
     }
 
-    #footer-bottom {
-      margin-top: 40px;
-      padding: 10px 0px;
+    #ft-left {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    #socmed {
+      margin-bottom: 2.5rem;
+      #fb {
+        height: 17px;
+        width: 16px;
+        padding-right: 5px;
+      }
+
+      #tw {
+        width: 20px;
+        height: 16px;
+        padding-right: 5px;
+      }
+
+      #yb {
+        width: 21px;
+        height: 15px;
+        padding-right: 5px;
+      }
+
+      #ig,
+      #ln {
+        width: 15px;
+        height: 15px;
+        padding-right: 5px;
+      }
+
+      #in {
+        width: 15px;
+        height: 15px;
+        padding-right: 5px;
+      }
     }
   }
 `

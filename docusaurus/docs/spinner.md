@@ -141,9 +141,9 @@ Spinner can also be used with buttons. To use this component out-of-the-box you 
 import { Spinner } from 'jasper-ui'
 ```
 
-|  Name  |   Type   |  Default  |         Description           |
-|-------------|----------|-----------|-------------------------------|
-| `variant`   | `String` | `default` | Customize Spinner theme between `default` and `regular` |
-| `size`      | `String` | `md`      | Specify the size of Spinner using `xs`, `sm`, `md`, `lg`, or `xl`. |
-| `speed`     | `String` | `normal`  | Speed up or slow down Spinner rotating speed using `slow`, `normal`, or `fast` |
-| `animation` | `String` | `linear`  | Change Spinner animation type.<br/><br/>Spinner may use one of a variety of animation variants such as:<br/>`linear`, `ease`, `bouncy`. |
+|     Name     |   Type   |  Default  |                                                           Description                                                                   |
+|--------------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| `variant`    | `String` | `default` | Customize Spinner theme between `default` and `regular`                                                                                 |
+| `size`       | `String` | `md`      | Specify the size of Spinner using `xs`, `sm`, `md`, `lg`, or `xl`.                                                                      |
+| `speed`      | `String` | `normal`  | Speed up or slow down Spinner rotating speed using `slow`, `normal`, or `fast`                                                          |
+| `animation`  | `String` | `linear`  | Change Spinner animation type.<br/><br/>Spinner may use one of a variety of animation variants such as:<br/>`linear`, `ease`, `bouncy`. |

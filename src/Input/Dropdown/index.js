@@ -28,7 +28,7 @@ const ArrowDropdown = ({ active }) => (
   </svg>
 )
 
-const Dropdown = ({ field, form: { setFieldValue }, ...props }) => {
+const Dropdown = ({ field, form, ...props }) => {
   const [show, setShow] = useState(false)
   const [value, setValue] = useState(props.placeholder)
 
@@ -47,7 +47,9 @@ const Dropdown = ({ field, form: { setFieldValue }, ...props }) => {
     }
     setShow(false)
     setValue(e)
-    setFieldValue(field.name, e)
+    if (form) {
+      form.setFieldValue(field.name, e)
+    }
   }
 
   useEffect(() => {
@@ -63,7 +65,9 @@ const Dropdown = ({ field, form: { setFieldValue }, ...props }) => {
   }, [show])
 
   useEffect(() => {
-    setFieldValue(field.name, value)
+    if (form) {
+      form.setFieldValue(field.name, value)
+    }
   }, [props.defaultValue])
 
   return (

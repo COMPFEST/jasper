@@ -3,7 +3,8 @@ import { SubscribeFormContainer } from "./style"
 
 const SubscribeForm = () => {
   const [email, setEmail] = useState("")
-  const [isLoading, setLoading] = useState(false)
+  // const [isLoading, setLoading] = useState(false)
+  const isLoading = false
 
   return (
     <SubscribeFormContainer>
@@ -14,12 +15,11 @@ const SubscribeForm = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      { isLoading ?
-      <button className="subscribe-button disabled">Loading..</button>
-        :
-      <button type="submit" className="subscribe-button">
+      { isLoading
+        ? <button className="subscribe-button disabled">Loading..</button>
+        : <button type="submit" className="subscribe-button">
         Subscribe
-      </button>
+        </button>
       }
     </SubscribeFormContainer>
   )

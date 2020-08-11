@@ -7,9 +7,6 @@ import findByType from "../utils/findByType"
 import useGetWindowWidth from "../utils/useGetWindowWidth"
 import { BREAKPOINT } from "../utils/variables"
 
-import ToggleClose from "./assets/toggle_close.svg"
-import ToggleOpen from "./assets/toggle_open.svg"
-
 const Brand = () => null
 const Collapse = () => null
 const Toggle = () => null
@@ -67,11 +64,15 @@ const Navbar = ({ children }) => {
     const toggle = findByType(children, Toggle)[0]
     const setShow = toggle.props?.setShow || function() {}
 
-    if (!toggle) return
+    const toggleChild = toggle.props.children
+    if (!toggleChild) return
+
+    const toggleOpen = toggleChild.filter((t) => t.props?.open)[0]
+    const toggleClose = toggleChild.filter((t) => t.props?.close)[0]
 
     return (
       <div className={styles.toggle} onClick={() => setShow((prev) => !prev)}>
-        {show ? <img src={ToggleClose} /> : <img src={ToggleOpen} />}
+        {show ? toggleClose : toggleOpen}
       </div>
     )
   }

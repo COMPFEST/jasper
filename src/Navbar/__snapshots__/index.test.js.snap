@@ -24,14 +24,6 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
         </a>
-        <div
-          className="toggle"
-          onClick={[Function]}
-        >
-          <img
-            src="toggle_open.svg"
-          />
-        </div>
       </div>
     </div>
     <div

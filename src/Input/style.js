@@ -4,21 +4,21 @@ import { Field } from "formik"
 export const BaseInput = styled(Field)`
   width: calc(100% - 34px);
   padding: 10px 15px;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
   background-color: transparent;
-  border: 2px solid ${(props) => props.theme.colors.primary};
+  border: 2px solid ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
   border-radius: 5px;
   font-family: inherit;
 
   &::placeholder {
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
     opacity: 0.5;
   }
 `
 
 export const RadioSpan = styled.span`
   display: block;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
 
   &:before {
     content: "";
@@ -27,10 +27,10 @@ export const RadioSpan = styled.span`
     height: 1.2rem;
     vertical-align: -0.25rem;
     border-radius: 1.2rem;
-    border: 1px solid ${(props) => props.theme.colors.primary};
+    border: 1px solid ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
     margin-right: 0.6rem;
     transition: background 0.2s ease;
-    box-shadow: inset 0 0 0 0.3rem ${(props) => props.theme.colors.background};
+    box-shadow: inset 0 0 0 0.3rem ${(props) => props.theme.colors.background ? props.theme.colors.background : "#000"};
   }
 `
 
@@ -44,14 +44,14 @@ export const RadioButton = styled(Field)`
   width: 1px;
 
   &:checked + ${RadioSpan}:before {
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
   }
 `
 
 export const PhoneSpan = styled.span`
   position: absolute;
   margin: 15px;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
 
   &:after {
     content: "";
@@ -61,12 +61,12 @@ export const PhoneSpan = styled.span`
     left: 2.5rem;
     width: 1px;
     height: calc(1rem + 10px);
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
   }
 `
 
 export const CheckboxLabel = styled.label`
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
   display: block;
   position: relative;
   padding-left: 35px;
@@ -92,7 +92,7 @@ export const CheckboxLabel = styled.label`
     left: 0;
     height: 20px;
     width: 20px;
-    border: 1px solid ${(props) => props.theme.colors.primary};
+    border: 1px solid ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
     border-radius: 2px;
   }
 
@@ -103,7 +103,7 @@ export const CheckboxLabel = styled.label`
 
   /* When the checkbox is checked, add a blue background */
   input:checked ~ .checkmark {
-    background-color: ${(props) => props.theme.colors.primary};
+    background-color: ${(props) => props.theme.colors.primary ? props.theme.colors.primary : "#f3f3f3"};
   }
 
   /* Style the checkmark/indicator */
@@ -115,7 +115,7 @@ export const CheckboxLabel = styled.label`
     top: 3px;
     width: 5px;
     height: 10px;
-    border: solid ${(props) => props.theme.colors.background};
+    border: solid ${(props) => props.theme.colors.background ? props.theme.colors.background : "#000"};
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }

@@ -24,7 +24,7 @@ export const MyStyle = styled.div`
     width: 80%;
     padding-bottom: 30px;
     font-size: 20px;
-    color: white;
+    color: ${props => props.theme.font.color ? props.theme.font.color : "#fff"};
   }
 
   button {
@@ -34,6 +34,6 @@ export const MyStyle = styled.div`
 
   button:nth-of-type(1) {
     background: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid ${props => props.theme.colors.primary ? props.theme.colors.primary : "#f4f4f4"};
   }
 `

@@ -1,8 +1,8 @@
 module.exports = {
   someSidebar: {
-    'Getting Started': ['installation', 'doc2'],
-    'Visual Language': ['color'],
-    Layout: ['doc3'],
-    Components: ['button', 'card', 'alert-box'],
-  },
+    "Getting Started": ["installation"],
+    "Visual Language": ["color"],
+    Layout: ["doc3"],
+    Components: ["button", "card", "alert-box"]
+  }
 }

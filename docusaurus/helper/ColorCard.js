@@ -4,6 +4,14 @@ import styled from "styled-components"
 const Container = styled.div`
   border-radius: 10px;
   width: 188px;
+
+  h3 {
+    color: #000000;
+  }
+
+  p {
+    color: #000000;
+  }
 `
 
 const Color = styled.div`

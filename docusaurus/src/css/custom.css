@@ -102,6 +102,34 @@ strong {
   line-height: 140%;
 }
 
+a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 140%;
+}
+
+.menu__link {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menu .menu__link {
+  margin-bottom: 24px;
+}
+
+.link__parent {
+  font-family: "itc", sans-serif;
+  font-size: 0.875rem;
+}
+
+.link__child {
+  font-size: 0.875rem;
+}
+
+.contents .contents__link {
+  margin-bottom: 12px;
+}
+
 :root {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);

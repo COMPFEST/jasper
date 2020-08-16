@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'COMPFEST',
   projectName: 'jasper',
+  plugins: ['font-loader'],
   themeConfig: {
     navbar: {
       title: 'Jasper',

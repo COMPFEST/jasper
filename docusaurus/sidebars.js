@@ -2,6 +2,7 @@ module.exports = {
   someSidebar: {
     'Getting Started': ['installation', 'doc2'],
     Layout: ['doc3'],
-    Components: ['button', 'card', 'alert-box', 'form-fields'],
+    Components: ['alert-box', 'button', 'card', 'form-fields', 'small-nav'],
+    Info: ['about']
   },
 }

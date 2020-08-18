@@ -6,5 +6,6 @@ import SmallNav from "./SmallNav"
 import Navbar from "./Navbar"
 import Dropdown from "./Input/Dropdown"
 import Footer from "./Footer"
+import Spinner from "./Spinner"
 
-export { Button, AlertBox, Card, Input, SmallNav, Navbar, Footer, Dropdown }
+export { Button, AlertBox, Card, Input, SmallNav, Navbar, Footer, Dropdown, Spinner }

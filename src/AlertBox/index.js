@@ -4,14 +4,15 @@ import Button from "../Button"
 import { MyStyle } from "./style"
 
 const AlertBox = props => {
+  const { message, cancel, proceed, ...other } = props
   return (
-    <MyStyle>
+    <MyStyle {...other}>
       <div className="container">
         <div className="info-message">
-          {props.message}
+          {message}
         </div>
-        <Button onClick={props.cancel}>Cancel</Button>
-        <Button onClick={props.proceed}>Proceed</Button>
+        <Button onClick={cancel}>Cancel</Button>
+        <Button onClick={proceed}>Proceed</Button>
       </div>
     </MyStyle>
   )

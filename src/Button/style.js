@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledButton = styled.button`
-  background: ${props => props.theme.colors.primary ? props.theme.colors.primary : "linear-gradient(111.34deg, #D418B6 0%, #F1185E 100%)"};
+  background: linear-gradient(111.34deg, #D418B6 0%, #F1185E 100%);
   border-radius: 100px;
   border: none;
   padding: 12px 22px;
@@ -11,9 +11,9 @@ export const StyledButton = styled.button`
 
   &.secondary {
     background: transparent;
-    border: 2px solid #f4f4f4;
+    border: 2px solid #FF008B;
     padding: 10px 20px;
-    color: white;
+    color: #FF008B;
   }
 
   &.nude {

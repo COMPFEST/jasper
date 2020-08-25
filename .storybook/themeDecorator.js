@@ -11,10 +11,8 @@ const defaulTheme = {
 const testTheme = {
   colors: {
     primary:undefined,
+    secondary:undefined,
     background:undefined,
-  },
-  font: {
-    color:undefined
   }
 }
 

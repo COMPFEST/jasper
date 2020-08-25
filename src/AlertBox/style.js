@@ -8,7 +8,7 @@ export const MyStyle = styled.div`
   display: flex;
   position: fixed;
   z-index: 1000;
-  background-color: #14062f;
+  background-color: ${props => props.theme.colors.background ? props.theme.colors.background : "#000"};
   overflow: hidden;
   padding-bottom: 500px;
 
@@ -24,7 +24,7 @@ export const MyStyle = styled.div`
     width: 80%;
     padding-bottom: 30px;
     font-size: 20px;
-    color: ${props => props.theme.font.color ? props.theme.font.color : "#fff"};
+    color: #fff;
   }
 
   button {
@@ -34,6 +34,6 @@ export const MyStyle = styled.div`
 
   button:nth-of-type(1) {
     background: transparent;
-    border: 1px solid ${props => props.theme.colors.primary ? props.theme.colors.primary : "#f4f4f4"};
+    border: 1px solid #f4f4f4;
   }
 `

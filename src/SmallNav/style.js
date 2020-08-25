@@ -9,7 +9,7 @@ const Style = styled.div`
     justify-content: center;
     font-size: 1.2rem;
     overflow-x: auto;
-    color: ${props => props.theme.font.color ? props.theme.font.color : "white"};
+    color: white;
   }
 
   .small-nav div {

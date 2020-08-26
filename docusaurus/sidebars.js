@@ -8,7 +8,8 @@ module.exports = {
       "card",
       "footer",
       "form-fields",
-      "small-nav"
+      "small-nav",
+      "carousel"
     ],
     Info: ["about"]
   }

@@ -8,7 +8,17 @@ export const MyStyle = styled.div`
   display: flex;
   position: fixed;
   z-index: 1000;
-  background-color: ${props => props.theme.colors.background ? props.theme.colors.background : "#000"};
+  background-color: ${props => {
+    try {
+      if (props.theme.colors.background) {
+        return props.theme.colors.background
+      } else {
+        throw new Error("background color not defined")
+      }
+    } catch (error) {
+        return "#000"
+    }
+  }};
   overflow: hidden;
   padding-bottom: 500px;
 
@@ -34,6 +44,6 @@ export const MyStyle = styled.div`
 
   button:nth-of-type(1) {
     background: transparent;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #f3f3f3;
   }
 `

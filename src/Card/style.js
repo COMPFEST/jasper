@@ -6,7 +6,17 @@ const Style = styled.div`
   }
 
   #card-body {
-    background: ${props => props.theme.colors.secondary ? props.theme.colors.secondary : "#131313"};
+    background: ${props => {
+      try {
+        if (props.theme.colors.secondary) {
+          return props.theme.colors.secondary
+        } else {
+          throw new Error("secondary color not defined")
+        }
+      } catch (error) {
+        return "#131313"
+      }
+    }};
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }

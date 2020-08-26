@@ -13,6 +13,7 @@ const testTheme = {
     primary:undefined,
     secondary:undefined,
     background:undefined,
+    inputColor:undefined,
   }
 }
 

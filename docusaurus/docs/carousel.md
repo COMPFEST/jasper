@@ -1,6 +1,6 @@
 ---
 id: carousel
-title: carousel
+title: Carousel
 ---
 
 import { Carousel, Button, Card } from 'jasper-ui'
@@ -25,15 +25,6 @@ const content3 = "/img/carousel-card-img.png"
 ```
 
 ### Result
-const content1 = "/img/carousel-card-img.png"
-const content2 = "/img/carousel-card-img.png"
-const content3 = "/img/carousel-card-img.png"
-
-<Carousel>
-<div className="first-content" style={{ color: "blue" }}>{ content1 }</div>
-<div className="second-content" style={{ color: "yellow" }}>{ content2 }</div>
-<div className="third-content" style={{ color: "red" }}>{ content3 }</div>
-</Carousel>
 
 ### Props
 

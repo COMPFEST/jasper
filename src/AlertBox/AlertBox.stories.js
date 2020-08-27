@@ -11,5 +11,5 @@ const alertCancel = () => {
 }
 
 storiesOf("AlertBox").add("Default", () => (
-  <AlertBox message={alertMessage} cancel={alertCancel} proceed={alertProceed} />
+  <AlertBox className="testing" message={alertMessage} cancel={alertCancel} proceed={alertProceed} />
 ))

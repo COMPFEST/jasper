@@ -6,7 +6,17 @@ const Style = styled.div`
   }
 
   #card-body {
-    background: #F3F3F3;
+    background: ${props => {
+      try {
+        if (props.theme.colors.secondary) {
+          return props.theme.colors.secondary
+        } else {
+          throw new Error("secondary color not defined")
+        }
+      } catch (error) {
+        return "#131313"
+      }
+    }};
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }
@@ -23,7 +33,7 @@ const Style = styled.div`
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color: #fff;
     margin: 0;
   }
 
@@ -32,7 +42,7 @@ const Style = styled.div`
     font-weight: normal;
     font-size: 13px;
     line-height: 177%;
-    color: #000000;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -62,6 +72,7 @@ const Style = styled.div`
     }
 
     #body {
+      color:#fff;
       padding: 32px 0;
     }
 
@@ -77,6 +88,7 @@ const Style = styled.div`
   #article-card {
     width: 30rem;
     & #card-body {
+      color:#fff;
       padding: 24px;
     }
 

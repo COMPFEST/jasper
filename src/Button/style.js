@@ -1,7 +1,17 @@
 import styled from "styled-components"
 
 export const StyledButton = styled.button`
-  background: linear-gradient(111.34deg, #D418B6 0%, #F1185E 100%);
+  background: ${props => {
+    try {
+      if (props.theme.colors.primary) {
+        return props.theme.colors.primary
+      } else {
+        throw new Error("primary-undefined")
+      }
+    } catch (err) {
+      return "linear-gradient(111.34deg, #D418B6 0%, #F1185E 100%)"
+    }
+  }};
   border-radius: 100px;
   border: none;
   padding: 12px 22px;

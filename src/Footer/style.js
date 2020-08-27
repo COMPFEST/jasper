@@ -1,7 +1,17 @@
 import styled from "styled-components"
 
 export const FooterContainer = styled.div`
-  background-color: #131313;
+  background-color: ${props => {
+    try {
+      if (props.theme.colors.secondary) {
+        return props.theme.colors.secondary
+      } else {
+        throw new Error("secondary color not defined")
+      }
+    } catch (error) {
+      return "#131313"
+    }
+  }};
   height: 240px;
   padding: 3rem 7rem;
   display: flex;

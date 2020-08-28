@@ -3,9 +3,6 @@ import EmblaCarouselReact from "embla-carousel-react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
-import next from "./static/carousel_next.svg"
-import prev from "./static/carousel_prev.svg"
-
 import "./carousel.css"
 
 const CarouselStyle = styled.div`

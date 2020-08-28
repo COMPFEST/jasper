@@ -17,14 +17,25 @@ const content1 = "/img/carousel-card-img.png"
 const content2 = "/img/carousel-card-img.png"
 const content3 = "/img/carousel-card-img.png"
 
-<Carousel>
-<div className="first-content" style={{ color: "blue" }}>{ content1 }</div>
-<div className="second-content" style={{ color: "yellow" }}>{ content2 }</div>
-<div className="third-content" style={{ color: "red" }}>{ content3 }</div>
+<Carousel
+    prevButton={(<img src="/img/carousel-prev.svg" alt="prev button"/>)}
+    nextButton={(<img src="/img/carousel-next.svg" alt="next button"/>)}
+>
+<div className="first-content" style={{ color: "blue" }}><img src={content1} alt="content 1" /></div>
+<div className="second-content" style={{ color: "yellow" }}><img src={content2} alt="content 2"/></div>
+<div className="third-content" style={{ color: "red" }}><img src={content3} alt="content 3"/></div>
 </Carousel>
 ```
 
 ### Result
+<Carousel
+    prevButton={(<img src="/img/carousel_prev.svg" alt="prev button"/>)}
+    nextButton={(<img src="/img/carousel_next.svg" alt="next button"/>)}
+>
+<div className="first-content" style={{ color: "blue" }}>tes</div>
+<div className="second-content" style={{ color: "yellow" }}>tes</div>
+<div className="third-content" style={{ color: "red" }}>tes</div>
+</Carousel>
 
 ### Props
 

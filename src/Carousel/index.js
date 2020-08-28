@@ -3,9 +3,6 @@ import EmblaCarouselReact from "embla-carousel-react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
-import next from "./static/carousel_next.svg"
-import prev from "./static/carousel_prev.svg"
-
 import "./carousel.css"
 
 const CarouselStyle = styled.div`
@@ -22,7 +19,7 @@ const NavButtonContainer = styled.div`
     height: 75px;
   }
 `
-const NavigateButton = styled.img`
+const NavigateButton = styled.div`
   position: absolute;
   top: 50%;
   cursor: pointer;
@@ -93,7 +90,8 @@ const DotButton = styled.div`
   ${props => (props.selected ? `width: 32px; background-color: #A70660;` : ``)}
 `
 
-const Carousel = ({ children }) => {
+const Carousel = (props) => {
+  const { children, prevButton, nextButton } = props
   const [embla, setEmbla] = useState(null)
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(true)
   const [nextBtnEnabled, setNextBtnEnabled] = useState(true)
@@ -162,14 +160,16 @@ const Carousel = ({ children }) => {
       <NavButtonContainer>
         <NavigateButton
           className={`prev-dept ${prevBtnEnabled ? " enabled" : ""}`}
-          src={prev}
           onClick={scrollPrev}
-        />
+        >
+          {prevButton}
+        </NavigateButton>
         <NavigateButton
           className={`next-dept ${nextBtnEnabled ? " enabled" : ""}`}
-          src={next}
           onClick={scrollNext}
-        />
+        >
+          {nextButton}
+        </NavigateButton>
       </NavButtonContainer>
     </CarouselStyle>
   )
@@ -177,6 +177,8 @@ const Carousel = ({ children }) => {
 
 Carousel.propTypes = {
   children: PropTypes.array,
+  prevButton: PropTypes.node.isRequired,
+  nextButton: PropTypes.node.isRequired,
 }
 
 export default Carousel

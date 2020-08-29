@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const CarouselStyle = styled.div`
   position: relative;
-  margin: 50px 0;
   .testimony_carousel__viewport {
     width: 100%;
     overflow: hidden;
@@ -75,14 +74,15 @@ export const NavigateButton = styled.div`
 
     &:not(.enabled) {
       width: 0px;
+      height:0px;
     }
 
-    &.next-dept {
+    &.next-dept, .prev-dept {
       right: auto;
-    }
-    &.prev-dept {
-      left: auto;
-      transform: initial;
+      transform:initial;
+      img{
+        width:100%;height:100%;
+      }
     }
   }
 `

@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react"
 import Carousel from "."
 
 import next from './static/carousel_next.svg'
-import prev from './static/carousel_prev.svg' 
+import prev from './static/carousel_prev.svg'
 
 const content1 = "First Content"
 const content2 = "Second Content"

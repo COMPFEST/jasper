@@ -2,10 +2,16 @@ import React from "react"
 import { shallow } from "enzyme"
 import Carousel from "."
 
+import next from "./static/carousel_next.svg"
+import prev from "./static/carousel_prev.svg"
+
 describe('Carousel1', () => {
   it("renders correctly", () => {
     const wrapper = shallow(
-      <Carousel>
+      <Carousel
+        prevButton={(<img src={prev} alt="prev button"/>)}
+        nextButton={(<img src={next} alt="next button"/>)}
+      >
         <div className="foo">
           Foo
         </div>

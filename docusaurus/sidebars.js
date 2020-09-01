@@ -6,10 +6,11 @@ module.exports = {
       "alert-box",
       "button",
       "card",
+      "carousel",
       "footer",
       "form-fields",
       "small-nav",
-      "carousel"
+      "spinner"
     ],
     Info: ["about"]
   }

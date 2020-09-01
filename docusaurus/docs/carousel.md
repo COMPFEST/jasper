@@ -32,9 +32,9 @@ const content3 = "/img/carousel-card-img.png"
     prevButton={(<img src="/img/carousel_prev.svg" alt="prev button"/>)}
     nextButton={(<img src="/img/carousel_next.svg" alt="next button"/>)}
 >
-<div className="first-content" style={{ color: "blue" }}>tes</div>
-<div className="second-content" style={{ color: "yellow" }}>tes</div>
-<div className="third-content" style={{ color: "red" }}>tes</div>
+<div className="first-content" style={{ color: "blue" }}>content 1</div>
+<div className="second-content" style={{ color: "yellow" }}>content 2</div>
+<div className="third-content" style={{ color: "red" }}>content 3</div>
 </Carousel>
 
 ### Props

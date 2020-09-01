@@ -3,7 +3,7 @@ id: form-fields
 title: Form Fields
 ---
 
-<!-- import { Input } from "jasper-ui" -->
+import {Input} from "jasper-ui"
 
 Form fields are used in forms where input from user is required. They are part of the django form fields implemented on our web. Typically used for registration, login, and signup.
 
@@ -52,7 +52,7 @@ Text input field is a commonly-defined single-line text field that a user can en
 
 <!-- ### Result
 
-<Input.text name="input-name" placeholder="text placeholder" /> -->
+<Input.Text name="input-name" placeholder="text placeholder"/> -->
 
 ## Radio Input
 
@@ -62,16 +62,30 @@ We add Radio input field to display many options with only one radio can be sele
 
 ### Code
 
+The name parameter must be the same to be detected as one Radio Input.
+
 ```jsx
-<Input.Radio name="name" value="text value">
-  Hello
+<Input.Radio name="name" value="One">
+  One
+</Input.Radio>
+<Input.Radio name="name" value="Two">
+  Two
+</Input.Radio>
+<Input.Radio name="name" value="Three">
+  Three
 </Input.Radio>
 ```
 
 <!-- ### Result
 
-<Input.Radio name="name" value="text value">
-Hello
+<Input.Radio name="name" value="One">
+  One
+</Input.Radio>
+<Input.Radio name="name" value="Two">
+  Two
+</Input.Radio>
+<Input.Radio name="name" value="Three">
+  Three
 </Input.Radio> -->
 
 ## Number Input

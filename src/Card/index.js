@@ -4,9 +4,9 @@ import PropTypes from "prop-types"
 import Style from './style'
 
 const Card = props => {
-  const miniInformationCard = (title, text, linkContent, href) => {
+  const miniInformationCard = ({title, text, linkContent, href, id, ...other}) => {
     return (
-      <div id="mini-information-card">
+      <div id={`mini-information-card`} {...other}>
         <div id="card-body">
           <h1 id="title">{title}</h1>
           <p id="content">{text}</p>
@@ -16,9 +16,9 @@ const Card = props => {
     )
   }
 
-  const largeCard = (title, text, image, miniTitle, buttonTop, buttonBottom) => {
+  const largeCard = ({title, text, image, miniTitle, buttonTop, buttonBottom, id, ...other}) => {
     return (
-      <div id="large-card">
+      <div id="large-card" {...other} >
         <div id="card-body">
           <div id='img-container'>
             <img src={image} alt=''/>
@@ -37,9 +37,9 @@ const Card = props => {
     )
   }
 
-  const articleCard = (title, category, image) => {
+  const articleCard = ({title, category, image, id, ...props}) => {
     return (
-      <div id="article-card">
+      <div id="article-card" {...props}>
         <div id="card-body">
           <div id="img-container">
             <img src={image} alt=''/>
@@ -51,9 +51,9 @@ const Card = props => {
     )
   }
 
-  const carouselCard = (caption, image) => {
+  const carouselCard = ({caption, image, id, ...other}) => {
     return (
-      <div id="carousel-card">
+      <div id="carousel-card" {...other}>
         <div id="card-body">
           <div id="img-container">
             <img src={image} alt='' />
@@ -64,16 +64,16 @@ const Card = props => {
     )
   }
 
-  const renderCardType = props => {
+  const renderCardType = (props) => {
     switch (props.type) {
       case 'large-card':
-        return largeCard(props.title, props.text, props.image, props.miniTitle, props.buttonTop, props.buttonBottom)
+        return largeCard(props)
       case 'article-card':
-        return articleCard(props.title, props.category, props.image)
+        return articleCard(props)
       case 'carousel-card':
-        return carouselCard(props.caption, props.image)
+        return carouselCard(props)
       default:
-        return miniInformationCard(props.title, props.text, props.linkContent, props.href)
+        return miniInformationCard(props)
     }
   }
 

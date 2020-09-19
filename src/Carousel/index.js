@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { CarouselStyle, NavButtonContainer, NavigateButton, DotButton } from "./style"
 
 const Carousel = (props) => {
-  const { children, prevButton, nextButton } = props
+  const { children, prevButton, nextButton, ...other } = props
   const [embla, setEmbla] = useState(null)
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(true)
   const [nextBtnEnabled, setNextBtnEnabled] = useState(true)
@@ -30,7 +30,7 @@ const Carousel = (props) => {
   }, [embla])
 
   return (
-    <CarouselStyle>
+    <CarouselStyle {...other}>
       <div style={{ position: "relative" }}>
         <EmblaCarouselReact
           className="testimony_carousel__viewport"

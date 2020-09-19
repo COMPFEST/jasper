@@ -14,13 +14,13 @@ We use footer to tell user brief information about Compfest and which contact th
 ### Code
 
 ```jsx
-import Facebook from "../static/img/FooterAssets/Facebook.svg"
-import Instagram from "../static/img/FooterAssets/Instagram.svg"
-import Line from "../static/img/FooterAssets/Line.svg"
-import Twitter from "../static/img/FooterAssets/twitter.svg"
-import Linkedin from "../static/img/FooterAssets/LinkedIn.svg"
-import Youtube from "../static/img/FooterAssets/youtube.svg"
-import Compfest from "../static/img/FooterAssets/compfest-white.svg"
+import Facebook from "/img/Facebook.svg"
+import Instagram from "/img/Instagram.svg"
+import Line from "/img/Line.svg"
+import Twitter from "/img/twitter.svg"
+import Linkedin from "/img/LinkedIn.svg"
+import Youtube from "/img/youtube.svg"
+import Compfest from "/img/compfest-white.svg"
 
 <Footer
   Facebook={Facebook}
@@ -35,9 +35,9 @@ import Compfest from "../static/img/FooterAssets/compfest-white.svg"
 
 ### Result
 
-<Footer Facebook="../static/img/FooterAssets/Facebook.svg" Instagram="../static/img/FooterAssets/Instagram.svg" Line="../static/img/FooterAssets/Line.svg" Twitter="../static/img/FooterAssets/twitter.svg" LinkedIn="../static/img/FooterAssets/LinkedIn.svg" Youtube="../static/img/FooterAssets/youtube.svg" Compfest="../static/img/FooterAssets/compfest-white.svg" />
+<Footer Facebook='/img/Facebook.svg' Instagram='/img/Instagram.svg' Line='/img/Line.svg' Twitter='/img/twitter.svg' LinkedIn='/img/LinkedIn.svg' Youtube='/img/youtube.svg' Compfest='/img/compfest-white.svg' />
 
-## Props
+### Props
 
 | Prop name | Type   | Mandatory/Optional | Description                                                                                 |
 | --------- | ------ | ------------------ | ------------------------------------------------------------------------------------------- |

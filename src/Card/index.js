@@ -4,9 +4,9 @@ import PropTypes from "prop-types"
 import Style from './style'
 
 const Card = props => {
-  const miniInformationCard = ({title, text, linkContent, href, id, ...other}) => {
+  const miniInformationCard = ({ title, text, linkContent, href, id, ...other }) => {
     return (
-      <div id={`mini-information-card`} {...other}>
+      <div id="mini-information-card" {...other}>
         <div id="card-body">
           <h1 id="title">{title}</h1>
           <p id="content">{text}</p>
@@ -16,7 +16,7 @@ const Card = props => {
     )
   }
 
-  const largeCard = ({title, text, image, miniTitle, buttonTop, buttonBottom, id, ...other}) => {
+  const largeCard = ({ title, text, image, miniTitle, buttonTop, buttonBottom, id, ...other }) => {
     return (
       <div id="large-card" {...other} >
         <div id="card-body">
@@ -37,7 +37,7 @@ const Card = props => {
     )
   }
 
-  const articleCard = ({title, category, image, id, ...props}) => {
+  const articleCard = ({ title, category, image, id, ...props }) => {
     return (
       <div id="article-card" {...props}>
         <div id="card-body">
@@ -51,7 +51,7 @@ const Card = props => {
     )
   }
 
-  const carouselCard = ({caption, image, id, ...other}) => {
+  const carouselCard = ({ caption, image, id, ...other }) => {
     return (
       <div id="carousel-card" {...other}>
         <div id="card-body">

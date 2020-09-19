@@ -99,8 +99,8 @@ export const DotButton = styled.div`
 `
 
 export default {
-    CarouselStyle,
-    NavButtonContainer,
-    NavigateButton,
-    DotButton
+  CarouselStyle,
+  NavButtonContainer,
+  NavigateButton,
+  DotButton
 }

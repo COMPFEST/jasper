@@ -3,7 +3,7 @@ import SubscribeForm from "./SubscribeForm"
 import { FooterContainer } from "./style"
 
 export const Footer = (props) => {
-  const { Compfest, Facebook, Twitter, Youtube, Instagram, Line, LinkedIn, ...other} = props
+  const { Compfest, Facebook, Twitter, Youtube, Instagram, Line, LinkedIn, ...other } = props
   return (
     <FooterContainer {...other}>
       <div className="row">

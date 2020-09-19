@@ -12,7 +12,7 @@ class SmallNav extends Component {
   }
 
   render() {
-    const { navItems, ...other} = this.props
+    const { navItems, ...other } = this.props
     return (
       <Style {...other}>
         <div className="small-nav">

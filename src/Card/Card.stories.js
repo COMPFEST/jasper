@@ -21,6 +21,7 @@ storiesOf("Card").add(
     image={PlaceholderImg}
     title='Card Title That is Very Long to Decribe Something'
     miniTitle='Card Mini Title'
+    className="tes"
     text='COMPFEST is an annual one-stop IT event run by students of Faculty of Computer Science, University of Indonesia. Lorem ipsum dolor sit amet Lorem. COMPFEST is an annual one-stop IT event run by students of Faculty of Computer Science, University of Indonesia. Lorem ipsum dolor sit amet Lorem.'
     buttonTop={<Button> Hello </Button>}
     buttonBottom={<Button> Hello </Button>}/>

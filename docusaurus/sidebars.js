@@ -3,6 +3,7 @@ module.exports = {
     "Getting Started": ["installation"],
     "Visual Language": ["color", "logo", "mascot"],
     Layout: ["doc3"],
-    Components: ["button", "card", "alert-box"]
-  }
+    Components: ['alert-box', 'button', 'card', 'form-fields', 'small-nav'],
+    Info: ['about']
+  },
 }

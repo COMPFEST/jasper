@@ -12,9 +12,9 @@ class SmallNav extends Component {
   }
 
   render() {
-    const navItems = this.props.navItems
+    const { navItems, ...other } = this.props
     return (
-      <Style>
+      <Style {...other}>
         <div className="small-nav">
           {navItems.map((navItem, index) => (
             <div

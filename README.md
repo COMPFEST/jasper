@@ -35,35 +35,9 @@ class Example extends Component {
 }
 ```
 
-## Local setup
+## Contributing
 
-To install jasper-ui:
-- npm install
-
-To install documentation page:
-- cd docusaurus && npm install
-
-To run storybook:
-- npm run storybook
-
-To run documentation page:
-- Run this in one terminal:
-  - npm start
-- Run this in another terminal:
-  - cd docusaurus && npm start
-
-
-## Testing
-
-To run all tests:
-- npm test
-
-To run test with coverage:
-- npm run test:coverage
-
-To run test and update snapshots:
-- npm run test:watch
-
+> #### [Please follow these steps to contribute](CONTRIBUTING.md).
 
 ## License
 

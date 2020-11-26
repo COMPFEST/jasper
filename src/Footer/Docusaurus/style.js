@@ -1,27 +1,18 @@
 import styled from "styled-components"
 
 export const FooterContainer = styled.div`
-  background-color: ${props => {
-    try {
-      if (props.theme.colors.secondary) {
-        return props.theme.colors.secondary
-      } else {
-        throw new Error("secondary color not defined")
-      }
-    } catch (error) {
-      return "#131313"
-    }
-  }};
-  height: 240px;
-  padding: 3rem 7rem;
+  background-color: #131313;
+  height: 320px; // 240px pengennya
+  padding: 2.5rem 2.5rem;
   display: flex;
   flex-direction: column;
   color: white;
-  font-family: "DM Sans", "itc";
+  /* font-family: "DM Sans", "itc"; */
 
   #ft-left {
-    max-width: 40%;
+    max-width: 35%; // 42% pengennya
   }
+
 
   div.row {
     display: flex;
@@ -34,29 +25,32 @@ export const FooterContainer = styled.div`
   }
 
   .ft-section-title {
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     margin-bottom: 0.5rem;
     display: block;
   }
 
   .slogan {
-    font-size: 18px;
-    letter-spacing: 0.04em;
-    margin-top: .5rem;
+    font-size: 15.1px; // 16 pengennya
+    letter-spacing: 0.03em;
+    margin-top: .2rem;
   }
 
   .deskripsi-singkat {
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.0;
   }
 
   .separator {
     /* border: 0.4px solid white; */
-    margin: 1.5rem 0;
+    margin: 1rem 0; // 0.7 pengennya
   }
 
   #copyright {
+    font-size: 13px;
     font-weight: bold;
     margin-bottom: 1rem;
     display: block;
@@ -72,31 +66,31 @@ export const FooterContainer = styled.div`
     #fb {
       height: 25px;
       width: 25px;
-      margin-right: 22px;
+      margin-right: 20px;
     }
 
     #tw {
       width: 30px;
       height: 25px;
-      margin-right: 22px;
+      margin-right: 20px;
     }
 
     #yb {
       width: 32px;
       height: 23px;
-      margin-right: 22px;
+      margin-right: 20px;
     }
 
     #ig,
     #ln {
       width: 23px;
       height: 23px;
-      margin-right: 22px;
+      margin-right: 20px;
     }
 
     #in {
       width: 23px;
-      height: 22px;
+      height: 20px;
     }
   }
 
@@ -116,37 +110,44 @@ export const FooterContainer = styled.div`
       margin-bottom: 1rem;
     }
 
+    .slogan {
+      font-size: 18px;
+    }
+
+    .deskripsi-singkat {
+      font-size: 14px;
+    }
+
     #socmed {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
       #fb {
-        height: 17px;
-        width: 16px;
-        padding-right: 5px;
+        height: 25px;
+        width: 25px;
+        margin-right: 17px;
       }
 
       #tw {
-        width: 20px;
-        height: 16px;
-        padding-right: 5px;
+        width: 30px;
+        height: 25px;
+        margin-right: 17px;
       }
 
       #yb {
-        width: 21px;
-        height: 15px;
-        padding-right: 5px;
+        width: 32px;
+        height: 23px;
+        margin-right: 17px;
       }
 
       #ig,
       #ln {
-        width: 15px;
-        height: 15px;
-        padding-right: 5px;
+        width: 23px;
+        height: 23px;
+        margin-right: 17px;
       }
 
       #in {
-        width: 15px;
-        height: 15px;
-        padding-right: 5px;
+        width: 23px;
+        height: 22px;
       }
     }
   }

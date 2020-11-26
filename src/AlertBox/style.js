@@ -8,7 +8,17 @@ export const MyStyle = styled.div`
   display: flex;
   position: fixed;
   z-index: 1000;
-  background-color: #14062f;
+  background-color: ${props => {
+    try {
+      if (props.theme.colors.background) {
+        return props.theme.colors.background
+      } else {
+        throw new Error("background color not defined")
+      }
+    } catch (error) {
+        return "#000"
+    }
+  }};
   overflow: hidden;
   padding-bottom: 500px;
 
@@ -24,7 +34,7 @@ export const MyStyle = styled.div`
     width: 80%;
     padding-bottom: 30px;
     font-size: 20px;
-    color: white;
+    color: #fff;
   }
 
   button {
@@ -34,6 +44,6 @@ export const MyStyle = styled.div`
 
   button:nth-of-type(1) {
     background: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid #f3f3f3;
   }
 `

@@ -8,8 +8,17 @@ const defaulTheme = {
   }
 }
 
+const testTheme = {
+  colors: {
+    primary:undefined,
+    secondary:undefined,
+    background:undefined,
+    inputColor:undefined,
+  }
+}
+
 const ThemeDecorator = (storyFn) => (
-  <ThemeProvider theme={defaulTheme}>{storyFn()}</ThemeProvider>
+  <ThemeProvider theme={testTheme}>{storyFn()}</ThemeProvider>
 )
 
 export default ThemeDecorator

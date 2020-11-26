@@ -1,99 +1,11 @@
 import React, { useState, useCallback, useEffect } from "react"
 import EmblaCarouselReact from "embla-carousel-react"
-import styled from "styled-components"
 import PropTypes from "prop-types"
 
-import next from "./static/carousel_next.svg"
-import prev from "./static/carousel_prev.svg"
+import { CarouselStyle, NavButtonContainer, NavigateButton, DotButton } from "./style"
 
-import "./carousel.css"
-
-const CarouselStyle = styled.div`
-  position: relative;
-  margin: 50px 0;
-`
-
-const NavButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: 768px) {
-    margin-top: 30px;
-    height: 75px;
-  }
-`
-const NavigateButton = styled.img`
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  transition: transform 0.3s, width 0.3s;
-
-  &.next-dept {
-    right: 60px;
-    transform: translate(50%, -50%);
-    &:not(.enabled) {
-      transform: translate(50%, -50%) scale(0.00001);
-    }
-  }
-  &.prev-dept {
-    left: 60px;
-    transform: translate(-50%, -50%);
-    &:not(.enabled) {
-      transform: translate(-50%, -50%) scale(0.00001);
-    }
-  }
-
-  @media (max-width: 1200px) {
-    &.next-dept {
-      right: 48px;
-    }
-    &.prev-dept {
-      left: 48px;
-    }
-  }
-
-  @media (max-width: 992px) {
-    &.next-dept {
-      right: 32px;
-    }
-    &.prev-dept {
-      left: 32px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    top: auto;
-    bottom: -150px;
-    position: initial;
-    width: 75px;
-    transform: initial !important;
-
-    &:not(.enabled) {
-      width: 0px;
-    }
-
-    &.next-dept {
-      right: auto;
-    }
-    &.prev-dept {
-      left: auto;
-      transform: initial;
-    }
-  }
-`
-
-const DotButton = styled.div`
-  cursor: pointer;
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  border-radius: 6px;
-  background-color: #530330;
-  transition: background-color 0.3s, width 0.3s;
-  ${props => (props.selected ? `width: 32px; background-color: #A70660;` : ``)}
-`
-
-const Carousel = ({ children }) => {
+const Carousel = (props) => {
+  const { children, prevButton, nextButton, ...other } = props
   const [embla, setEmbla] = useState(null)
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(true)
   const [nextBtnEnabled, setNextBtnEnabled] = useState(true)
@@ -118,7 +30,7 @@ const Carousel = ({ children }) => {
   }, [embla])
 
   return (
-    <CarouselStyle>
+    <CarouselStyle {...other}>
       <div style={{ position: "relative" }}>
         <EmblaCarouselReact
           className="testimony_carousel__viewport"
@@ -162,14 +74,16 @@ const Carousel = ({ children }) => {
       <NavButtonContainer>
         <NavigateButton
           className={`prev-dept ${prevBtnEnabled ? " enabled" : ""}`}
-          src={prev}
           onClick={scrollPrev}
-        />
+        >
+          {prevButton}
+        </NavigateButton>
         <NavigateButton
           className={`next-dept ${nextBtnEnabled ? " enabled" : ""}`}
-          src={next}
           onClick={scrollNext}
-        />
+        >
+          {nextButton}
+        </NavigateButton>
       </NavButtonContainer>
     </CarouselStyle>
   )
@@ -177,6 +91,8 @@ const Carousel = ({ children }) => {
 
 Carousel.propTypes = {
   children: PropTypes.array,
+  prevButton: PropTypes.node.isRequired,
+  nextButton: PropTypes.node.isRequired,
 }
 
 export default Carousel

@@ -16,7 +16,8 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "styled-components": "file:../node_modules/styled-components",
-    "jasper-ui": "file:.."
+    "jasper-ui": "file:..",
+    "font-loader": "file:plugins/font-loader"
   },
   "browserslist": {
     "production": [

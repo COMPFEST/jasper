@@ -1,6 +1,6 @@
 ---
 id: installation
-title: Installation
+title: Getting Started/Installation
 sidebar_label: Installation
 ---
 

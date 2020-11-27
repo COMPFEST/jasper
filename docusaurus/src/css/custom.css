@@ -6,6 +6,154 @@
  */
 
 /* You can override the default Infima variables here. */
+/* DM Sans */
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../static/fonts/DMSans-Regular.woff2") format("woff2"), url("../../static/fonts/DMSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../static/fonts/DMSans-Bold.woff2") format("woff2"), url("../../static/fonts/DMSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "itc";
+  src: url("../../static/fonts/ITCAvantGardeStd-Bk.woff2") format("woff2"), url("../../static/fonts/ITCAvantGardeStd-Bk.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "itc";
+  src: url("../../static/fonts/ITCAvantGardeStd-Demi.woff2") format("woff2"), url("../../static/fonts/ITCAvantGardeStd-Demi.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "itc cn";
+  src: url("../../static/fonts/ITCAvantGardeStd-DemiCn.woff2") format("woff2"), url("../../static/fonts/ITCAvantGardeStd-DemiCn.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "itc";
+  src: url("../../static/fonts/ITCAvantGardeStd-Bold.woff2") format("woff2"), url("../../static/fonts/ITCAvantGardeStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "itc", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 140%;
+}
+
+h2 {
+  font-family: "itc", sans-serif;
+  font-size: 1.5rem;
+  line-height: 140%;
+}
+
+h3 {
+  font-family: "itc", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 140%;
+  display: inline;
+}
+
+h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 140%;
+}
+
+strong {
+  font-family: "itc", sans-serif;
+  font-size: 1.125rem;
+  line-height: 140%;
+}
+
+a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 140%;
+}
+
+.menu__link {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menu .menu__link {
+  margin-bottom: 24px;
+}
+
+.link__parent {
+  font-family: "itc", sans-serif;
+  font-size: 0.875rem;
+}
+
+.link__child {
+  font-size: 0.875rem;
+}
+
+.contents .contents__link {
+  margin-bottom: 12px;
+}
+
+.h3-subtitle {
+  color: #747373;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
 :root {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);

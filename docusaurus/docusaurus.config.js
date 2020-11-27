@@ -1,11 +1,12 @@
 module.exports = {
-  title: "Jasper",
-  tagline: "Modern React Component Library from COMPFEST",
-  url: "https://jasper.compfest.id",
-  baseUrl: "/",
-  favicon: "img/favicon.ico",
-  organizationName: "COMPFEST",
-  projectName: "jasper",
+  title: 'Jasper',
+  tagline: 'Modern React Component Library from COMPFEST',
+  url: 'https://jasper.compfest.id',
+  baseUrl: '/',
+  favicon: 'img/favicon.ico',
+  organizationName: 'COMPFEST',
+  projectName: 'jasper',
+  plugins: ['font-loader'],
   themeConfig: {
     navbar: {
       title: "Jasper",

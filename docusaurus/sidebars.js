@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
     "Getting Started": ["introduction", "installation", "doc2"],
+    "Visual Language": ["color", "logo", "mascot"],
     Layout: ["doc3"],
     Components: [
       "alert-box",
@@ -13,5 +14,5 @@ module.exports = {
       "spinner"
     ],
     Info: ["about"]
-  }
+  },
 }

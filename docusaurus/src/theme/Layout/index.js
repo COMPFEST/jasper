@@ -5,28 +5,28 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
-import Head from '@docusaurus/Head';
-import isInternalUrl from '@docusaurus/isInternalUrl';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import React from 'react'
+import Head from '@docusaurus/Head'
+import isInternalUrl from '@docusaurus/isInternalUrl'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
-import ThemeProvider from '@theme/ThemeProvider';
-import TabGroupChoiceProvider from '@theme/TabGroupChoiceProvider';
-import AnnouncementBar from '@theme/AnnouncementBar';
-import Navbar from '@theme/Navbar';
-import Footer from '@theme/Footer';
+import ThemeProvider from '@theme/ThemeProvider'
+import TabGroupChoiceProvider from '@theme/TabGroupChoiceProvider'
+import AnnouncementBar from '@theme/AnnouncementBar'
+import Navbar from '@theme/Navbar'
+import Footer from '@theme/Footer'
 
-import './styles.css';
+import './styles.css'
 
 function Layout(props) {
-  const {siteConfig = {}} = useDocusaurusContext();
+  const { siteConfig = {} } = useDocusaurusContext()
   const {
     favicon,
     title: siteTitle,
-    themeConfig: {image: defaultImage},
+    themeConfig: { image: defaultImage },
     url: siteUrl,
-  } = siteConfig;
+  } = siteConfig
   const {
     children,
     title,
@@ -36,16 +36,16 @@ function Layout(props) {
     keywords,
     permalink,
     version,
-  } = props;
-  const metaTitle = title ? `${title} | ${siteTitle}` : siteTitle;
+  } = props
+  const metaTitle = title ? `${title} | ${siteTitle}` : siteTitle
 
-  const metaImage = image || defaultImage;
-  let metaImageUrl = siteUrl + useBaseUrl(metaImage);
+  const metaImage = image || defaultImage
+  let metaImageUrl = siteUrl + useBaseUrl(metaImage)
   if (!isInternalUrl(metaImage)) {
-    metaImageUrl = metaImage;
+    metaImageUrl = metaImage
   }
 
-  const faviconUrl = useBaseUrl(favicon);
+  const faviconUrl = useBaseUrl(favicon)
 
   return (
     <ThemeProvider>
@@ -83,7 +83,7 @@ function Layout(props) {
         {!noFooter && <Footer />}
       </TabGroupChoiceProvider>
     </ThemeProvider>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

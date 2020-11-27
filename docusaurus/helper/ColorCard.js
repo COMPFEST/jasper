@@ -15,7 +15,7 @@ const Container = styled.div`
 `
 
 const Color = styled.div`
-  background: ${props => props.hex};
+  background: ${(props) => props.hex};
   height: 150px;
   border-radius: 10px 10px 0px 0px;
 `
@@ -33,16 +33,16 @@ const Description = styled.div`
 
 const ColorCard = ({ colorName, hex, rgb, ...props }) => {
   return (
-    <Container {...props} >
+    <Container {...props}>
       <Color hex={hex} />
       <Description>
         <h3>{colorName}</h3>
         <div style={{ display: "flex", flexDirection: "row" }}>
-          <div style={{ flex: "1"}}>
+          <div style={{ flex: "1" }}>
             <h6 className="title">Hex</h6>
             <p>{hex}</p>
           </div>
-          <div style={{ flex: "1"}}>
+          <div style={{ flex: "1" }}>
             <h6 className="title">RGB</h6>
             <p>{rgb}</p>
           </div>
